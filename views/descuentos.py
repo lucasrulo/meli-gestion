@@ -4,7 +4,7 @@ import streamlit as st
 
 from meli import promos
 from meli.bulk import run_bulk
-from meli.carga import compute_promo, input_block, mode_picker, preview, resolve
+from meli.carga import compute_promo, grid_block, mode_picker, preview, resolve
 from meli.ui import catalog_index, pick_account, show_results
 
 st.session_state["_page"] = "descuentos"
@@ -32,16 +32,15 @@ if not quitar:
         st.stop()
     st.caption(f"Vigencia: {start:%d/%m/%Y %H:%M} → {finish:%d/%m/%Y %H:%M}. MeLi valida la duración máxima permitida.")
 
-data = input_block("lista" if quitar else "promo", "desc")
-c1, c2 = st.columns([2, 1])
-with c1:
-    mode = mode_picker("desc")
-round_int = c2.checkbox("Redondear a entero", value=True)
+mode = mode_picker("desc")
+index = catalog_index(client)
+data = grid_block("lista" if quitar else "promo", "desc", index, mode)
 if data is None:
     st.stop()
 
-index = catalog_index(client)
-det = compute_promo(resolve(index, data, mode), round_int, quitar)
+st.divider()
+st.subheader("Vista previa")
+det = compute_promo(resolve(index, data, mode), True, quitar)
 todo = preview(det, "desc", "dto_%")
 if todo.empty:
     st.info("No hay nada para procesar.")

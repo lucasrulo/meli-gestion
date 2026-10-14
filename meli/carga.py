@@ -211,3 +211,196 @@ def preview(det: pd.DataFrame, key: str, var_col: str) -> pd.DataFrame:
     if (conflict > 1).any():
         st.warning(f"{int((conflict > 1).sum())} publicaciones aparecen en más de un modelo-color; se usa el primero.")
     return todo.drop_duplicates("item_id").reset_index(drop=True)
+
+
+# ---------------------------------------------------------------- tabla de carga (modelo | actual | nuevo)
+REDONDEOS = {
+    "terminado_999": "Terminado en 999",
+    "entero": "Entero",
+    "100": "Múltiplo de 100",
+    "1000": "Múltiplo de 1.000",
+    "no": "Sin redondeo",
+}
+
+
+def redondear(x: float, how: str) -> float:
+    if x is None or pd.isna(x):
+        return None
+    if how == "terminado_999":
+        return max(round(x / 1000) * 1000 - 1, 999)
+    if how == "100":
+        return round(x / 100) * 100
+    if how == "1000":
+        return round(x / 1000) * 1000
+    if how == "entero":
+        return round(x)
+    return round(x, 2)
+
+
+def _fmt(x):
+    return f"${x:,.0f}".replace(",", ".")
+
+
+def lookup(index: pd.DataFrame, claves, mode: str) -> pd.DataFrame:
+    """Por cada clave: precio de lista actual (el más común), rango si varía, SKUs y publicaciones."""
+    claves = [c for c in claves if c]
+    if not claves:
+        return pd.DataFrame(columns=["clave", "precio_actual", "skus", "publicaciones", "estado"])
+    det = match(index, claves, mode=mode)
+    det["precio_lista"] = det.apply(
+        lambda r: to_number(r.get("precio_original")) or to_number(r.get("precio_actual")), axis=1)
+    rows = []
+    for c in claves:
+        d = det[(det["clave"] == c) & det["item_id"].notna()]
+        if d.empty:
+            rows.append({"clave": c, "precio_actual": None, "skus": 0, "publicaciones": 0,
+                         "estado": "❌ No encontrado"})
+            continue
+        pl = d.drop_duplicates("item_id")["precio_lista"].dropna()
+        if pl.empty:
+            actual = None
+        else:
+            vc = pl.value_counts()
+            actual = float(vc[vc == vc.max()].index.max())  # el más común; si empatan, el mayor
+        estado = "✅"
+        if pl.nunique() > 1:
+            estado = f"⚠️ Precios distintos {_fmt(pl.min())} – {_fmt(pl.max())}"
+        en_promo = d["precio_original"].notna().any() if "precio_original" in d else False
+        if en_promo:
+            venta = pd.to_numeric(d["precio_actual"], errors="coerce").min()
+            estado += f" · en promo ({_fmt(venta)})"
+        rows.append({"clave": c, "precio_actual": actual, "skus": int(d["sku"].dropna().nunique()),
+                     "publicaciones": int(d["item_id"].nunique()), "estado": estado})
+    return pd.DataFrame(rows)
+
+
+def grid_block(kind: str, key: str, index: pd.DataFrame, mode: str) -> pd.DataFrame | None:
+    """Tabla editable: modelo-color | precio actual (lo trae MeLi) | precio nuevo / promo.
+    kind: 'precio' | 'promo' | 'lista'. Devuelve DataFrame (clave + precio / precio_promo) listo para resolve()."""
+    ss = st.session_state
+    key = f"{key}_{kind}"
+    newcol = {"precio": "precio", "promo": "precio_promo", "lista": None}[kind]
+    newlabel = {"precio": "Precio nuevo", "promo": "Precio promo", "lista": None}[kind]
+    sk, vk, lk = f"grid_{key}", f"gridv_{key}", f"gridlook_{key}"
+    ss.setdefault(vk, 0)
+
+    def empty(n=15):
+        d = pd.DataFrame({"clave": pd.Series([None] * n, dtype="string"),
+                          "precio_actual": pd.Series([None] * n, dtype="float")})
+        if newcol:
+            d[newcol] = pd.Series([None] * n, dtype="float")
+        d["skus"] = pd.Series([None] * n, dtype="float")
+        d["publicaciones"] = pd.Series([None] * n, dtype="float")
+        d["estado"] = pd.Series([None] * n, dtype="string")
+        return d
+
+    def store(df):
+        ss[sk] = df.reset_index(drop=True)
+        ss[vk] += 1
+        st.rerun()
+
+    ss.setdefault(sk, empty())
+
+    # ---- pegar lista larga / Excel → carga la tabla
+    with st.expander("📋 Pegar lista larga o subir Excel", expanded=ss[sk]["clave"].dropna().empty):
+        st.caption("Columna 1: modelo-color / SKU / MLA. Columna 2 (opcional): "
+                   + (f"{newlabel.lower()}." if newcol else "no hace falta."))
+        a, b = st.columns(2)
+        txt = a.text_area("Pegar", height=150, key=f"paste_{key}", label_visibility="collapsed",
+                          placeholder="CL1234-010\t89999\nCL1234-020\nKP5566-001")
+        up = b.file_uploader("Excel", type=["xlsx", "xls", "csv"], key=f"up_{key}", label_visibility="collapsed")
+        if b.button("⬇️ Cargar en la tabla", key=f"load_{key}", type="primary"):
+            rows = []
+            if up is not None:
+                x = read_excel(up)
+                if "clave" not in x:
+                    st.error("El Excel necesita una columna modelo_color (o sku / item_id).")
+                    st.stop()
+                valcol = next((c for c in ("precio", "precio_promo") if c in x), None)
+                for _, r in x.iterrows():
+                    rows.append({"clave": str(r["clave"]).strip(),
+                                 "nuevo": to_number(r.get(valcol)) if valcol else None})
+            for line in (txt or "").splitlines():
+                parts = [p.strip() for p in (line.split("\t") if "\t" in line else line.split(";"))]
+                if parts and parts[0]:
+                    rows.append({"clave": parts[0], "nuevo": to_number(parts[1]) if len(parts) > 1 else None})
+            rows = [r for r in rows if r["clave"] and r["clave"].lower() not in {"nan", "modelo_color", "sku", "modelo"}]
+            if not rows:
+                st.warning("No hay filas para cargar.")
+            else:
+                new = pd.DataFrame(rows).drop_duplicates("clave", keep="last")
+                df = empty(0)
+                df = pd.concat([df, pd.DataFrame({"clave": new["clave"]})], ignore_index=True)
+                if newcol:
+                    df[newcol] = new["nuevo"].values
+                ss.pop(lk, None)
+                store(df)
+
+    # ---- tabla editable
+    cfg = {
+        "clave": st.column_config.TextColumn("Modelo-color / SKU", width="medium"),
+        "precio_actual": st.column_config.NumberColumn("Precio actual", format="localized", disabled=True),
+        "skus": st.column_config.NumberColumn("SKUs", disabled=True, width="small"),
+        "publicaciones": st.column_config.NumberColumn("Publ.", disabled=True, width="small"),
+        "estado": st.column_config.TextColumn("Estado", disabled=True, width="large"),
+    }
+    if newcol:
+        cfg[newcol] = st.column_config.NumberColumn(newlabel, format="localized", min_value=0)
+    order = ["clave", "precio_actual"] + ([newcol] if newcol else []) + ["skus", "publicaciones", "estado"]
+    ed = st.data_editor(ss[sk][order], num_rows="dynamic", hide_index=True, width="stretch",
+                        column_config=cfg, key=f"ed_{key}_{ss[vk]}")
+    ed = ed.copy()
+    ed["clave"] = ed["clave"].astype("string").str.strip()
+
+    # ---- busca precios automáticamente cuando cambian los modelos o el modo de búsqueda
+    claves = [c for c in ed["clave"].dropna().tolist() if c]
+    sig = (tuple(claves), mode, len(index))
+    if claves and ss.get(lk) != sig:
+        with st.spinner("Buscando precios actuales…"):
+            info = lookup(index, claves, mode).drop_duplicates("clave")
+        base = ed[ed["clave"].fillna("") != ""].drop(columns=["precio_actual", "skus", "publicaciones", "estado"])
+        base = base.drop_duplicates("clave", keep="last").merge(info, on="clave", how="left")
+        ss[lk] = sig
+        store(base)
+
+    # ---- acciones masivas
+    if newcol:
+        st.markdown("**Aplicar a todos**")
+        c1, c2, c3, c4 = st.columns([1.2, 1.4, 1.2, 1])
+        if kind == "precio":
+            pct = c1.number_input("Aumento %", value=10.0, step=5.0, key=f"pct_{key}",
+                                  help="Negativo para bajar. Se calcula sobre el precio actual.")
+        else:
+            pct = c1.number_input("Descuento %", value=20.0, min_value=0.0, max_value=95.0, step=5.0, key=f"pct_{key}")
+        how = c2.selectbox("Redondeo", list(REDONDEOS), format_func=REDONDEOS.get, key=f"rnd_{key}")
+        solo_vacios = c3.checkbox("Solo filas vacías", key=f"sv_{key}",
+                                  help="No pisa los precios que ya cargaste a mano.")
+        if c4.button("Aplicar %", key=f"ap_{key}", width="stretch"):
+            df = ed[ed["clave"].fillna("") != ""].copy()
+            factor = 1 + pct / 100 if kind == "precio" else 1 - pct / 100
+            calc = df["precio_actual"].map(lambda v: redondear(v * factor, how) if v and not pd.isna(v) else None)
+            mask = df[newcol].isna() if solo_vacios else pd.Series(True, index=df.index)
+            df.loc[mask, newcol] = calc[mask]
+            store(df)
+
+    b1, b2, _ = st.columns([1, 1, 3])
+    if b1.button("🔄 Volver a buscar", key=f"rl_{key}"):
+        ss.pop(lk, None)
+        store(ed[ed["clave"].fillna("") != ""])
+    if b2.button("🗑️ Limpiar tabla", key=f"clr_{key}"):
+        ss.pop(lk, None)
+        store(empty())
+
+    data = ed[ed["clave"].fillna("") != ""].copy()
+    if data.empty:
+        return None
+    data["clave"] = data["clave"].astype(str)
+    keep = ["clave"] + ([newcol] if newcol else [])
+    data = data[keep].drop_duplicates("clave", keep="last")
+    if newcol:
+        data[newcol] = pd.to_numeric(data[newcol], errors="coerce")
+        data = data[data[newcol].notna()]
+        if data.empty:
+            st.info(f"Completá la columna **{newlabel}** (a mano o con *Aplicar %*) para ver la vista previa.")
+            return None
+    return data

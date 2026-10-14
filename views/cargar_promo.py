@@ -6,7 +6,7 @@ from meli import promos
 from meli.api import MeliError
 from meli.bulk import run_bulk
 from meli.excel import to_number
-from meli.carga import compute_promo, input_block, mode_picker, preview, resolve
+from meli.carga import compute_promo, grid_block, mode_picker, preview, resolve
 from meli.ui import catalog_index, pick_account, show_results
 
 st.session_state["_page"] = "cargar"
@@ -42,16 +42,15 @@ accion = c2.radio("Acción", ["Agregar", "Quitar"], horizontal=True)
 target = choices[i]
 quitar = accion == "Quitar"
 
-data = input_block("lista" if quitar else "promo", "cargar")
-c1, c2 = st.columns([2, 1])
-with c1:
-    mode = mode_picker("cargar")
-round_int = c2.checkbox("Redondear a entero", value=True)
+mode = mode_picker("cargar")
+index = catalog_index(client)
+data = grid_block("lista" if quitar else "promo", "cargar", index, mode)
 if data is None:
     st.stop()
 
-index = catalog_index(client)
-det = compute_promo(resolve(index, data, mode), round_int, quitar)
+st.divider()
+st.subheader("Vista previa")
+det = compute_promo(resolve(index, data, mode), True, quitar)
 todo = preview(det, "cargar", "dto_%")
 if todo.empty:
     st.info("No hay nada para procesar.")

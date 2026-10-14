@@ -11,7 +11,10 @@ App Streamlit para operar las tiendas oficiales de MercadoLibre de forma masiva:
 | 📨 Invitaciones MeLi | Candidatos de campañas de MeLi, filtro por modelo-color y por % que aportás, suma en bloque |
 | 💲 Precios masivos | modelo-color + precio → cambia el precio de todos los SKUs/talles de ese modelo-color |
 
-**Carga:** pegás 2 columnas copiadas de Excel (o subís el Excel). La clave puede ser modelo-color, SKU o ID MLA.
+**Carga (Precios, Cargar a campaña, Descuentos):** tabla de 3 columnas *Modelo-color / SKU · Precio actual · Precio nuevo (o promo)*.
+Pegás o tipeás los modelos-color y el precio actual se completa solo desde MeLi (con SKUs, publicaciones y alertas:
+no encontrado, precios distintos, en promo). El precio nuevo lo cargás a mano, pegado desde Excel, o con
+**Aplicar %** a todos (aumento o descuento) con redondeo terminado en 999 / entero / múltiplo de 100 o 1.000.
 Búsqueda *Empieza con* (default) trae todos los talles; se ignoran guiones, espacios y mayúsculas.
 
 **Vista previa:** métricas (cargados / encontrados / no encontrados / SKUs / publicaciones), resumen por modelo-color

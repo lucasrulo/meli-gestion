@@ -3,7 +3,7 @@ from datetime import datetime
 import streamlit as st
 
 from meli.bulk import run_bulk
-from meli.carga import compute_precio, input_block, mode_picker, preview, resolve
+from meli.carga import compute_precio, grid_block, mode_picker, preview, resolve
 from meli.prices import update_price
 from meli.ui import catalog_index, pick_account, show_results
 
@@ -11,21 +11,19 @@ st.session_state["_page"] = "precios"
 st.title("💲 Precios masivos")
 client = pick_account()
 
-data = input_block("precio", "precios")
-c1, c2, c3 = st.columns([2, 1, 1])
+c1, c2 = st.columns([3, 1])
 with c1:
     mode = mode_picker("precios")
-round_int = c2.checkbox("Redondear a entero", value=True)
-alert = c3.number_input("Alertar si cambia más de %", 1, 100, 30)
-
-if data is None:
-    st.stop()
-if "precio" not in data:
-    st.error("Falta la columna precio.")
-    st.stop()
+alert = c2.number_input("Alertar si cambia más de %", 1, 300, 50)
 
 index = catalog_index(client)
-det = compute_precio(resolve(index, data, mode), round_int, alert)
+data = grid_block("precio", "precios", index, mode)
+if data is None:
+    st.stop()
+
+st.divider()
+st.subheader("Vista previa")
+det = compute_precio(resolve(index, data, mode), True, alert)
 todo = preview(det, "precios", "var_%")
 
 if todo.empty:
