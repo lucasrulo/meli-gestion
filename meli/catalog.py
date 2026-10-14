@@ -4,6 +4,7 @@ Escanea todas las publicaciones (activas y pausadas), trae el detalle en
 multiget de a 20 y arma una tabla con una fila por SKU (item o variación).
 Toma el SKU de SELLER_SKU (atributo) y de seller_custom_field.
 """
+import re
 from concurrent.futures import ThreadPoolExecutor
 
 import pandas as pd
@@ -96,27 +97,39 @@ def load_index(client: MeliClient, statuses=("active", "paused")) -> pd.DataFram
     return build_index(multiget(client, ids))
 
 
-def match(index: pd.DataFrame, keys: pd.Series, prefix: bool = False) -> pd.DataFrame:
-    """Devuelve una fila por (clave_input, item_id). Acepta SKU o item_id (MLA...)."""
+def norm(s) -> str:
+    """Normaliza para comparar: mayúsculas y sin guiones/espacios/puntos ('CL-1234 010' == 'CL1234010')."""
+    return re.sub(r"[^A-Z0-9]", "", str(s or "").upper())
+
+
+MODES = {"empieza": "Empieza con (modelo-color)", "exacto": "Exacto (SKU)", "contiene": "Contiene"}
+
+
+def match(index: pd.DataFrame, keys, mode: str = "empieza") -> pd.DataFrame:
+    """Una fila por (clave, SKU encontrado). Clave = modelo-color, SKU o ID MLA.
+    Las claves sin resultado quedan con item_id vacío."""
+    idx = index.copy()
+    idx["_n"] = idx["sku"].map(norm)
     out = []
-    by_item = index.drop_duplicates("item_id").set_index("item_id")
-    for raw in keys.dropna().astype(str):
-        k = raw.strip().upper()
-        if not k:
+    for raw in pd.Series(list(keys)).dropna().astype(str):
+        k, kn = raw.strip(), norm(raw)
+        if not kn:
             continue
-        if k.startswith("MLA") and k[3:].isdigit():
-            if k in by_item.index:
-                r = by_item.loc[k].to_dict()
-                r["item_id"] = k
-                out.append({"clave": raw, **r})
-            else:
-                out.append({"clave": raw, "item_id": None})
-            continue
-        hits = index[index["sku_norm"].str.startswith(k)] if prefix else index[index["sku_norm"] == k]
-        if hits.empty:
-            out.append({"clave": raw, "item_id": None})
+        if re.fullmatch(r"MLA\d+", kn):
+            hits = idx[idx["item_id"] == kn]
+        elif mode == "exacto":
+            hits = idx[idx["_n"] == kn]
+        elif mode == "contiene":
+            hits = idx[idx["_n"].str.contains(kn, regex=False)]
         else:
-            for _, r in hits.drop_duplicates("item_id").iterrows():
-                out.append({"clave": raw, **r.to_dict()})
+            hits = idx[idx["_n"].str.startswith(kn)]
+        if hits.empty:
+            out.append({"clave": k, "item_id": None})
+        else:
+            for r in hits.to_dict("records"):
+                out.append({"clave": k, **r})
     df = pd.DataFrame(out)
-    return df.drop(columns=["sku_norm"], errors="ignore")
+    if "item_id" not in df:
+        df["item_id"] = None
+    return df.drop(columns=["_n", "sku_norm"], errors="ignore").drop_duplicates(
+        subset=[c for c in ["clave", "item_id", "sku"] if c in df])

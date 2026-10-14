@@ -29,7 +29,8 @@ pg = st.navigation(
     [
         st.Page("views/cuentas.py", title="Cuentas", icon="🔑", default=True),
         st.Page("views/campanas.py", title="Campañas", icon="📣"),
-        st.Page("views/cargar_promo.py", title="Cargar SKUs a promo", icon="🏷️"),
+        st.Page("views/cargar_promo.py", title="Cargar a campaña", icon="🏷️"),
+        st.Page("views/descuentos.py", title="Descuentos", icon="🔖"),
         st.Page("views/invitaciones.py", title="Invitaciones MeLi", icon="📨"),
         st.Page("views/precios.py", title="Precios masivos", icon="💲"),
     ]

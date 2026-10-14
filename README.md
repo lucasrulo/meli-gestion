@@ -5,14 +5,18 @@ App Streamlit para operar las tiendas oficiales de MercadoLibre de forma masiva:
 | Página | Qué hace |
 |---|---|
 | 🔑 Cuentas | Conecta las 4 cuentas por OAuth, alias, prueba de conexión |
-| 📣 Campañas | Lista todas las promos (propias y de MeLi), crea / edita / elimina campañas propias, exporta items |
-| 🏷️ Cargar SKUs a promo | Excel `sku + precio_promo o descuento_pct` → agrega (o quita) en una campaña propia, una DEAL o como descuento individual |
-| 📨 Invitaciones MeLi | Trae los candidatos de campañas de MeLi (co-fondeadas, tradicionales, liquidación, etc.), filtra por % que aportás o por Excel de SKUs y los suma en bloque |
-| 💲 Precios masivos | Excel `sku + precio` → actualiza todas las publicaciones de ese SKU (incluye variaciones) |
+| 📣 Campañas | Lista todas las promos, crea / edita / elimina campañas propias, exporta items |
+| 🏷️ Cargar a campaña | modelo-color + % o precio promo → agrega (o quita) en una campaña propia o tradicional de MeLi |
+| 🔖 Descuentos | modelo-color + % o precio → aplica (o quita) el descuento por producto con fechas, en bloque |
+| 📨 Invitaciones MeLi | Candidatos de campañas de MeLi, filtro por modelo-color y por % que aportás, suma en bloque |
+| 💲 Precios masivos | modelo-color + precio → cambia el precio de todos los SKUs/talles de ese modelo-color |
 
-Todo pasa por **vista previa → confirmación → ejecución → Excel de resultado** con el error exacto de MeLi por fila.
-El SKU se busca en `SELLER_SKU` y `seller_custom_field` (item y variaciones). También acepta IDs `MLA...`.
-"Coincidir por prefijo" sirve si tu Excel tiene SKU por modelo-color y MeLi por talle.
+**Carga:** pegás 2 columnas copiadas de Excel (o subís el Excel). La clave puede ser modelo-color, SKU o ID MLA.
+Búsqueda *Empieza con* (default) trae todos los talles; se ignoran guiones, espacios y mayúsculas.
+
+**Vista previa:** métricas (cargados / encontrados / no encontrados / SKUs / publicaciones), resumen por modelo-color
+con precio actual → precio nuevo y % (destildás lo que no quieras), detalle por SKU con link, y lista de no encontrados
+descargable. Después: confirmación → ejecución → Excel de resultado con el error exacto de MeLi por fila.
 
 ## Setup (una sola vez)
 

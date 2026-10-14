@@ -12,11 +12,12 @@ def _norm_col(c: str) -> str:
 
 
 ALIASES = {
-    "sku": {"sku", "seller_sku", "codigo", "cod", "articulo", "sku_vendedor"},
-    "item_id": {"item_id", "item", "publicacion", "id_publicacion", "mla", "id"},
+    "clave": {"modelo_color", "modelocolor", "modelo", "modelo_y_color", "sku", "seller_sku", "codigo", "cod",
+              "articulo", "sku_vendedor", "item_id", "item", "publicacion", "id_publicacion", "mla", "id"},
     "precio": {"precio", "precio_nuevo", "price", "nuevo_precio", "precio_lista"},
-    "precio_promo": {"precio_promo", "deal_price", "precio_oferta", "precio_promocion"},
-    "descuento_pct": {"descuento_pct", "descuento", "pct", "porcentaje", "dto", "descuento"},
+    "precio_promo": {"precio_promo", "deal_price", "precio_oferta", "precio_promocion", "precio_descuento",
+                     "precio_con_descuento"},
+    "descuento_pct": {"descuento_pct", "descuento", "pct", "porcentaje", "dto", "dto_pct"},
     "precio_meli_plus": {"precio_meli_plus", "top_deal_price", "precio_nivel_6"},
 }
 

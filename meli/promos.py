@@ -30,6 +30,11 @@ TYPE_LABELS = {
 }
 
 
+def _num(x):
+    x = float(x)
+    return int(x) if x.is_integer() else round(x, 2)
+
+
 def fmt_date(d: datetime) -> str:
     return d.strftime("%Y-%m-%dT%H:%M:%S")
 
@@ -104,9 +109,9 @@ def add_item(client: MeliClient, item_id: str, promo_type: str, promo_id: str | 
     if offer_id and promo_type in OFFER_TYPES:
         body["offer_id"] = offer_id
     if deal_price is not None and promo_type in PRICE_TYPES:
-        body["deal_price"] = deal_price
+        body["deal_price"] = _num(deal_price)
     if top_deal_price:
-        body["top_deal_price"] = top_deal_price
+        body["top_deal_price"] = _num(top_deal_price)
     if start:
         body["start_date"] = fmt_date(start)
     if finish:

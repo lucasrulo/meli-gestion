@@ -6,7 +6,9 @@ import streamlit as st
 from meli import promos
 from meli.api import MeliError
 from meli.bulk import run_bulk
-from meli.excel import read_excel, to_number
+from meli.carga import input_block, mode_picker
+from meli.catalog import match
+from meli.excel import to_number
 from meli.ui import catalog_index, pick_account, show_results
 
 st.session_state["_page"] = "invit"
@@ -68,14 +70,17 @@ info = (index.groupby("item_id")
 df = cands.rename(columns={"id": "item_id"}).merge(info, on="item_id", how="left")
 
 # ---------- Filtros ----------
-f1, f2, f3 = st.columns(3)
-sku_file = f1.file_uploader("Filtrar por Excel de SKUs (opcional)", type=["xlsx", "xls", "csv"])
-if sku_file:
-    sk = read_excel(sku_file)
-    col = "sku" if "sku" in sk else sk.columns[0]
-    wanted = set(sk[col].dropna().astype(str).str.strip().str.upper())
-    df = df[df["skus"].fillna("").str.upper().apply(lambda s: any(w in s.split(", ") for w in wanted))
-            | df["item_id"].isin(wanted)]
+with st.expander("🔎 Filtrar por modelo-color (opcional)"):
+    flt = input_block("lista", "invit")
+    fmode = mode_picker("invit")
+if flt is not None:
+    hit = match(index, flt["clave"], mode=fmode)
+    keep_ids = set(hit["item_id"].dropna())
+    nf = hit[hit["item_id"].isna()]["clave"].tolist()
+    df = df[df["item_id"].isin(keep_ids)]
+    st.caption(f"Filtro: {len(keep_ids)} publicaciones de {flt['clave'].nunique()} modelos-color"
+               + (f" · sin publicación: {', '.join(nf[:15])}" if nf else ""))
+f2, f3 = st.columns(2)
 if "seller_percentage" in df:
     mx = f2.number_input("Máx. % que aporto yo", 0.0, 100.0, 100.0, step=1.0)
     df = df[df["seller_percentage"].fillna(0).astype(float) <= mx]
