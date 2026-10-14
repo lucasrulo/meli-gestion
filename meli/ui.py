@@ -68,3 +68,4 @@ def show_results(df: pd.DataFrame, filename: str) -> None:
     st.dataframe(df, width="stretch", hide_index=True)
     st.download_button("⬇️ Descargar resultado", to_xlsx(df), file_name=filename,
                        mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
+
