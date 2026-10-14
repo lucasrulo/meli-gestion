@@ -25,7 +25,8 @@ ITEM_ATTRS = ("id,title,price,original_price,seller_id,official_store_id,permali
 # ---------------------------------------------------------------- persistencia (rama tokens del repo)
 class ProteccionStore:
     def __init__(self):
-        self.gh = GitHubTokenStore(path="proteccion.json")
+        self.gh = GitHubTokenStore()
+        self.gh.path = "proteccion.json"  # mismo repo y rama que los tokens, otro archivo
 
     def load(self) -> dict:
         data, _ = self.gh.load()
