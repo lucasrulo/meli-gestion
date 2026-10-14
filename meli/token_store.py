@@ -24,10 +24,10 @@ class _Conflict(Exception):
 
 
 class GitHubTokenStore:
-    def __init__(self):
+    def __init__(self, path: str | None = None):
         self.repo = secret("GITHUB_REPO")
         self.branch = secret("TOKENS_BRANCH", "tokens")
-        self.path = secret("TOKENS_PATH", "tokens.json")
+        self.path = path or secret("TOKENS_PATH", "tokens.json")
         self.headers = {
             "Authorization": f"Bearer {secret('GITHUB_TOKEN')}",
             "Accept": "application/vnd.github+json",
