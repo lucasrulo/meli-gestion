@@ -7,7 +7,8 @@ from meli.api import MeliError
 from meli.bulk import run_bulk
 from meli.excel import to_number
 from meli.carga import compute_promo, grid_block, mode_picker, preview, resolve
-from meli.ui import catalog_index, pick_account, show_results
+from meli.credibilidad import render_last, save_run
+from meli.ui import catalog_index, pick_account
 
 st.session_state["_page"] = "cargar"
 st.title("🏷️ Cargar a campaña")
@@ -67,6 +68,7 @@ if st.button(f"🚀 {accion} {len(todo)} publicaciones", type="primary", disable
                             top_deal_price=to_number(r.get("precio_meli_plus")))
 
     res = run_bulk(todo.to_dict("records"), job, label=accion)
-    keep = [c for c in ["clave", "item_id", "titulo", "precio_lista", "precio_nuevo", "dto_%", "resultado", "error",
-                        "procesado"] if c in res]
-    show_results(res[keep], f"resultado_campana_{datetime.now():%Y%m%d_%H%M}.xlsx")
+    save_run("cargar", res, client, target["type"], target["id"])
+
+render_last(client, "cargar", f"resultado_campana_{datetime.now():%Y%m%d_%H%M}.xlsx",
+            ["clave", "item_id", "titulo", "precio_lista", "precio_nuevo", "dto_%"])
