@@ -2,7 +2,7 @@
 import pandas as pd
 import streamlit as st
 
-from .catalog import MODES, match
+from .catalog import EXPAND, MODES, match
 from .excel import read_excel, template, to_number, to_xlsx
 
 
@@ -85,8 +85,13 @@ def input_block(kind: str, key: str) -> pd.DataFrame | None:
 
 
 def mode_picker(key: str) -> str:
-    return st.radio("Cómo buscar", list(MODES), format_func=MODES.get, horizontal=True, key=f"mode_{key}",
-                    help="Se ignoran guiones, espacios y mayúsculas. 'Empieza con' trae todos los talles del modelo-color.")
+    c1, c2 = st.columns(2)
+    m = c1.radio("Cómo buscar", list(MODES), format_func=MODES.get, horizontal=True, key=f"mode_{key}",
+                 help="Se ignoran guiones, espacios y mayúsculas. 'Empieza con' trae todos los talles del modelo-color.")
+    e = c2.radio("Completar con variantes de la publicación", list(EXPAND), format_func=EXPAND.get, key=f"exp_{key}",
+                 help="Publicaciones nuevas de MeLi (una publicación por talle): suma todas las variantes de la misma "
+                      "publicación aunque algún talle no tenga SKU cargado o tenga otro SKU.")
+    return f"{m}|{e}"
 
 
 def resolve(index: pd.DataFrame, data: pd.DataFrame, mode: str) -> pd.DataFrame:
@@ -192,7 +197,7 @@ def preview(det: pd.DataFrame, key: str, var_col: str) -> pd.DataFrame:
                         disabled=[c for c in summ.columns if c != "aplicar"])
 
     with st.expander(f"🔎 Detalle por SKU ({len(found)})"):
-        dcols = [c for c in ["clave", "sku", "titulo", "item_id", "estado", "stock", "precio_actual",
+        dcols = [c for c in ["clave", "sku", "por_familia", "color", "titulo", "item_id", "estado", "stock", "precio_actual",
                              "precio_original", "precio_nuevo", var_col, "obs", "permalink"] if c in found]
         st.dataframe(found[dcols], hide_index=True, width="stretch",
                      column_config={"permalink": st.column_config.LinkColumn("link", display_text="ver")})
