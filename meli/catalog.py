@@ -57,6 +57,13 @@ def _skus(obj: dict) -> set[str]:
     return {s for s in found if s}
 
 
+def _color(obj: dict) -> str | None:
+    for a in (obj.get("attributes") or []) + (obj.get("attribute_combinations") or []):
+        if a.get("id") in ("COLOR", "MAIN_COLOR") and a.get("value_name"):
+            return str(a["value_name"]).strip().upper()
+    return None
+
+
 def build_index(items: list[dict]) -> pd.DataFrame:
     rows = []
     for it in items:
@@ -70,6 +77,9 @@ def build_index(items: list[dict]) -> pd.DataFrame:
             "stock": it.get("available_quantity"),
             "catalogo": bool(it.get("catalog_listing")),
             "user_product_id": it.get("user_product_id"),
+            "familia": it.get("family_name") or None,
+            "categoria": it.get("category_id"),
+            "color": _color(it),
             "variaciones": len(variations),
             "variation_ids": ",".join(str(v["id"]) for v in variations),
             "permalink": it.get("permalink"),
@@ -103,11 +113,37 @@ def norm(s) -> str:
 
 
 MODES = {"empieza": "Empieza con (modelo-color)", "exacto": "Exacto (SKU)", "contiene": "Contiene"}
+EXPAND = {"color": "Mismo color de la publicación", "todo": "Toda la publicación (todos los colores)", "no": "Solo SKUs que coinciden"}
+
+
+def _expand_family(idx: pd.DataFrame, hits: pd.DataFrame, how: str) -> pd.DataFrame:
+    """Suma las demás variantes (User Products) de la misma publicación/familia, aunque no tengan SKU o el SKU no coincida."""
+    if how == "no" or "familia" not in idx or hits.empty:
+        return hits
+    fam = hits[hits["familia"].notna()]
+    if fam.empty:
+        return hits
+    keys = ["familia", "categoria"] + (["color"] if how == "color" else [])
+    ref = fam[keys].drop_duplicates()
+    if how == "color":
+        ref = ref[ref["color"].notna()]
+        if ref.empty:  # sin color informado → toda la familia
+            keys = ["familia", "categoria"]
+            ref = fam[keys].drop_duplicates()
+    extra = idx.merge(ref, on=keys, how="inner")
+    extra = extra[~extra["item_id"].isin(hits["item_id"])]
+    if extra.empty:
+        return hits
+    extra = extra.assign(por_familia=True)
+    return pd.concat([hits.assign(por_familia=False), extra], ignore_index=True)
 
 
 def match(index: pd.DataFrame, keys, mode: str = "empieza") -> pd.DataFrame:
     """Una fila por (clave, SKU encontrado). Clave = modelo-color, SKU o ID MLA.
+    mode puede traer la expansión por familia: 'empieza|color', 'exacto|todo', 'contiene|no'.
     Las claves sin resultado quedan con item_id vacío."""
+    mode, _, how = str(mode).partition("|")
+    how = how or "color"
     idx = index.copy()
     idx["_n"] = idx["sku"].map(norm)
     out = []
@@ -126,6 +162,7 @@ def match(index: pd.DataFrame, keys, mode: str = "empieza") -> pd.DataFrame:
         if hits.empty:
             out.append({"clave": k, "item_id": None})
         else:
+            hits = _expand_family(idx, hits, how)
             for r in hits.to_dict("records"):
                 out.append({"clave": k, **r})
     df = pd.DataFrame(out)
