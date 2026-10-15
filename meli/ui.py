@@ -41,9 +41,17 @@ def pick_account() -> MeliClient:
     return MeliClient(tm, uid)
 
 
+INDEX_VERSION = 2  # subir cuando cambian las columnas del índice → invalida el caché viejo
+
+
 @st.cache_data(ttl=3600, show_spinner=False)
-def _cached_index(user_id: str, nonce: int) -> pd.DataFrame:
+def _cached_index(user_id: str, nonce: int, version: int = INDEX_VERSION) -> pd.DataFrame:
     return load_index(MeliClient(get_token_manager(), user_id))
+
+
+def index_for(user_id: str) -> pd.DataFrame:
+    """Índice de cualquier cuenta conectada (mismo caché que catalog_index)."""
+    return _cached_index(str(user_id), st.session_state.get(f"catalog_nonce_{user_id}", 0))
 
 
 def catalog_index(client: MeliClient) -> pd.DataFrame:

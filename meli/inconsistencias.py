@@ -4,6 +4,7 @@ import pandas as pd
 from .excel import to_number
 
 AGRUPAR = {
+    "auto": "Automático (publicación + color; si no hay datos de publicación, modelo-color por SKU)",
     "familia_color": "Publicación + color (talles de un mismo color)",
     "familia": "Publicación completa (todos los colores)",
     "modelo_color": "Modelo-color por SKU (SKU sin el talle)",
@@ -45,14 +46,26 @@ def items_table(index: pd.DataFrame) -> pd.DataFrame:
     return agg
 
 
-def group_key(df: pd.DataFrame, how: str) -> pd.Series:
-    if how == "modelo_color":
-        return df["modelo_color"]
+def _fam_key(df: pd.DataFrame, con_color: bool) -> pd.Series:
     fam = df["familia"].fillna("")
     key = fam + " · " + df["categoria"].fillna("")
-    if how == "familia_color":
+    if con_color:
         key = key + " · " + df["color"].fillna("")
     return key.where(fam != "", None)
+
+
+def group_key(df: pd.DataFrame, how: str) -> pd.Series:
+    if how == "auto":
+        fam = _fam_key(df, True)
+        sku = ("SKU · " + df["modelo_color"].fillna("")).where(df["modelo_color"].notna(), None)
+        key = fam.where(fam.notna(), sku)
+    elif how == "modelo_color":
+        key = df["modelo_color"]
+    else:
+        key = _fam_key(df, how == "familia_color")
+    if "cuenta" in df:  # nunca mezclar cuentas en un mismo grupo
+        key = key.where(key.isna(), df["cuenta"].astype(str) + " · " + key.astype(str))
+    return key
 
 
 def find_groups(items: pd.DataFrame, how: str, min_diff_pct: float, texto: str = "",
@@ -66,7 +79,9 @@ def find_groups(items: pd.DataFrame, how: str, min_diff_pct: float, texto: str =
                 | df["skus"].fillna("").str.lower().str.contains(t, regex=False)
                 | df["grupo"].fillna("").str.lower().str.contains(t, regex=False)]
     g = df.drop_duplicates(["grupo", "item_id"]).groupby("grupo")
+    extra = {"cuenta": ("cuenta", "first")} if "cuenta" in df else {}
     summ = g.agg(
+        **extra,
         titulo=("titulo", "first"),
         publicaciones=("item_id", "nunique"),
         min=("precio_lista", "min"),

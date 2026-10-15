@@ -4,10 +4,12 @@ import pandas as pd
 import streamlit as st
 
 from meli import inconsistencias as inc
+from meli.api import MeliClient
+from meli.auth import get_token_manager
 from meli.bulk import run_bulk
 from meli.excel import to_xlsx
 from meli.prices import update_price
-from meli.ui import catalog_index, pick_account, show_results
+from meli.ui import catalog_index, index_for, pick_account, show_results
 
 st.session_state["_page"] = "inconsistencias"
 st.title("⚖️ Precios distintos")
@@ -15,8 +17,29 @@ st.caption("Busca en tus publicaciones el mismo artículo con precios diferentes
            "calza a distinto precio) y te deja igualarlos en bloque o publicación por publicación. "
            "Compara siempre el **precio de lista** (sin promo).")
 client = pick_account()
+tm = get_token_manager()
+accounts = tm.accounts()
+
+alcance = st.radio("Analizar", ["Cuenta seleccionada", "Todas las cuentas"], horizontal=True, key="inc_scope")
 index = catalog_index(client)
-items = inc.items_table(index)
+if alcance == "Todas las cuentas":
+    partes = []
+    prog = st.progress(0.0, text="Leyendo catálogos…")
+    for n, (uid, a) in enumerate(accounts.items(), 1):
+        it = inc.items_table(index if uid == client.user_id else index_for(uid))
+        it["cuenta"], it["uid"] = a.get("alias") or a.get("nickname") or uid, uid
+        partes.append(it)
+        prog.progress(n / len(accounts), text=f"Leyendo catálogos… {a.get('alias')}")
+    prog.empty()
+    items = pd.concat(partes, ignore_index=True)
+else:
+    items = inc.items_table(index)
+    items["uid"] = client.user_id
+
+con_familia = items["familia"].notna().mean() if len(items) else 0
+st.caption(f"{len(items['item_id'].unique())} publicaciones analizadas · "
+           f"{con_familia:.0%} con datos de publicación agrupada (formato nuevo de MeLi). "
+           "El resto se agrupa por modelo-color del SKU.")
 
 # ---------------------------------------------------------------- filtros
 c1, c2 = st.columns([2, 1])
@@ -48,7 +71,7 @@ summ = summ.copy()
 summ["precios"] = summ["grupo"].map(inc.precios_texto(det))
 summ["precio_objetivo"] = inc.objetivo(summ, regla).values
 summ.insert(0, "igualar", True)
-cols = ["igualar", "titulo", "publicaciones", "precios", "min", "max", "dif_%", "precio_objetivo", "en_promo", "grupo"]
+cols = ["igualar"] + (["cuenta"] if "cuenta" in summ else []) + ["titulo", "publicaciones", "precios", "min", "max", "dif_%", "precio_objetivo", "en_promo", "grupo"]
 ed = st.data_editor(
     summ[cols], hide_index=True, width="stretch", key=f"inc_sum_{how}_{regla}_{texto}_{min_diff}",
     disabled=[c for c in cols if c not in ("igualar", "precio_objetivo")],
@@ -76,7 +99,7 @@ d["aplicar"] = d["precio_nuevo"].notna() & (d["precio_nuevo"] != d["precio_lista
 
 st.subheader("2 · Revisá publicación por publicación")
 st.caption("Por defecto se tildan solo las que cambian de precio. Podés editar el precio de una publicación puntual.")
-dcols = ["aplicar", "titulo", "color", "skus", "item_id", "estado", "stock", "precio_lista", "precio_venta",
+dcols = ["aplicar"] + (["cuenta"] if "cuenta" in d else []) + ["titulo", "color", "skus", "item_id", "estado", "stock", "precio_lista", "precio_venta",
          "precio_nuevo", "en_promo", "permalink"]
 sig = hash(tuple(sorted((k, float(v) if pd.notna(v) else -1) for k, v in obj.items())))
 ed2 = st.data_editor(
@@ -94,7 +117,7 @@ ed2 = st.data_editor(
 
 todo = ed2[ed2["aplicar"] & ed2["precio_nuevo"].notna() & (ed2["precio_nuevo"] > 0)]
 todo = todo[todo["precio_nuevo"] != todo["precio_lista"]].drop_duplicates("item_id")
-todo = todo.merge(d[["item_id", "variation_ids"]].drop_duplicates("item_id"), on="item_id", how="left")
+todo = todo.merge(d[["item_id", "variation_ids", "uid"]].drop_duplicates("item_id"), on="item_id", how="left")
 if todo.empty:
     st.info("No hay publicaciones para cambiar.")
     st.stop()
@@ -107,10 +130,12 @@ baja = int((todo["precio_nuevo"] < todo["precio_lista"]).sum())
 st.divider()
 ok = st.checkbox(f"Confirmo cambiar el precio de {len(todo)} publicaciones ({sube} suben · {baja} bajan)")
 if st.button(f"🚀 Igualar {len(todo)} publicaciones", type="primary", disabled=not ok):
+    clients = {uid: MeliClient(tm, uid) for uid in todo["uid"].dropna().unique()}
     res = run_bulk(todo.to_dict("records"),
-                   lambda r: update_price(client, r["item_id"], r["precio_nuevo"], r.get("variation_ids")),
+                   lambda r: update_price(clients.get(r.get("uid"), client), r["item_id"], r["precio_nuevo"],
+                                          r.get("variation_ids")),
                    label="Igualando precios")
-    keep = [c for c in ["titulo", "color", "skus", "item_id", "precio_lista", "precio_nuevo", "resultado", "error",
+    keep = [c for c in ["cuenta", "titulo", "color", "skus", "item_id", "precio_lista", "precio_nuevo", "resultado", "error",
                         "procesado"] if c in res]
     show_results(res[keep], f"resultado_igualar_{datetime.now():%Y%m%d_%H%M}.xlsx")
     st.cache_data.clear()
