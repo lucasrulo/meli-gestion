@@ -3,12 +3,14 @@ from datetime import date, datetime, time, timedelta
 import pandas as pd
 import streamlit as st
 
+from meli.theme import hero
+
 from meli import promos
 from meli.api import MeliError
 from meli.excel import to_xlsx
 from meli.ui import pick_account
 
-st.title("📣 Campañas")
+hero("Campañas", "Todas tus promociones propias y de MercadoLibre en un solo lugar: creá, editá y auditá.", "PROMOCIONES")
 client = pick_account()
 
 
@@ -47,7 +49,7 @@ else:
 
 # ---------------- Crear ----------------
 st.divider()
-st.subheader("➕ Crear campaña propia")
+st.subheader("Crear campaña propia")
 st.caption("Campaña del vendedor con % flexible: cada SKU lleva su propio precio promo (lo cargás en *Cargar SKUs a promo*). "
            "MeLi valida duración máxima y fechas; si algo no cumple, muestra el error acá.")
 with st.form("crear"):
@@ -74,7 +76,7 @@ with st.form("crear"):
 
 # ---------------- Gestionar ----------------
 st.divider()
-st.subheader("🛠️ Ver / editar una promoción")
+st.subheader("Ver / editar una promoción")
 if df.empty:
     st.stop()
 

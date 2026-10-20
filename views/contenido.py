@@ -4,6 +4,8 @@ from datetime import datetime
 import pandas as pd
 import streamlit as st
 
+from meli.theme import hero
+
 from meli import contenido as ct
 from meli.api import MeliError
 from meli.bulk import run_bulk
@@ -12,9 +14,7 @@ from meli.config import secret
 from meli.ui import catalog_index, pick_account, show_results
 
 st.session_state["_page"] = "contenido"
-st.title("📝 Contenido SEO / GEO")
-st.caption("Descripciones y ficha técnica de tus publicaciones: puntaje, edición tipo cajas de texto, sugerencias con IA "
-           "(opcional) y aplicación a todas las variantes de la publicación.")
+hero("Contenido SEO / GEO", "Descripciones y ficha técnica optimizadas para el buscador de MeLi y los asistentes de IA.", "CATÁLOGO · IA")
 client = pick_account()
 index = catalog_index(client)
 api_key = secret("ANTHROPIC_API_KEY")

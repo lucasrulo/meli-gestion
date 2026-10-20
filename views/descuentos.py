@@ -2,6 +2,8 @@ from datetime import date, datetime, time, timedelta
 
 import streamlit as st
 
+from meli.theme import hero
+
 from meli import promos
 from meli.api import MeliError
 from meli.bulk import run_bulk
@@ -10,7 +12,7 @@ from meli.credibilidad import render_last, save_run
 from meli.ui import catalog_index, pick_account
 
 st.session_state["_page"] = "descuentos"
-st.title("🔖 Descuentos masivos")
+hero("Descuentos masivos", "Descuentos con nombre o individuales, aplicados a todo un modelo-color de una vez.", "PROMOCIONES")
 client = pick_account()
 
 pkey = f"promos_{client.user_id}"

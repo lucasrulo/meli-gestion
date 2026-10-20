@@ -4,9 +4,11 @@ from datetime import datetime
 import pandas as pd
 import streamlit as st
 
+from meli.theme import hero
+
 from meli.auth import get_token_manager
 
-st.title("🔑 Cuentas MercadoLibre")
+hero("Cuentas", "Conexión segura de tus tiendas oficiales de MercadoLibre.", "CONFIGURACIÓN")
 
 if msg := st.session_state.pop("flash", None):
     (st.success if msg.startswith("✅") else st.error)(msg)

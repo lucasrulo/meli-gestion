@@ -3,6 +3,8 @@ from datetime import datetime
 import pandas as pd
 import streamlit as st
 
+from meli.theme import hero
+
 from meli import promos
 from meli.api import MeliError
 from meli.bulk import run_bulk
@@ -12,8 +14,7 @@ from meli.excel import to_number
 from meli.ui import catalog_index, pick_account, show_results
 
 st.session_state["_page"] = "invit"
-st.title("📨 Invitaciones de MeLi")
-st.caption("Campañas de MercadoLibre donde tus publicaciones son *candidatas*. Elegís cuáles sumar y a qué precio.")
+hero("Invitaciones de MeLi", "Campañas de MercadoLibre donde tus publicaciones son candidatas.", "PROMOCIONES")
 client = pick_account()
 
 key = f"promos_{client.user_id}"

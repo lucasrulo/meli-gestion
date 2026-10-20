@@ -4,13 +4,15 @@ from datetime import datetime
 import pandas as pd
 import streamlit as st
 
+from meli.theme import hero
+
 from meli import marca
 from meli.api import MeliError
 from meli.auth import get_token_manager
 from meli.excel import to_number
 from meli.ui import pick_account
 
-st.title("🛡️ Protección de marca")
+hero("Protección de marca", "Detección de publicaciones sospechosas de terceros y registro de denuncias.", "MARCA · RIESGO")
 st.caption("Encuentra publicaciones de terceros con señales de falsificación, agrupa por vendedor y arma el listado "
            "para denunciar en el Programa de Protección de Marca de MeLi (o pasarle a la marca). "
            "El puntaje es una **ayuda para priorizar**, no una prueba: revisá cada publicación antes de denunciar.")

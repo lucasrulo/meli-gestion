@@ -2,13 +2,15 @@ from datetime import datetime
 
 import streamlit as st
 
+from meli.theme import hero
+
 from meli.bulk import run_bulk
 from meli.carga import compute_precio, grid_block, mode_picker, preview, resolve
 from meli.prices import update_price
 from meli.ui import catalog_index, pick_account, show_results
 
 st.session_state["_page"] = "precios"
-st.title("💲 Precios masivos")
+hero("Precios masivos", "Actualizá precios por modelo-color con vista previa, % masivos y redondeo inteligente.", "PRECIOS")
 client = pick_account()
 
 c1, c2 = st.columns([3, 1])

@@ -15,13 +15,20 @@ def require_login() -> None:
     pwd = secret("APP_PASSWORD")
     if not pwd or st.session_state.get("auth_ok"):
         return
-    st.title("🔒 Gestión MercadoLibre")
-    typed = st.text_input("Contraseña", type="password")
+    import base64
+    from pathlib import Path
+    ic = Path(__file__).resolve().parent.parent / "assets" / "icon.svg"
+    img = f'<img src="data:image/svg+xml;base64,{base64.b64encode(ic.read_bytes()).decode()}"/>' if ic.exists() else ""
+    st.markdown(f'<div class="mo-login">{img}<div class="mo-title" style="font-size:2.2rem">MeLi Ops</div>'
+                '<div class="mo-sub" style="margin:0 auto 18px">Centro de control de tus tiendas oficiales · Distrinando</div>'
+                '</div>', unsafe_allow_html=True)
+    _, mid, _ = st.columns([1, 1.2, 1])
+    typed = mid.text_input("Contraseña", type="password", placeholder="••••••••")
     if typed:
         if hmac.compare_digest(typed, str(pwd)):
             st.session_state["auth_ok"] = True
             st.rerun()
-        st.error("Contraseña incorrecta")
+        mid.error("Contraseña incorrecta")
     st.stop()
 
 

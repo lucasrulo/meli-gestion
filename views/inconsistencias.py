@@ -3,6 +3,8 @@ from datetime import datetime
 import pandas as pd
 import streamlit as st
 
+from meli.theme import hero
+
 from meli import inconsistencias as inc
 from meli.api import MeliClient
 from meli.auth import get_token_manager
@@ -12,10 +14,7 @@ from meli.prices import update_price
 from meli.ui import catalog_index, index_for, pick_account, show_results
 
 st.session_state["_page"] = "inconsistencias"
-st.title("⚖️ Precios distintos")
-st.caption("Busca en tus publicaciones el mismo artículo con precios diferentes (por ejemplo, talles de una misma "
-           "calza a distinto precio) y te deja igualarlos en bloque o publicación por publicación. "
-           "Compara siempre el **precio de lista** (sin promo).")
+hero("Precios distintos", "Detecta el mismo artículo con precios diferentes y los iguala en bloque.", "PRECIOS · AUDITORÍA")
 client = pick_account()
 tm = get_token_manager()
 accounts = tm.accounts()

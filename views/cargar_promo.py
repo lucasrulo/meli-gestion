@@ -2,6 +2,8 @@ from datetime import datetime
 
 import streamlit as st
 
+from meli.theme import hero
+
 from meli import promos
 from meli.api import MeliError
 from meli.bulk import run_bulk
@@ -11,7 +13,7 @@ from meli.credibilidad import render_last, save_run
 from meli.ui import catalog_index, pick_account
 
 st.session_state["_page"] = "cargar"
-st.title("🏷️ Cargar a campaña")
+hero("Cargar a campaña", "Sumá o quitá modelos-color de una campaña en segundos.", "PROMOCIONES")
 st.caption("Suma o quita modelos-color de una campaña propia o una campaña tradicional de MeLi. "
            "Para descuentos sueltos por producto usá **Descuentos**.")
 client = pick_account()
