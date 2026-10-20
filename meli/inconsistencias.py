@@ -68,11 +68,18 @@ def group_key(df: pd.DataFrame, how: str) -> pd.Series:
     return key
 
 
+CAMPOS = {
+    "precio_lista": "Precio de lista (sin promo)",
+    "precio_venta": "Precio de venta (lo que ve el comprador, con promo)",
+}
+
+
 def find_groups(items: pd.DataFrame, how: str, min_diff_pct: float, texto: str = "",
-                estados=("active", "paused")) -> tuple[pd.DataFrame, pd.DataFrame]:
+                estados=("active", "paused"), campo: str = "precio_lista") -> tuple[pd.DataFrame, pd.DataFrame]:
     df = items[items["estado"].isin(estados)].copy()
+    df["precio_cmp"] = pd.to_numeric(df[campo], errors="coerce")
     df["grupo"] = group_key(df, how)
-    df = df[df["grupo"].notna() & df["precio_lista"].notna()]
+    df = df[df["grupo"].notna() & df["precio_cmp"].notna()]
     if texto:
         t = texto.strip().lower()
         df = df[df["titulo"].fillna("").str.lower().str.contains(t, regex=False)
@@ -84,10 +91,10 @@ def find_groups(items: pd.DataFrame, how: str, min_diff_pct: float, texto: str =
         **extra,
         titulo=("titulo", "first"),
         publicaciones=("item_id", "nunique"),
-        min=("precio_lista", "min"),
-        max=("precio_lista", "max"),
-        precios_distintos=("precio_lista", "nunique"),
-        moda=("precio_lista", lambda s: float(s.value_counts().sort_index(ascending=False).idxmax())),
+        min=("precio_cmp", "min"),
+        max=("precio_cmp", "max"),
+        precios_distintos=("precio_cmp", "nunique"),
+        moda=("precio_cmp", lambda s: float(s.value_counts().sort_index(ascending=False).idxmax())),
         en_promo=("en_promo", "sum"),
     ).reset_index()
     summ = summ[summ["precios_distintos"] > 1]
@@ -101,7 +108,7 @@ def precios_texto(det: pd.DataFrame) -> pd.Series:
     def fmt(s):
         vc = s.value_counts().sort_index()
         return " / ".join(f"${v:,.0f}".replace(",", ".") + (f" ×{n}" if n > 1 else "") for v, n in vc.items())
-    return det.groupby("grupo")["precio_lista"].apply(fmt)
+    return det.groupby("grupo")["precio_cmp"].apply(fmt)
 
 
 def objetivo(summ: pd.DataFrame, regla: str) -> pd.Series:
@@ -112,3 +119,15 @@ def objetivo(summ: pd.DataFrame, regla: str) -> pd.Series:
     if regla == "moda":
         return summ["moda"]
     return pd.Series([None] * len(summ), index=summ.index, dtype="float")
+
+
+def diagnostico(items: pd.DataFrame, how: str, q: str) -> pd.DataFrame:
+    """Para entender por qué un artículo no aparece: muestra cómo quedó agrupada cada publicación."""
+    t = q.strip().lower()
+    df = items[items["titulo"].fillna("").str.lower().str.contains(t, regex=False)
+               | items["skus"].fillna("").str.lower().str.contains(t, regex=False)
+               | items["item_id"].fillna("").str.lower().str.contains(t, regex=False)].copy()
+    df["grupo"] = group_key(df, how)
+    cols = [c for c in ["cuenta", "item_id", "titulo", "estado", "skus", "familia", "color", "modelo_color", "grupo",
+                        "precio_lista", "precio_venta", "en_promo", "permalink"] if c in df]
+    return df[cols].sort_values(["grupo", "precio_lista"], na_position="last").head(300)

@@ -50,9 +50,23 @@ how = c1.radio("Qué considerar el mismo artículo", list(inc.AGRUPAR), format_f
 estados = c2.multiselect("Estados", ["active", "paused"], ["active", "paused"], key="inc_est")
 c1, c2 = st.columns([2, 1])
 texto = c1.text_input("Buscar (título, SKU o modelo)", key="inc_txt", placeholder="Ej: calza, K238187ZW")
-min_diff = c2.number_input("Diferencia mínima %", 0.0, 500.0, 1.0, step=1.0, key="inc_dif")
+min_diff = c2.number_input("Diferencia mínima %", 0.0, 500.0, 0.0, step=0.5, key="inc_dif")
 
-summ, det = inc.find_groups(items, how, min_diff, texto, tuple(estados))
+campo = st.radio("Comparar", list(inc.CAMPOS), format_func=inc.CAMPOS.get, horizontal=True, key="inc_campo",
+                 help="Precio de venta incluye descuentos y promos activas: muestra artículos donde un talle tiene "
+                      "descuento y otro no. Al igualar se cambia siempre el precio de lista.")
+summ, det = inc.find_groups(items, how, min_diff, texto, tuple(estados), campo)
+
+with st.expander("🔎 ¿No aparece un artículo? Diagnóstico"):
+    qd = st.text_input("Título, SKU o MLA", key="inc_diag", placeholder="Ej: kombat marsella")
+    if qd:
+        dg = inc.diagnostico(items, how, qd)
+        st.caption(f"{len(dg)} publicaciones. Si las variantes quedan en **grupos distintos** o tienen el **mismo precio "
+                   "de lista** (la diferencia es por promo), no aparecen arriba.")
+        st.dataframe(dg, hide_index=True, width="stretch",
+                     column_config={"permalink": st.column_config.LinkColumn("Link", display_text="ver"),
+                                    "precio_lista": st.column_config.NumberColumn("Lista", format="localized"),
+                                    "precio_venta": st.column_config.NumberColumn("Venta", format="localized")})
 
 m = st.columns(4)
 m[0].metric("Artículos con precios distintos", len(summ))
@@ -119,7 +133,12 @@ todo = ed2[ed2["aplicar"] & ed2["precio_nuevo"].notna() & (ed2["precio_nuevo"] >
 todo = todo[todo["precio_nuevo"] != todo["precio_lista"]].drop_duplicates("item_id")
 todo = todo.merge(d[["item_id", "variation_ids", "uid"]].drop_duplicates("item_id"), on="item_id", how="left")
 if todo.empty:
-    st.info("No hay publicaciones para cambiar.")
+    if campo == "precio_venta":
+        st.info("El precio de lista ya es el mismo: la diferencia viene de una **promo o descuento activo** en "
+                "algunas variantes (columna *Precio venta*). Para igualar, quitá o extendé ese descuento desde "
+                "**Descuentos** o **Cargar a campaña** con esos modelos-color.")
+    else:
+        st.info("No hay publicaciones para cambiar.")
     st.stop()
 
 promo = int(todo["en_promo"].sum())
