@@ -53,3 +53,10 @@ Página Cuentas → *Conectar cuenta*. Para cada tienda: iniciá sesión en merc
 - Precio con descuento_pct se calcula sobre el precio **sin promo** (`original_price` si el item ya tiene una).
 - Cambiar el precio de un item con promo activa puede ser rechazado o sacarlo de la promo (MeLi).
 - El catálogo de cada cuenta se cachea 1 h; botón 🔄 *Refrescar catálogo* para releer.
+
+## IA para descripciones (opcional · solapa 📝 Contenido SEO)
+1. Entrar a https://console.anthropic.com → crear cuenta → **Billing**: cargar crédito (prepago).
+2. **Settings → Limits**: poner un límite de gasto mensual (ej. US$ 20) para no tener sorpresas.
+3. **API Keys → Create key** → copiar.
+4. Streamlit → Settings → Secrets: agregar `ANTHROPIC_API_KEY = "sk-ant-..."` (y opcional `ANTHROPIC_MODEL`).
+Sin la key la solapa funciona igual (edición manual y Excel), solo se deshabilitan los botones de IA.

@@ -34,6 +34,7 @@ pg = st.navigation(
         st.Page("views/invitaciones.py", title="Invitaciones MeLi", icon="📨"),
         st.Page("views/precios.py", title="Precios masivos", icon="💲"),
         st.Page("views/inconsistencias.py", title="Precios distintos", icon="⚖️"),
+        st.Page("views/contenido.py", title="Contenido SEO", icon="📝"),
         st.Page("views/proteccion.py", title="Protección de marca", icon="🛡️"),
     ]
 )
