@@ -73,7 +73,15 @@ st.divider()
 st.subheader("Tiendas Shopify")
 stores = sh.stores()
 if not stores:
-    st.info("No hay tiendas Shopify configuradas. Agregalas en **Secrets** (ver README → Shopify).")
+    st.warning("No encontré tiendas Shopify en los Secrets.")
+    hint = sh.secret_names_hint()
+    st.markdown(
+        "La forma más simple es usar **los mismos secrets que tus otros repos** (dashboard / reposición). "
+        "En Streamlit → Settings → Secrets agregá, **arriba de todo** (antes de cualquier línea que empiece con `[`):\n"
+        "```toml\nTOKEN_REEBOK = \"shpat_...\"\nTOKEN_COLUMBIA = \"shpat_...\"\nTOKEN_CROCS = \"shpat_...\"\n"
+        "TOKEN_KAPPA = \"shpat_...\"\nTOKEN_PICCADILLY = \"shpat_...\"\n```")
+    if hint:
+        st.caption("Secrets que veo con nombre parecido (solo nombres): " + ", ".join(f"`{h}`" for h in hint))
 else:
     st.dataframe(pd.DataFrame([{
         "clave": k, "tienda": c["nombre"], "dominio": c["shop"], "vendor (filtro)": c.get("vendor") or "—",

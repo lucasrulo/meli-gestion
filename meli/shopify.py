@@ -29,18 +29,82 @@ class ShopifyError(Exception):
     pass
 
 
-def stores() -> dict[str, dict]:
-    raw = secret("shopify", {}) or {}
-    out = {}
-    for key, cfg in dict(raw).items():
-        cfg = dict(cfg)
-        if not cfg.get("shop"):
-            continue
-        cfg["shop"] = re.sub(r"^https?://", "", cfg["shop"]).strip("/")
-        cfg.setdefault("nombre", key.capitalize())
-        cfg["key"] = key
-        out[key] = cfg
+# Tiendas de Distrinando (mismo formato que dashboard-distrinando / reposicion-distrinando: secrets TOKEN_<MARCA>)
+DEFAULT_STORES = {
+    "reebok": {"shop": "reebok-ar.myshopify.com", "secret": "TOKEN_REEBOK", "nombre": "Reebok", "meli": "REEBOK"},
+    "columbia": {"shop": "columbia-ar.myshopify.com", "secret": "TOKEN_COLUMBIA", "nombre": "Columbia", "meli": "COLUMBIA"},
+    "crocs": {"shop": "crocs-ar.myshopify.com", "secret": "TOKEN_CROCS", "nombre": "Crocs", "meli": "CROCS"},
+    "kappa": {"shop": "kappa-ar.myshopify.com", "secret": "TOKEN_KAPPA", "nombre": "Kappa", "meli": "KAPPA"},
+    "piccadilly": {"shop": "piccadilly-ar.myshopify.com", "secret": "TOKEN_PICCADILLY", "nombre": "Piccadilly",
+                   "meli": "PICCADILLY"},
+}
+_SHOP_KEYS = ("shop", "store", "domain", "url", "shop_url", "myshopify")
+_TOKEN_KEYS = ("token", "access_token", "admin_token", "api_token", "shpat")
+
+
+def _norm_shop(v: str) -> str:
+    v = re.sub(r"^https?://", "", str(v or "")).strip().strip("/")
+    v = v.split("/")[0]
+    if v and "." not in v:
+        v = f"{v}.myshopify.com"
+    return v
+
+
+def _from_table(key: str, cfg: dict) -> dict | None:
+    cfg = {str(k).lower(): v for k, v in dict(cfg).items()}
+    shop = next((cfg[k] for k in _SHOP_KEYS if cfg.get(k)), None)
+    tok = next((cfg[k] for k in _TOKEN_KEYS if cfg.get(k)), None)
+    if not shop:
+        return None
+    out = {**cfg, "shop": _norm_shop(shop)}
+    if tok:
+        out["token"] = tok
+    out.setdefault("nombre", key.replace("_", " ").title())
     return out
+
+
+def stores() -> dict[str, dict]:
+    """Tiendas Shopify configuradas. Acepta:
+    1) tablas [shopify.<clave>] con shop + token (o client_id/client_secret)
+    2) los secrets de tus otros repos: TOKEN_REEBOK, TOKEN_COLUMBIA, TOKEN_CROCS, TOKEN_KAPPA, TOKEN_PICCADILLY
+       (opcional SHOP_<MARCA> para otro dominio)"""
+    out: dict[str, dict] = {}
+    raw = secret("shopify", {}) or {}
+    try:
+        items = dict(raw).items()
+    except Exception:  # noqa: BLE001
+        items = []
+    sueltos = {}
+    for key, cfg in items:
+        if isinstance(cfg, str):  # [shopify] con TOKEN_KAPPA = "..." adentro
+            sueltos[str(key).upper()] = cfg
+            continue
+        try:
+            t = _from_table(key, cfg)
+        except Exception:  # noqa: BLE001
+            t = None
+        if t:
+            out[str(key).lower()] = t
+    for key, d in DEFAULT_STORES.items():
+        if key in out:
+            continue
+        tok = secret(d["secret"]) or secret(d["secret"].lower()) or sueltos.get(d["secret"]) or sueltos.get(key.upper())
+        if tok:
+            shop = secret(f"SHOP_{key.upper()}") or d["shop"]
+            out[key] = {"shop": _norm_shop(shop), "token": tok, "nombre": d["nombre"], "meli": d["meli"]}
+    for k, c in out.items():
+        c["key"] = k
+    return out
+
+
+def secret_names_hint() -> list[str]:
+    """Nombres (no valores) de secrets que parecen de Shopify, para diagnosticar configuraciones."""
+    try:
+        names = list(st.secrets.keys())
+    except Exception:  # noqa: BLE001
+        return []
+    return [n for n in names if re.search(r"shop|token_|myshopify", n, re.I) and n not in
+            ("GITHUB_TOKEN", "ANTHROPIC_API_KEY")]
 
 
 def stores_for_meli(alias: str | None) -> list[str]:
