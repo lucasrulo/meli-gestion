@@ -85,6 +85,30 @@ def create_seller_campaign(client: MeliClient, name: str, start: datetime, finis
     return client.post("/seller-promotions/promotions", json=body, params=V2)
 
 
+def _acortar(nombre: str, n: int) -> str:
+    if len(nombre) <= n:
+        return nombre
+    corto = nombre[:n].rsplit(" ", 1)[0].strip()
+    return corto if len(corto) >= n * 0.6 else nombre[:n].strip()
+
+
+def create_seller_campaign_safe(client: MeliClient, name: str, start: datetime, finish: datetime) -> tuple[dict, str]:
+    """Crea la campaña; si MeLi rechaza el nombre por largo, reintenta acortándolo. Devuelve (respuesta, nombre usado)."""
+    from .api import MeliError
+    last = None
+    for n in (None, 30, 25, 20, 15):
+        nombre = name if n is None else _acortar(name, n)
+        if n is not None and nombre == last:
+            continue
+        last = nombre
+        try:
+            return create_seller_campaign(client, nombre, start, finish), nombre
+        except MeliError as e:
+            if "characters long" not in str(e) and "title" not in str(e).lower():
+                raise
+    raise MeliError(400, {"message": "MeLi rechazó el nombre incluso acortado a 15 caracteres. Probá con uno más corto."})
+
+
 def update_seller_campaign(client: MeliClient, promo_id: str, name: str, start: datetime, finish: datetime) -> dict:
     body = {
         "promotion_type": "SELLER_CAMPAIGN",

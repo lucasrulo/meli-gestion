@@ -52,8 +52,9 @@ sel = st.selectbox(
 nombre = None
 start = finish = None
 if sel == NUEVO:
-    nombre = st.text_input("Nombre del descuento", placeholder="Ej: Kappa Botines -20% Octubre", max_chars=60,
-                           key="desc_nombre")
+    nombre = st.text_input("Nombre del descuento", placeholder="Ej: Día de la Madre Indum.", max_chars=30,
+                           key="desc_nombre",
+                           help="MeLi limita el largo del nombre. Si igual lo rechaza, la app lo acorta sola y te avisa.")
 if not quitar and sel in (NUEVO, SIN_NOMBRE):
     c1, c2, c3, c4 = st.columns(4)
     d1 = c1.date_input("Desde", date.today(), format="DD/MM/YYYY")
@@ -104,7 +105,10 @@ if st.button(f"🚀 {accion} ({len(todo)})", type="primary", disabled=not ok):
     promo_id, ptype = None, "PRICE_DISCOUNT"
     if sel == NUEVO:
         try:
-            r = promos.create_seller_campaign(client, nombre.strip(), start, finish)
+            r, usado = promos.create_seller_campaign_safe(client, nombre.strip(), start, finish)
+            if usado != nombre.strip():
+                st.info(f"MeLi no aceptó el nombre completo; se creó como «{usado}».")
+                nombre = usado
             promo_id, ptype = r.get("id"), "SELLER_CAMPAIGN"
             st.success(f"Descuento creado en MeLi: {r.get('name') or nombre} ({promo_id})")
             load_promos(force=True)
