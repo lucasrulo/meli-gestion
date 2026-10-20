@@ -113,6 +113,21 @@ def seo_score(title: str, desc: str, filled: int, total: int) -> tuple[int, list
     return min(pts, 100), notas
 
 
+def parse_ficha(ficha: str) -> tuple[int, int]:
+    try:
+        a, b = str(ficha).split("/")
+        return int(a), int(b)
+    except Exception:
+        return 0, 0
+
+
+def comparar(title: str, desc_actual: str, desc_nueva: str, filled_act: int, filled_new: int, total: int) -> dict:
+    """Puntaje antes y después + qué mejoras quedan pendientes en la versión nueva."""
+    s0, _ = seo_score(title, desc_actual, filled_act, total)
+    s1, pend = seo_score(title, desc_nueva, filled_new, total)
+    return {"antes": s0, "despues": s1, "delta": s1 - s0, "pendientes": pend}
+
+
 def analyze(client: MeliClient, rep_ids: list[str], progress=None) -> pd.DataFrame:
     items = {it["id"]: it for it in multiget(client, rep_ids)}
     with ThreadPoolExecutor(max_workers=6) as ex:

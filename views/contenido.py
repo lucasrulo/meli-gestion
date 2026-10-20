@@ -156,6 +156,18 @@ with tab_ed:
                         if str(r["valor_nuevo"] or "").strip() and r["valor_nuevo"] != r["valor_actual"]} \
             if not at_ed.empty else {}
         cambia_desc = limpia != (row["descripcion"] or "").strip()
+
+        # ---- puntaje nuevo en vivo
+        total_at = len(cat)
+        filled_act = sum(1 for a in cat if vals.get(a["id"]))
+        filled_new = sum(1 for a in cat if vals.get(a["id"]) or cambios_attr.get(a["id"]))
+        cmp_ = ct.comparar(item.get("title", row["nombre"]), row["descripcion"], limpia, filled_act, filled_new, total_at)
+        st.markdown("#### Puntaje")
+        p1, p2, p3 = st.columns([1, 1, 3])
+        p1.metric("Actual", f"{cmp_['antes']}/100")
+        p2.metric("Con los cambios", f"{cmp_['despues']}/100", delta=cmp_["delta"])
+        p3.progress(cmp_["despues"] / 100)
+        p3.caption("Pendiente: " + (" · ".join(cmp_["pendientes"]) if cmp_["pendientes"] else "nada, ¡completa! ✅"))
         ids = row["item_ids"].split(",")
         todas = st.checkbox(f"Aplicar a las {len(ids)} variantes de la publicación", value=True, key=f"cont_all_{rep}")
         destino = ids if todas else [rep]
@@ -209,6 +221,7 @@ with tab_ia:
                                            ct.category_attributes(client, it.get("category_id")), extra_m)
                     gasto += c
                     cola.append({"pub": r["pub"], "nombre": r["nombre"], "item_ids": r["item_ids"],
+                                 "titulo": it.get("title"), "ficha": r["ficha"],
                                  "actual": r["descripcion"], "nueva": sug.get("descripcion", ""),
                                  "atributos": {a["id"]: a["valor"] for a in sug.get("atributos", [])
                                                if a.get("id") and a.get("valor")}})
@@ -223,10 +236,21 @@ with tab_ia:
         if cola:
             st.subheader(f"Revisión · {len(cola)} propuestas")
             for i, p in enumerate(cola):
-                with st.expander(f"{p['nombre']} · {len(p['item_ids'].split(','))} variante(s)", expanded=i < 2):
+                _fa, _tot = ct.parse_ficha(p.get("ficha", ""))
+                _c = ct.comparar(p.get("titulo") or p["nombre"], p["actual"], ct.limpiar(p["nueva"]), _fa,
+                                 min(_tot, _fa + len(p["atributos"])), _tot)
+                with st.expander(f"{p['nombre']} · {len(p['item_ids'].split(','))} variante(s) · "
+                                 f"puntaje {_c['antes']} → {_c['despues']}", expanded=i < 2):
                     a, b = st.columns(2)
                     a.text_area("Actual", p["actual"], height=300, disabled=True, key=f"q_cur_{i}")
                     p["nueva"] = b.text_area("Propuesta (editable)", p["nueva"], height=300, key=f"q_new_{i}")
+                    fa, tot = ct.parse_ficha(p.get("ficha", ""))
+                    fn = min(tot, fa + len(p["atributos"]))
+                    cp = ct.comparar(p.get("titulo") or p["nombre"], p["actual"], ct.limpiar(p["nueva"]), fa, fn, tot)
+                    a.metric("Puntaje actual", f"{cp['antes']}/100")
+                    b.metric("Puntaje propuesta", f"{cp['despues']}/100", delta=cp["delta"])
+                    if cp["pendientes"]:
+                        b.caption("Pendiente: " + " · ".join(cp["pendientes"]))
                     if p["atributos"]:
                         st.caption("Atributos propuestos: " + " · ".join(f"{k}: {v}" for k, v in p["atributos"].items()))
                         p["usar_attrs"] = st.checkbox("Aplicar también estos atributos", value=True, key=f"q_at_{i}")
@@ -271,7 +295,22 @@ with tab_xl:
             else:
                 x["descripcion_nueva"] = x["descripcion_nueva"].map(ct.limpiar)
                 x["largo"] = x["descripcion_nueva"].str.len()
-                st.dataframe(x[["nombre", "item_ids", "largo", "descripcion_nueva"]], hide_index=True, width="stretch")
+                ref = df.set_index("pub")
+                def _sc(r):
+                    fa, tot = ct.parse_ficha(ref["ficha"].get(r["pub"], "")) if r["pub"] in ref.index else (0, 0)
+                    act = ref["descripcion"].get(r["pub"], "") if r["pub"] in ref.index else r.get("descripcion_actual", "")
+                    c = ct.comparar(r["nombre"], act, r["descripcion_nueva"], fa, fa, tot)
+                    return pd.Series({"puntaje_antes": c["antes"], "puntaje_nuevo": c["despues"],
+                                      "pendiente": " · ".join(c["pendientes"])})
+                x = pd.concat([x, x.apply(_sc, axis=1)], axis=1)
+                m1, m2 = st.columns(2)
+                m1.metric("Puntaje promedio antes", f"{x['puntaje_antes'].mean():.0f}/100")
+                m2.metric("Puntaje promedio nuevo", f"{x['puntaje_nuevo'].mean():.0f}/100",
+                          delta=round(x["puntaje_nuevo"].mean() - x["puntaje_antes"].mean()))
+                st.dataframe(x[["nombre", "puntaje_antes", "puntaje_nuevo", "pendiente", "largo", "descripcion_nueva"]],
+                             hide_index=True, width="stretch",
+                             column_config={"puntaje_nuevo": st.column_config.ProgressColumn(
+                                 "Puntaje nuevo", min_value=0, max_value=100, format="%d")})
                 filas = [{"publicacion": r["nombre"], "item_id": iid, "desc": r["descripcion_nueva"]}
                          for _, r in x.iterrows() for iid in str(r["item_ids"]).split(",") if iid]
                 ok = st.checkbox(f"Confirmo actualizar la descripción de {len(filas)} publicaciones "
