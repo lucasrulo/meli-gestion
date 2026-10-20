@@ -1,4 +1,5 @@
 """Detecta un mismo artículo publicado con precios distintos dentro de la cuenta."""
+import re
 import pandas as pd
 
 from .excel import to_number
@@ -17,12 +18,23 @@ REGLAS = {
 }
 
 
+_TALLE = re.compile(r"^(\d{1,2}([.,]5)?|\d{1,2}/\d{1,2}|X{0,3}S|S|M|L|X{1,4}L|\d?XL|XXXL|U|UN|UNI|TU|OS|"
+                    r"\d{1,2}[A-Z]|[A-Z]\d{1,2})$")
+
+
 def strip_size(sku) -> str | None:
-    """'K1342233W-KSA02-40' → 'K1342233W-KSA02'. Con un solo guion o sin guiones deja el SKU igual."""
+    """SKU → modelo-color (sin el talle).
+    'K1342233W-KSA02-40' → 'K1342233W-KSA02' (2+ guiones: saca el último segmento)
+    'P14313300000310SS25-40' → 'P14313300000310SS25' (1 guion: lo saca solo si el último segmento parece talle)."""
     if sku is None or (isinstance(sku, float) and pd.isna(sku)):
         return None
     s = str(sku).strip().upper()
-    return s.rsplit("-", 1)[0] if s.count("-") >= 2 else s
+    if "-" not in s:
+        return s
+    base, last = s.rsplit("-", 1)
+    if s.count("-") >= 2 or _TALLE.match(last):
+        return base
+    return s
 
 
 def items_table(index: pd.DataFrame) -> pd.DataFrame:

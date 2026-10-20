@@ -64,3 +64,25 @@ with st.expander("Desconectar cuenta"):
         if st.button("Desconectar", type="secondary"):
             tm.remove(uid)
             st.rerun()
+
+
+# ---------------------------------------------------------------- Shopify
+from meli import shopify as sh  # noqa: E402
+
+st.divider()
+st.subheader("Tiendas Shopify")
+stores = sh.stores()
+if not stores:
+    st.info("No hay tiendas Shopify configuradas. Agregalas en **Secrets** (ver README → Shopify).")
+else:
+    st.dataframe(pd.DataFrame([{
+        "clave": k, "tienda": c["nombre"], "dominio": c["shop"], "vendor (filtro)": c.get("vendor") or "—",
+        "cuenta MeLi vinculada": c.get("meli") or "todas",
+        "acceso": "token" if c.get("token") else ("client credentials" if c.get("client_id") else "⚠️ falta"),
+    } for k, c in stores.items()]), hide_index=True, width="stretch")
+    if st.button("Probar conexión Shopify"):
+        for k in stores:
+            try:
+                st.success(f"{stores[k]['nombre']}: OK · {sh.ShopifyClient(k).shop_name()}")
+            except Exception as e:  # noqa: BLE001
+                st.error(f"{stores[k]['nombre']}: {e}")

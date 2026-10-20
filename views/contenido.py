@@ -11,6 +11,9 @@ from meli.api import MeliError
 from meli.bulk import run_bulk
 from meli.catalog import multiget
 from meli.config import secret
+from meli import shopify as sh
+from meli.auth import get_token_manager
+from meli.inconsistencias import strip_size
 from meli.ui import catalog_index, pick_account, show_results
 
 st.session_state["_page"] = "contenido"
@@ -168,26 +171,136 @@ with tab_ed:
         p2.metric("Con los cambios", f"{cmp_['despues']}/100", delta=cmp_["delta"])
         p3.progress(cmp_["despues"] / 100)
         p3.caption("Pendiente: " + (" · ".join(cmp_["pendientes"]) if cmp_["pendientes"] else "nada, ¡completa! ✅"))
-        ids = row["item_ids"].split(",")
-        todas = st.checkbox(f"Aplicar a las {len(ids)} variantes de la publicación", value=True, key=f"cont_all_{rep}")
-        destino = ids if todas else [rep]
-        st.write(f"Cambios: {'descripción' if cambia_desc else ''}"
-                 f"{' + ' if cambia_desc and cambios_attr else ''}"
-                 f"{f'{len(cambios_attr)} atributos' if cambios_attr else ''}"
-                 f"{'ninguno' if not cambia_desc and not cambios_attr else ''} → {len(destino)} publicación(es)")
-        if st.button("💾 Guardar en MeLi", type="primary", disabled=not (cambia_desc or cambios_attr),
-                     key=f"cont_save_{rep}"):
-            def job(r):
-                if cambia_desc:
-                    ct.set_description(client, r["item_id"], limpia)
-                if cambios_attr:
-                    ct.set_attributes(client, r["item_id"], cambios_attr)
+        # ---------------------------------------------------------- Shopify
+        shop_ok, shop_cambios, prod, scli = False, {}, None, None
+        stores = sh.stores()
+        if stores:
+            st.markdown("#### 🛍️ Shopify")
+            alias = get_token_manager().accounts().get(client.user_id, {}).get("alias")
+            tiendas = sh.stores_for_meli(alias)
+            variants = sh.variants_for(tiendas)
+            skus_pub = set(index[index["item_id"].isin(row["item_ids"].split(","))]["sku"].dropna().astype(str))
+            mcs = {strip_size(x) for x in skus_pub}
+            hit = variants[variants["sku"].notna() & (variants["sku"].str.upper().isin({x.upper() for x in skus_pub})
+                                                      | variants["sku"].map(strip_size).isin(mcs))]
+            prods = hit.drop_duplicates("product_id")
+            if prods.empty:
+                st.caption("No encontré este artículo en Shopify (por SKU) en: "
+                           + ", ".join(stores[t]["nombre"] for t in tiendas))
+            else:
+                opciones = prods.to_dict("records")
+                pi = st.selectbox("Producto Shopify", range(len(opciones)), key=f"cont_sp_{rep}",
+                                  format_func=lambda i: f"{opciones[i]['producto']} · {opciones[i]['tienda_nombre']} · "
+                                                        f"{opciones[i]['estado']}") if len(opciones) > 1 else 0
+                sel_p = opciones[pi]
+                kprod = f"cont_shopprod_{sel_p['product_id']}"
+                scli = sh.ShopifyClient(sel_p["tienda"])
+                if kprod not in st.session_state:
+                    try:
+                        st.session_state[kprod] = (scli.products([sel_p["product_id"]]) or [{}])[0]
+                    except sh.ShopifyError as e:
+                        st.error(str(e))
+                        st.session_state[kprod] = {}
+                prod = st.session_state[kprod]
+                if prod:
+                    seo = prod.get("seo") or {}
+                    kh, kt, kd = (f"cont_sh_html_{rep}", f"cont_sh_t_{rep}", f"cont_sh_d_{rep}")
+                    st.session_state.setdefault(kh, prod.get("descriptionHtml") or "")
+                    st.session_state.setdefault(kt, seo.get("title") or "")
+                    st.session_state.setdefault(kd, seo.get("description") or "")
+                    s1, s2, s3 = st.columns([1.3, 1.2, 1])
+                    if s1.button("↳ Usar la descripción nueva de MeLi (convertida a HTML)", key=f"cont_conv_{rep}"):
+                        st.session_state[kh] = sh.text_to_html(limpia)
+                    if s2.button("✨ IA para Shopify (HTML + SEO)", disabled=not api_key, key=f"cont_aish_{rep}"):
+                        with st.spinner("Generando contenido Shopify…"):
+                            try:
+                                attrs = {a.get("name") or a.get("id"): a.get("value_name")
+                                         for a in (item.get("attributes") or []) if a.get("value_name")}
+                                d, costo = ct.ai_suggest_shopify(api_key, secret("ANTHROPIC_MODEL", "claude-sonnet-4-5"),
+                                                                 prod.get("title"), limpia or row["descripcion"],
+                                                                 attrs, extra)
+                                st.session_state[kh] = d.get("html", "")
+                                st.session_state[kt] = d.get("seo_title", "")[:70]
+                                st.session_state[kd] = d.get("seo_description", "")[:160]
+                                st.session_state["cont_gasto"] = st.session_state.get("cont_gasto", 0) + costo
+                                st.toast(f"Listo · US$ {costo:.3f}")
+                            except Exception as e:  # noqa: BLE001
+                                st.error(str(e))
+                    if s3.button("↩️ Volver a lo actual", key=f"cont_shreset_{rep}"):
+                        st.session_state[kh] = prod.get("descriptionHtml") or ""
+                        st.session_state[kt] = seo.get("title") or ""
+                        st.session_state[kd] = seo.get("description") or ""
+                    st.markdown(f"[{prod.get('title')}]({prod.get('onlineStoreUrl') or '#'}) · "
+                                f"{stores[sel_p['tienda']]['nombre']}")
+                    h1, h2 = st.columns(2)
+                    h1.text_area("Descripción actual (HTML)", prod.get("descriptionHtml") or "", height=260,
+                                 disabled=True, key=f"cont_sh_cur_{rep}")
+                    html_new = h2.text_area("Descripción nueva (HTML, editable)", height=260, key=kh)
+                    with h2.expander("👁️ Vista previa"):
+                        st.markdown(html_new, unsafe_allow_html=True)
+                    t1c, t2c = st.columns([1, 1.6])
+                    seo_t = t1c.text_input("SEO title", key=kt, max_chars=70)
+                    seo_d = t2c.text_area("Meta description", key=kd, max_chars=160, height=80)
+                    sa, sa_n = ct.shop_score(prod.get("title"), prod.get("descriptionHtml") or "",
+                                             seo.get("title") or "", seo.get("description") or "")
+                    sb, sb_n = ct.shop_score(prod.get("title"), html_new, seo_t, seo_d)
+                    q1, q2, q3 = st.columns([1, 1, 3])
+                    q1.metric("Shopify actual", f"{sa}/100")
+                    q2.metric("Shopify con cambios", f"{sb}/100", delta=sb - sa)
+                    q3.progress(sb / 100)
+                    q3.caption("Pendiente: " + (" · ".join(sb_n) if sb_n else "nada, ¡completa! ✅"))
+                    if html_new.strip() != (prod.get("descriptionHtml") or "").strip():
+                        shop_cambios["description_html"] = html_new
+                    if seo_t != (seo.get("title") or ""):
+                        shop_cambios["seo_title"] = seo_t
+                    if seo_d != (seo.get("description") or ""):
+                        shop_cambios["seo_description"] = seo_d
+                    shop_ok = True
 
-            res = run_bulk([{"item_id": i} for i in destino], job, label="Guardando")
+        # ---------------------------------------------------------- guardar
+        st.markdown("#### Guardar")
+        ids = row["item_ids"].split(",")
+        g1, g2, g3 = st.columns([1, 1, 1.4])
+        en_meli = g1.checkbox("Guardar en MeLi", value=bool(cambia_desc or cambios_attr),
+                              disabled=not (cambia_desc or cambios_attr),
+                              key=f"cont_gm_{rep}_{bool(cambia_desc or cambios_attr)}")
+        en_shop = g2.checkbox("Guardar en Shopify", value=bool(shop_cambios), disabled=not shop_cambios,
+                              key=f"cont_gs_{rep}_{bool(shop_cambios)}")
+        todas = g3.checkbox(f"MeLi: aplicar a las {len(ids)} variantes", value=True, key=f"cont_all_{rep}")
+        destino = ids if todas else [rep]
+        resumen = []
+        if en_meli:
+            resumen.append(f"MeLi: {'descripción' if cambia_desc else ''}{' + ' if cambia_desc and cambios_attr else ''}"
+                           f"{f'{len(cambios_attr)} atributos' if cambios_attr else ''} → {len(destino)} publicación(es)")
+        if en_shop:
+            resumen.append("Shopify: " + ", ".join({"description_html": "descripción", "seo_title": "SEO title",
+                                                     "seo_description": "meta description"}[k] for k in shop_cambios))
+        st.write(" · ".join(resumen) if resumen else "Sin cambios para guardar.")
+        if st.button("💾 Guardar en los canales elegidos", type="primary", disabled=not (en_meli or en_shop),
+                     key=f"cont_save_{rep}"):
+            filas = []
+            if en_meli:
+                filas += [{"canal": "MeLi", "id": i} for i in destino]
+            if en_shop:
+                filas.append({"canal": "Shopify", "id": prod.get("id")})
+
+            def job(r):
+                if r["canal"] == "MeLi":
+                    if cambia_desc:
+                        ct.set_description(client, r["id"], limpia)
+                    if cambios_attr:
+                        ct.set_attributes(client, r["id"], cambios_attr)
+                else:
+                    scli.update_product_content(r["id"], **shop_cambios)
+
+            res = run_bulk(filas, job, label="Guardando")
             show_results(res, f"resultado_contenido_{datetime.now():%Y%m%d_%H%M}.xlsx")
-            if (res["resultado"] == "OK").all():
+            okm = res[(res["canal"] == "MeLi") & (res["resultado"] == "OK")]
+            if en_meli and len(okm) == len(destino):
                 df.loc[df["pub"] == pid, "descripcion"] = limpia
                 df.loc[df["pub"] == pid, "largo_desc"] = len(limpia)
+            if en_shop and (res[res["canal"] == "Shopify"]["resultado"] == "OK").all():
+                st.session_state.pop(f"cont_shopprod_{prod.get('id')}", None)
 
         if st.session_state.get("cont_gasto"):
             st.caption(f"Gasto de IA en esta sesión: US$ {st.session_state['cont_gasto']:.3f}")

@@ -240,3 +240,59 @@ def limpiar(txt: str) -> str:
 def estimar_costo(n: int, model: str) -> float:
     pin, pout = PRECIOS.get(model, (3.0, 15.0))
     return n * (2500 / 1e6 * pin + 900 / 1e6 * pout)
+
+
+# ---------------------------------------------------------------- Shopify (HTML + SEO)
+def shop_score(title: str, html: str, seo_title: str, seo_desc: str) -> tuple[int, list[str]]:
+    """Mismo criterio que MeLi para el cuerpo (70 pts) + SEO title/meta description (30 pts)."""
+    from .shopify import html_to_text
+    base, notas = seo_score(title, html_to_text(html), 0, 0)  # sin ficha técnica: 15 pts fijos
+    base -= 15
+    pts = base
+    tl, dl = len(seo_title or ""), len(seo_desc or "")
+    if 30 <= tl <= 70:
+        pts += 15
+    else:
+        notas.append("SEO title vacío" if not tl else f"SEO title de {tl} caracteres (ideal 30–70)")
+        pts += 5 if tl else 0
+    if 70 <= dl <= 160:
+        pts += 15
+    else:
+        notas.append("meta description vacía" if not dl else f"meta description de {dl} caracteres (ideal 70–160)")
+        pts += 5 if dl else 0
+    if html and "<h2" not in html.lower():
+        notas.append("sin subtítulos H2")
+    return max(0, min(pts, 100)), [n for n in notas if not n.startswith("ficha")]
+
+
+SYSTEM_SHOP = """Sos especialista en SEO para e-commerce y GEO (que buscadores e IA entiendan y citen la página) para una
+tienda oficial de marca en Argentina (Shopify). Español rioplatense neutro.
+Reglas: no inventes datos (usá solo lo provisto); no menciones precios, cuotas, envíos ni promociones; sin emojis.
+Devolvé HTML limpio solo con <h2>, <h3>, <p>, <ul>, <li>, <strong> (sin estilos, sin scripts, sin links).
+Estructura: párrafo inicial con marca + modelo + tipo + color + uso; <h2>Características</h2> con lista;
+<h2>Ideal para</h2>; <h2>Preguntas frecuentes</h2> con 3-5 <h3>pregunta</h3><p>respuesta</p>.
+SEO title: 45-65 caracteres, con marca, modelo y tipo de producto. Meta description: 130-155 caracteres, persuasiva.
+Respondé ÚNICAMENTE JSON: {"html": "...", "seo_title": "...", "seo_description": "..."}"""
+
+
+def ai_suggest_shopify(api_key: str, model: str, titulo: str, base_text: str, atributos: dict, extra: str = ""):
+    datos = {"titulo": titulo, "atributos": atributos, "descripcion_base": (base_text or "")[:6000]}
+    user = "Datos del producto:\n" + json.dumps(datos, ensure_ascii=False, indent=1)
+    if extra.strip():
+        user += "\n\nIndicaciones adicionales:\n" + extra.strip()
+    r = requests.post(
+        "https://api.anthropic.com/v1/messages",
+        headers={"x-api-key": api_key, "anthropic-version": "2023-06-01", "content-type": "application/json"},
+        json={"model": model, "max_tokens": 3500, "system": SYSTEM_SHOP, "messages": [{"role": "user", "content": user}]},
+        timeout=120,
+    )
+    if r.status_code != 200:
+        raise RuntimeError(f"Claude API {r.status_code}: {r.text[:300]}")
+    body = r.json()
+    text = "".join(b.get("text", "") for b in body.get("content", []) if b.get("type") == "text")
+    m = re.search(r"\{.*\}", text, re.S)
+    data = json.loads(m.group(0)) if m else {"html": text}
+    data["html"] = re.sub(r"<(script|style)[^>]*>.*?</\1>", "", data.get("html", ""), flags=re.S | re.I)
+    u = body.get("usage") or {}
+    pin, pout = PRECIOS.get(model, (3.0, 15.0))
+    return data, u.get("input_tokens", 0) / 1e6 * pin + u.get("output_tokens", 0) / 1e6 * pout

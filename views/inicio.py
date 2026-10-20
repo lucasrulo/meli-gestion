@@ -5,11 +5,12 @@ import streamlit as st
 
 from meli.auth import get_token_manager
 from meli.config import secret
+from meli import shopify as sh
 from meli.theme import card, hero
 
 hora = datetime.now().hour
 saludo = "Buen día" if hora < 13 else "Buenas tardes" if hora < 20 else "Buenas noches"
-hero(f"{saludo}, equipo Distrinando", "Centro de control de las tiendas oficiales en MercadoLibre: precios, promociones, "
+hero(f"{saludo}, equipo Distrinando", "Centro de control de las tiendas oficiales en MercadoLibre y Shopify: precios, promociones, "
      "contenido y protección de marca, en masivo y con vista previa.", "MELI OPS · ONLINE")
 
 accounts = get_token_manager().accounts()
@@ -19,7 +20,7 @@ m[0].metric("Cuentas conectadas", len(accounts))
 m[1].metric("Tokens activos", f"{vigentes}/{len(accounts)}" if accounts else "—")
 m[2].metric("IA · Claude", "ON" if secret("ANTHROPIC_API_KEY") else "OFF",
             help=None if secret("ANTHROPIC_API_KEY") else "Cargá ANTHROPIC_API_KEY en Secrets para activarla.")
-m[3].metric("Módulos", 9)
+m[3].metric("Tiendas Shopify", len(sh.stores()))
 
 if accounts:
     st.caption("Tiendas: " + " · ".join(f"`{a.get('alias') or a.get('nickname')}`" for a in accounts.values()))
@@ -34,11 +35,13 @@ MODULOS = [
         ("views/invitaciones.py", "📨", "Invitaciones MeLi", "Aceptar campañas de MeLi donde sos candidato.", "CO-FONDEO"),
     ]),
     ("Precios", [
-        ("views/precios.py", "💲", "Precios masivos", "Actualizar por modelo-color con redondeo inteligente.", "BULK"),
+        ("views/omnicanal.py", "🔀", "Precios omnicanal", "Un precio por modelo-color en MeLi y Shopify, en uno o ambos.", "MELI + SHOPIFY"),
+        ("views/analisis_precios.py", "📊", "Análisis de precios", "Brechas, cobertura y stock entre canales.", "INTELIGENCIA"),
+        ("views/precios.py", "💲", "Precios masivos MeLi", "Actualizar por modelo-color con redondeo inteligente.", "BULK"),
         ("views/inconsistencias.py", "⚖️", "Precios distintos", "Detectar e igualar talles con precios diferentes.", "AUDITORÍA"),
     ]),
     ("Catálogo y marca", [
-        ("views/contenido.py", "📝", "Contenido SEO / GEO", "Descripciones y ficha técnica con puntaje e IA.", "IA"),
+        ("views/contenido.py", "📝", "Contenido SEO / GEO", "Descripciones, ficha técnica y SEO en MeLi y Shopify con IA.", "IA · 2 CANALES"),
         ("views/proteccion.py", "🛡️", "Protección de marca", "Vendedores sospechosos y registro de denuncias.", "RIESGO"),
         ("views/cuentas.py", "🔑", "Cuentas", "Conectar y administrar las tiendas oficiales.", "CONFIG"),
     ]),
@@ -46,7 +49,7 @@ MODULOS = [
 
 for seccion, mods in MODULOS:
     st.markdown(f"### {seccion}")
-    cols = st.columns(len(mods) if len(mods) > 2 else 3)
+    cols = st.columns(max(3, min(len(mods), 4)))
     for col, (page, ic, tit, txt, badge) in zip(cols, mods):
         with col:
             card(ic, tit, txt, badge)

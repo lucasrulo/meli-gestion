@@ -43,7 +43,9 @@ pg = st.navigation(
             st.Page("views/invitaciones.py", title="Invitaciones MeLi", icon=":material/mark_email_unread:"),
         ],
         "Precios": [
-            st.Page("views/precios.py", title="Precios masivos", icon=":material/price_change:"),
+            st.Page("views/omnicanal.py", title="Precios omnicanal", icon=":material/sync_alt:"),
+            st.Page("views/analisis_precios.py", title="Análisis de precios", icon=":material/insights:"),
+            st.Page("views/precios.py", title="Precios masivos MeLi", icon=":material/price_change:"),
             st.Page("views/inconsistencias.py", title="Precios distintos", icon=":material/balance:"),
         ],
         "Catálogo y marca": [

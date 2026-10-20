@@ -60,3 +60,16 @@ Página Cuentas → *Conectar cuenta*. Para cada tienda: iniciá sesión en merc
 3. **API Keys → Create key** → copiar.
 4. Streamlit → Settings → Secrets: agregar `ANTHROPIC_API_KEY = "sk-ant-..."` (y opcional `ANTHROPIC_MODEL`).
 Sin la key la solapa funciona igual (edición manual y Excel), solo se deshabilitan los botones de IA.
+
+## Shopify (precios omnicanal, análisis y contenido en 2 canales)
+En Streamlit → Settings → Secrets, una tabla por tienda (ver `.streamlit/secrets.toml.example`):
+```toml
+[shopify.kappa]
+shop = "xxxx.myshopify.com"
+token = "shpat_..."        # o client_id + client_secret si la app es del Dev Dashboard
+meli = "KAPPA"             # alias de la cuenta MeLi vinculada
+nombre = "Kappa"
+vendor = ""                # opcional: tienda compartida (ej "MHW-ar")
+```
+Scopes necesarios: `read_products`, `write_products` (y `read_inventory` para ver stock).
+Probar en **Cuentas → Probar conexión Shopify**.
