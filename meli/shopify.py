@@ -92,6 +92,20 @@ def stores() -> dict[str, dict]:
         if tok:
             shop = secret(f"SHOP_{key.upper()}") or d["shop"]
             out[key] = {"shop": _norm_shop(shop), "token": tok, "nombre": d["nombre"], "meli": d["meli"]}
+    # Tiendas conectadas con el botón "Conectar tienda" (OAuth): tienen prioridad sobre los secrets
+    try:
+        from .shopify_auth import get_shopify_auth
+        conectadas = get_shopify_auth().connected()
+    except Exception:  # noqa: BLE001
+        conectadas = {}
+    for shop, rec in conectadas.items():
+        key = next((k for k, d in DEFAULT_STORES.items() if d["shop"] == shop), shop.split(".")[0])
+        base = DEFAULT_STORES.get(key, {})
+        out[key] = {
+            "shop": shop, "token": rec.get("token"), "oauth": True,
+            "nombre": rec.get("nombre") or base.get("nombre") or key,
+            "meli": rec.get("meli") or base.get("meli", ""), "vendor": rec.get("vendor", ""),
+        }
     for k, c in out.items():
         c["key"] = k
     return out

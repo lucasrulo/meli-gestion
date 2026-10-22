@@ -5,6 +5,7 @@ import streamlit as st
 from meli.auth import AuthError, get_token_manager
 from meli.config import require_secrets
 from meli.theme import apply_theme
+from meli.shopify_auth import handle_callback as shopify_callback
 from meli.ui import require_login
 
 ASSETS = Path(__file__).parent / "assets"
@@ -14,6 +15,7 @@ st.logo(str(ASSETS / "logo.svg"), size="large", icon_image=str(ASSETS / "icon.sv
 
 require_secrets("MELI_APP_ID", "MELI_CLIENT_SECRET", "MELI_REDIRECT_URI", "GITHUB_TOKEN", "GITHUB_REPO")
 require_login()
+shopify_callback()  # vuelta de Shopify (?shop=...&hmac=...) — antes que el callback de MeLi
 
 # ---- Callback OAuth: MeLi vuelve a la URL raíz con ?code=...&state=... ----
 qp = st.query_params
@@ -57,4 +59,6 @@ pg = st.navigation(
         ],
     }
 )
+if _msg := st.session_state.pop("flash", None):
+    (st.success if _msg.startswith("✅") else st.error)(_msg)
 pg.run()

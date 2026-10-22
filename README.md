@@ -62,6 +62,19 @@ Página Cuentas → *Conectar cuenta*. Para cada tienda: iniciá sesión en merc
 Sin la key la solapa funciona igual (edición manual y Excel), solo se deshabilitan los botones de IA.
 
 ## Shopify (precios omnicanal, análisis y contenido en 2 canales)
+
+### Opción recomendada: botón "Conectar tienda" (como MeLi)
+1. dev.shopify.com → **Apps → Create app** → nombre "MeLi Ops".
+2. En la versión: **App URL** y **Redirect URLs** = `https://meli-gestion-distrinando.streamlit.app` · *Embed in Shopify admin*: **desactivado** ·
+   **Scopes**: `read_products,write_products,read_inventory` → **Release**.
+3. **Distribution → Custom distribution** → dominio de la tienda (o la organización Plus, si todas están en la misma) → copiar el link de instalación.
+4. **Settings** → copiar Client ID y Client secret → Streamlit Secrets: `SHOPIFY_CLIENT_ID`, `SHOPIFY_CLIENT_SECRET`.
+5. App → **Cuentas** → elegir tienda → **🔗 Conectar tienda** → Shopify pide aprobar → volvés conectado. Vinculá la cuenta MeLi y Guardar.
+
+Si las tiendas no están en la misma organización Plus, Shopify obliga una app por tienda: repetí 1-4 y cargá cada par en
+`[shopify_apps.<subdominio>]`. Los tokens se guardan en `shopify_tokens.json` (rama `tokens`), nunca en el código.
+
+### Alternativa: token manual en Secrets
 En Streamlit → Settings → Secrets, una tabla por tienda (ver `.streamlit/secrets.toml.example`):
 ```toml
 [shopify.kappa]

@@ -68,25 +68,66 @@ with st.expander("Desconectar cuenta"):
 
 # ---------------------------------------------------------------- Shopify
 from meli import shopify as sh  # noqa: E402
+from meli import shopify_auth as sa  # noqa: E402
 
 st.divider()
 st.subheader("Tiendas Shopify")
-stores = sh.stores()
-if not stores:
-    st.warning("No encontré tiendas Shopify en los Secrets.")
-    hint = sh.secret_names_hint()
-    st.markdown(
-        "La forma más simple es usar **los mismos secrets que tus otros repos** (dashboard / reposición). "
-        "En Streamlit → Settings → Secrets agregá, **arriba de todo** (antes de cualquier línea que empiece con `[`):\n"
-        "```toml\nTOKEN_REEBOK = \"shpat_...\"\nTOKEN_COLUMBIA = \"shpat_...\"\nTOKEN_CROCS = \"shpat_...\"\n"
-        "TOKEN_KAPPA = \"shpat_...\"\nTOKEN_PICCADILLY = \"shpat_...\"\n```")
-    if hint:
-        st.caption("Secrets que veo con nombre parecido (solo nombres): " + ", ".join(f"`{h}`" for h in hint))
+
+if sa.oauth_enabled():
+    auth = sa.get_shopify_auth()
+    st.caption("Iniciá sesión en el admin de Shopify de la tienda, elegila y tocá **Conectar tienda**: "
+               "Shopify te pide aprobar los permisos y volvés acá conectado. El link vale 15 minutos.")
+    opciones = {d["shop"]: d["nombre"] for d in sh.DEFAULT_STORES.values()}
+    c1, c2, c3 = st.columns([1.3, 1.3, 1])
+    elegida = c1.selectbox("Tienda", list(opciones) + ["otra"], key="shp_sel",
+                           format_func=lambda x: f"{opciones[x]} · {x}" if x in opciones else "Otra (escribir dominio)")
+    otra = c2.text_input("Dominio", key="shp_otra", placeholder="mitienda.myshopify.com",
+                         disabled=elegida != "otra")
+    dominio = sa.norm_shop(otra if elegida == "otra" else elegida)
+    c3.write("")
+    if dominio:
+        try:
+            c3.link_button("🔗 Conectar tienda", auth.authorize_url(dominio), type="primary", width="stretch")
+        except sa.ShopifyAuthError as e:
+            c3.error(str(e))
+    else:
+        c3.button("🔗 Conectar tienda", disabled=True, width="stretch")
+
+    con = auth.connected()
+    if con:
+        st.markdown("**Conectadas por app**")
+        aliases = [""] + sorted({(a.get("alias") or "").upper() for a in accounts.values() if a.get("alias")})
+        for shop, rec in con.items():
+            with st.expander(f"✅ {rec.get('nombre')} · {shop} · conectada {rec.get('connected_at', '')}"):
+                e1, e2, e3, e4 = st.columns([1.2, 1.2, 1, 1])
+                nom = e1.text_input("Nombre", rec.get("nombre", ""), key=f"shp_n_{shop}")
+                meli_v = (rec.get("meli") or "").upper()
+                mel = e2.selectbox("Cuenta MeLi vinculada", aliases if meli_v in aliases else aliases + [meli_v],
+                                   index=(aliases if meli_v in aliases else aliases + [meli_v]).index(meli_v),
+                                   key=f"shp_m_{shop}", format_func=lambda x: x or "— todas —")
+                ven = e3.text_input("Vendor (opcional)", rec.get("vendor", ""), key=f"shp_v_{shop}",
+                                    help="Para tiendas compartidas: ej. MHW-ar o Sorel-ar")
+                e4.write("")
+                if e4.button("Guardar", key=f"shp_g_{shop}", width="stretch"):
+                    auth.set_meta(shop, nombre=nom, meli=mel, vendor=ven)
+                    st.rerun()
+                st.caption(f"Permisos: `{rec.get('scope')}`")
+                if st.checkbox(f"Confirmo desconectar {shop}", key=f"shp_dx_{shop}"):
+                    if st.button("Desconectar", key=f"shp_d_{shop}"):
+                        auth.remove(shop)
+                        st.rerun()
 else:
+    st.info("Para conectar tiendas con un botón (como MeLi) cargá `SHOPIFY_CLIENT_ID` y `SHOPIFY_CLIENT_SECRET` "
+            "de tu app de Shopify en los Secrets (ver README → Shopify por app).")
+
+stores = sh.stores()
+if stores:
+    st.markdown("**Tiendas disponibles en la app**")
     st.dataframe(pd.DataFrame([{
         "clave": k, "tienda": c["nombre"], "dominio": c["shop"], "vendor (filtro)": c.get("vendor") or "—",
         "cuenta MeLi vinculada": c.get("meli") or "todas",
-        "acceso": "token" if c.get("token") else ("client credentials" if c.get("client_id") else "⚠️ falta"),
+        "acceso": "app (botón)" if c.get("oauth") else ("token en secrets" if c.get("token") else
+                                                         ("client credentials" if c.get("client_id") else "⚠️ falta")),
     } for k, c in stores.items()]), hide_index=True, width="stretch")
     if st.button("Probar conexión Shopify"):
         for k in stores:
@@ -94,3 +135,7 @@ else:
                 st.success(f"{stores[k]['nombre']}: OK · {sh.ShopifyClient(k).shop_name()}")
             except Exception as e:  # noqa: BLE001
                 st.error(f"{stores[k]['nombre']}: {e}")
+else:
+    hint = sh.secret_names_hint()
+    if hint:
+        st.caption("Secrets que veo con nombre parecido (solo nombres): " + ", ".join(f"`{h}`" for h in hint))
