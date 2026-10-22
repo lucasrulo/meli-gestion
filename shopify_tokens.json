@@ -34,5 +34,14 @@
     "meli": "",
     "vendor": "",
     "connected_at": "2026-10-22 17:24:02"
+  },
+  "piccadilly-ar.myshopify.com": {
+    "shop": "piccadilly-ar.myshopify.com",
+    "token_enc": "9rucSCm6VYr0bcC5diLhBpm-quS98ENMo-D-CcO21mYAJScuQNbkDpCD2Wo3xPkcWbU=",
+    "scope": "read_analytics,write_analytics_annotations,write_assigned_fulfillment_orders,read_audit_events,read_customer_events,write_channels,write_custom_pixels,write_customers,write_customer_data_erasure,write_customer_merge,write_delivery_customizations,write_price_rules,write_discounts,write_discovery,write_draft_orders,write_files,write_fulfillment_constraint_rules,write_fulfillments,write_gift_card_transactions,write_gift_cards,write_inventory,read_inventory_purchase_orders,write_inventory_shipments,write_inventory_shipments_received_items,write_inventory_transfers,write_delivery_option_generators,write_locales,write_locations,write_marketing_integrated_campaigns,write_marketing_events,write_markets,write_markets_home,write_merchant_managed_fulfillment_orders,write_metaobject_definitions,write_metaobjects,write_online_store_navigation,write_online_store_pages,write_order_edits,write_orders,write_packing_slip_templates,write_payment_notifications,write_product_feeds,write_product_listings,write_products,write_publications,write_purchase_options,write_reports,write_resource_feedbacks,write_shipping,write_pixels,customer_read_companies,customer_write_customers,customer_read_draft_orders,customer_read_markets,customer_read_metaobjects,customer_write_orders",
+    "nombre": "Piccadilly Argentina | Sitio Oficial",
+    "meli": "",
+    "vendor": "",
+    "connected_at": "2026-10-22 17:24:19"
   }
 }
