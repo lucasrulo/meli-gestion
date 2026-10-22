@@ -183,6 +183,22 @@ textarea {{ font-family: 'Inter', sans-serif !important; line-height: 1.5 !impor
   border:1px solid var(--border); color: var(--muted); }}
 .mo-login {{ max-width: 420px; margin: 8vh auto 0; text-align:center; }}
 .mo-login img {{ width: 84px; filter: drop-shadow(0 0 24px rgba(139,92,246,.55)); }}
+/* ---------- tarjeta de producto (Contenido) ---------- */
+.mo-prod {{ display:flex; gap:18px; align-items:center; }}
+.mo-prod img, .mo-prod .noimg {{ width:104px; height:104px; object-fit:contain; border-radius:14px; flex:none;
+  background:#fff; border:1px solid var(--border); }}
+.mo-prod .noimg {{ display:flex; align-items:center; justify-content:center; color:#888; font-size:.75rem; background:var(--surface2); }}
+.mo-prod .info {{ min-width:0; flex:1; }}
+.mo-prod .t {{ font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:1.12rem; color:var(--text); line-height:1.25; }}
+.mo-prod .meta {{ color:var(--muted); font-size:.82rem; margin:4px 0 8px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }}
+.mo-prod .chips {{ display:flex; gap:8px; flex-wrap:wrap; }}
+.mo-chip {{ font-size:.8rem; padding:4px 10px; border-radius:999px; background:rgba(139,158,255,.08);
+  border:1px solid var(--border); color:var(--muted); }}
+.mo-chip b {{ color:var(--text); }}
+.mo-chip b.up {{ color:{C['ok']}; }}
+.mo-chip b.down {{ color:{C['err']}; }}
+.mo-prod .pend {{ color:var(--muted); font-size:.78rem; margin-top:8px; }}
+@media (max-width: 640px) {{ .mo-prod img, .mo-prod .noimg {{ width:72px; height:72px; }} }}
 </style>
 """
 

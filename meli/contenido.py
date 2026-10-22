@@ -128,6 +128,12 @@ def comparar(title: str, desc_actual: str, desc_nueva: str, filled_act: int, fil
     return {"antes": s0, "despues": s1, "delta": s1 - s0, "pendientes": pend}
 
 
+def _foto_url(it: dict) -> str:
+    pics = it.get("pictures") or []
+    u = (pics[0].get("secure_url") or pics[0].get("url")) if pics else it.get("thumbnail")
+    return (u or "").replace("http://", "https://")
+
+
 def analyze(client: MeliClient, rep_ids: list[str], progress=None) -> pd.DataFrame:
     items = {it["id"]: it for it in multiget(client, rep_ids)}
     with ThreadPoolExecutor(max_workers=6) as ex:
@@ -152,6 +158,7 @@ def analyze(client: MeliClient, rep_ids: list[str], progress=None) -> pd.DataFra
             "faltan": ", ".join(a["nombre"] for a in faltan)[:200],
             "mejoras": " · ".join(notas),
             "descripcion": descs.get(iid, ""),
+            "foto": _foto_url(it),
         })
         if progress:
             progress(n / len(rep_ids))

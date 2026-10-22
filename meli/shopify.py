@@ -241,7 +241,7 @@ class ShopifyClient:
     query($ids: [ID!]!) {
       nodes(ids: $ids) {
         ... on Product { id title handle vendor productType tags descriptionHtml onlineStoreUrl
-                         seo { title description } }
+                         seo { title description } featuredMedia { preview { image { url } } } }
       }
     }"""
 
@@ -326,15 +326,18 @@ def text_to_html(txt: str) -> str:
             if not lista:
                 out.append("<ul>")
                 lista = True
-            out.append(f"<li>{re.sub(r'^[-•*·]\s+', '', esc)}</li>")
+            li = re.sub(r'^[-•*·]\s+', '', esc)
+            out.append(f"<li>{li}</li>")
             continue
         if lista:
             out.append("</ul>")
             lista = False
         if re.match(r"^P:\s*", line, re.I):
-            out.append(f"<h3>{re.sub(r'^P:\s*', '', esc, flags=re.I)}</h3>")
+            h3 = re.sub(r'^P:\s*', '', esc, flags=re.I)
+            out.append(f"<h3>{h3}</h3>")
         elif re.match(r"^R:\s*", line, re.I):
-            out.append(f"<p>{re.sub(r'^R:\s*', '', esc, flags=re.I)}</p>")
+            pr = re.sub(r'^R:\s*', '', esc, flags=re.I)
+            out.append(f"<p>{pr}</p>")
         elif len(line) <= 60 and (line.isupper() or line.endswith(":")):
             out.append(f"<h2>{esc.rstrip(':').capitalize()}</h2>")
         else:
