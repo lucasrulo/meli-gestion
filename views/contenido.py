@@ -1,3 +1,4 @@
+import html as html_mod
 import io
 from datetime import datetime
 
@@ -307,9 +308,32 @@ with tab_ed:
                 if prev_s:
                     with st.container(border=True):
                         st.markdown(html_new, unsafe_allow_html=True)
+                # ---- SEO: lo que muestra Google (Shopify → producto → "Optimización para motores de búsqueda")
+                r1, r2 = st.columns([3, 1.2], vertical_alignment="center")
+                r1.markdown("**🔎 Cómo aparece en Google**  \n"
+                            "<span style='color:var(--muted);font-size:.8rem'>Se guarda en Shopify → producto → "
+                            "<i>Optimización para motores de búsqueda</i> (título de la página y meta descripción). "
+                            "Si lo dejás vacío, Google usa el título y el comienzo de la descripción.</span>",
+                            unsafe_allow_html=True)
+                if r2.button("💡 Sugerir (sin IA)", key=f"cont_seosug_{rep}", width="stretch",
+                             help="Arma título y meta description con reglas, gratis. Después lo podés editar."):
+                    st.session_state[kt], st.session_state[kd] = ct.seo_sugerido(
+                        prod.get("title"), stores[sel_p["tienda"]]["nombre"],
+                        sh.html_to_text(html_new) or limpia, titulo)
                 q1, q2 = st.columns([1, 1.6])
-                seo_t = q1.text_input("SEO title", key=kt, max_chars=70)
-                seo_d = q2.text_input("Meta description", key=kd, max_chars=160)
+                seo_t = q1.text_input("SEO title (ideal ≤ 60)", key=kt, max_chars=70)
+                seo_d = q2.text_input("Meta description (ideal 120–155)", key=kd, max_chars=160)
+                g_t = seo_t or prod.get("title") or ""
+                g_d = seo_d or ct._cortar(sh.html_to_text(html_new), 155)
+                g_u = prod.get("onlineStoreUrl") or f"{stores[sel_p['tienda']]['shop']}/products/{prod.get('handle', '')}"
+                g_t, g_d = html_mod.escape(g_t), html_mod.escape(g_d)
+                st.markdown(
+                    f"<div style='background:#fff;border-radius:12px;padding:12px 16px;font-family:Arial,sans-serif;"
+                    f"max-width:640px'><div style='color:#202124;font-size:12px'>{g_u}</div>"
+                    f"<div style='color:#1a0dab;font-size:18px;line-height:1.3;margin:2px 0'>{g_t[:60]}"
+                    f"{'…' if len(g_t) > 60 else ''}</div>"
+                    f"<div style='color:#4d5156;font-size:13px;line-height:1.45'>{g_d[:155]}"
+                    f"{'…' if len(g_d) > 155 else ''}</div></div>", unsafe_allow_html=True)
                 sa, _ = ct.shop_score(prod.get("title"), html_act, seo.get("title") or "", seo.get("description") or "")
                 sb, sb_n = ct.shop_score(prod.get("title"), html_new, seo_t, seo_d)
                 if html_new.strip() != html_act.strip():

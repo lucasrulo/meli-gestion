@@ -303,3 +303,38 @@ def ai_suggest_shopify(api_key: str, model: str, titulo: str, base_text: str, at
     u = body.get("usage") or {}
     pin, pout = PRECIOS.get(model, (3.0, 15.0))
     return data, u.get("input_tokens", 0) / 1e6 * pin + u.get("output_tokens", 0) / 1e6 * pout
+
+
+# ---------------------------------------------------------------- SEO Shopify sin IA (reglas)
+def _cortar(texto: str, maximo: int) -> str:
+    texto = re.sub(r"\s+", " ", texto or "").strip()
+    if len(texto) <= maximo:
+        return texto
+    corte = texto[:maximo]
+    fin = max(corte.rfind(". "), corte.rfind("! "), corte.rfind("? "))
+    if fin > maximo * 0.6:                      # termina en una oración completa
+        return corte[:fin + 1]
+    return corte[:corte.rfind(" ")].rstrip(",;:-") + "."
+
+
+def seo_sugerido(titulo: str, marca: str, desc_texto: str, titulo_meli: str = "") -> tuple[str, str]:
+    """SEO title (≤60) y meta description (≤155) armados con reglas, sin IA.
+    Title: producto + marca + 'Tienda Oficial' si entra. Meta: qué es + primeras oraciones de la descripción."""
+    titulo = re.sub(r"\s+", " ", (titulo or "").strip())
+    marca = (marca or "").strip()
+    # si el título de MeLi es más descriptivo (agrega tipo de producto/color) y entra, se usa ese
+    base = titulo
+    tm = re.sub(r"\s+", " ", (titulo_meli or "").strip())
+    if tm and len(tm) > len(titulo) and len(tm) <= 50:
+        base = tm.title() if tm.isupper() else tm
+    if marca and marca.lower() not in base.lower():
+        base = f"{base} {marca}"
+    base = re.sub(r"\b(Y|De|Con|Para|En)\b", lambda x: x.group(0).lower(), base)
+    t = base + " | Tienda Oficial" if len(base) <= 44 else base
+    t = _cortar(t, 60).rstrip(".")
+    # meta description
+    cuerpo = re.sub(r"(?i)\b(materiales|tecnolog[ií]a|tegnologia)\s*:.*$", "", desc_texto or "").strip()
+    cuerpo = re.sub(r"\s+", " ", cuerpo)
+    inicio = f"Comprá {base} en la tienda oficial{(' de ' + marca) if marca and marca.lower() not in base.lower() else ''}. "
+    m = _cortar(inicio + cuerpo, 155) if cuerpo else _cortar(inicio + "Producto original de la marca.", 155)
+    return t, m
