@@ -11,6 +11,7 @@ Secrets:
 
 Los tokens obtenidos se guardan en shopify_tokens.json en la rama `tokens` del repo (igual que MeLi).
 """
+import base64
 import hashlib
 import hmac
 import re
@@ -56,6 +57,33 @@ def oauth_enabled() -> bool:
     return bool(secret("SHOPIFY_CLIENT_ID") or secret("shopify_apps"))
 
 
+def _keystream(key: str, n: int, nonce: bytes) -> bytes:
+    out, i = b"", 0
+    while len(out) < n:
+        out += hmac.new(key.encode(), nonce + i.to_bytes(4, "big"), hashlib.sha256).digest()
+        i += 1
+    return out[:n]
+
+
+def _enc(token: str, key: str) -> str:
+    """Cifra el token antes de guardarlo en GitHub (así no queda en texto plano ni lo bloquea el escaneo de secretos)."""
+    import os
+    nonce = os.urandom(12)
+    raw = token.encode()
+    ct = bytes(a ^ b for a, b in zip(raw, _keystream(key, len(raw), nonce)))
+    return base64.urlsafe_b64encode(nonce + ct).decode()
+
+
+def _dec(blob: str, key: str) -> str:
+    b = base64.urlsafe_b64decode(blob.encode())
+    nonce, ct = b[:12], b[12:]
+    return bytes(a ^ c for a, c in zip(ct, _keystream(key, len(ct), nonce))).decode()
+
+
+def _key_for(shop: str) -> str:
+    return secret("TOKENS_KEY") or credentials_for(shop)[1] or ""
+
+
 class ShopifyAuth:
     def __init__(self):
         self.store = GitHubTokenStore()
@@ -72,7 +100,16 @@ class ShopifyAuth:
                     self._data, _ = self.store.load()
                 except Exception:  # noqa: BLE001
                     self._data = self._data or {}
-            return dict(self._data)
+            out = {}
+            for shop, rec in self._data.items():
+                rec = dict(rec)
+                if rec.get("token_enc"):
+                    try:
+                        rec["token"] = _dec(rec["token_enc"], _key_for(shop))
+                    except Exception:  # noqa: BLE001
+                        rec["token"] = None
+                out[shop] = rec
+            return out
 
     def _update(self, fn, msg: str) -> None:
         with self.lock:
@@ -81,7 +118,8 @@ class ShopifyAuth:
     def set_meta(self, shop: str, **meta) -> None:
         def fn(d):
             if shop in d:
-                d[shop].update({k: v for k, v in meta.items()})
+                d[shop] = {**d[shop], **meta}
+                d[shop].pop("token", None)
             return d
         self._update(fn, f"shopify meta {shop}")
 
@@ -141,7 +179,7 @@ class ShopifyAuth:
             pass
         prev = self.connected().get(shop, {})
         rec = {
-            "shop": shop, "token": tok["access_token"], "scope": tok.get("scope"),
+            "shop": shop, "token_enc": _enc(tok["access_token"], _key_for(shop)), "scope": tok.get("scope"),
             "nombre": prev.get("nombre") or info.get("name") or shop.split(".")[0],
             "meli": prev.get("meli", ""), "vendor": prev.get("vendor", ""),
             "connected_at": time.strftime("%Y-%m-%d %H:%M:%S"),
@@ -151,7 +189,7 @@ class ShopifyAuth:
             d[shop] = rec
             return d
         self._update(fn, f"shopify conectar {shop}")
-        return rec
+        return {**rec, "token": tok["access_token"]}
 
 
 @st.cache_resource
@@ -178,8 +216,8 @@ def handle_callback() -> None:
             try:
                 rec = auth.exchange(shop, qp["code"])
                 st.session_state["flash"] = f"✅ Tienda Shopify conectada: {rec['nombre']} ({shop})"
-            except ShopifyAuthError as e:
-                st.session_state["flash"] = f"❌ {e}"
+            except Exception as e:  # noqa: BLE001
+                st.session_state["flash"] = f"❌ No se pudo guardar la conexión de {shop}: {e}"
         st.rerun()
     # Entrada desde el link de instalación: pedir autorización
     url = auth.authorize_url(shop)

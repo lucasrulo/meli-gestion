@@ -7,6 +7,7 @@ sobre este repo. El repo debe ser PRIVADO.
 """
 import base64
 import json
+import time
 
 import requests
 
@@ -93,12 +94,16 @@ class GitHubTokenStore:
 
     def update(self, fn, message: str) -> dict:
         """Lee → aplica fn(data) → guarda. Reintenta si otro proceso escribió en el medio."""
-        for _ in range(4):
+        last = ""
+        for i in range(4):
             data, sha = self.load()
             new = fn(dict(data))
             try:
                 self._save(new, sha, message)
                 return new
-            except _Conflict:
-                continue
-        raise TokenStoreError("Conflicto repetido guardando tokens en GitHub, probá de nuevo.")
+            except _Conflict as e:
+                last = str(e)
+                if "secret" in last.lower() or "rule" in last.lower():
+                    break  # bloqueo de GitHub (push protection / reglas), no es una carrera
+                time.sleep(0.5 * (i + 1))
+        raise TokenStoreError(f"GitHub no dejó guardar {self.path}: {last[:400]}")
