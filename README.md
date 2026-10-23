@@ -86,3 +86,18 @@ vendor = ""                # opcional: tienda compartida (ej "MHW-ar")
 ```
 Scopes necesarios: `read_products`, `write_products` (y `read_inventory` para ver stock).
 Probar en **Cuentas → Probar conexión Shopify**.
+
+## Shopify masivo (Catálogo Shopify · SEO y calidad · Historial)
+- **Catálogo Shopify**: estados (activo / no listado / borrador / archivado) + publicar en canales, tags, colecciones
+  (agregar/quitar/crear por tag), metacampos (valor para todos, por producto o con IA) y fotos desde Azure por código.
+- **SEO y calidad**: auditoría con puntaje y arreglos en un clic, SEO title/meta masivo, texto alternativo de fotos
+  (reglas o IA que mira la foto) y redirecciones 301.
+- **Historial** (Configuración): cada cambio masivo queda guardado con su antes/después y se puede **deshacer**.
+- Lectura del catálogo y cambios grandes (≥ 60 productos) usan **Bulk Operations** de Shopify (rápido y sin límite de API).
+
+Permisos (scopes) que necesita la app de Shopify:
+`read_products, write_products, read_inventory, write_files, write_online_store_navigation, read_publications, write_publications`
+→ Dev Dashboard → tu app → nueva versión con esos scopes → **Release** → en la app: Cuentas → **Conectar tienda** de nuevo en cada tienda.
+
+Secrets opcionales: `AZURE_CATALOGO_URL` (default `https://distriecomm.blob.core.windows.net/catalogo`),
+`ANTHROPIC_MODEL_ALT` (default `claude-haiku-4-5`, para texto alternativo).

@@ -338,3 +338,64 @@ def seo_sugerido(titulo: str, marca: str, desc_texto: str, titulo_meli: str = ""
     inicio = f"Comprá {base} en la tienda oficial{(' de ' + marca) if marca and marca.lower() not in base.lower() else ''}. "
     m = _cortar(inicio + cuerpo, 155) if cuerpo else _cortar(inicio + "Producto original de la marca.", 155)
     return t, m
+
+
+# ---------------------------------------------------------------- IA: helpers genéricos
+def _claude(api_key: str, model: str, system: str, content, max_tokens: int = 2000) -> tuple[str, float]:
+    r = requests.post(
+        "https://api.anthropic.com/v1/messages",
+        headers={"x-api-key": api_key, "anthropic-version": "2023-06-01", "content-type": "application/json"},
+        json={"model": model, "max_tokens": max_tokens, "system": system,
+              "messages": [{"role": "user", "content": content}]},
+        timeout=120,
+    )
+    if r.status_code != 200:
+        raise RuntimeError(f"Claude API {r.status_code}: {r.text[:300]}")
+    body = r.json()
+    text = "".join(b.get("text", "") for b in body.get("content", []) if b.get("type") == "text")
+    u = body.get("usage") or {}
+    pin, pout = PRECIOS.get(model, (3.0, 15.0))
+    return text, u.get("input_tokens", 0) / 1e6 * pin + u.get("output_tokens", 0) / 1e6 * pout
+
+
+SYSTEM_META = """Completás un campo de ficha de producto (metacampo de Shopify) para productos de indumentaria y calzado
+deportivo en Argentina. Usá SOLO la información provista (título, tipo, tags, descripción). Si no se puede deducir con
+seguridad, devolvé "" para ese producto. Si hay una lista de opciones válidas, respondé exactamente con una de ellas.
+Respondé únicamente un JSON: {"<n>": "<valor>", ...} con la misma numeración recibida."""
+
+
+def ai_metacampo(api_key: str, model: str, productos: list[dict], campo: str, tipo: str,
+                 opciones: list[str] | None = None) -> tuple[list[str], float]:
+    """productos: [{"titulo", "tipo", "tags", "texto"}] (hasta ~25 por llamada)."""
+    datos = {str(i): {k: (v[:1200] if isinstance(v, str) else v) for k, v in p.items()} for i, p in enumerate(productos)}
+    user = (f"Campo a completar: «{campo}» (tipo {tipo})."
+            + (f"\nOpciones válidas: {json.dumps(opciones, ensure_ascii=False)}" if opciones else "")
+            + "\n\nProductos:\n" + json.dumps(datos, ensure_ascii=False))
+    text, costo = _claude(api_key, model, SYSTEM_META, user, 3000)
+    m = re.search(r"\{.*\}", text, re.S)
+    data = json.loads(m.group(0)) if m else {}
+    vals = [str(data.get(str(i), "") or "").strip() for i in range(len(productos))]
+    if opciones:
+        low = {o.lower(): o for o in opciones}
+        vals = [low.get(v.lower(), "") for v in vals]
+    return vals, costo
+
+
+SYSTEM_ALT = """Escribís el texto alternativo (alt) de fotos de producto para una tienda online argentina.
+Una sola frase en español, máximo 125 caracteres, sin "imagen de" ni "foto de". Incluí tipo de producto, marca, modelo,
+color y la vista o detalle que se ve (frente, perfil, suela, detalle de costura, puesto en una persona…).
+Respondé solo el texto."""
+
+
+def ai_alt(api_key: str, model: str, image_url: str, titulo: str) -> tuple[str, float]:
+    content = [{"type": "image", "source": {"type": "url", "url": image_url}},
+               {"type": "text", "text": f"Producto: {titulo}"}]
+    text, costo = _claude(api_key, model, SYSTEM_ALT, content, 120)
+    return text.strip().strip('"')[:125], costo
+
+
+def alt_reglas(titulo: str, n: int, total: int) -> str:
+    """Alt sin IA: título + número de vista."""
+    vistas = ["vista principal", "vista lateral", "vista trasera", "detalle", "vista superior", "suela", "detalle"]
+    v = vistas[n] if n < len(vistas) else f"vista {n + 1}"
+    return f"{titulo} - {v}"[:125] if total > 1 else str(titulo)[:125]

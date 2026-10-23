@@ -408,6 +408,21 @@ with tab_ed:
             res = run_bulk(filas, job, label="Guardando")
             show_results(res, f"resultado_contenido_{datetime.now():%Y%m%d_%H%M}.xlsx")
             okm = res[(res["canal"] == "MeLi") & (res["resultado"] == "OK")]
+            from meli import historial
+            if en_meli and cambia_desc and not okm.empty:
+                historial.registrar("MeLi", get_token_manager().accounts().get(client.user_id, {}).get("alias") or client.user_id,
+                                    "meli_descripcion", f"Descripción MeLi: {titulo}",
+                                    [{"id": i, "label": titulo, "antes": desc_act, "despues": limpia, "ok": True, "error": ""}
+                                     for i in okm["id"]], {"user_id": client.user_id})
+            if en_shop and (res[res["canal"] == "Shopify"]["resultado"] == "OK").all():
+                ant = {"descriptionHtml": html_act, "seo": {"title": seo.get("title") or "",
+                                                           "description": seo.get("description") or ""}}
+                nue = {"descriptionHtml": shop_cambios.get("description_html", html_act),
+                       "seo": {"title": shop_cambios.get("seo_title", ant["seo"]["title"]),
+                               "description": shop_cambios.get("seo_description", ant["seo"]["description"])}}
+                historial.registrar("Shopify", sel_p["tienda"], "contenido", f"Contenido Shopify: {prod.get('title')}",
+                                    [{"id": prod.get("id"), "label": prod.get("title"), "antes": ant, "despues": nue,
+                                      "ok": True, "error": ""}])
             if en_meli and len(okm) == len(destino):
                 df.loc[df["pub"] == pid, "descripcion"] = limpia
                 df.loc[df["pub"] == pid, "largo_desc"] = len(limpia)

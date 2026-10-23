@@ -25,7 +25,8 @@ import streamlit as st
 from .config import secret
 from .token_store import GitHubTokenStore
 
-DEFAULT_SCOPES = "read_products,write_products,read_inventory"
+DEFAULT_SCOPES = ("read_products,write_products,read_inventory,write_files,write_online_store_navigation,"
+                  "read_publications,write_publications")
 STATE_TTL = 15 * 60
 
 

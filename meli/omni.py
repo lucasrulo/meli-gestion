@@ -188,12 +188,16 @@ def aplicar(meli_rows: pd.DataFrame, shop_rows: pd.DataFrame, meli_clients: dict
         return pd.DataFrame()
 
     shop_clients: dict[str, ShopifyClient] = {}
+    log_meli, log_shop = [], defaultdict(list)   # para el historial (deshacer)
 
     def run(t):
         canal, r = t
         if canal == "MeLi":
             cli = meli_clients.get(str(r.get("uid") or default_uid)) or meli_clients[default_uid]
             update_price(cli, r["item_id"], r["precio_nuevo"], r.get("variation_ids"))
+            log_meli.append({"id": r["item_id"], "label": r.get("titulo"), "antes": float(r["precio_lista"]),
+                             "despues": float(r["precio_nuevo"]), "ok": True, "error": "",
+                             "uid": str(cli.user_id), "variations": r.get("variation_ids")})
             return [{"canal": "MeLi", "clave": r["clave"], "id": r["item_id"], "titulo": r.get("titulo"),
                      "antes": r["precio_lista"], "despues": r["precio_nuevo"]}]
         cli = shop_clients.setdefault(r["tienda"], ShopifyClient(r["tienda"]))
@@ -204,6 +208,15 @@ def aplicar(meli_rows: pd.DataFrame, shop_rows: pd.DataFrame, meli_clients: dict
                 item["compareAtPrice"] = v.get("tachado_nuevo")
             payload.append(item)
         cli.update_variant_prices(r["product_id"], payload)
+        _f = lambda x: None if x is None or pd.isna(x) or x == 0 else f"{float(x):.2f}"  # noqa: E731
+        log_shop[r["tienda"]].append({
+            "id": r["product_id"], "label": r["variantes"][0].get("producto"), "ok": True, "error": "",
+            "antes": [{"id": v["variant_id"], "price": _f(v["precio"]),
+                       **({"compareAtPrice": _f(v.get("precio_tachado"))} if tachado != "mantener" else {})}
+                      for v in r["variantes"]],
+            "despues": [{"id": v["variant_id"], "price": _f(v["precio_nuevo"]),
+                         **({"compareAtPrice": _f(v.get("tachado_nuevo"))} if tachado != "mantener" else {})}
+                        for v in r["variantes"]]})
         return [{"canal": "Shopify", "clave": v["clave"], "id": v.get("sku"), "titulo": v.get("producto"),
                  "antes": v["precio"], "despues": v["precio_nuevo"]} for v in r["variantes"]]
 
@@ -228,6 +241,15 @@ def aplicar(meli_rows: pd.DataFrame, shop_rows: pd.DataFrame, meli_clients: dict
                                     "despues": v.get("precio_nuevo"), "resultado": "ERROR", "error": str(e)[:400]})
             bar.progress(i / len(tareas), text=f"Aplicando… {i}/{len(tareas)}")
     bar.empty()
+    from . import historial
+    for tienda, filas in log_shop.items():
+        historial.registrar("Shopify", tienda, "precios", f"Precios omnicanal ({len(filas)} productos)", filas)
+    por_uid = defaultdict(list)
+    for f in log_meli:
+        por_uid[f["uid"]].append(f)
+    for uid, filas in por_uid.items():
+        historial.registrar("MeLi", uid, "meli_precio", f"Precios MeLi ({len(filas)} publicaciones)", filas,
+                            {"user_id": uid, "variations": {f["id"]: f.get("variations") for f in filas}})
     res = pd.DataFrame(out)
     res["procesado"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     return res

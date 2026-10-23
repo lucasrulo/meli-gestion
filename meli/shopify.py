@@ -160,11 +160,12 @@ class ShopifyClient:
             self._tokens[self.key] = (tok, time.time() + int(body.get("expires_in", 86000)) - 600)
             return tok
 
-    def gql(self, query: str, variables: dict | None = None, retries: int = 6) -> dict:
+    def gql(self, query: str, variables: dict | None = None, retries: int = 6, version: str | None = None) -> dict:
+        url = self.url if not version else f"https://{self.shop}/admin/api/{version}/graphql.json"
         force = False
         for attempt in range(retries):
             try:
-                r = requests.post(self.url, json={"query": query, "variables": variables or {}}, timeout=60,
+                r = requests.post(url, json={"query": query, "variables": variables or {}}, timeout=60,
                                   headers={"X-Shopify-Access-Token": self._token(force),
                                            "Content-Type": "application/json"})
             except requests.RequestException as e:
@@ -190,7 +191,10 @@ class ShopifyClient:
                     rate = th.get("restoreRate", 50) or 50
                     time.sleep(min(max(need - th.get("currentlyAvailable", 0), 50) / rate, 30))
                     continue
-                raise ShopifyError(f"{self.cfg['nombre']}: " + "; ".join(e.get("message", str(e)) for e in errs)[:400])
+                msg = "; ".join(e.get("message", str(e)) for e in errs)[:400]
+                if "access" in msg.lower() and ("scope" in msg.lower() or "denied" in msg.lower()):
+                    msg += " → Falta un permiso en la app de Shopify: agregalo en el Dev Dashboard y tocá «Conectar tienda» de nuevo."
+                raise ShopifyError(f"{self.cfg['nombre']}: {msg}")
             self._pace(body)
             return body.get("data") or {}
         raise ShopifyError(f"{self.cfg['nombre']}: sin respuesta tras reintentos")

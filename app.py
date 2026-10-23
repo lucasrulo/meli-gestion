@@ -54,10 +54,16 @@ pg = st.navigation(
             st.Page("views/contenido.py", title="Contenido SEO", icon=":material/auto_awesome:"),
             st.Page("views/proteccion.py", title="Protección de marca", icon=":material/shield:"),
         ],
+        "Shopify": [
+            st.Page("views/shop_catalogo.py", title="Catálogo Shopify", icon=":material/inventory_2:"),
+            st.Page("views/shop_seo.py", title="SEO y calidad", icon=":material/travel_explore:"),
+        ],
         "Configuración": [
+            st.Page("views/historial.py", title="Historial", icon=":material/history:"),
             st.Page("views/cuentas.py", title="Cuentas", icon=":material/key:"),
         ],
-    }
+    },
+    expanded=True,
 )
 if _msg := st.session_state.pop("flash", None):
     (st.success if _msg.startswith("✅") else st.error)(_msg)
