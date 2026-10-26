@@ -1,89 +1,114 @@
 """Clips (videos verticales) de MercadoLibre por publicación.
 
-MeLi documenta el recurso de clips en Global Selling (/marketplace/items/{id}/clips). Para cuentas locales se prueba
-ese recurso y, si no responde, /items/{id}/clips. El que funcione se usa para toda la cuenta.
+La API de clips no está habilitada para cuentas de Argentina (solo Global Selling). Pero la página pública de cada
+publicación trae los clips que muestra ("shorts"): id, vistas, duración y fecha. Se leen de ahí.
 """
+import json
+import random
+import re
+import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import pandas as pd
+import requests
 
-from .api import MeliClient, MeliError
+from .api import MeliClient
 from .catalog import multiget
 
-ENDPOINTS = ["/marketplace/items/{id}/clips", "/items/{id}/clips"]
-ESTADOS = {"PUBLISHED": "publicado", "UNDER_REVIEW": "en revisión", "REJECTED": "rechazado",
-           "TRANSCODING_REJECTED": "rechazado (video)", "PAUSED": "pausado"}
+UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) "
+      "Chrome/128.0.0.0 Safari/537.36")
 
 
-def _parse(body) -> list[dict]:
-    """Normaliza la respuesta a [{clip_uuid, estado, motivo}] (acepta las variantes de formato conocidas)."""
-    if isinstance(body, list):
-        clips = body
-    elif isinstance(body, dict):
-        clips = body.get("clips") or body.get("results") or []
-    else:
-        clips = []
+def _array(html: str, key: str) -> list | None:
+    i = html.find(f'"{key}":[')
+    if i < 0:
+        return None
+    start = i + len(key) + 3
+    depth, j, en_str, esc = 0, start, False, False
+    while j < len(html):
+        c = html[j]
+        if en_str:
+            if esc:
+                esc = False
+            elif c == "\\":
+                esc = True
+            elif c == '"':
+                en_str = False
+        elif c == '"':
+            en_str = True
+        elif c == "[":
+            depth += 1
+        elif c == "]":
+            depth -= 1
+            if depth == 0:
+                break
+        j += 1
+    try:
+        return json.loads(html[start:j + 1])
+    except Exception:  # noqa: BLE001
+        return None
+
+
+def parse_shorts(html: str) -> list[dict]:
+    arr = _array(html, "shorts") or []
     out = []
-    for c in clips:
-        meta = c.get("metadata") or [{}]
-        m = meta[0] if isinstance(meta, list) and meta else (meta if isinstance(meta, dict) else {})
-        est = (m.get("moderation_status") or c.get("moderation_status") or c.get("status") or "").upper()
-        mot = m.get("moderation_reasons") or c.get("moderation_reasons") or ""
-        if isinstance(mot, list):
-            mot = ", ".join(str(x.get("description") or x.get("reason") or x) if isinstance(x, dict) else str(x) for x in mot)
-        out.append({"clip_uuid": c.get("clip_uuid") or c.get("id"), "estado": est, "motivo": str(mot)})
+    for s in arr:
+        if not isinstance(s, dict):
+            continue
+        creado = None
+        for k in ("track_vip", "track_intention_to_view"):
+            ev = ((s.get(k) or {}).get("melidata_event") or {}).get("event_data") or {}
+            creado = creado or ev.get("created_at")
+        out.append({"clip_id": s.get("id"), "user_id": s.get("user_id"), "vistas": s.get("views") or 0,
+                    "duracion": s.get("video_duration"), "creado": (creado or "")[:10]})
     return out
 
 
-def detectar_endpoint(client: MeliClient, item_ids: list[str]) -> tuple[str | None, list[str]]:
-    """Prueba los endpoints sobre algunas publicaciones. Devuelve (endpoint, log de pruebas)."""
-    log = []
-    for ep in ENDPOINTS:
-        for iid in item_ids[:6]:
-            try:
-                client.get(ep.format(id=iid))
-                log.append(f"✅ {ep.format(id=iid)} → 200")
-                return ep, log
-            except MeliError as e:
-                log.append(f"✖ {ep.format(id=iid)} → {e.status}: {str(e)[:120]}")
-                if e.status in (401, 403):
-                    break
-    return None, log
+def clips_publicacion(url: str, intentos: int = 3) -> tuple[list[dict], str]:
+    """Lee la página pública de la publicación. Devuelve (clips, error)."""
+    if not url:
+        return [], "sin link"
+    for n in range(intentos):
+        try:
+            r = requests.get(url, timeout=30, headers={"User-Agent": UA, "Accept-Language": "es-AR,es;q=0.9"})
+        except requests.RequestException as e:
+            err = str(e)[:120]
+        else:
+            if r.status_code == 200 and "<html" in r.text[:2000].lower():
+                if '"shorts":[' in r.text or "gallery" in r.text:
+                    return parse_shorts(r.text), ""
+                err = "página sin galería (¿captcha o bloqueo?)"
+            else:
+                err = f"HTTP {r.status_code}"
+            if r.status_code == 404:
+                return [], "publicación no encontrada"
+        time.sleep(1.5 * (n + 1) + random.random())
+    return [], err
 
 
-def clips_de(client: MeliClient, ep: str, iid: str) -> tuple[list[dict], str]:
-    try:
-        return _parse(client.get(ep.format(id=iid))), ""
-    except MeliError as e:
-        if e.status == 404:
-            return [], ""
-        return [], f"{e.status}: {str(e)[:150]}"
-
-
-def relevar(client: MeliClient, item_ids: list[str], ep: str | None, progress=None) -> pd.DataFrame:
-    """Por publicación: clips por estado + video clásico + ventas."""
+def relevar(client: MeliClient, item_ids: list[str], progress=None, workers: int = 4) -> pd.DataFrame:
     items = {it["id"]: it for it in multiget(client, item_ids)}
     res: dict[str, tuple[list, str]] = {}
-    if ep:
-        with ThreadPoolExecutor(max_workers=6) as ex:
-            futs = {ex.submit(clips_de, client, ep, i): i for i in item_ids}
-            for n, f in enumerate(as_completed(futs), 1):
-                res[futs[f]] = f.result()
-                if progress:
-                    progress(n / len(futs))
+    with ThreadPoolExecutor(max_workers=workers) as ex:
+        futs = {ex.submit(clips_publicacion, (items.get(i) or {}).get("permalink")): i for i in item_ids}
+        for n, f in enumerate(as_completed(futs), 1):
+            res[futs[f]] = f.result()
+            if progress:
+                progress(n / len(futs))
     rows = []
     for iid in item_ids:
         it = items.get(iid, {})
         cl, err = res.get(iid, ([], "sin consultar"))
-        cuenta = lambda *s: sum(1 for c in cl if c["estado"] in s)  # noqa: E731
+        propios = [c for c in cl if not c["user_id"] or str(c["user_id"]) == str(client.user_id)]
         pics = it.get("pictures") or []
         rows.append({
             "item_id": iid, "titulo": it.get("title"), "estado_pub": it.get("status"),
             "foto": ((pics[0].get("secure_url") if pics else it.get("thumbnail")) or "").replace("http://", "https://"),
             "vendidos": it.get("sold_quantity") or 0, "stock": it.get("available_quantity"),
-            "clips": len(cl), "publicados": cuenta("PUBLISHED"), "en_revision": cuenta("UNDER_REVIEW"),
-            "rechazados": cuenta("REJECTED", "TRANSCODING_REJECTED"), "pausados": cuenta("PAUSED"),
-            "motivos": " | ".join(c["motivo"] for c in cl if c["motivo"])[:300],
+            "clip_ids": [c["clip_id"] for c in propios], "clips_det": propios, "clips": len(propios),
+            "vistas": sum(int(c["vistas"] or 0) for c in propios),
+            "ultimo_clip": max((c["creado"] for c in propios if c["creado"]), default=""),
+            "clips_otros": len(cl) - len(propios),
             "video_clasico": bool(it.get("video_id")), "link": it.get("permalink"), "error": err,
         })
     return pd.DataFrame(rows)

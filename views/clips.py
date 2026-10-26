@@ -20,74 +20,76 @@ ix["pub"] = ix["familia"].fillna(ix["item_id"]) if "familia" in ix else ix["item
 skus = index.groupby("item_id")["sku"].apply(lambda s: ", ".join(sorted({str(x) for x in s if x}))[:80])
 ix["skus"] = ix["item_id"].map(skus)
 
-c1, c2 = st.columns([1, 2])
-estados = c1.multiselect("Estados", ["active", "paused"], ["active"], key="clp_est")
-calib = c2.text_input("Opcional: ID de una publicación que SÍ tenga clip (ej. MLA123456789)", key="clp_cal",
-                      help="Sirve para confirmar el recurso de la API la primera vez. Si no lo sabés, dejalo vacío.")
+estados = st.multiselect("Estados", ["active", "paused"], ["active"], key="clp_est")
 sel = ix[ix["estado"].isin(estados)]
 k = f"clips_{client.user_id}"
+st.caption("Se lee la página pública de cada publicación (la API de MeLi no expone clips para cuentas de Argentina). "
+           "Tarda ~1 minuto cada 150 publicaciones.")
 
 if st.button(f"🎬 Relevar clips de {len(sel)} publicaciones", type="primary", key="clp_go"):
-    ids = sel.sort_values("stock", ascending=False)["item_id"].tolist()
-    prueba = ([calib.strip().upper()] if calib.strip() else []) + ids
-    with st.spinner("Detectando el recurso de clips de la API…"):
-        ep, log = cp.detectar_endpoint(client, prueba)
-    bar = st.progress(0.0, text="Consultando clips…")
-    df = cp.relevar(client, ids, ep, progress=lambda p: bar.progress(p, text=f"Consultando clips… {p * 100:.0f}%"))
+    ids = sel["item_id"].tolist()
+    bar = st.progress(0.0, text="Leyendo publicaciones…")
+    df = cp.relevar(client, ids, progress=lambda p: bar.progress(p, text=f"Leyendo publicaciones… {p * 100:.0f}%"))
     bar.empty()
     df = df.merge(sel[["item_id", "pub", "familia", "skus"]], on="item_id", how="left")
-    st.session_state[k] = (df, ep, log, datetime.now().strftime("%d/%m %H:%M"))
+    st.session_state[k] = (df, datetime.now().strftime("%d/%m %H:%M"))
 
 if k not in st.session_state:
     st.info("Tocá **Relevar clips** para armar el listado.")
     st.stop()
 
-df, ep, log, cuando = st.session_state[k]
-with st.expander("Diagnóstico de la API" + (" ✅" if ep else " ⚠️"), expanded=not ep):
-    st.caption(f"Recurso usado: `{ep}`" if ep else "Ninguno de los recursos de clips respondió para esta cuenta.")
-    st.code("\n".join(log) or "-", language=None)
-    if not ep:
-        st.warning("MeLi no expuso los clips para esta cuenta por API (o ninguna de las publicaciones probadas tiene clip). "
-                   "Probá cargar arriba el ID de una publicación que tenga clip y volvé a relevar. "
-                   "Mientras tanto el listado muestra solo el video clásico.")
+df, cuando = st.session_state[k]
+errs = df[df["error"] != ""]
+if len(errs):
+    with st.expander(f"⚠️ {len(errs)} publicaciones no se pudieron leer", expanded=len(errs) > len(df) / 2):
+        st.dataframe(errs[["item_id", "titulo", "error", "link"]], hide_index=True, width="stretch",
+                     column_config={"link": st.column_config.LinkColumn("Link", display_text="ver")})
+        if len(errs) > len(df) / 2:
+            st.warning("MeLi está bloqueando la lectura desde el servidor de la app. Probá de nuevo en unos minutos; "
+                       "si persiste avisame y lo pasamos a correr desde GitHub Actions.")
 
 # ---- por publicación (agrupa las variantes/colores de una misma familia)
-g = (df.groupby("pub").agg(titulo=("titulo", "first"), foto=("foto", "first"), items=("item_id", "nunique"),
-                           items_con_clip=("publicados", lambda s: int((s > 0).sum())),
-                           clips=("clips", "sum"), publicados=("publicados", "sum"), en_revision=("en_revision", "sum"),
-                           rechazados=("rechazados", "sum"), video_clasico=("video_clasico", "max"),
-                           vendidos=("vendidos", "sum"), stock=("stock", "sum"), skus=("skus", "first"),
-                           motivos=("motivos", lambda s: " | ".join(x for x in s if x)[:300]), link=("link", "first"))
-     .reset_index())
-g["situacion"] = g.apply(lambda r: "✅ Con clip" if r["publicados"] else ("⏳ En revisión" if r["en_revision"] else
-                         ("❌ Rechazado" if r["rechazados"] else "🎬 Sin clip")), axis=1)
+def _agg(x: pd.DataFrame) -> pd.Series:
+    det = {c["clip_id"]: c for lst in x["clips_det"] for c in lst}
+    ids = set(det)
+    return pd.Series({
+        "titulo": x["titulo"].iloc[0], "foto": x["foto"].iloc[0], "items": x["item_id"].nunique(),
+        "items_con_clip": int((x["clips"] > 0).sum()), "clips": len(ids),
+        "vistas": int(sum(int(c["vistas"] or 0) for c in det.values())),
+        "ultimo_clip": max(x["ultimo_clip"]), "video_clasico": bool(x["video_clasico"].any()),
+        "vendidos": int(x["vendidos"].sum()), "stock": int(x["stock"].fillna(0).sum()), "skus": x["skus"].iloc[0],
+        "link": x["link"].iloc[0], "error": " | ".join(e for e in x["error"] if e)[:120]})
+
+
+g = df.groupby("pub").apply(_agg, include_groups=False).reset_index()
+g["situacion"] = g.apply(lambda r: "✅ Con clip" if r["clips"] else ("⚠️ Sin leer" if r["error"] else "🎬 Sin clip"), axis=1)
 
 m = st.columns(4)
 m[0].metric("Publicaciones", len(g))
-m[1].metric("✅ Con clip publicado", int((g["publicados"] > 0).sum()))
+m[1].metric("✅ Con clip", int((g["clips"] > 0).sum()))
 m[2].metric("🎬 Sin clip", int((g["situacion"] == "🎬 Sin clip").sum()))
-m[3].metric("❌ Rechazados", int((g["rechazados"] > 0).sum()))
+m[3].metric("👁️ Vistas de clips", f"{int(g['vistas'].sum()):,}".replace(",", "."))
 st.caption(f"Relevado {cuando}. Prioridad para grabar: las que más venden y tienen stock, sin clip.")
 
 f1, f2 = st.columns([2, 1])
-ver = f1.segmented_control("Ver", ["🎬 Sin clip", "✅ Con clip", "⏳ En revisión", "❌ Rechazado", "Todas"],
+ver = f1.segmented_control("Ver", ["🎬 Sin clip", "✅ Con clip", "⚠️ Sin leer", "Todas"],
                            default="🎬 Sin clip", key="clp_ver") or "Todas"
 solo_stock = f2.toggle("Solo con stock", value=True, key="clp_stock")
 v = g if ver == "Todas" else g[g["situacion"] == ver]
 if solo_stock:
     v = v[v["stock"].fillna(0) > 0]
 v = v.sort_values(["vendidos", "stock"], ascending=False)
-st.dataframe(v[["foto", "titulo", "situacion", "publicados", "en_revision", "rechazados", "items_con_clip", "items",
-                "video_clasico", "vendidos", "stock", "skus", "motivos", "link"]],
+st.dataframe(v[["foto", "titulo", "situacion", "clips", "vistas", "ultimo_clip", "items_con_clip", "items",
+                "video_clasico", "vendidos", "stock", "skus", "link"]],
              hide_index=True, width="stretch", row_height=56, height=min(40 + 58 * len(v), 640),
              column_config={"foto": st.column_config.ImageColumn("", width="small"),
                             "titulo": st.column_config.TextColumn("Publicación", width="large"),
-                            "situacion": "Situación", "publicados": "Clips ✅", "en_revision": "⏳", "rechazados": "❌",
+                            "situacion": "Situación", "clips": "Clips", "vistas": st.column_config.NumberColumn("Vistas"),
+                            "ultimo_clip": "Último clip",
                             "items_con_clip": st.column_config.NumberColumn("Colores con clip"),
                             "items": st.column_config.NumberColumn("Colores"),
                             "video_clasico": st.column_config.CheckboxColumn("Video clásico"),
                             "vendidos": st.column_config.NumberColumn("Vendidos"),
-                            "motivos": st.column_config.TextColumn("Motivo de rechazo", width="medium"),
                             "link": st.column_config.LinkColumn("Link", display_text="ver")})
 st.download_button("⬇️ Descargar Excel", to_xlsx(g.drop(columns=["foto"]).sort_values("vendidos", ascending=False)),
                    f"clips_{datetime.now():%Y%m%d}.xlsx")
