@@ -1,0 +1,18 @@
+{
+  "ops": [
+    {
+      "id": "20261026-102551-62076e",
+      "fecha": "2026-10-26 10:25:51",
+      "usuario": "app",
+      "canal": "Shopify",
+      "tienda": "crocs",
+      "accion": "estado",
+      "descripcion": "Crocs Argentina | Sitio Oficial: 9 productos → 🔗 No listado",
+      "reversible": true,
+      "deshace": null,
+      "total": 9,
+      "ok": 9,
+      "deshecha_por": null
+    }
+  ]
+}
