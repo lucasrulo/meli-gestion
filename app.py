@@ -52,6 +52,7 @@ pg = st.navigation(
         ],
         "Catálogo y marca": [
             st.Page("views/contenido.py", title="Contenido SEO", icon=":material/auto_awesome:"),
+            st.Page("views/clips.py", title="Clips", icon=":material/movie:"),
             st.Page("views/proteccion.py", title="Protección de marca", icon=":material/shield:"),
         ],
         "Shopify": [
