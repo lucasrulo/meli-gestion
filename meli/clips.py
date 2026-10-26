@@ -104,9 +104,10 @@ def clips_publicacion(url: str, intentos: int = 2) -> tuple[list[dict], str]:
                         if tam > MAX_BYTES:
                             break
                     txt = b"".join(buf).decode("utf-8", "ignore")
-                    if "<html" in txt[:3000].lower():
+                    if "ui-pdp" in txt or '"gallery"' in txt:   # es una página de producto de verdad
                         return parse_shorts(txt), ""
-                    err = "respuesta inesperada (¿bloqueo?)"
+                    m = re.search(r"<title>(.*?)</title>", txt, re.S | re.I)
+                    err = f"no es la página del producto ({(m.group(1).strip() if m else r.url)[:80]})"
         except requests.RequestException as e:
             err = str(e)[:120]
         time.sleep(0.8 * (n + 1) + random.random() * 0.5)
@@ -126,7 +127,7 @@ def relevar(client: MeliClient, item_ids: list[str], progress=None, workers: int
     for iid in item_ids:
         it = items.get(iid, {})
         cl, err = res.get(iid, ([], "sin consultar"))
-        propios = [c for c in cl if not c["user_id"] or str(c["user_id"]) == str(client.user_id)]
+        propios = cl  # los clips que muestra la página de la publicación
         pics = it.get("pictures") or []
         rows.append({
             "item_id": iid, "titulo": it.get("title"), "estado_pub": it.get("status"),
@@ -139,3 +140,18 @@ def relevar(client: MeliClient, item_ids: list[str], progress=None, workers: int
             "video_clasico": bool(it.get("video_id")), "link": it.get("permalink"), "error": err,
         })
     return pd.DataFrame(rows)
+
+
+def diagnostico(url: str) -> dict:
+    """Lee una página completa y cuenta qué trae (para entender por qué no aparecen clips)."""
+    try:
+        r = _session().get(url, timeout=(6, 25))
+    except requests.RequestException as e:
+        return {"error": str(e)}
+    t = r.text
+    m = re.search(r"<title>(.*?)</title>", t, re.S | re.I)
+    i = t.find('"shorts"')
+    return {"status": r.status_code, "url_final": r.url, "bytes": len(t), "titulo": (m.group(1).strip() if m else "")[:120],
+            "es_producto": "ui-pdp" in t or '"gallery"' in t, "tiene_shorts": i >= 0, "tiene_clips": '"clips"' in t,
+            "clips_leidos": len(parse_shorts(t)),
+            "fragmento": re.sub(r"https?://\S+?(?=[\"\\])", "<url>", t[i - 60:i + 400]) if i >= 0 else ""}

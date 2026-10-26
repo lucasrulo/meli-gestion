@@ -48,6 +48,16 @@ if modo.startswith("Rápido"):
     objetivo = sel.sort_values("stock", ascending=False).drop_duplicates("pub")
 else:
     objetivo = sel
+with st.expander("🔧 Probar una publicación (diagnóstico)"):
+    d1, d2 = st.columns([2, 1], vertical_alignment="bottom")
+    pid = d1.text_input("ID de publicación con clip", placeholder="MLA1866105389", key="clp_diag_id")
+    if d2.button("Probar", key="clp_diag", disabled=not pid.strip()):
+        iid = pid.strip().upper().replace("-", "")
+        try:
+            link = client.get(f"/items/{iid}").get("permalink")
+        except Exception:  # noqa: BLE001
+            link = f"https://articulo.mercadolibre.com.ar/{iid[:3]}-{iid[3:]}"
+        st.json(cp.diagnostico(link))
 prev = st.session_state.get(k, (None, ""))[0]
 if alcance.startswith("Solo") and prev is not None and not prev.empty:
     con_clip = set(prev.loc[prev["clips"] > 0, "pub"])
