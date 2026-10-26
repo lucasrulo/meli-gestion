@@ -1,157 +1,88 @@
-"""Clips (videos verticales) de MercadoLibre por publicación.
+"""Clips / video por publicación, con la API oficial de Calidad de publicaciones (/item/{id}/performance).
 
-La API de clips no está habilitada para cuentas de Argentina (solo Global Selling). Pero la página pública de cada
-publicación trae los clips que muestra ("shorts"): id, vistas, duración y fecha. Se leen de ahí.
+MeLi incluye en la calidad el objetivo «Creá un video» (el mismo que aparece en Central de vendedores como
+«Sin video»). Si ese objetivo está COMPLETED la publicación ya tiene video/clip; si está PENDING, no tiene.
+La lectura de la página pública no sirve: MeLi la bloquea desde servidores (verificación de cuenta).
 """
-import json
-import random
 import re
-import threading
-import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import pandas as pd
-import requests
 
-from .api import MeliClient
+from .api import MeliClient, MeliError
 from .catalog import multiget
 
-UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) "
-      "Chrome/128.0.0.0 Safari/537.36")
+_VIDEO = re.compile(r"video|clip|short", re.I)
 
 
-def _array(html: str, key: str) -> list | None:
-    i = html.find(f'"{key}":[')
-    if i < 0:
-        return None
-    start = i + len(key) + 3
-    depth, j, en_str, esc = 0, start, False, False
-    while j < len(html):
-        c = html[j]
-        if en_str:
-            if esc:
-                esc = False
-            elif c == "\\":
-                esc = True
-            elif c == '"':
-                en_str = False
-        elif c == '"':
-            en_str = True
-        elif c == "[":
-            depth += 1
-        elif c == "]":
-            depth -= 1
-            if depth == 0:
-                break
-        j += 1
-    try:
-        return json.loads(html[start:j + 1])
-    except Exception:  # noqa: BLE001
-        return None
-
-
-def parse_shorts(html: str) -> list[dict]:
-    arr = _array(html, "shorts") or []
+def _reglas(perf: dict) -> list[dict]:
     out = []
-    for s in arr:
-        if not isinstance(s, dict):
-            continue
-        creado = None
-        for k in ("track_vip", "track_intention_to_view"):
-            ev = ((s.get(k) or {}).get("melidata_event") or {}).get("event_data") or {}
-            creado = creado or ev.get("created_at")
-        out.append({"clip_id": s.get("id"), "user_id": s.get("user_id"), "vistas": s.get("views") or 0,
-                    "duracion": s.get("video_duration"), "creado": (creado or "")[:10]})
+    for b in perf.get("buckets") or []:
+        for v in b.get("variables") or []:
+            for r in v.get("rules") or [{}]:
+                w = r.get("wordings") or {}
+                out.append({"variable": v.get("key"), "regla": r.get("key"), "estado": r.get("status") or v.get("status"),
+                            "titulo": w.get("title") or v.get("title") or "", "label": w.get("label") or "",
+                            "link": w.get("link") or ""})
     return out
 
 
-_SES = threading.local()
+def video_de(perf: dict) -> tuple[str, str, str]:
+    """(situación, regla, link para crear) a partir de la respuesta de /performance."""
+    regs = [r for r in _reglas(perf) if _VIDEO.search(" ".join(str(r[k] or "") for k in ("variable", "regla", "titulo", "label")))]
+    if not regs:
+        return "sin dato", "", ""
+    pend = [r for r in regs if r["estado"] == "PENDING"]
+    if pend:
+        return "sin video", pend[0]["regla"] or pend[0]["variable"], pend[0]["link"]
+    return "con video", regs[0]["regla"] or regs[0]["variable"], ""
 
 
-def _session() -> requests.Session:
-    if not hasattr(_SES, "s"):  # una conexión keep-alive por hilo (evita el handshake en cada página)
-        ses = requests.Session()
-        ses.headers.update({"User-Agent": UA, "Accept-Language": "es-AR,es;q=0.9", "Accept-Encoding": "gzip, deflate"})
-        _SES.s = ses
-    return _SES.s
+def performance(client: MeliClient, it: dict) -> tuple[dict, str]:
+    iid = it["id"]
+    try:
+        return client.get(f"/item/{iid}/performance") or {}, ""
+    except MeliError as e:
+        up = it.get("user_product_id")
+        if up and e.status in (400, 404):
+            try:
+                return client.get(f"/user-product/{up}/performance") or {}, ""
+            except MeliError as e2:
+                return {}, f"{e2.status}: {str(e2)[:100]}"
+        return {}, f"{e.status}: {str(e)[:100]}"
 
 
-MAX_BYTES = 3_000_000
-
-
-def clips_publicacion(url: str, intentos: int = 2) -> tuple[list[dict], str]:
-    """Lee la página pública (en streaming: corta apenas encuentra los clips). Devuelve (clips, error)."""
-    if not url:
-        return [], "sin link"
-    err = ""
-    for n in range(intentos):
-        try:
-            with _session().get(url, timeout=(6, 15), stream=True) as r:
-                if r.status_code == 404:
-                    return [], "publicación no encontrada"
-                if r.status_code != 200:
-                    err = f"HTTP {r.status_code}"
-                else:
-                    buf, tam = [], 0
-                    for chunk in r.iter_content(131072, decode_unicode=False):
-                        buf.append(chunk)
-                        tam += len(chunk)
-                        txt = b"".join(buf).decode("utf-8", "ignore")
-                        if '"shorts":[' in txt:
-                            arr = parse_shorts(txt)
-                            if arr or txt.find("]", txt.find('"shorts":[')) > 0 and _array(txt, "shorts") is not None:
-                                return arr, ""
-                        if tam > MAX_BYTES:
-                            break
-                    txt = b"".join(buf).decode("utf-8", "ignore")
-                    if "ui-pdp" in txt or '"gallery"' in txt:   # es una página de producto de verdad
-                        return parse_shorts(txt), ""
-                    m = re.search(r"<title>(.*?)</title>", txt, re.S | re.I)
-                    err = f"no es la página del producto ({(m.group(1).strip() if m else r.url)[:80]})"
-        except requests.RequestException as e:
-            err = str(e)[:120]
-        time.sleep(0.8 * (n + 1) + random.random() * 0.5)
-    return [], err
-
-
-def relevar(client: MeliClient, item_ids: list[str], progress=None, workers: int = 12) -> pd.DataFrame:
+def relevar(client: MeliClient, item_ids: list[str], progress=None, workers: int = 8) -> pd.DataFrame:
     items = {it["id"]: it for it in multiget(client, item_ids)}
-    res: dict[str, tuple[list, str]] = {}
+    res: dict[str, tuple[dict, str]] = {}
     with ThreadPoolExecutor(max_workers=workers) as ex:
-        futs = {ex.submit(clips_publicacion, (items.get(i) or {}).get("permalink")): i for i in item_ids}
+        futs = {ex.submit(performance, client, items[i]): i for i in item_ids if i in items}
         for n, f in enumerate(as_completed(futs), 1):
             res[futs[f]] = f.result()
             if progress:
-                progress(n / len(futs))
+                progress(n / max(len(futs), 1))
     rows = []
     for iid in item_ids:
         it = items.get(iid, {})
-        cl, err = res.get(iid, ([], "sin consultar"))
-        propios = cl  # los clips que muestra la página de la publicación
+        perf, err = res.get(iid, ({}, "no se pudo leer la publicación"))
+        sit, regla, link_crear = video_de(perf) if perf else ("sin dato", "", "")
         pics = it.get("pictures") or []
         rows.append({
             "item_id": iid, "titulo": it.get("title"), "estado_pub": it.get("status"),
             "foto": ((pics[0].get("secure_url") if pics else it.get("thumbnail")) or "").replace("http://", "https://"),
             "vendidos": it.get("sold_quantity") or 0, "stock": it.get("available_quantity"),
-            "clip_ids": [c["clip_id"] for c in propios], "clips_det": propios, "clips": len(propios),
-            "vistas": sum(int(c["vistas"] or 0) for c in propios),
-            "ultimo_clip": max((c["creado"] for c in propios if c["creado"]), default=""),
-            "clips_otros": len(cl) - len(propios),
+            "video": sit, "regla": regla, "crear_link": link_crear, "calidad": perf.get("score"),
             "video_clasico": bool(it.get("video_id")), "link": it.get("permalink"), "error": err,
         })
     return pd.DataFrame(rows)
 
 
-def diagnostico(url: str) -> dict:
-    """Lee una página completa y cuenta qué trae (para entender por qué no aparecen clips)."""
-    try:
-        r = _session().get(url, timeout=(6, 25))
-    except requests.RequestException as e:
-        return {"error": str(e)}
-    t = r.text
-    m = re.search(r"<title>(.*?)</title>", t, re.S | re.I)
-    i = t.find('"shorts"')
-    return {"status": r.status_code, "url_final": r.url, "bytes": len(t), "titulo": (m.group(1).strip() if m else "")[:120],
-            "es_producto": "ui-pdp" in t or '"gallery"' in t, "tiene_shorts": i >= 0, "tiene_clips": '"clips"' in t,
-            "clips_leidos": len(parse_shorts(t)),
-            "fragmento": re.sub(r"https?://\S+?(?=[\"\\])", "<url>", t[i - 60:i + 400]) if i >= 0 else ""}
+def diagnostico(client: MeliClient, item_id: str) -> dict:
+    it = (multiget(client, [item_id]) or [{}])[0]
+    if not it:
+        return {"error": "No encontré la publicación en esta cuenta"}
+    perf, err = performance(client, it)
+    sit, regla, link = video_de(perf) if perf else ("sin dato", "", "")
+    return {"publicacion": it.get("title"), "error": err, "calidad": perf.get("score"), "video": sit, "regla_video": regla,
+            "reglas_relacionadas": [r for r in _reglas(perf) if _VIDEO.search(f"{r['variable']} {r['regla']} {r['titulo']} {r['label']}")],
+            "todas_las_reglas": [f"{r['variable']}/{r['regla']}: {r['estado']}" for r in _reglas(perf)]}
