@@ -6,6 +6,7 @@ publicación trae los clips que muestra ("shorts"): id, vistas, duración y fech
 import json
 import random
 import re
+import threading
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
@@ -64,29 +65,55 @@ def parse_shorts(html: str) -> list[dict]:
     return out
 
 
-def clips_publicacion(url: str, intentos: int = 3) -> tuple[list[dict], str]:
-    """Lee la página pública de la publicación. Devuelve (clips, error)."""
+_SES = threading.local()
+
+
+def _session() -> requests.Session:
+    if not hasattr(_SES, "s"):  # una conexión keep-alive por hilo (evita el handshake en cada página)
+        ses = requests.Session()
+        ses.headers.update({"User-Agent": UA, "Accept-Language": "es-AR,es;q=0.9", "Accept-Encoding": "gzip, deflate"})
+        _SES.s = ses
+    return _SES.s
+
+
+MAX_BYTES = 3_000_000
+
+
+def clips_publicacion(url: str, intentos: int = 2) -> tuple[list[dict], str]:
+    """Lee la página pública (en streaming: corta apenas encuentra los clips). Devuelve (clips, error)."""
     if not url:
         return [], "sin link"
+    err = ""
     for n in range(intentos):
         try:
-            r = requests.get(url, timeout=30, headers={"User-Agent": UA, "Accept-Language": "es-AR,es;q=0.9"})
+            with _session().get(url, timeout=(6, 15), stream=True) as r:
+                if r.status_code == 404:
+                    return [], "publicación no encontrada"
+                if r.status_code != 200:
+                    err = f"HTTP {r.status_code}"
+                else:
+                    buf, tam = [], 0
+                    for chunk in r.iter_content(131072, decode_unicode=False):
+                        buf.append(chunk)
+                        tam += len(chunk)
+                        txt = b"".join(buf).decode("utf-8", "ignore")
+                        if '"shorts":[' in txt:
+                            arr = parse_shorts(txt)
+                            if arr or txt.find("]", txt.find('"shorts":[')) > 0 and _array(txt, "shorts") is not None:
+                                return arr, ""
+                        if tam > MAX_BYTES:
+                            break
+                    txt = b"".join(buf).decode("utf-8", "ignore")
+                    if "<html" in txt[:3000].lower():
+                        return parse_shorts(txt), ""
+                    err = "respuesta inesperada (¿bloqueo?)"
         except requests.RequestException as e:
             err = str(e)[:120]
-        else:
-            if r.status_code == 200 and "<html" in r.text[:2000].lower():
-                if '"shorts":[' in r.text or "gallery" in r.text:
-                    return parse_shorts(r.text), ""
-                err = "página sin galería (¿captcha o bloqueo?)"
-            else:
-                err = f"HTTP {r.status_code}"
-            if r.status_code == 404:
-                return [], "publicación no encontrada"
-        time.sleep(1.5 * (n + 1) + random.random())
+        time.sleep(0.8 * (n + 1) + random.random() * 0.5)
     return [], err
 
 
-def relevar(client: MeliClient, item_ids: list[str], progress=None, workers: int = 4) -> pd.DataFrame:
+def relevar(client: MeliClient, item_ids: list[str], progress=None, workers: int = 12) -> pd.DataFrame:
     items = {it["id"]: it for it in multiget(client, item_ids)}
     res: dict[str, tuple[list, str]] = {}
     with ThreadPoolExecutor(max_workers=workers) as ex:
