@@ -24,10 +24,11 @@ if not stores:
 client = pick_account()
 tm = get_token_manager()
 alias = tm.accounts().get(client.user_id, {}).get("alias")
-tiendas = st.sidebar.multiselect("Tiendas Shopify", list(stores), default=sh.stores_for_meli(alias),
-                                 format_func=lambda k: stores[k]["nombre"], key=f"omni_st_{client.user_id}")
+from meli.selector_marca import corto  # noqa: E402
+tiendas = st.multiselect("Tiendas Shopify a comparar", list(stores), default=sh.stores_for_meli(alias),
+                         format_func=lambda k: corto(stores[k]["nombre"]), key=f"omni_st_{client.user_id}")
 if not tiendas:
-    st.info("Elegí al menos una tienda Shopify en la barra lateral.")
+    st.info("Elegí al menos una tienda Shopify.")
     st.stop()
 
 mode = mode_picker("omni")

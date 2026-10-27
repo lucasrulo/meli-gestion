@@ -17,8 +17,8 @@ def pick_store(key: str = "shop_store") -> str | None:
     if not st_:
         st.warning("No hay tiendas Shopify conectadas. Andá a **Cuentas → Conectar tienda**.")
         st.stop()
-    opts = list(st_)
-    return st.sidebar.selectbox("Tienda Shopify", opts, key=key, format_func=lambda k: st_[k]["nombre"])
+    from .selector_marca import elegir_tienda
+    return elegir_tienda(st_)
 
 
 def cargar(tienda: str):

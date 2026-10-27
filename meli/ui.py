@@ -38,14 +38,8 @@ def pick_account() -> MeliClient:
     if not accounts:
         st.warning("No hay cuentas conectadas. Andá a **Cuentas** y conectá al menos una.")
         st.stop()
-    ids = sorted(accounts, key=lambda k: (accounts[k].get("alias") or "").lower())
-    uid = st.sidebar.selectbox(
-        "Cuenta MeLi",
-        ids,
-        format_func=lambda k: accounts[k].get("alias") or accounts[k].get("nickname") or k,
-        key="account_uid",
-    )
-    return MeliClient(tm, uid)
+    from .selector_marca import elegir_cuenta
+    return MeliClient(tm, elegir_cuenta(accounts))
 
 
 INDEX_VERSION = 2  # subir cuando cambian las columnas del índice → invalida el caché viejo
