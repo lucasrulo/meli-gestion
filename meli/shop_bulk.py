@@ -132,7 +132,7 @@ def parse_catalogo(lines: list[dict], key: str, vendor: str = "") -> tuple[pd.Da
 
 
 @st.cache_data(ttl=3600, show_spinner=False)
-def _catalogo_cached(key: str, nonce: int):
+def _catalogo_cached(key: str, nonce: float):
     cli = ShopifyClient(key)
     lines = bulk_query(cli, CATALOGO_Q)
     return parse_catalogo(lines, key, cli.cfg.get("vendor") or "")
@@ -142,12 +142,12 @@ def catalogo(key: str, refresh: bool = False):
     """(productos, variantes, fotos, metacampos) de una tienda. Caché 1 h; refresh=True relee."""
     nk = f"cat_nonce_{key}"
     if refresh or nk not in st.session_state:
-        st.session_state[nk] = int(time.time())
+        st.session_state[nk] = time.time()
     return _catalogo_cached(key, st.session_state[nk])
 
 
 def invalidar(key: str) -> None:
-    st.session_state[f"cat_nonce_{key}"] = int(time.time())
+    st.session_state[f"cat_nonce_{key}"] = time.time()
 
 
 # ---------------------------------------------------------------- mutaciones masivas

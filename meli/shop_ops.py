@@ -36,7 +36,7 @@ M_COLL_REM = """mutation($id: ID!, $ids: [ID!]!) { collectionRemoveProducts(id: 
                   userErrors { field message } } }"""
 
 NOMBRES = {
-    "estado": "Cambio de estado", "tags_add": "Agregar tags", "tags_remove": "Quitar tags",
+    "estado": "Cambio de estado", "tags_set": "Reemplazar tags", "tags_add": "Agregar tags", "tags_remove": "Quitar tags",
     "publicar": "Publicar en canales", "despublicar": "Despublicar de canales", "seo": "SEO title / meta",
     "alt": "Texto alternativo de fotos", "fotos_add": "Agregar fotos", "fotos_remove": "Quitar fotos",
     "metacampos": "Metacampos", "redirect_add": "Crear redirecciones", "redirect_remove": "Borrar redirecciones",
@@ -50,6 +50,8 @@ def _vars(accion: str, f: dict, meta: dict):
     d = f["despues"]
     if accion == "estado":
         return M_STATUS, {"p": {"id": f["id"], "status": d}}
+    if accion == "tags_set":
+        return M_STATUS.replace("status }", "tags }"), {"p": {"id": f["id"], "tags": list(d)}}
     if accion == "tags_add":
         return M_TAGS_ADD, {"id": f["id"], "tags": list(d)}
     if accion == "tags_remove":
@@ -159,7 +161,7 @@ def inversa(entry: dict) -> tuple[str, list[dict], dict] | None:
     if not ok or not entry.get("reversible", True):
         return None
     sw = lambda f, **k: {"id": f["id"], "label": f.get("label"), "antes": f["despues"], "despues": f["antes"], **k}  # noqa: E731
-    if acc in ("estado", "seo", "alt", "metacampos", "contenido", "meli_descripcion", "meli_precio"):
+    if acc in ("estado", "tags_set", "seo", "alt", "metacampos", "contenido", "meli_descripcion", "meli_precio"):
         return acc, [sw(f) for f in ok], meta
     if acc == "precios":
         return acc, [sw(f) for f in ok], meta

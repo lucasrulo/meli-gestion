@@ -60,30 +60,81 @@ with t_est:
 
 # ================================================================ 2. tags y colecciones
 with t_tag:
-    modo = st.segmented_control("¿Qué querés hacer?", ["Agregar tags", "Quitar tags", "Agregar a colección",
-                                                        "Quitar de colección", "Crear colección"],
-                                default="Agregar tags", key="tag_modo") or "Agregar tags"
+    modo = st.segmented_control("¿Qué querés hacer?", ["Tags", "Agregar a colección", "Quitar de colección",
+                                                        "Crear colección"], default="Tags", key="tag_modo") or "Tags"
     sel = selector(P, "tag", extra_cols=["tags"])
     tags_all = sorted({t for ts in P["tags"] for t in ts})
-    if modo in ("Agregar tags", "Quitar tags"):
-        if modo == "Agregar tags":
+    if modo == "Tags":
+        como = st.radio("Cómo", ["➕ Agregar", "🔁 Reemplazar todos", "➖ Quitar", "🔎 Buscar y reemplazar"],
+                        horizontal=True, key="tag_como",
+                        help="Agregar: suma a los tags que ya tiene. Reemplazar todos: deja SOLO los que elijas. "
+                             "Buscar y reemplazar: cambia una palabra dentro de los tags.")
+        en_sel = sorted({t for ts in sel["tags"] for t in ts}) if not sel.empty else tags_all
+
+        def _lista(label: str, key: str, opciones: list[str]) -> list[str]:
             c1, c2 = st.columns(2)
-            exist = c1.multiselect("Tags existentes", tags_all, key="tag_ex")
-            nuevos = c2.text_input("Tags nuevos (separados por coma)", key="tag_new")
-            tags = list(dict.fromkeys(exist + [t.strip() for t in nuevos.split(",") if t.strip()]))
-        else:
-            en_sel = sorted({t for ts in sel["tags"] for t in ts}) if not sel.empty else tags_all
+            ex = c1.multiselect(f"{label} (existentes)", opciones, key=f"{key}_ex")
+            nv = c2.text_input("…o escribilos (separados por coma)", key=f"{key}_nv")
+            return list(dict.fromkeys(ex + [t.strip() for t in nv.split(",") if t.strip()]))
+
+        nuevo_de = None   # función tags actuales -> tags nuevos
+        desc = ""
+        if como == "➕ Agregar":
+            tags = _lista("Tags a agregar", "tag_add", tags_all)
+            if tags:
+                nuevo_de = lambda ts: list(dict.fromkeys(list(ts) + tags))  # noqa: E731
+                desc = f"agregar «{', '.join(tags)}»"
+        elif como == "🔁 Reemplazar todos":
+            tags = _lista("Tags que van a quedar", "tag_set", tags_all)
+            st.caption("⚠️ Se borran todos los tags actuales de los productos tildados y quedan solo estos.")
+            if tags:
+                nuevo_de = lambda ts: list(tags)  # noqa: E731
+                desc = f"reemplazar tags por «{', '.join(tags)}»"
+        elif como == "➖ Quitar":
             tags = st.multiselect("Tags a quitar", en_sel, key="tag_rm")
-        if tags and not sel.empty:
-            if modo == "Agregar tags":
-                afect = sel[sel["tags"].apply(lambda ts: any(t not in ts for t in tags))]
-            else:
-                afect = sel[sel["tags"].apply(lambda ts: any(t in ts for t in tags))]
-            st.caption(f"{len(afect)} producto(s) cambian · tags: {', '.join(tags)}")
+            if tags:
+                nuevo_de = lambda ts: [t for t in ts if t not in tags]  # noqa: E731
+                desc = f"quitar «{', '.join(tags)}»"
+        else:
+            c1, c2, c3 = st.columns([1, 1, 1.2], vertical_alignment="bottom")
+            buscar = c1.text_input("Buscar", key="tag_bus", placeholder="ej: verano25")
+            reempl = c2.text_input("Reemplazar por", key="tag_rep", placeholder="ej: verano26 (vacío = borrar)")
+            alcance_b = c3.radio("Buscar en", ["Parte del tag", "Tag completo"], horizontal=True, key="tag_alc")
+            if buscar.strip():
+                import re as _re
+                b_ = buscar.strip()
+                patron = _re.compile(_re.escape(b_), _re.I)
+
+                def nuevo_de(ts):
+                    out = []
+                    for t in ts:
+                        if alcance_b == "Tag completo":
+                            t2 = reempl.strip() if t.lower() == b_.lower() else t
+                        else:
+                            t2 = patron.sub(reempl, t).strip(" ,")
+                        if t2:
+                            out.append(t2)
+                    return list(dict.fromkeys(out))
+                desc = f"reemplazar «{b_}» por «{reempl}»" if reempl else f"borrar «{b_}» de los tags"
+                hits = sorted({t for ts in sel["tags"] for t in ts if patron.search(t)}) if not sel.empty else []
+                st.caption("Tags que coinciden: " + (", ".join(f"`{t}`" for t in hits[:40]) if hits else "ninguno"))
+
+        if nuevo_de and not sel.empty:
+            prev = sel[["product_id", "titulo", "tags"]].copy()
+            prev["nuevos"] = prev["tags"].apply(lambda ts: nuevo_de(list(ts)))
+            afect = prev[prev.apply(lambda r: list(r["tags"]) != list(r["nuevos"]), axis=1)]
+            st.markdown(f"**{len(afect)}** de {len(prev)} producto(s) cambian.")
+            if not afect.empty:
+                st.dataframe(afect.assign(tags=afect["tags"].map(", ".join), nuevos=afect["nuevos"].map(", ".join))
+                             [["titulo", "tags", "nuevos"]].head(300), hide_index=True, width="stretch",
+                             height=min(40 + 36 * len(afect), 320),
+                             column_config={"titulo": st.column_config.TextColumn("Producto", width="medium"),
+                                            "tags": st.column_config.TextColumn("Tags actuales", width="large"),
+                                            "nuevos": st.column_config.TextColumn("Tags nuevos", width="large")})
             if ejecutar_ui("🏷️ Aplicar tags", len(afect), "tag"):
-                acc = "tags_add" if modo == "Agregar tags" else "tags_remove"
-                res = ops.aplicar(tienda, acc, _filas(afect, "tags", tags),
-                                  f"{nombre}: {modo.lower()} «{', '.join(tags)}» en {len(afect)} productos",
+                filas = [{"id": r["product_id"], "label": r["titulo"], "antes": list(r["tags"]), "despues": list(r["nuevos"])}
+                         for _, r in afect.iterrows()]
+                res = ops.aplicar(tienda, "tags_set", filas, f"{nombre}: {desc} en {len(filas)} productos",
                                   progress=progreso("Tags…"))
                 ops.mostrar_resultado(res)
     elif modo in ("Agregar a colección", "Quitar de colección"):
