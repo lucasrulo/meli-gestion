@@ -7,7 +7,7 @@ from meli import azure_fotos as az
 from meli import contenido as ct
 from meli import shop_ops as ops
 from meli.config import secret
-from meli.shop_ui import ESTADOS, cargar, colecciones as _colecciones, ejecutar_ui, pick_store, progreso, \
+from meli.shop_ui import ESTADOS, _match_codigos, cargar, colecciones as _colecciones, ejecutar_ui, pick_store, progreso, \
     publicaciones as _publicaciones, selector
 from meli.shopify import ShopifyClient, ShopifyError, html_to_text, stores
 from meli.excel import to_xlsx
@@ -361,6 +361,58 @@ with t_meta:
                 st.session_state.pop(kv, None)
 
 # ================================================================ 4. fotos desde Azure
+def _tabla_fotos(df: pd.DataFrame, key: str, extra: list[str] | None = None, check: bool = True) -> pd.DataFrame:
+    """Tabla con foto de Azure vs Shopify; devuelve los tildados."""
+    v = df.copy()
+    v["estado"] = v["estado"].map(lambda x: ESTADOS.get(x, x))
+    v["foto"] = v["foto"].fillna("")
+    v["vista_azure"] = v["urls"].map(lambda u: u[0] if u else None)
+    v.insert(0, "✔", check)
+    cols = ["✔", "vista_azure", "foto", "titulo", "estado", "n_shopify", "n_azure"] + (extra or []) + ["codigo_azure"]
+    ed = st.data_editor(v[cols + ["product_id"]], hide_index=True, width="stretch", row_height=56,
+                        height=min(40 + 58 * len(v), 460), key=f"{key}_{len(v)}_{hash(tuple(v['product_id']))}",
+                        disabled=[c for c in cols if c != "✔"], column_order=cols,
+                        column_config={"vista_azure": st.column_config.ImageColumn("Azure", width="small"),
+                                       "foto": st.column_config.ImageColumn("Shopify", width="small"),
+                                       "titulo": st.column_config.TextColumn("Producto", width="large"),
+                                       "n_shopify": "Fotos Shopify", "n_azure": "Fotos Azure",
+                                       "azure_txt": "Cambió en Azure", "codigo_azure": "Código en Azure",
+                                       "codigos": "Códigos buscados"})
+    return df[df["product_id"].isin(ed.loc[ed["✔"], "product_id"])]
+
+
+def _cargar(filas_df: pd.DataFrame, reemplazar: bool, carpeta: str, solo_faltantes: bool = False) -> None:
+    """Carga las fotos de Azure. Reemplazar: primero carga las nuevas y recién después quita las viejas
+    (si la carga falla, el producto queda con sus fotos actuales)."""
+    mm = M.groupby("product_id")["media_id"].apply(list).to_dict()
+    urls_sh = M.groupby("product_id")["url"].apply(
+        lambda s_: {str(u).split("?")[0].rsplit("/", 1)[-1].lower() for u in s_}).to_dict()
+    filas = []
+    for _, r in filas_df.iterrows():
+        urls = r["urls"]
+        if solo_faltantes:
+            ya = urls_sh.get(r["product_id"], set())
+            urls = [u for u in urls if u.rsplit("/", 1)[-1].lower() not in ya]
+        if urls:
+            filas.append({"id": r["product_id"], "label": r["titulo"], "alt": r["titulo"],
+                          "antes": mm.get(r["product_id"], []), "despues": urls})
+    if not filas:
+        st.info("No hay fotos nuevas para cargar.")
+        return
+    res = ops.aplicar(tienda, "fotos_add", filas, f"{nombre}: {'reemplazar' if reemplazar else 'cargar'} fotos de "
+                      f"Azure/{carpeta} en {len(filas)} productos", {"carpeta": carpeta}, progress=progreso("Cargando fotos…"))
+    ops.mostrar_resultado(res)
+    if reemplazar:
+        quitar = [{"id": f["id"], "label": f["label"], "antes": None, "despues": f["antes"]}
+                  for f in filas if f.get("ok") and f["antes"]]
+        if quitar:
+            ops.mostrar_resultado(ops.aplicar(tienda, "fotos_remove", quitar,
+                                              f"{nombre}: quitar fotos viejas de {len(quitar)} productos",
+                                              reversible=False, progress=progreso("Quitando fotos viejas…")))
+    st.caption("Shopify descarga las imágenes en segundo plano: pueden tardar 1–2 minutos en verse. "
+               "Tocá **🔄 Releer catálogo** para ver los números actualizados.")
+
+
 with t_fot:
     st.caption(f"Fuente: `{az.base_url()}` · se matchea por código de artículo / modelo-color del SKU (y handle).")
     try:
@@ -370,69 +422,79 @@ with t_fot:
         carps = []
     if carps:
         sug = next((c for c in carps if c.lower().replace(" ", "") == nombre.lower().replace(" ", "")), carps[0])
-        c1, c2 = st.columns([1, 1.6])
-        carpeta = c1.selectbox("Carpeta de Azure (marca)", carps, index=carps.index(sug), key="az_carp")
-        modo_f = c2.radio("Modo", ["Solo productos sin fotos", "Agregar las que faltan", "Reemplazar todas"],
-                          key="az_modo", horizontal=True,
-                          help="Reemplazar: quita las fotos actuales y carga las de Azure (las quitadas no se pueden "
-                               "restaurar con Deshacer).")
+        carpeta = st.selectbox("Carpeta de Azure (marca)", carps, index=carps.index(sug), key="az_carp")
         with st.spinner("Listando fotos de Azure…"):
             F = az.fotos(carpeta)
-        mt = az.matchear(P, F)
-        sin_az = mt[mt["n_azure"] == 0]
+        mt = az.matchear(P, F, M)
+        sin_sh = mt[mt["n_shopify"] == 0]
         m1, m2, m3, m4 = st.columns(4)
-        m1.metric("Productos", len(mt))
-        m2.metric("Sin fotos en Shopify", int((mt["n_shopify"] == 0).sum()))
-        m3.metric("Con fotos en Azure", int((mt["n_azure"] > 0).sum()))
-        m4.metric("Sin fotos en Azure", len(sin_az))
-        if modo_f == "Solo productos sin fotos":
-            cand = mt[(mt["n_shopify"] == 0) & (mt["n_azure"] > 0)]
-        elif modo_f == "Agregar las que faltan":
-            cand = mt[mt["n_azure"] > mt["n_shopify"]]
+        m1.metric("Sin fotos en Shopify", len(sin_sh))
+        m2.metric("…y con fotos en Azure", int((sin_sh["n_azure"] > 0).sum()))
+        m3.metric("Cambiaron en Azure", int(mt["cambio_azure"].sum()),
+                  help="Productos cuyas fotos en Azure son más nuevas que las cargadas en Shopify.")
+        m4.metric("Sin fotos en Azure", int((mt["n_azure"] == 0).sum()))
+
+        accion = st.segmented_control("¿Qué querés hacer?", ["🕳️ Sin fotos en Shopify", "🔄 Actualizar / reemplazar",
+                                                            "➕ Completar faltantes"],
+                                      default="🕳️ Sin fotos en Shopify", key="az_acc") or "🕳️ Sin fotos en Shopify"
+
+        if accion == "🕳️ Sin fotos en Shopify":
+            v = sin_sh.copy()
+            v["en_azure"] = v["n_azure"].map(lambda n: f"✅ Sí ({n})" if n else "❌ No")
+            f1, f2 = st.columns([1.4, 1])
+            ver = f1.radio("Mostrar", ["Todos", "Con fotos en Azure (se pueden cargar)", "Sin fotos en Azure"],
+                           horizontal=True, key="az_sin_ver")
+            solo_act = f2.toggle("Solo activos / no listados", value=False, key="az_sin_act")
+            if ver.startswith("Con"):
+                v = v[v["n_azure"] > 0]
+            elif ver.startswith("Sin"):
+                v = v[v["n_azure"] == 0]
+            if solo_act:
+                v = v[v["estado"].isin(["ACTIVE", "UNLISTED"])]
+            st.caption(f"{len(v)} producto(s). Los que no están en Azure muestran qué códigos se buscaron.")
+            if not v.empty:
+                elegidos = _tabla_fotos(v, "az_sin", ["en_azure", "codigos"], check=True)
+                xl = v.assign(estado=v["estado"].map(lambda x: ESTADOS.get(x, x).split(" ", 1)[-1]))[
+                    ["titulo", "estado", "en_azure", "n_azure", "codigo_azure", "skus", "codigos"]]
+                c1, c2 = st.columns([1, 2])
+                c1.download_button("⬇️ Descargar Excel", to_xlsx(xl), f"{nombre}_sin_fotos.xlsx")
+                cargables = elegidos[elegidos["n_azure"] > 0]
+                with c2:
+                    if ejecutar_ui("🖼️ Cargar fotos de Azure", len(cargables), "az_sin",
+                                   f"Cargar fotos en {len(cargables)} producto(s) que tienen fotos en Azure"):
+                        _cargar(cargables, False, carpeta)
+
+        elif accion == "🔄 Actualizar / reemplazar":
+            st.caption("Borra las fotos que tiene Shopify y carga las de Azure (primero carga las nuevas; si algo falla, "
+                       "el producto conserva sus fotos). Las fotos borradas no se pueden recuperar con Deshacer.")
+            como = st.radio("Elegir productos", ["Pegar códigos", "Los que cambiaron en Azure"], horizontal=True,
+                            key="az_upd_como")
+            if como == "Pegar códigos":
+                txt = st.text_area("Códigos de artículo, modelo-color o SKUs (uno por línea)", key="az_upd_cod", height=110)
+                selp, faltan = _match_codigos(P, txt)
+                if faltan:
+                    st.warning(f"No encontré en Shopify {len(faltan)}: " + ", ".join(faltan[:30]))
+                v = mt[mt["product_id"].isin(selp["product_id"])]
+            else:
+                v = mt[mt["cambio_azure"]]
+            sin_az = v[v["n_azure"] == 0]
+            if len(sin_az):
+                st.warning(f"{len(sin_az)} no tienen fotos en Azure y se omiten: " + ", ".join(sin_az["titulo"].head(10)))
+            v = v[v["n_azure"] > 0].copy()
+            v["azure_txt"] = v["azure_mod"].map(lambda d: d.strftime("%d/%m/%Y") if pd.notna(d) else "")
+            if v.empty:
+                st.caption("Sin productos para actualizar.")
+            else:
+                elegidos = _tabla_fotos(v, "az_upd", ["azure_txt"])
+                if ejecutar_ui("🔄 Reemplazar fotos", len(elegidos), "az_upd",
+                               f"Confirmo BORRAR las fotos actuales de {len(elegidos)} producto(s) y cargar las de Azure"):
+                    _cargar(elegidos, True, carpeta)
+
         else:
-            cand = mt[mt["n_azure"] > 0]
-        cand = cand.copy()
-        cand["estado"] = cand["estado"].map(lambda x: ESTADOS.get(x, x))
-        cand["foto"] = cand["foto"].fillna("")
-        cand.insert(0, "✔", True)
-        cand["vista_azure"] = cand["urls"].map(lambda u: u[0] if u else None)
-        ed = st.data_editor(cand[["✔", "vista_azure", "foto", "titulo", "estado", "n_shopify", "n_azure", "codigo_azure",
-                                  "product_id"]], hide_index=True, width="stretch", row_height=56,
-                            height=min(40 + 58 * len(cand), 460), key=f"az_ed_{carpeta}_{modo_f}_{len(cand)}",
-                            disabled=["vista_azure", "foto", "titulo", "estado", "n_shopify", "n_azure", "codigo_azure"],
-                            column_order=["✔", "vista_azure", "foto", "titulo", "estado", "n_shopify", "n_azure", "codigo_azure"],
-                            column_config={"vista_azure": st.column_config.ImageColumn("Azure", width="small"),
-                                           "foto": st.column_config.ImageColumn("Shopify", width="small"),
-                                           "titulo": st.column_config.TextColumn("Producto", width="large"),
-                                           "n_shopify": "Fotos Shopify", "n_azure": "Fotos Azure",
-                                           "codigo_azure": "Código en Azure"})
-        elegidos = cand[cand["product_id"].isin(ed.loc[ed["✔"], "product_id"])]
-        cols_dl = st.columns(2)
-        if not sin_az.empty:
-            cols_dl[0].download_button("⬇️ Productos sin foto en Azure (CSV)",
-                                       sin_az[["titulo", "skus", "estado"]].to_csv(index=False).encode("utf-8-sig"),
-                                       f"sin_foto_azure_{tienda}.csv", "text/csv")
-        if ejecutar_ui("🖼️ Cargar fotos", len(elegidos), "az"):
-            mm = M.groupby("product_id")["media_id"].apply(list).to_dict()
-            if modo_f == "Reemplazar todas":
-                quitar = [{"id": r["product_id"], "label": r["titulo"], "antes": None, "despues": mm.get(r["product_id"], [])}
-                          for _, r in elegidos.iterrows() if mm.get(r["product_id"])]
-                if quitar:
-                    ops.mostrar_resultado(ops.aplicar(tienda, "fotos_remove", quitar,
-                                                      f"{nombre}: quitar fotos actuales de {len(quitar)} productos",
-                                                      reversible=False, progress=progreso("Quitando fotos…")))
-            filas = []
-            urls_sh = M.groupby("product_id")["url"].apply(lambda s: {u.split("?")[0].rsplit("/", 1)[-1].lower() for u in s}).to_dict()
-            for _, r in elegidos.iterrows():
-                urls = r["urls"]
-                if modo_f == "Agregar las que faltan":  # evita duplicar las que ya están (por nombre de archivo)
-                    ya = urls_sh.get(r["product_id"], set())
-                    urls = [u for u in urls if u.rsplit("/", 1)[-1].lower() not in ya]
-                if urls:
-                    filas.append({"id": r["product_id"], "label": r["titulo"], "alt": r["titulo"],
-                                  "antes": [] if modo_f == "Reemplazar todas" else mm.get(r["product_id"], []),
-                                  "despues": urls})
-            res = ops.aplicar(tienda, "fotos_add", filas, f"{nombre}: cargar fotos de Azure/{carpeta} en {len(filas)} productos",
-                              {"carpeta": carpeta}, progress=progreso("Cargando fotos…"))
-            ops.mostrar_resultado(res)
-            st.caption("Shopify descarga las imágenes en segundo plano: pueden tardar 1–2 minutos en aparecer.")
+            v = mt[mt["n_azure"] > mt["n_shopify"]]
+            st.caption(f"{len(v)} producto(s) tienen más fotos en Azure que en Shopify. Se agregan solo las que faltan "
+                       "(por nombre de archivo), sin tocar las actuales.")
+            if not v.empty:
+                elegidos = _tabla_fotos(v, "az_fal")
+                if ejecutar_ui("➕ Agregar fotos faltantes", len(elegidos), "az_fal"):
+                    _cargar(elegidos, False, carpeta, solo_faltantes=True)

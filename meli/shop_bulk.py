@@ -29,7 +29,7 @@ CATALOGO_Q = """
         id sku barcode price compareAtPrice inventoryQuantity title
         inventoryItem { measurement { weight { value unit } } }
       } } }
-      media { edges { node { ... on MediaImage { id alt mediaContentType image { url } } } } }
+      media { edges { node { ... on MediaImage { id alt mediaContentType createdAt image { url } } } } }
       metafields { edges { node { id namespace key type value } } }
     } }
   }
@@ -100,13 +100,13 @@ def parse_catalogo(lines: list[dict], key: str, vendor: str = "") -> tuple[pd.Da
                           "peso": w.get("value"), "peso_unidad": w.get("unit")})
         elif "/MediaImage/" in gid:
             media.append({"product_id": par, "media_id": gid, "alt": x.get("alt") or "",
-                          "url": (x.get("image") or {}).get("url")})
+                          "url": (x.get("image") or {}).get("url"), "creado": x.get("createdAt") or ""})
         elif "/Metafield/" in gid:
             metas.append({"product_id": par, "metafield_id": gid, "namespace": x.get("namespace"), "key": x.get("key"),
                           "type": x.get("type"), "value": x.get("value")})
     V = pd.DataFrame(vars_, columns=["product_id", "variant_id", "sku", "barcode", "precio", "precio_tachado", "stock",
                                      "variante", "peso", "peso_unidad"])
-    M = pd.DataFrame(media, columns=["product_id", "media_id", "alt", "url"])
+    M = pd.DataFrame(media, columns=["product_id", "media_id", "alt", "url", "creado"])
     MF = pd.DataFrame(metas, columns=["product_id", "metafield_id", "namespace", "key", "type", "value"])
     vg = V.groupby("product_id")
     skus = vg["sku"].apply(list).to_dict() if not V.empty else {}
