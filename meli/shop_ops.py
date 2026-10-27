@@ -41,7 +41,8 @@ NOMBRES = {
     "alt": "Texto alternativo de fotos", "fotos_add": "Agregar fotos", "fotos_remove": "Quitar fotos",
     "metacampos": "Metacampos", "redirect_add": "Crear redirecciones", "redirect_remove": "Borrar redirecciones",
     "precios": "Precios Shopify", "coleccion_add": "Agregar a colección", "coleccion_remove": "Quitar de colección",
-    "contenido": "Descripción/SEO Shopify", "coleccion_seo": "SEO de colecciones", "meta_owner": "SEO de páginas/blog", "meli_descripcion": "Descripción MeLi", "meli_precio": "Precio MeLi",
+    "contenido": "Descripción/SEO Shopify", "coleccion_seo": "SEO de colecciones", "meta_owner": "SEO de páginas/blog",
+    "imagen_ref_add": "Imagen compartida a productos", "imagen_ref_remove": "Quitar imagen compartida", "meli_descripcion": "Descripción MeLi", "meli_precio": "Precio MeLi", "meli_fotos": "Imagen en publicaciones MeLi",
 }
 
 
@@ -51,6 +52,9 @@ M_COLL_SEO = """mutation($i: CollectionInput!) { collectionUpdate(input: $i) { c
 
 def _vars(accion: str, f: dict, meta: dict):
     d = f["despues"]
+    if accion in ("imagen_ref_add", "imagen_ref_remove"):   # misma imagen (Archivo) en muchos productos
+        campo = "referencesToAdd" if accion == "imagen_ref_add" else "referencesToRemove"
+        return M_ALT, {"files": [{"id": meta["file_id"], campo: [f["id"]]}]}
     if accion == "coleccion_seo":
         return M_COLL_SEO, {"i": {"id": f["id"], "seo": {"title": d.get("title", ""), "description": d.get("description", "")}}}
     if accion == "meta_owner":   # metacampo de cualquier recurso (páginas, artículos): f["meta"] = {namespace, key, type}
@@ -174,7 +178,7 @@ def inversa(entry: dict) -> tuple[str, list[dict], dict] | None:
         return None
     sw = lambda f, **k: {**{x: f[x] for x in ("meta", "alt") if x in f}, "id": f["id"], "label": f.get("label"),  # noqa: E731
                          "antes": f["despues"], "despues": f["antes"], **k}
-    if acc in ("estado", "tags_set", "seo", "coleccion_seo", "meta_owner", "alt", "metacampos", "contenido", "meli_descripcion", "meli_precio"):
+    if acc in ("estado", "tags_set", "seo", "coleccion_seo", "meta_owner", "alt", "metacampos", "contenido", "meli_descripcion", "meli_precio", "meli_fotos"):
         return acc, [sw(f) for f in ok], meta
     if acc == "precios":
         return acc, [sw(f) for f in ok], meta
@@ -186,6 +190,9 @@ def inversa(entry: dict) -> tuple[str, list[dict], dict] | None:
         return otra, [{"id": f["id"], "label": f.get("label"), "antes": f["despues"], "despues": f["despues"]} for f in ok], meta
     if acc in ("coleccion_add", "coleccion_remove"):
         otra = "coleccion_remove" if acc == "coleccion_add" else "coleccion_add"
+        return otra, [{"id": f["id"], "label": f.get("label"), "antes": None, "despues": None} for f in ok], meta
+    if acc in ("imagen_ref_add", "imagen_ref_remove"):
+        otra = "imagen_ref_remove" if acc == "imagen_ref_add" else "imagen_ref_add"
         return otra, [{"id": f["id"], "label": f.get("label"), "antes": None, "despues": None} for f in ok], meta
     if acc == "fotos_add":
         filas = [{"id": f["id"], "label": f.get("label"), "antes": None, "despues": f.get("creados") or []}
@@ -222,6 +229,9 @@ def _deshacer_meli(entry, acc, filas, desc):
         try:
             if acc == "meli_descripcion":
                 set_description(cli, f["id"], f["despues"] or "")
+            elif acc == "meli_fotos":
+                from .meli_fotos import poner_fotos
+                poner_fotos(cli, f["id"], f["despues"])
             else:
                 update_price(cli, f["id"], f["despues"], (entry.get("meta") or {}).get("variations", {}).get(f["id"]))
             f["ok"], f["error"] = True, ""

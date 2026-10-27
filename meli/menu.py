@@ -29,6 +29,8 @@ MENU = {
     "Imágenes": [
         ("views/shop_imagenes.py", "Imágenes Shopify", "photo_library", "🖼️",
          "Fotos de productos desde Azure y texto alternativo de productos, banners y archivos.", "SHOPIFY"),
+        ("views/meli_imagenes.py", "Imágenes MeLi", "add_photo_alternate", "📤",
+         "Una misma imagen (ej. tabla de talles) a muchas publicaciones de una vez.", "MELI"),
     ],
     "SEO y contenido": [
         ("views/contenido.py", "Descripciones SEO / GEO", "auto_awesome", "📝",
