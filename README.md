@@ -96,7 +96,7 @@ Probar en **Cuentas → Probar conexión Shopify**.
 - Lectura del catálogo y cambios grandes (≥ 60 productos) usan **Bulk Operations** de Shopify (rápido y sin límite de API).
 
 Permisos (scopes) que necesita la app de Shopify:
-`read_products, write_products, read_inventory, write_files, write_online_store_navigation, read_publications, write_publications`
+`read_products, write_products, read_inventory, write_files, write_online_store_navigation, read_publications, write_publications, write_content`
 → Dev Dashboard → tu app → nueva versión con esos scopes → **Release** → en la app: Cuentas → **Conectar tienda** de nuevo en cada tienda.
 
 Secrets opcionales: `AZURE_CATALOGO_URL` (default `https://distriecomm.blob.core.windows.net/catalogo`),

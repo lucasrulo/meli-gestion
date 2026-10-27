@@ -41,13 +41,24 @@ NOMBRES = {
     "alt": "Texto alternativo de fotos", "fotos_add": "Agregar fotos", "fotos_remove": "Quitar fotos",
     "metacampos": "Metacampos", "redirect_add": "Crear redirecciones", "redirect_remove": "Borrar redirecciones",
     "precios": "Precios Shopify", "coleccion_add": "Agregar a colección", "coleccion_remove": "Quitar de colección",
-    "contenido": "Descripción/SEO Shopify", "meli_descripcion": "Descripción MeLi", "meli_precio": "Precio MeLi",
+    "contenido": "Descripción/SEO Shopify", "coleccion_seo": "SEO de colecciones", "meta_owner": "SEO de páginas/blog", "meli_descripcion": "Descripción MeLi", "meli_precio": "Precio MeLi",
 }
 
 
 # ---------------------------------------------------------------- variables por acción
+M_COLL_SEO = """mutation($i: CollectionInput!) { collectionUpdate(input: $i) { collection { id } userErrors { field message } } }"""
+
+
 def _vars(accion: str, f: dict, meta: dict):
     d = f["despues"]
+    if accion == "coleccion_seo":
+        return M_COLL_SEO, {"i": {"id": f["id"], "seo": {"title": d.get("title", ""), "description": d.get("description", "")}}}
+    if accion == "meta_owner":   # metacampo de cualquier recurso (páginas, artículos): f["meta"] = {namespace, key, type}
+        m = f["meta"]
+        if d in (None, ""):
+            return M_META_DEL, {"m": [{"ownerId": f["id"], "namespace": m["namespace"], "key": m["key"]}]}
+        return M_META_SET, {"m": [{"ownerId": f["id"], "namespace": m["namespace"], "key": m["key"],
+                                   "type": m.get("type", "single_line_text_field"), "value": str(d)}]}
     if accion == "estado":
         return M_STATUS, {"p": {"id": f["id"], "status": d}}
     if accion == "tags_set":
@@ -115,7 +126,8 @@ def aplicar(tienda: str, accion: str, filas: list[dict], descripcion: str, meta:
         def prog(p, base=hechos, n=len(idxs)):
             if progress:
                 progress((base + p * n) / len(filas))
-        out = ejecutar(tienda, mut, [pares[i][1] for i in idxs], progress=prog)
+        out = ejecutar(tienda, mut, [pares[i][1] for i in idxs], progress=prog,
+                       version=COLL_VERSION if accion == "coleccion_seo" else None)
         for i, r in zip(idxs, out):
             res[i] = r
         hechos += len(idxs)
@@ -160,8 +172,9 @@ def inversa(entry: dict) -> tuple[str, list[dict], dict] | None:
     ok = [f for f in entry["filas"] if f.get("ok")]
     if not ok or not entry.get("reversible", True):
         return None
-    sw = lambda f, **k: {"id": f["id"], "label": f.get("label"), "antes": f["despues"], "despues": f["antes"], **k}  # noqa: E731
-    if acc in ("estado", "tags_set", "seo", "alt", "metacampos", "contenido", "meli_descripcion", "meli_precio"):
+    sw = lambda f, **k: {**{x: f[x] for x in ("meta", "alt") if x in f}, "id": f["id"], "label": f.get("label"),  # noqa: E731
+                         "antes": f["despues"], "despues": f["antes"], **k}
+    if acc in ("estado", "tags_set", "seo", "coleccion_seo", "meta_owner", "alt", "metacampos", "contenido", "meli_descripcion", "meli_precio"):
         return acc, [sw(f) for f in ok], meta
     if acc == "precios":
         return acc, [sw(f) for f in ok], meta

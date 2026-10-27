@@ -20,15 +20,21 @@ MENU = {
         ("views/invitaciones.py", "Invitaciones", "mark_email_unread", "📨",
          "Aceptar campañas de MeLi donde sos candidato.", "MELI"),
     ],
-    "Catálogo y contenido": [
-        ("views/contenido.py", "Contenido SEO / GEO", "auto_awesome", "📝",
-         "Descripciones, ficha técnica y SEO con IA, en MeLi y Shopify.", "MELI + SHOPIFY"),
+    "Catálogo": [
         ("views/shop_catalogo.py", "Catálogo Shopify", "inventory_2", "🗂️",
-         "Estados, tags, colecciones, metacampos y fotos de Azure en masa.", "SHOPIFY"),
-        ("views/shop_seo.py", "SEO y calidad Shopify", "travel_explore", "🩺",
-         "Auditoría, SEO masivo, texto alternativo y redirecciones 301.", "SHOPIFY"),
+         "Estados, tags, colecciones (y su Excel por modelo-color) y metacampos en masa.", "SHOPIFY"),
         ("views/clips.py", "Clips y video MeLi", "movie", "🎬",
          "Qué publicaciones tienen clip y cuáles grabar primero.", "MELI"),
+    ],
+    "Imágenes": [
+        ("views/shop_imagenes.py", "Imágenes Shopify", "photo_library", "🖼️",
+         "Fotos de productos desde Azure y texto alternativo de productos, banners y archivos.", "SHOPIFY"),
+    ],
+    "SEO y contenido": [
+        ("views/contenido.py", "Descripciones SEO / GEO", "auto_awesome", "📝",
+         "Descripciones, ficha técnica y SEO de cada producto con IA, en MeLi y Shopify.", "MELI + SHOPIFY"),
+        ("views/shop_seo.py", "SEO y calidad Shopify", "travel_explore", "🔎",
+         "Auditoría y SEO de productos, colecciones, páginas y blog, más redirecciones 301.", "SHOPIFY"),
     ],
     "Marca y control": [
         ("views/proteccion.py", "Protección de marca", "shield", "🛡️",

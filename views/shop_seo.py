@@ -9,14 +9,15 @@ from meli.shop_ui import ESTADOS, cargar, colecciones, ejecutar_ui, pick_store, 
 from meli.shopify import ShopifyClient, ShopifyError, html_to_text, stores
 from meli.theme import hero
 
-hero("SEO y calidad Shopify", "Auditoría del catálogo, SEO masivo, texto alternativo de fotos y redirecciones 301.",
+hero("SEO y calidad Shopify", "Auditoría del catálogo y SEO de productos, colecciones, páginas y blog, más redirecciones 301.",
      "SHOPIFY · SEO")
 tienda = pick_store()
 nombre = stores()[tienda]["nombre"]
 P, V, M, MF = cargar(tienda)
 api_key = secret("ANTHROPIC_API_KEY")
 
-t_aud, t_seo, t_alt, t_red = st.tabs(["🩺 Auditoría", "🔎 SEO masivo", "🖼️ Texto alternativo", "↪️ Redirecciones 301"])
+t_aud, t_seo, t_col, t_pag, t_red = st.tabs(["🩺 Auditoría", "🔎 SEO de productos", "📚 SEO de colecciones",
+                                             "📄 SEO de páginas y blog", "↪️ Redirecciones 301"])
 
 
 def _seo_reglas(rows: pd.DataFrame) -> pd.DataFrame:
@@ -101,7 +102,7 @@ with t_aud:
             with cfix:
                 if ejecutar_ui("🖼️ Completar alt con el título (gratis)", len(pids), "fix_alt"):
                     _aplicar_alt(_alt_reglas(pids), f"{nombre}: alt con reglas desde auditoría")
-                st.caption("Para un alt que describa cada foto, usá la pestaña **Texto alternativo** con IA.")
+                st.caption("Para un alt que describa cada foto, usá **Imágenes Shopify → Alt de productos** con IA.")
         elif fix == "tachado":
             with cfix:
                 if ejecutar_ui("🧹 Quitar tachados inválidos", len(pids), "fix_tach"):
@@ -127,9 +128,9 @@ with t_aud:
                                                       progress=progreso("Estados…")))
         elif fix == "fotos":
             try:
-                cfix.page_link("views/shop_catalogo.py", label="Ir a Catálogo Shopify → Fotos (Azure)", icon="🖼️")
+                cfix.page_link("views/shop_imagenes.py", label="Ir a Imágenes Shopify → Fotos de productos", icon="🖼️")
             except Exception:  # noqa: BLE001
-                cfix.caption("Cargalas desde **Catálogo Shopify → Fotos (Azure)**.")
+                cfix.caption("Cargalas desde **Imágenes Shopify → Fotos de productos**.")
 
 # ================================================================ 2. SEO masivo
 with t_seo:
@@ -163,59 +164,146 @@ with t_seo:
                 _aplicar_seo(camb, f"{nombre}: SEO masivo ({len(camb)} productos)")
                 st.session_state.pop(kg, None)
 
-# ================================================================ 3. texto alternativo
-with t_alt:
-    st.caption("El texto alternativo describe cada foto para Google Imágenes y lectores de pantalla.")
-    todas = st.toggle("Incluir fotos que ya tienen alt", key="alt_todas")
-    sel = selector(P, "alt", default_modo="Filtros")
-    if not sel.empty:
-        pids = set(sel["product_id"])
-        m = M.merge(P[["product_id", "titulo"]], on="product_id")
-        m["orden"] = m.groupby("product_id").cumcount()
-        m["total"] = m.groupby("product_id")["media_id"].transform("count")
-        m = m[m["product_id"].isin(pids)]
-        if not todas:
-            m = m[m["alt"].fillna("").str.strip() == ""]
-        ka = f"alt_gen_{tienda}"
-        modelo = secret("ANTHROPIC_MODEL_ALT", "claude-haiku-4-5")
-        c1, c2, c3 = st.columns([1, 1, 2], vertical_alignment="center")
-        if c1.button("💡 Con reglas (gratis)", key="alt_r", width="stretch", disabled=m.empty):
-            st.session_state[ka] = {r["media_id"]: ct.alt_reglas(r["titulo"], r["orden"], r["total"]) for _, r in m.iterrows()}
-        if c2.button("✨ Con IA (mira la foto)", key="alt_ia", width="stretch", disabled=m.empty or not api_key,
-                     help=None if api_key else "Cargá ANTHROPIC_API_KEY en los Secrets."):
-            from concurrent.futures import ThreadPoolExecutor, as_completed
-            bar, gasto, gen = progreso("IA describiendo fotos…"), 0.0, {}
-            with ThreadPoolExecutor(max_workers=4) as ex:
-                futs = {ex.submit(ct.ai_alt, api_key, modelo, r["url"], r["titulo"]): r["media_id"] for _, r in m.iterrows()}
-                for i, f in enumerate(as_completed(futs), 1):
-                    try:
-                        txt, c = f.result()
-                        gen[futs[f]], gasto = txt, gasto + c
-                    except Exception as e:  # noqa: BLE001
-                        st.warning(str(e)[:200])
-                    bar(i / len(futs))
-            st.session_state[ka] = gen
-            st.toast(f"Listo · US$ {gasto:.3f}")
-        c3.caption(f"{len(m)} foto(s) · IA con {modelo}: ~US$ {len(m) * 0.002:.2f} aprox.")
-        gen = st.session_state.get(ka, {})
-        if m.empty:
-            st.success("Todas las fotos de estos productos ya tienen texto alternativo ✅")
-        else:
-            m = m.assign(nuevo_alt=m["media_id"].map(gen).fillna(m["alt"].fillna("")).astype(str), alt=m["alt"].fillna("").astype(str))
-            ed = st.data_editor(m[["url", "titulo", "alt", "nuevo_alt", "media_id"]], hide_index=True, width="stretch",
-                                row_height=60, height=min(40 + 62 * len(m), 460), key=f"alt_ed_{len(m)}_{len(gen)}",
-                                column_order=["url", "titulo", "alt", "nuevo_alt"], disabled=["url", "titulo", "alt"],
-                                column_config={"url": st.column_config.ImageColumn("Foto", width="small"),
-                                               "titulo": st.column_config.TextColumn("Producto", width="medium"),
-                                               "alt": st.column_config.TextColumn("Alt actual"),
-                                               "nuevo_alt": st.column_config.TextColumn("✏️ Alt nuevo", width="large",
-                                                                                        max_chars=125)})
-            camb = ed[ed["nuevo_alt"].fillna("") != ed["alt"].fillna("")].merge(m[["media_id"]], on="media_id")
-            if ejecutar_ui("🖼️ Guardar texto alternativo", len(camb), "alt", f"Confirmo actualizar {len(camb)} foto(s)"):
-                _aplicar_alt(camb, f"{nombre}: texto alternativo de {len(camb)} fotos")
-                st.session_state.pop(ka, None)
+# ================================================================ 3. SEO de colecciones
+def _grilla_seo(df: pd.DataFrame, key: str, titulo_col: str = "titulo"):
+    """Editor de SEO title / meta con contador. df: id, titulo, seo_title, seo_description, nuevo_title, nuevo_meta."""
+    df = df.assign(c_t=df["nuevo_title"].str.len(), c_m=df["nuevo_meta"].str.len())
+    return st.data_editor(df, hide_index=True, width="stretch", key=key,
+                          column_order=[titulo_col, "seo_title", "nuevo_title", "c_t", "nuevo_meta", "c_m"],
+                          disabled=[titulo_col, "seo_title", "c_t", "c_m"],
+                          column_config={titulo_col: st.column_config.TextColumn("Nombre", width="medium"),
+                                         "seo_title": st.column_config.TextColumn("Title actual"),
+                                         "nuevo_title": st.column_config.TextColumn("✏️ SEO title", width="medium", max_chars=70),
+                                         "c_t": st.column_config.NumberColumn("#", width="small"),
+                                         "nuevo_meta": st.column_config.TextColumn("✏️ Meta description", width="large",
+                                                                                   max_chars=160),
+                                         "c_m": st.column_config.NumberColumn("#", width="small")})
 
-# ================================================================ 4. redirecciones
+
+@st.cache_data(ttl=600, show_spinner=False)
+def _colecciones_seo(key: str, nonce) -> pd.DataFrame:
+    q = """query($c: String) { collections(first: 250, after: $c) { pageInfo { hasNextPage endCursor }
+             nodes { id title handle descriptionHtml seo { title description } productsCount { count } } } }"""
+    cli, rows, cur = ShopifyClient(key), [], None
+    while True:
+        d = cli.gql(q, {"c": cur}, version=ops.COLL_VERSION)["collections"]
+        rows += [{"id": n["id"], "titulo": n["title"], "handle": n["handle"],
+                  "texto": html_to_text(n.get("descriptionHtml") or ""),
+                  "seo_title": (n.get("seo") or {}).get("title") or "", "seo_description": (n.get("seo") or {}).get("description") or "",
+                  "productos": (n.get("productsCount") or {}).get("count")} for n in d["nodes"]]
+        if not d["pageInfo"]["hasNextPage"]:
+            break
+        cur = d["pageInfo"]["endCursor"]
+    return pd.DataFrame(rows, columns=["id", "titulo", "handle", "texto", "seo_title", "seo_description", "productos"])
+
+
+def _sugerir(nombre_item: str, texto: str, tipo: str) -> tuple[str, str]:
+    t, m = ct.seo_sugerido(nombre_item, nombre, texto)
+    if not texto.strip():
+        m = ct._cortar(f"{tipo} {nombre_item} en la tienda oficial de {nombre}. Productos originales.", 155)
+    return t, m
+
+
+with t_col:
+    nkc = f"collseo_nonce_{tienda}"
+    try:
+        C = _colecciones_seo(tienda, st.session_state.get(nkc, 0))
+    except ShopifyError as e:
+        st.error(str(e))
+        C = pd.DataFrame(columns=["id", "titulo", "handle", "texto", "seo_title", "seo_description", "productos"])
+    falt = C[(C["seo_title"] == "") | (C["seo_description"] == "")]
+    st.caption(f"{len(C)} colecciones · **{len(falt)} sin SEO title o meta**. Las colecciones suelen ser las páginas que "
+               "más tráfico de Google traen (ej. «zapatillas running hombre»).")
+    f1, f2 = st.columns([1, 2])
+    solo = f1.toggle("Solo sin SEO", value=True, key="cs_solo")
+    q = f2.text_input("Buscar colección", key="cs_q")
+    v = falt if solo else C
+    if q:
+        v = v[v["titulo"].str.contains(q, case=False, regex=False)]
+    kg = f"cs_gen_{tienda}"
+    if st.button("💡 Generar con reglas (gratis)", key="cs_gen", disabled=v.empty):
+        st.session_state[kg] = {r["id"]: _sugerir(r["titulo"], r["texto"], "Descubrí") for _, r in v.iterrows()}
+    gen = st.session_state.get(kg, {})
+    if not v.empty:
+        v = v.assign(nuevo_title=v["id"].map(lambda i: gen.get(i, (None,))[0]).fillna(v["seo_title"]),
+                     nuevo_meta=v["id"].map(lambda i: gen.get(i, (None, None))[1]).fillna(v["seo_description"]))
+        ed = _grilla_seo(v, f"cs_ed_{len(v)}_{len(gen)}")
+        camb = ed[(ed["nuevo_title"] != ed["seo_title"]) | (ed["nuevo_meta"] != ed["seo_description"])]
+        if ejecutar_ui("📚 Guardar SEO de colecciones", len(camb), "cs"):
+            filas = [{"id": r["id"], "label": r["titulo"],
+                      "antes": {"title": r["seo_title"], "description": r["seo_description"]},
+                      "despues": {"title": r["nuevo_title"], "description": r["nuevo_meta"]}} for _, r in camb.iterrows()]
+            ops.mostrar_resultado(ops.aplicar(tienda, "coleccion_seo", filas,
+                                              f"{nombre}: SEO de {len(filas)} colecciones", progress=progreso("SEO…")))
+            st.session_state.pop(kg, None)
+            st.session_state[nkc] = st.session_state.get(nkc, 0) + 1
+
+# ================================================================ 4. SEO de páginas y blog
+@st.cache_data(ttl=600, show_spinner=False)
+def _paginas(key: str, nonce) -> pd.DataFrame:
+    campos = """id title handle body
+                tt: metafield(namespace: "global", key: "title_tag") { value }
+                dt: metafield(namespace: "global", key: "description_tag") { value }"""
+    cli, rows = ShopifyClient(key), []
+    for tipo, raiz, extra in (("Página", "pages", ""), ("Blog", "articles", "blog { title }")):
+        cur = None
+        while True:
+            q = f"""query($c: String) {{ {raiz}(first: 250, after: $c) {{ pageInfo {{ hasNextPage endCursor }}
+                     nodes {{ {campos} {extra} }} }} }}"""
+            d = cli.gql(q, {"c": cur})[raiz]
+            for n in d["nodes"]:
+                rows.append({"id": n["id"], "tipo": tipo + (f" · {n['blog']['title']}" if n.get("blog") else ""),
+                             "titulo": n["title"], "handle": n["handle"], "texto": html_to_text(n.get("body") or ""),
+                             "seo_title": (n.get("tt") or {}).get("value") or "",
+                             "seo_description": (n.get("dt") or {}).get("value") or ""})
+            if not d["pageInfo"]["hasNextPage"]:
+                break
+            cur = d["pageInfo"]["endCursor"]
+    return pd.DataFrame(rows, columns=["id", "tipo", "titulo", "handle", "texto", "seo_title", "seo_description"])
+
+
+with t_pag:
+    nkp = f"pagseo_nonce_{tienda}"
+    try:
+        G = _paginas(tienda, st.session_state.get(nkp, 0))
+    except ShopifyError as e:
+        st.error(str(e))
+        G = pd.DataFrame(columns=["id", "tipo", "titulo", "handle", "texto", "seo_title", "seo_description"])
+    falt = G[(G["seo_title"] == "") | (G["seo_description"] == "")]
+    st.caption(f"{len(G)} páginas y notas de blog · **{len(falt)} sin SEO title o meta** (ej. Guía de talles, "
+               "Cambios y devoluciones, Sucursales, notas del blog).")
+    f1, f2 = st.columns([1, 2])
+    solo = f1.toggle("Solo sin SEO", value=True, key="ps_solo")
+    q = f2.text_input("Buscar", key="ps_q")
+    v = falt if solo else G
+    if q:
+        v = v[v["titulo"].str.contains(q, case=False, regex=False)]
+    kg = f"ps_gen_{tienda}"
+    if st.button("💡 Generar con reglas (gratis)", key="ps_gen", disabled=v.empty):
+        st.session_state[kg] = {r["id"]: (ct.seo_sugerido(r["titulo"], nombre, "")[0],
+                                          ct._cortar(r["texto"], 155) if r["texto"].strip() else
+                                          ct._cortar(f"{r['titulo']} — información de la tienda oficial de {nombre}.", 155))
+                                for _, r in v.iterrows()}
+    gen = st.session_state.get(kg, {})
+    if not v.empty:
+        v = v.assign(nuevo_title=v["id"].map(lambda i: gen.get(i, (None,))[0]).fillna(v["seo_title"]),
+                     nuevo_meta=v["id"].map(lambda i: gen.get(i, (None, None))[1]).fillna(v["seo_description"]),
+                     nombre_tipo=v["tipo"] + " · " + v["titulo"])
+        ed = _grilla_seo(v, f"ps_ed_{len(v)}_{len(gen)}", "nombre_tipo")
+        filas = []
+        for _, r in ed.iterrows():
+            for col_old, col_new, k_ in (("seo_title", "nuevo_title", "title_tag"), ("seo_description", "nuevo_meta", "description_tag")):
+                if (r[col_new] or "") != (r[col_old] or ""):
+                    filas.append({"id": r["id"], "label": f"{r['titulo']} ({'title' if k_ == 'title_tag' else 'meta'})",
+                                  "meta": {"namespace": "global", "key": k_, "type": "single_line_text_field"},
+                                  "antes": r[col_old] or None, "despues": r[col_new] or None})
+        if ejecutar_ui("📄 Guardar SEO de páginas", len(filas), "ps", f"Confirmo guardar {len(filas)} cambio(s)"):
+            ops.mostrar_resultado(ops.aplicar(tienda, "meta_owner", filas, f"{nombre}: SEO de páginas/blog ({len(filas)} campos)",
+                                              progress=progreso("SEO…")))
+            st.session_state.pop(kg, None)
+            st.session_state[nkp] = st.session_state.get(nkp, 0) + 1
+
+# ================================================================ 5. redirecciones
 with t_red:
     @st.cache_data(ttl=300, show_spinner=False)
     def _redirects(key: str, nonce: int) -> pd.DataFrame:
