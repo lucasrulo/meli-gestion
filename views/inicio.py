@@ -27,30 +27,12 @@ if accounts:
 else:
     st.warning("Todavía no hay cuentas conectadas. Empezá por **Cuentas**.")
 
-MODULOS = [
-    ("Promociones", [
-        ("views/campanas.py", "📣", "Campañas", "Crear, editar y auditar campañas propias y de MeLi.", "SELLER CAMPAIGN"),
-        ("views/cargar_promo.py", "🏷️", "Cargar a campaña", "Sumar o quitar modelos-color con precio o %.", "BULK"),
-        ("views/descuentos.py", "🔖", "Descuentos", "Descuentos con nombre o individuales, en bloque.", "BULK"),
-        ("views/invitaciones.py", "📨", "Invitaciones MeLi", "Aceptar campañas de MeLi donde sos candidato.", "CO-FONDEO"),
-    ]),
-    ("Precios", [
-        ("views/omnicanal.py", "🔀", "Precios omnicanal", "Un precio por modelo-color en MeLi y Shopify, en uno o ambos.", "MELI + SHOPIFY"),
-        ("views/analisis_precios.py", "📊", "Análisis de precios", "Brechas, cobertura y stock entre canales.", "INTELIGENCIA"),
-        ("views/precios.py", "💲", "Precios masivos MeLi", "Actualizar por modelo-color con redondeo inteligente.", "BULK"),
-        ("views/inconsistencias.py", "⚖️", "Precios distintos", "Detectar e igualar talles con precios diferentes.", "AUDITORÍA"),
-    ]),
-    ("Catálogo y marca", [
-        ("views/contenido.py", "📝", "Contenido SEO / GEO", "Descripciones, ficha técnica y SEO en MeLi y Shopify con IA.", "IA · 2 CANALES"),
-        ("views/proteccion.py", "🛡️", "Protección de marca", "Vendedores sospechosos y registro de denuncias.", "RIESGO"),
-        ("views/cuentas.py", "🔑", "Cuentas", "Conectar y administrar las tiendas oficiales.", "CONFIG"),
-    ]),
-]
+from meli.menu import MENU  # noqa: E402
 
-for seccion, mods in MODULOS:
+for seccion, mods in MENU.items():
     st.markdown(f"### {seccion}")
-    cols = st.columns(max(3, min(len(mods), 4)))
-    for col, (page, ic, tit, txt, badge) in zip(cols, mods):
-        with col:
-            card(ic, tit, txt, badge)
+    cols = st.columns(4)
+    for i, (page, tit, _ic, emoji, txt, badge) in enumerate(mods):
+        with cols[i % 4]:
+            card(emoji, tit, txt, badge)
             st.page_link(page, label=f"Abrir {tit} →")
