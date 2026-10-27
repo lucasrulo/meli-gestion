@@ -10,6 +10,8 @@ from meli.config import secret
 from meli.shop_ui import ESTADOS, cargar, colecciones as _colecciones, ejecutar_ui, pick_store, progreso, \
     publicaciones as _publicaciones, selector
 from meli.shopify import ShopifyClient, ShopifyError, html_to_text, stores
+from meli.excel import to_xlsx
+from meli.inconsistencias import strip_size
 from meli.theme import hero
 
 hero("Catálogo Shopify", "Estados, tags, colecciones, metacampos y fotos — en masa, con historial para deshacer.",
@@ -19,7 +21,8 @@ nombre = stores()[tienda]["nombre"]
 P, V, M, MF = cargar(tienda)
 api_key = secret("ANTHROPIC_API_KEY")
 
-t_est, t_tag, t_meta, t_fot = st.tabs(["🚦 Estados y canales", "🏷️ Tags y colecciones", "🧩 Metacampos", "🖼️ Fotos (Azure)"])
+t_est, t_tag, t_col, t_meta, t_fot = st.tabs(["🚦 Estados y canales", "🏷️ Tags y colecciones", "📚 Ver colecciones",
+                                               "🧩 Metacampos", "🖼️ Fotos (Azure)"])
 
 
 def _filas(sel: pd.DataFrame, antes_col, despues) -> list[dict]:
@@ -191,6 +194,82 @@ with t_tag:
                 st.session_state[f"coll_nonce_{tienda}"] = st.session_state.get(f"coll_nonce_{tienda}", 0) + 1
             except ShopifyError as e:
                 st.error(str(e))
+
+# ================================================================ 2b. ver / descargar colecciones
+@st.cache_data(ttl=600, show_spinner=False)
+def _productos_coleccion(key: str, cid: str, nonce) -> list[str]:
+    q = """query($id: ID!, $c: String) { collection(id: $id) { products(first: 250, after: $c) {
+             pageInfo { hasNextPage endCursor } nodes { id } } } }"""
+    cli, ids, cur = ShopifyClient(key), [], None
+    while True:
+        d = ((cli.gql(q, {"id": cid, "c": cur}, version=ops.COLL_VERSION).get("collection") or {}).get("products")) or {}
+        ids += [n["id"] for n in d.get("nodes") or []]
+        if not (d.get("pageInfo") or {}).get("hasNextPage"):
+            return ids
+        cur = d["pageInfo"]["endCursor"]
+
+
+with t_col:
+    nkc = f"coll_nonce_{tienda}"
+    try:
+        cols_all = _colecciones(tienda, st.session_state.get(nkc, 0))
+    except ShopifyError as e:
+        st.error(str(e))
+        cols_all = pd.DataFrame(columns=["id", "titulo", "handle", "tipo", "productos"])
+    cl = cols_all.set_index("id")
+    elegidas = st.multiselect("Colecciones (escribí para buscar)", cols_all["id"].tolist(), key="vc_sel",
+                              format_func=lambda i: f"{cl.loc[i, 'titulo']} · {cl.loc[i, 'tipo']} · "
+                                                    f"{cl.loc[i, 'productos']} productos")
+    c1, c2 = st.columns([1, 1])
+    estados_vc = c1.multiselect("Estados", list(ESTADOS), default=["ACTIVE"], format_func=ESTADOS.get, key="vc_est")
+    solo_stock_vc = c2.toggle("Solo con stock", value=False, key="vc_stock")
+    if elegidas:
+        filas = []
+        info = P.set_index("product_id")
+        for cid in elegidas:
+            try:
+                with st.spinner(f"Leyendo «{cl.loc[cid, 'titulo']}»…"):
+                    pids = _productos_coleccion(tienda, cid, st.session_state.get(nkc, 0))
+            except ShopifyError as e:
+                st.error(str(e))
+                continue
+            vv = V[V["product_id"].isin(pids)].copy()
+            vv["modelo_color"] = vv["sku"].map(lambda x: strip_size(x) if x else None)
+            for (pid, mc), g in vv.groupby(["product_id", "modelo_color"], dropna=False):
+                if pid not in info.index:
+                    continue
+                p = info.loc[pid]
+                filas.append({
+                    "coleccion": cl.loc[cid, "titulo"], "modelo_color": mc or "(sin SKU)", "producto": p["titulo"],
+                    "estado": p["estado"], "tipo": p["tipo"], "talles": len(g),
+                    "stock": int(g["stock"].fillna(0).sum()), "precio": g["precio"].max(),
+                    "precio_tachado": g["precio_tachado"].max(), "foto": p["foto"], "url": p["url"] or "",
+                })
+        out = pd.DataFrame(filas, columns=["coleccion", "modelo_color", "producto", "estado", "tipo", "talles", "stock",
+                                           "precio", "precio_tachado", "foto", "url"])
+        if estados_vc:
+            out = out[out["estado"].isin(estados_vc)]
+        if solo_stock_vc:
+            out = out[out["stock"] > 0]
+        out = out.sort_values(["coleccion", "producto", "modelo_color"])
+        m1, m2, m3 = st.columns(3)
+        m1.metric("Modelo-color", out["modelo_color"].nunique())
+        m2.metric("Productos", out["producto"].nunique())
+        m3.metric("Stock total", f"{int(out['stock'].sum()):,}".replace(",", "."))
+        st.dataframe(out.assign(estado=out["estado"].map(lambda x: ESTADOS.get(x, x))), hide_index=True, width="stretch",
+                     row_height=50, height=min(40 + 52 * len(out), 520),
+                     column_order=["foto", "coleccion", "modelo_color", "producto", "estado", "talles", "stock", "precio",
+                                   "precio_tachado", "url"],
+                     column_config={"foto": st.column_config.ImageColumn("", width="small"),
+                                    "coleccion": "Colección", "modelo_color": "Modelo-color",
+                                    "producto": st.column_config.TextColumn("Producto", width="large"),
+                                    "precio": st.column_config.NumberColumn("Precio", format="$ %d"),
+                                    "precio_tachado": st.column_config.NumberColumn("Tachado", format="$ %d"),
+                                    "url": st.column_config.LinkColumn("Link", display_text="ver")})
+        nombre_x = cl.loc[elegidas[0], "handle"] if len(elegidas) == 1 else "colecciones"
+        st.download_button("⬇️ Descargar Excel", to_xlsx(out.drop(columns=["foto"]).assign(
+            estado=out["estado"].map(lambda x: ESTADOS.get(x, x).split(" ", 1)[-1]))),
+            f"{nombre}_{nombre_x}.xlsx", type="primary")
 
 # ================================================================ 3. metacampos
 with t_meta:
