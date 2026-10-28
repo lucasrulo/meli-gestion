@@ -43,7 +43,7 @@ class MeliClient:
         self.tm = tm
         self.user_id = str(user_id)
 
-    def request(self, method: str, path: str, params=None, json=None, retries: int = 5):
+    def request(self, method: str, path: str, params=None, json=None, retries: int = 5, headers: dict | None = None):
         forced = False
         for attempt in range(retries):
             token = self.tm.get_access_token(self.user_id, force=forced)
@@ -54,7 +54,7 @@ class MeliClient:
                     f"{API_BASE}{path}",
                     params=params,
                     json=json,
-                    headers={"Authorization": f"Bearer {token}", "Accept": "application/json"},
+                    headers={"Authorization": f"Bearer {token}", "Accept": "application/json", **(headers or {})},
                     timeout=40,
                 )
             except requests.RequestException as e:

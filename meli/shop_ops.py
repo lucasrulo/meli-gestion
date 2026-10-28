@@ -42,7 +42,7 @@ NOMBRES = {
     "metacampos": "Metacampos", "redirect_add": "Crear redirecciones", "redirect_remove": "Borrar redirecciones",
     "precios": "Precios Shopify", "coleccion_add": "Agregar a colección", "coleccion_remove": "Quitar de colección",
     "contenido": "Descripción/SEO Shopify", "coleccion_seo": "SEO de colecciones", "meta_owner": "SEO de páginas/blog",
-    "imagen_ref_add": "Imagen compartida a productos", "imagen_ref_remove": "Quitar imagen compartida", "meli_descripcion": "Descripción MeLi", "meli_precio": "Precio MeLi", "meli_fotos": "Imagen en publicaciones MeLi",
+    "imagen_ref_add": "Imagen compartida a productos", "imagen_ref_remove": "Quitar imagen compartida", "meli_descripcion": "Descripción MeLi", "meli_precio": "Precio MeLi", "meli_fotos": "Imagen en publicaciones MeLi", "meli_ads": "Publicidad MeLi",
 }
 
 
@@ -178,7 +178,7 @@ def inversa(entry: dict) -> tuple[str, list[dict], dict] | None:
         return None
     sw = lambda f, **k: {**{x: f[x] for x in ("meta", "alt") if x in f}, "id": f["id"], "label": f.get("label"),  # noqa: E731
                          "antes": f["despues"], "despues": f["antes"], **k}
-    if acc in ("estado", "tags_set", "seo", "coleccion_seo", "meta_owner", "alt", "metacampos", "contenido", "meli_descripcion", "meli_precio", "meli_fotos"):
+    if acc in ("estado", "tags_set", "seo", "coleccion_seo", "meta_owner", "alt", "metacampos", "contenido", "meli_descripcion", "meli_precio", "meli_fotos", "meli_ads"):
         return acc, [sw(f) for f in ok], meta
     if acc == "precios":
         return acc, [sw(f) for f in ok], meta
@@ -229,6 +229,10 @@ def _deshacer_meli(entry, acc, filas, desc):
         try:
             if acc == "meli_descripcion":
                 set_description(cli, f["id"], f["despues"] or "")
+            elif acc == "meli_ads":
+                from .ads import modificar
+                modificar(cli, (entry.get("meta") or {}).get("site", "MLA"), f["id"],
+                          {k: v for k, v in (f["despues"] or {}).items() if v is not None})
             elif acc == "meli_fotos":
                 from .meli_fotos import poner_fotos
                 poner_fotos(cli, f["id"], f["despues"])

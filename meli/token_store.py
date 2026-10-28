@@ -81,7 +81,7 @@ class GitHubTokenStore:
         self._ensure_branch()
         payload = {
             "message": message,
-            "content": base64.b64encode(json.dumps(data, indent=2, ensure_ascii=False).encode()).decode(),
+            "content": base64.b64encode(json.dumps(data, indent=2, ensure_ascii=False, default=lambda o: o.item() if hasattr(o, "item") else str(o)).encode()).decode(),
             "branch": self.branch,
         }
         if sha:

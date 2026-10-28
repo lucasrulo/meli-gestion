@@ -13,12 +13,14 @@ MENU = {
         ("views/inconsistencias.py", "Precios distintos MeLi", "balance", "⚖️",
          "Detectar e igualar talles/colores con precios diferentes.", "MELI"),
     ],
-    "Promociones MeLi": [
+    "Promociones y Ads MeLi": [
         ("views/campanas.py", "Campañas", "campaign", "📣", "Crear, editar y auditar campañas propias y de MeLi.", "MELI"),
         ("views/cargar_promo.py", "Cargar a campaña", "sell", "🏷️", "Sumar o quitar modelos-color con precio o %.", "MELI"),
         ("views/descuentos.py", "Descuentos", "percent", "🔖", "Descuentos con nombre o individuales, en bloque.", "MELI"),
         ("views/invitaciones.py", "Invitaciones", "mark_email_unread", "📨",
          "Aceptar campañas de MeLi donde sos candidato.", "MELI"),
+        ("views/publicidad.py", "Publicidad (Ads)", "ads_click", "💸",
+         "Presupuesto, ROAS objetivo y ajuste automático de las campañas de Product Ads, en masa.", "MELI"),
     ],
     "Catálogo": [
         ("views/shop_catalogo.py", "Catálogo Shopify", "inventory_2", "🗂️",
