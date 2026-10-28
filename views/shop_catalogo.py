@@ -21,8 +21,8 @@ nombre = stores()[tienda]["nombre"]
 P, V, M, MF = cargar(tienda)
 api_key = secret("ANTHROPIC_API_KEY")
 
-t_est, t_tag, t_col, t_meta = st.tabs(["🚦 Estados y canales", "🏷️ Tags y colecciones", "📚 Ver colecciones",
-                                       "🧩 Metacampos"])
+t_est, t_tag, t_limp, t_col, t_meta = st.tabs(["🚦 Estados y canales", "🏷️ Tags y colecciones", "🧹 Limpiar tags",
+                                               "📚 Ver colecciones", "🧩 Metacampos"])
 
 
 def _filas(sel: pd.DataFrame, antes_col, despues) -> list[dict]:
@@ -194,6 +194,90 @@ with t_tag:
                 st.session_state[f"coll_nonce_{tienda}"] = st.session_state.get(f"coll_nonce_{tienda}", 0) + 1
             except ShopifyError as e:
                 st.error(str(e))
+
+# ================================================================ 2a. limpiar tags sin uso
+@st.cache_data(ttl=600, show_spinner=False)
+def _reglas_colecciones(key: str, nonce) -> pd.DataFrame:
+    q = """query($c: String) { collections(first: 250, after: $c) { pageInfo { hasNextPage endCursor }
+             nodes { id title ruleSet { rules { column relation condition } } } } }"""
+    cli, rows, cur = ShopifyClient(key), [], None
+    while True:
+        d = cli.gql(q, {"c": cur}, version=ops.COLL_VERSION)["collections"]
+        for n in d["nodes"]:
+            for r in ((n.get("ruleSet") or {}).get("rules") or []):
+                rows.append({"coleccion": n["title"], "columna": r.get("column"), "relacion": r.get("relation"),
+                             "condicion": str(r.get("condition") or "")})
+        if not d["pageInfo"]["hasNextPage"]:
+            break
+        cur = d["pageInfo"]["endCursor"]
+    return pd.DataFrame(rows, columns=["coleccion", "columna", "relacion", "condicion"])
+
+
+with t_limp:
+    st.caption("Lista todos los tags de los productos y marca cuáles **no usa ninguna colección automática**. "
+               "Ojo: un tag sin colección puede igual servir para filtros del theme, descuentos, apps o reportes — "
+               "revisá antes de borrar.")
+    try:
+        R = _reglas_colecciones(tienda, st.session_state.get(f"coll_nonce_{tienda}", 0))
+    except ShopifyError as e:
+        st.error(str(e))
+        R = pd.DataFrame(columns=["coleccion", "columna", "relacion", "condicion"])
+    rt = R[R["columna"] == "TAG"]
+    uso = rt.groupby(rt["condicion"].str.strip().str.lower())["coleccion"].apply(
+        lambda s_: ", ".join(sorted(set(s_)))).to_dict()
+    ex = P[["product_id", "estado", "tags"]].explode("tags").dropna(subset=["tags"])
+    if ex.empty:
+        st.info("Los productos de esta tienda no tienen tags.")
+    else:
+        T = (ex.groupby("tags").agg(productos=("product_id", "nunique"),
+                                    activos=("estado", lambda s_: int((s_ == "ACTIVE").sum())))
+             .reset_index().rename(columns={"tags": "tag"}))
+        T["colecciones"] = T["tag"].str.strip().str.lower().map(uso).fillna("")
+        T["situacion"] = T["colecciones"].map(lambda c: "✅ En colección" if c else "🧹 Sin colección")
+        m1, m2, m3 = st.columns(3)
+        m1.metric("Tags distintos", len(T))
+        m2.metric("✅ Usados en colecciones", int((T["colecciones"] != "").sum()))
+        m3.metric("🧹 Sin colección", int((T["colecciones"] == "").sum()))
+        f1, f2, f3 = st.columns([1.3, 1, 1.2])
+        ver = f1.radio("Mostrar", ["🧹 Sin colección", "✅ En colección", "Todos"], horizontal=True, key="lt_ver")
+        maxp = f2.number_input("Usado en hasta N productos", min_value=0, value=0, step=1, key="lt_max",
+                               help="0 = sin límite. Ej.: 3 para ver tags casi sin uso (errores de tipeo, viejos).")
+        q = f3.text_input("Buscar tag", key="lt_q")
+        v = T if ver == "Todos" else T[T["situacion"] == ver]
+        if maxp:
+            v = v[v["productos"] <= maxp]
+        if q:
+            v = v[v["tag"].str.contains(q, case=False, regex=False)]
+        v = v.sort_values(["productos", "tag"]).copy()
+        v.insert(0, "Borrar", False)
+        ed = st.data_editor(v, hide_index=True, width="stretch", key=f"lt_ed_{len(v)}_{hash(tuple(v['tag']))}",
+                            height=min(40 + 36 * len(v), 460), disabled=["tag", "productos", "activos", "colecciones",
+                                                                         "situacion"],
+                            column_order=["Borrar", "tag", "situacion", "productos", "activos", "colecciones"],
+                            column_config={"Borrar": st.column_config.CheckboxColumn(width="small"),
+                                           "tag": st.column_config.TextColumn("Tag", width="medium"),
+                                           "situacion": "Situación", "productos": "Productos", "activos": "Activos",
+                                           "colecciones": st.column_config.TextColumn("Colecciones que lo usan",
+                                                                                      width="large")})
+        c1, c2 = st.columns([1, 2])
+        c1.download_button("⬇️ Descargar Excel", to_xlsx(T.sort_values("productos")), f"{nombre}_tags.xlsx")
+        borrar = ed.loc[ed["Borrar"], "tag"].tolist()
+        if borrar:
+            en_col = [t for t in borrar if uso.get(t.strip().lower())]
+            if en_col:
+                st.warning("Estos tags **sí** los usa una colección automática; si los borrás, los productos salen de "
+                           "esa colección: " + ", ".join(en_col))
+            afect = P[P["tags"].apply(lambda ts: any(t in ts for t in borrar))]
+            st.caption(f"Se quitan {len(borrar)} tag(s) de {len(afect)} producto(s): {', '.join(borrar[:20])}")
+            with c2:
+                if ejecutar_ui("🧹 Borrar tags seleccionados", len(afect), "lt",
+                               f"Confirmo quitar {len(borrar)} tag(s) de {len(afect)} producto(s)"):
+                    filas = [{"id": r["product_id"], "label": r["titulo"], "antes": list(r["tags"]),
+                              "despues": [t for t in r["tags"] if t not in borrar]} for _, r in afect.iterrows()]
+                    res = ops.aplicar(tienda, "tags_set", filas,
+                                      f"{nombre}: limpiar {len(borrar)} tag(s) sin uso ({len(filas)} productos)",
+                                      progress=progreso("Limpiando tags…"))
+                    ops.mostrar_resultado(res)
 
 # ================================================================ 2b. ver / descargar colecciones
 @st.cache_data(ttl=600, show_spinner=False)
