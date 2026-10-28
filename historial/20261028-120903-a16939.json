@@ -1,0 +1,294 @@
+{
+  "id": "20261028-120903-a16939",
+  "fecha": "2026-10-28 12:09:03",
+  "usuario": "app",
+  "canal": "Shopify",
+  "tienda": "piccadilly",
+  "accion": "estado",
+  "descripcion": "Piccadilly Argentina | Sitio Oficial: 35 productos → 🟢 Activo",
+  "filas": [
+    {
+      "id": "gid://shopify/Product/8629555134602",
+      "label": "Borcego Fabiana Caña Media",
+      "antes": "UNLISTED",
+      "despues": "ACTIVE",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629570568330",
+      "label": "Sandalia Cati",
+      "antes": "UNLISTED",
+      "despues": "ACTIVE",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629573976202",
+      "label": "Sandalia Cristine Cruzada",
+      "antes": "UNLISTED",
+      "despues": "ACTIVE",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629574140042",
+      "label": "Sandalia Cristine Cruzada",
+      "antes": "UNLISTED",
+      "despues": "ACTIVE",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629574271114",
+      "label": "Sandalia Cristine Cruzada",
+      "antes": "UNLISTED",
+      "despues": "ACTIVE",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629638168714",
+      "label": "Zapato Deise",
+      "antes": "UNLISTED",
+      "despues": "ACTIVE",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629638299786",
+      "label": "Zapato Deise",
+      "antes": "UNLISTED",
+      "despues": "ACTIVE",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8630034694282",
+      "label": "Zapato Laura Hebilla",
+      "antes": "UNLISTED",
+      "despues": "ACTIVE",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8630035284106",
+      "label": "Zapato Laura Scarpin",
+      "antes": "UNLISTED",
+      "despues": "ACTIVE",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8630035447946",
+      "label": "Zapato Laura Scarpin",
+      "antes": "UNLISTED",
+      "despues": "ACTIVE",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8630041575562",
+      "label": "Zapato Scarpin",
+      "antes": "UNLISTED",
+      "despues": "ACTIVE",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8668776890506",
+      "label": "Zapato Laura",
+      "antes": "UNLISTED",
+      "despues": "ACTIVE",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8668776923274",
+      "label": "Zapato Laura",
+      "antes": "UNLISTED",
+      "despues": "ACTIVE",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8668776956042",
+      "label": "Zapato Ivone",
+      "antes": "UNLISTED",
+      "despues": "ACTIVE",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8668779184266",
+      "label": "Sandalia Mari",
+      "antes": "UNLISTED",
+      "despues": "ACTIVE",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8668779249802",
+      "label": "Sandalia Mari",
+      "antes": "UNLISTED",
+      "despues": "ACTIVE",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8668779282570",
+      "label": "Sandalia Mari",
+      "antes": "UNLISTED",
+      "despues": "ACTIVE",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8668779675786",
+      "label": "Sandalia Sol",
+      "antes": "UNLISTED",
+      "despues": "ACTIVE",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8668779774090",
+      "label": "Sandalia Sol",
+      "antes": "UNLISTED",
+      "despues": "ACTIVE",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8668780986506",
+      "label": "Sandalia Gabi",
+      "antes": "UNLISTED",
+      "despues": "ACTIVE",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8668781052042",
+      "label": "Sandalia Gabi",
+      "antes": "UNLISTED",
+      "despues": "ACTIVE",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8806320406666",
+      "label": "Sueco Sol",
+      "antes": "UNLISTED",
+      "despues": "ACTIVE",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8903498793098",
+      "label": "Mocasín Fabiana",
+      "antes": "UNLISTED",
+      "despues": "ACTIVE",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8903636910218",
+      "label": "Zapato Silvia",
+      "antes": "UNLISTED",
+      "despues": "ACTIVE",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8903637041290",
+      "label": "Mocasín Fabiana",
+      "antes": "UNLISTED",
+      "despues": "ACTIVE",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8903637827722",
+      "label": "Mocasín Gisa",
+      "antes": "UNLISTED",
+      "despues": "ACTIVE",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8903637860490",
+      "label": "Mocasín Gisa",
+      "antes": "UNLISTED",
+      "despues": "ACTIVE",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8903637893258",
+      "label": "Mocasín Gisa",
+      "antes": "UNLISTED",
+      "despues": "ACTIVE",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9236565524618",
+      "label": "Zapato Laura",
+      "antes": "UNLISTED",
+      "despues": "ACTIVE",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9236567326858",
+      "label": "Mocasín Fabiana",
+      "antes": "UNLISTED",
+      "despues": "ACTIVE",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9236567359626",
+      "label": "Mocasín Gisa",
+      "antes": "UNLISTED",
+      "despues": "ACTIVE",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9249932116106",
+      "label": "Mocasín Gisa",
+      "antes": "UNLISTED",
+      "despues": "ACTIVE",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9269305999498",
+      "label": "Zapato SIlvia",
+      "antes": "UNLISTED",
+      "despues": "ACTIVE",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9282606268554",
+      "label": "Chatita Raquel",
+      "antes": "UNLISTED",
+      "despues": "ACTIVE",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9318103220362",
+      "label": "Zapato Deise",
+      "antes": "UNLISTED",
+      "despues": "ACTIVE",
+      "ok": true,
+      "error": ""
+    }
+  ],
+  "meta": {},
+  "reversible": true,
+  "deshace": null
+}
