@@ -105,6 +105,11 @@ def stores() -> dict[str, dict]:
     except Exception:  # noqa: BLE001
         conectadas = {}
     for shop, rec in conectadas.items():
+        vk = next((k for k, d in VENDOR_STORES.items() if d["shop"] == shop), None)
+        if vk:   # tienda propia de Mountain Hardwear / Sorel: se muestra con el nombre de la marca
+            out[vk] = {"shop": shop, "token": rec.get("token"), "oauth": True, "nombre": VENDOR_STORES[vk]["nombre"],
+                       "meli": rec.get("meli", ""), "vendor": secret(f"VENDOR_{vk.upper()}") or rec.get("vendor", "")}
+            continue
         key = next((k for k, d in DEFAULT_STORES.items() if d["shop"] == shop), shop.split(".")[0])
         base = DEFAULT_STORES.get(key, {})
         out[key] = {
@@ -112,6 +117,12 @@ def stores() -> dict[str, dict]:
             "nombre": rec.get("nombre") or base.get("nombre") or key,
             "meli": rec.get("meli") or base.get("meli", ""), "vendor": rec.get("vendor", ""),
         }
+    for vk, d in VENDOR_STORES.items():   # tabla/secret con el dominio propio de MHW o Sorel → una sola entrada
+        dup = [k_ for k_, c in out.items() if c["shop"] == d["shop"] and k_ != vk]
+        for k_ in dup:
+            c = out.pop(k_)
+            if vk not in out:
+                out[vk] = {**c, "nombre": d["nombre"], "vendor": secret(f"VENDOR_{vk.upper()}") or c.get("vendor", "")}
     # Mountain Hardwear y Sorel: tiendas "virtuales" filtradas por vendor dentro de su tienda
     for vk, d in VENDOR_STORES.items():
         if vk in out:
@@ -154,7 +165,10 @@ class ShopifyClient:
     _lock = threading.Lock()
 
     def __init__(self, key: str):
-        cfg = stores().get(key)
+        todas = stores()
+        if key not in todas:   # claves viejas (ej. «columbia-mhw» guardada en el Historial) → nombre nuevo
+            key = next((vk for vk, d in VENDOR_STORES.items() if d["shop"].split(".")[0] == key), key)
+        cfg = todas.get(key)
         if not cfg:
             raise ShopifyError(f"Tienda Shopify «{key}» no configurada en secrets.")
         self.key, self.cfg = key, cfg

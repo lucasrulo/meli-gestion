@@ -33,8 +33,8 @@ def _barra(label: str, opciones: list[str], fmt, estado_key: str, widget_key: st
         c1.markdown(f"<div style='font-size:.78rem;letter-spacing:.08em;color:var(--muted);text-transform:uppercase'>"
                     f"{label}</div>", unsafe_allow_html=True)
         if len(opciones) <= 10:
-            c2.segmented_control(label, opciones, format_func=fmt, key=widget_key, on_change=_guardar,
-                                 label_visibility="collapsed")
+            c2.pills(label, opciones, format_func=fmt, key=widget_key, on_change=_guardar,
+                     label_visibility="collapsed")   # pills: si no entran en una línea, bajan a la siguiente
         else:
             c2.selectbox(label, opciones, format_func=fmt, key=widget_key, on_change=_guardar,
                          label_visibility="collapsed")
