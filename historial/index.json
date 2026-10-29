@@ -1,6 +1,20 @@
 {
   "ops": [
     {
+      "id": "20261029-112753-3dc1c8",
+      "fecha": "2026-10-29 11:27:53",
+      "usuario": "app",
+      "canal": "Shopify",
+      "tienda": "reebok",
+      "accion": "tags_set",
+      "descripcion": "Reebok Argentina | Sitio Oficial: agregar «30Cybermonday, Cybermonday» en 1 productos",
+      "reversible": true,
+      "deshace": null,
+      "total": 1,
+      "ok": 1,
+      "deshecha_por": null
+    },
+    {
       "id": "20261028-120912-4433ac",
       "fecha": "2026-10-28 12:09:12",
       "usuario": "app",
