@@ -23,7 +23,7 @@ CATALOGO_Q = """
 {
   products {
     edges { node {
-      id title handle status vendor productType tags descriptionHtml onlineStoreUrl totalInventory updatedAt
+      id title handle status vendor productType tags descriptionHtml onlineStoreUrl totalInventory updatedAt createdAt
       seo { title description }
       variants { edges { node {
         id sku barcode price compareAtPrice inventoryQuantity title
@@ -36,7 +36,7 @@ CATALOGO_Q = """
 }"""
 
 PROD_COLS = ["tienda", "product_id", "titulo", "handle", "estado", "vendor", "tipo", "tags", "descripcion_html",
-             "seo_title", "seo_description", "url", "stock", "actualizado", "n_variantes", "n_fotos", "foto",
+             "seo_title", "seo_description", "url", "stock", "actualizado", "creado", "n_variantes", "n_fotos", "foto",
              "skus", "codigos"]
 
 
@@ -123,6 +123,7 @@ def parse_catalogo(lines: list[dict], key: str, vendor: str = "") -> tuple[pd.Da
             "tags": list(p.get("tags") or []), "descripcion_html": p.get("descriptionHtml") or "",
             "seo_title": (p.get("seo") or {}).get("title") or "", "seo_description": (p.get("seo") or {}).get("description") or "",
             "url": p.get("onlineStoreUrl"), "stock": p.get("totalInventory"), "actualizado": p.get("updatedAt"),
+            "creado": (p.get("createdAt") or "")[:10],
             "n_variantes": len(sk), "n_fotos": nfot.get(pid, 0), "foto": foto1.get(pid) or "",
             "skus": ", ".join(s for s in sk if s)[:200], "codigos": _codigos(sk, p.get("handle") or ""),
         })

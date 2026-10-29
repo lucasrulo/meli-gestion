@@ -21,8 +21,8 @@ nombre = stores()[tienda]["nombre"]
 P, V, M, MF = cargar(tienda)
 api_key = secret("ANTHROPIC_API_KEY")
 
-t_est, t_tag, t_limp, t_col, t_meta = st.tabs(["🚦 Estados y canales", "🏷️ Tags y colecciones", "🧹 Limpiar tags",
-                                               "📚 Ver colecciones", "🧩 Metacampos"])
+t_est, t_tag, t_limp, t_col, t_meta, t_dl = st.tabs(["🚦 Estados y canales", "🏷️ Tags y colecciones", "🧹 Limpiar tags",
+                                                     "📚 Ver colecciones", "🧩 Metacampos", "⬇️ Descargar productos"])
 
 
 def _filas(sel: pd.DataFrame, antes_col, despues) -> list[dict]:
@@ -260,7 +260,30 @@ with t_limp:
                                            "colecciones": st.column_config.TextColumn("Colecciones que lo usan",
                                                                                       width="large")})
         c1, c2 = st.columns([1, 2])
-        c1.download_button("⬇️ Descargar Excel", to_xlsx(T.sort_values("productos")), f"{nombre}_tags.xlsx")
+        # Excel: hoja resumen por tag (con sus modelo-color) + hoja detalle tag × modelo-color
+        vv = V[["product_id", "sku", "stock"]].copy()
+        vv["modelo_color"] = vv["sku"].map(lambda x: strip_size(x) if x else None).fillna("(sin SKU)")
+        mc = (vv.groupby(["product_id", "modelo_color"])["stock"].sum().reset_index()
+              .merge(P[["product_id", "titulo", "estado"]], on="product_id"))
+        det = (ex[["product_id", "tags"]].rename(columns={"tags": "tag"}).merge(mc, on="product_id")
+               .merge(T[["tag", "situacion", "colecciones"]], on="tag"))
+        det["estado"] = det["estado"].map(lambda x: ESTADOS.get(x, x).split(" ", 1)[-1])
+        det = det[["tag", "situacion", "colecciones", "modelo_color", "titulo", "estado", "stock"]].sort_values(
+            ["tag", "modelo_color"]).rename(columns={"titulo": "producto"})
+        res_x = T.merge(det.groupby("tag")["modelo_color"].apply(lambda s_: ", ".join(sorted(set(s_)))).rename(
+            "modelos_color").reset_index(), on="tag", how="left")
+        res_x["cant_modelos_color"] = res_x["modelos_color"].fillna("").map(lambda s_: len([x for x in s_.split(", ") if x]))
+        res_x = res_x[["tag", "situacion", "colecciones", "productos", "activos", "cant_modelos_color", "modelos_color"]]
+
+        def _xlsx_tags() -> bytes:
+            import io
+            buf = io.BytesIO()
+            with pd.ExcelWriter(buf) as w:
+                res_x.sort_values("productos").to_excel(w, sheet_name="Tags", index=False)
+                det.to_excel(w, sheet_name="Detalle modelo-color", index=False)
+            return buf.getvalue()
+        c1.download_button("⬇️ Descargar Excel", _xlsx_tags(), f"{nombre}_tags.xlsx",
+                           help="Hoja «Tags»: un tag por fila con sus modelo-color. Hoja «Detalle»: una fila por tag × modelo-color.")
         borrar = ed.loc[ed["Borrar"], "tag"].tolist()
         if borrar:
             en_col = [t for t in borrar if uso.get(t.strip().lower())]
@@ -443,3 +466,77 @@ with t_meta:
                                   progress=progreso("Metacampos…"))
                 ops.mostrar_resultado(res)
                 st.session_state.pop(kv, None)
+
+# ================================================================ 4. descargar productos (todas las marcas) por modelo + color
+def _talle(variante: str) -> str:
+    v = str(variante or "")
+    return v.split("/")[-1].strip() if "/" in v else v.strip()
+
+
+with t_dl:
+    from datetime import date as _date
+
+    from meli.shop_bulk import catalogo as _catalogo
+    from meli.selector_marca import corto
+    st.caption("Productos de **todas las marcas** colapsados a una fila por **modelo + color** (talles juntos), con su "
+               "**fecha de creación**. Mountain Hardwear y Sorel se separan por vendor dentro de su tienda.")
+    todas = stores()
+    c1, c2 = st.columns([1.4, 1])
+    sel_t = c1.multiselect("Tiendas a incluir", list(todas), default=list(todas), key="dl_tiendas",
+                           format_func=lambda k: corto(todas[k]["nombre"]))
+    todo = c2.checkbox("Traer todos los productos (ignorar fechas)", value=True, key="dl_todo")
+    if todo:
+        c2.caption("Se traen **todos** los productos, sin filtrar por fecha de creación.")
+        desde = hasta = None
+    else:
+        d1, d2 = c2.columns(2)
+        desde = d1.date_input("Creados desde", _date.today().replace(day=1), key="dl_desde", format="DD/MM/YYYY")
+        hasta = d2.date_input("Hasta", _date.today(), key="dl_hasta", format="DD/MM/YYYY")
+    est_dl = st.multiselect("Estados", list(ESTADOS), default=list(ESTADOS), format_func=ESTADOS.get, key="dl_est")
+    if st.button("⬇️ Generar Excel de productos", type="primary", width="stretch", disabled=not sel_t, key="dl_go"):
+        filas, bar = [], st.progress(0.0, text="Leyendo catálogos…")
+        for i, k in enumerate(sel_t, 1):
+            bar.progress((i - 1) / len(sel_t), text=f"Leyendo {corto(todas[k]['nombre'])}…")
+            try:
+                Pk, Vk, _, _ = _catalogo(k)
+            except ShopifyError as e:
+                st.warning(f"{todas[k]['nombre']}: {e}")
+                continue
+            if est_dl:
+                Pk = Pk[Pk["estado"].isin(est_dl)]
+            if desde:
+                cr = pd.to_datetime(Pk["creado"], errors="coerce").dt.date
+                Pk = Pk[(cr >= desde) & (cr <= hasta)]
+            vv = Vk[Vk["product_id"].isin(Pk["product_id"])].copy()
+            vv["modelo_color"] = vv["sku"].map(lambda x: strip_size(x) if x else None).fillna("(sin SKU)")
+            vv["talle"] = vv["variante"].map(_talle)
+            info = Pk.set_index("product_id")
+            for (pid, mc), g in vv.groupby(["product_id", "modelo_color"]):
+                p = info.loc[pid]
+                filas.append({
+                    "marca": corto(todas[k]["nombre"]), "modelo_color": mc, "producto": p["titulo"],
+                    "estado": ESTADOS.get(p["estado"], p["estado"]).split(" ", 1)[-1], "tipo": p["tipo"],
+                    "vendor": p["vendor"], "talles": ", ".join(t for t in g["talle"] if t),
+                    "cant_talles": len(g), "talles_con_stock": int((g["stock"].fillna(0) > 0).sum()),
+                    "stock": int(g["stock"].fillna(0).sum()), "precio": g["precio"].max(),
+                    "precio_tachado": g["precio_tachado"].max(), "fecha_creacion": p["creado"],
+                    "tags": ", ".join(p["tags"]), "url": p["url"] or "", "foto": p["foto"] or "",
+                })
+        bar.empty()
+        out = pd.DataFrame(filas)
+        if out.empty:
+            st.info("No hay productos con esos filtros.")
+        else:
+            out = out.sort_values(["marca", "fecha_creacion", "modelo_color"], ascending=[True, False, True])
+            st.session_state["dl_out"] = out
+    out = st.session_state.get("dl_out")
+    if out is not None and not out.empty:
+        m1, m2, m3 = st.columns(3)
+        m1.metric("Modelo-color", f"{len(out):,}".replace(",", "."))
+        m2.metric("Marcas", out["marca"].nunique())
+        m3.metric("Stock total", f"{int(out['stock'].sum()):,}".replace(",", "."))
+        st.dataframe(out.groupby("marca").agg(modelo_color=("modelo_color", "count"), stock=("stock", "sum"),
+                                              con_stock=("stock", lambda s_: int((s_ > 0).sum()))).reset_index(),
+                     hide_index=True, width="stretch")
+        st.download_button("⬇️ Descargar Excel", to_xlsx(out), f"productos_modelo_color_{_date.today():%Y%m%d}.xlsx",
+                           type="primary", width="stretch", key="dl_xlsx")

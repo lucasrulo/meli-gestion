@@ -38,6 +38,12 @@ DEFAULT_STORES = {
     "piccadilly": {"shop": "piccadilly-ar.myshopify.com", "secret": "TOKEN_PICCADILLY", "nombre": "Piccadilly",
                    "meli": "PICCADILLY"},
 }
+# Marcas que viven dentro de otra tienda y se separan por vendor (mismo token que la tienda que las contiene).
+# Se pueden ajustar con secrets: SHOP_MHW / TOKEN_MHW / VENDOR_MHW (idem SOREL).
+VENDOR_STORES = {
+    "mhw": {"shop": "columbia-mhw.myshopify.com", "nombre": "Mountain Hardwear", "vendor": "MHW-ar", "meli": ""},
+    "sorel": {"shop": "columbia-sorel.myshopify.com", "nombre": "Sorel", "vendor": "Sorel-ar", "meli": ""},
+}
 _SHOP_KEYS = ("shop", "store", "domain", "url", "shop_url", "myshopify")
 _TOKEN_KEYS = ("token", "access_token", "admin_token", "api_token", "shpat")
 
@@ -106,6 +112,20 @@ def stores() -> dict[str, dict]:
             "nombre": rec.get("nombre") or base.get("nombre") or key,
             "meli": rec.get("meli") or base.get("meli", ""), "vendor": rec.get("vendor", ""),
         }
+    # Mountain Hardwear y Sorel: tiendas "virtuales" filtradas por vendor dentro de su tienda
+    for vk, d in VENDOR_STORES.items():
+        if vk in out:
+            continue
+        shop = _norm_shop(secret(f"SHOP_{vk.upper()}") or "")
+        tok = secret(f"TOKEN_{vk.upper()}")
+        if not shop:
+            candidatos = [d["shop"]] + [c["shop"] for k_, c in out.items() if k_ == "columbia"]
+            shop = next((x for x in candidatos if any(c["shop"] == x for c in out.values())), d["shop"])
+        base = next((c for c in out.values() if c["shop"] == shop and not c.get("vendor")), None)
+        if tok or base:
+            out[vk] = {"shop": shop, "token": tok or base.get("token"), "nombre": d["nombre"], "meli": d["meli"],
+                       "vendor": secret(f"VENDOR_{vk.upper()}") or d["vendor"], "virtual": True,
+                       **({k_: base[k_] for k_ in ("client_id", "client_secret") if base and base.get(k_)} if not tok else {})}
     for k, c in out.items():
         c["key"] = k
     return out
