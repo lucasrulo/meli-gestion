@@ -11,7 +11,7 @@ from meli.theme import card, hero
 hora = datetime.now().hour
 saludo = "Buen día" if hora < 13 else "Buenas tardes" if hora < 20 else "Buenas noches"
 hero(f"{saludo}, equipo Distrinando", "Centro de control de las tiendas oficiales en MercadoLibre y Shopify: precios, promociones, "
-     "contenido y protección de marca, en masivo y con vista previa.", "MELI OPS · ONLINE")
+     "contenido y protección de marca, en masivo y con vista previa.", "OMNIOPS · MELI + SHOPIFY · ONLINE")
 
 accounts = get_token_manager().accounts()
 vigentes = sum(1 for a in accounts.values() if a.get("expires_at", 0) > time.time())

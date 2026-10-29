@@ -9,7 +9,7 @@ from meli.shopify_auth import handle_callback as shopify_callback
 from meli.ui import require_login
 
 ASSETS = Path(__file__).parent / "assets"
-st.set_page_config(page_title="MeLi Ops · Distrinando", page_icon=str(ASSETS / "icon.svg"), layout="wide")
+st.set_page_config(page_title="OmniOps · Distrinando", page_icon=str(ASSETS / "icon.svg"), layout="wide")
 apply_theme()
 st.logo(str(ASSETS / "logo.svg"), size="large", icon_image=str(ASSETS / "icon.svg"))
 

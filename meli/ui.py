@@ -19,8 +19,8 @@ def require_login() -> None:
     from pathlib import Path
     ic = Path(__file__).resolve().parent.parent / "assets" / "icon.svg"
     img = f'<img src="data:image/svg+xml;base64,{base64.b64encode(ic.read_bytes()).decode()}"/>' if ic.exists() else ""
-    st.markdown(f'<div class="mo-login">{img}<div class="mo-title" style="font-size:2.2rem">MeLi Ops</div>'
-                '<div class="mo-sub" style="margin:0 auto 18px">Centro de control de tus tiendas oficiales · Distrinando</div>'
+    st.markdown(f'<div class="mo-login">{img}<div class="mo-title" style="font-size:2.2rem">OmniOps</div>'
+                '<div class="mo-sub" style="margin:0 auto 18px">MercadoLibre + Shopify en un solo lugar · Distrinando</div>'
                 '</div>', unsafe_allow_html=True)
     _, mid, _ = st.columns([1, 1.2, 1])
     typed = mid.text_input("Contraseña", type="password", placeholder="••••••••")
@@ -78,3 +78,15 @@ def show_results(df: pd.DataFrame, filename: str) -> None:
     st.download_button("⬇️ Descargar resultado", to_xlsx(df), file_name=filename,
                        mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
 
+
+
+def caja_texto(label: str, key: str, boton: str = "🔎 Buscar", placeholder: str = "", height: int = 110,
+               label_visibility: str = "visible", container=None) -> str:
+    """Caja para pegar listados con botón para avanzar (además de Ctrl+Enter). Devuelve el texto confirmado."""
+    cont = container if container is not None else st
+    with cont.form(f"form_{key}", border=False, enter_to_submit=False):
+        st.text_area(label, key=key, height=height, placeholder=placeholder, label_visibility=label_visibility)
+        c1, c2 = st.columns([1, 3], vertical_alignment="center")
+        c1.form_submit_button(boton, type="primary", width="stretch")
+        c2.caption("o Ctrl+Enter")
+    return st.session_state.get(key, "") or ""

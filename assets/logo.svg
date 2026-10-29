@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 56" width="240" height="56">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 56" width="260" height="56">
   <defs>
     <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#22D3EE"/><stop offset="0.55" stop-color="#8B5CF6"/><stop offset="1" stop-color="#EC4899"/>
@@ -11,13 +11,16 @@
     </filter>
   </defs>
   <g transform="translate(2,2) scale(0.8)">
-    <path d="M32 4 56 18v28L32 60 8 46V18Z" fill="#0B1222" stroke="url(#g)" stroke-width="3.2" stroke-linejoin="round"/>
-    <path d="M19 42V23l13 11 13-11v19" fill="none" stroke="url(#g)" stroke-width="4.6" stroke-linecap="round"
-          stroke-linejoin="round" filter="url(#glow)"/>
-    <circle cx="47.5" cy="14.5" r="3.6" fill="#FFE600"/>
+    <rect x="4" y="4" width="56" height="56" rx="16" fill="#0B1222" stroke="url(#g)" stroke-width="3"/>
+    <circle cx="32" cy="32" r="15" fill="none" stroke="url(#g)" stroke-width="4.4" filter="url(#glow)"/>
+    <path d="M32 32 21.4 21.4M32 32 42.6 42.6M32 32 45 23" stroke="#7C8AA5" stroke-width="1.6" stroke-linecap="round" opacity=".8"/>
+    <circle cx="32" cy="32" r="4" fill="#E6F6FF"/>
+    <circle cx="21.4" cy="21.4" r="5" fill="#FFE600" stroke="#0B1222" stroke-width="2"/>
+    <circle cx="42.6" cy="42.6" r="5" fill="#95BF47" stroke="#0B1222" stroke-width="2"/>
+    <circle cx="45.4" cy="24.3" r="3.2" fill="#22D3EE" stroke="#0B1222" stroke-width="1.6"/>
   </g>
-  <text x="58" y="30" font-family="'Space Grotesk','Segoe UI',Arial,sans-serif" font-size="25" font-weight="700"
-        letter-spacing="1.2" fill="url(#t)">MELI<tspan fill="url(#g)">OPS</tspan></text>
-  <text x="59" y="46" font-family="'Space Grotesk','Segoe UI',Arial,sans-serif" font-size="9.5" font-weight="500"
-        letter-spacing="4.2" fill="#7C8AA5">DISTRINANDO</text>
+  <text x="60" y="30" font-family="'Space Grotesk','Segoe UI',Arial,sans-serif" font-size="25" font-weight="700"
+        letter-spacing="1.2" fill="url(#t)">OMNI<tspan fill="url(#g)">OPS</tspan></text>
+  <text x="61" y="46" font-family="'Space Grotesk','Segoe UI',Arial,sans-serif" font-size="8.6" font-weight="500"
+        letter-spacing="1.9" fill="#7C8AA5">MELI · SHOPIFY · DISTRINANDO</text>
 </svg>

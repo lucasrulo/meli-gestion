@@ -4,11 +4,17 @@
       <stop offset="0" stop-color="#22D3EE"/><stop offset="0.55" stop-color="#8B5CF6"/><stop offset="1" stop-color="#EC4899"/>
     </linearGradient>
     <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="2.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+      <feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
   </defs>
-  <path d="M32 4 56 18v28L32 60 8 46V18Z" fill="#0B1222" stroke="url(#g)" stroke-width="3.2" stroke-linejoin="round"/>
-  <path d="M19 42V23l13 11 13-11v19" fill="none" stroke="url(#g)" stroke-width="4.6" stroke-linecap="round"
-        stroke-linejoin="round" filter="url(#glow)"/>
-  <circle cx="47.5" cy="14.5" r="3.6" fill="#FFE600"/>
+  <rect x="4" y="4" width="56" height="56" rx="16" fill="#0B1222" stroke="url(#g)" stroke-width="3"/>
+  <!-- órbita omnicanal -->
+  <circle cx="32" cy="32" r="15" fill="none" stroke="url(#g)" stroke-width="4.4" filter="url(#glow)"/>
+  <!-- conexiones hub → canales -->
+  <path d="M32 32 21.4 21.4M32 32 42.6 42.6M32 32 45 23" stroke="#7C8AA5" stroke-width="1.6" stroke-linecap="round" opacity=".8"/>
+  <circle cx="32" cy="32" r="4" fill="#E6F6FF"/>
+  <!-- canales: MercadoLibre, Shopify y más -->
+  <circle cx="21.4" cy="21.4" r="5" fill="#FFE600" stroke="#0B1222" stroke-width="2"/>
+  <circle cx="42.6" cy="42.6" r="5" fill="#95BF47" stroke="#0B1222" stroke-width="2"/>
+  <circle cx="45.4" cy="24.3" r="3.2" fill="#22D3EE" stroke="#0B1222" stroke-width="1.6"/>
 </svg>

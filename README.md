@@ -1,4 +1,6 @@
-# meli-gestion · Distrinando
+# OmniOps · Distrinando
+
+Centro de control omnicanal (MercadoLibre + Shopify). Repo: `meli-gestion`.
 
 App Streamlit para operar las tiendas oficiales de MercadoLibre de forma masiva:
 
@@ -64,7 +66,7 @@ Sin la key la solapa funciona igual (edición manual y Excel), solo se deshabili
 ## Shopify (precios omnicanal, análisis y contenido en 2 canales)
 
 ### Opción recomendada: botón "Conectar tienda" (como MeLi)
-1. dev.shopify.com → **Apps → Create app** → nombre "MeLi Ops".
+1. dev.shopify.com → **Apps → Create app** → nombre "OmniOps".
 2. En la versión: **App URL** y **Redirect URLs** = `https://meli-gestion-distrinando.streamlit.app` · *Embed in Shopify admin*: **desactivado** ·
    **Scopes**: `read_products,write_products,read_inventory` → **Release**.
 3. **Distribution → Custom distribution** → dominio de la tienda (o la organización Plus, si todas están en la misma) → copiar el link de instalación.
