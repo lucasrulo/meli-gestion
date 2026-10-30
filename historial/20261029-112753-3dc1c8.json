@@ -1,0 +1,40 @@
+{
+  "id": "20261029-112753-3dc1c8",
+  "fecha": "2026-10-29 11:27:53",
+  "usuario": "app",
+  "canal": "Shopify",
+  "tienda": "reebok",
+  "accion": "tags_set",
+  "descripcion": "Reebok Argentina | Sitio Oficial: agregar «30Cybermonday, Cybermonday» en 1 productos",
+  "filas": [
+    {
+      "id": "gid://shopify/Product/14753384169844",
+      "label": "Zapatillas Reebok Royal BB4500 HI2",
+      "antes": [
+        "30Cyber",
+        "basketball",
+        "calzado",
+        "classic",
+        "men",
+        "Precyber",
+        "zapatillas"
+      ],
+      "despues": [
+        "30Cyber",
+        "basketball",
+        "calzado",
+        "classic",
+        "men",
+        "Precyber",
+        "zapatillas",
+        "30Cybermonday",
+        "Cybermonday"
+      ],
+      "ok": true,
+      "error": ""
+    }
+  ],
+  "meta": {},
+  "reversible": true,
+  "deshace": null
+}

@@ -1,0 +1,78 @@
+{
+  "id": "20261030-174558-6a646e",
+  "fecha": "2026-10-30 17:45:58",
+  "usuario": "app",
+  "canal": "Shopify",
+  "tienda": "crocs",
+  "accion": "estado",
+  "descripcion": "Crocs Argentina | Sitio Oficial: 8 productos → 🟢 Activo",
+  "filas": [
+    {
+      "id": "gid://shopify/Product/9802985931038",
+      "label": "Classic Crush Clog",
+      "antes": "UNLISTED",
+      "despues": "ACTIVE",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802987372830",
+      "label": "Classic Cutie Clog Kids",
+      "antes": "UNLISTED",
+      "despues": "ACTIVE",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802988749086",
+      "label": "Crocs Classic Crush Rain Boot",
+      "antes": "UNLISTED",
+      "despues": "ACTIVE",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802988912926",
+      "label": "Crocs Classic Crush Rain Boot",
+      "antes": "UNLISTED",
+      "despues": "ACTIVE",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802993402142",
+      "label": "Crocs Crush Slide",
+      "antes": "UNLISTED",
+      "despues": "ACTIVE",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802995040542",
+      "label": "Crocs Paw Patrol Off Court Clg T",
+      "antes": "UNLISTED",
+      "despues": "ACTIVE",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9834195976478",
+      "label": "Classic Slipper Kids",
+      "antes": "UNLISTED",
+      "despues": "ACTIVE",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/16030123065630",
+      "label": "Crocs Classic Crush Rain Boot",
+      "antes": "UNLISTED",
+      "despues": "ACTIVE",
+      "ok": true,
+      "error": ""
+    }
+  ],
+  "meta": {},
+  "reversible": true,
+  "deshace": null
+}
