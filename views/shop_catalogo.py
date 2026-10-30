@@ -21,8 +21,9 @@ nombre = stores()[tienda]["nombre"]
 P, V, M, MF = cargar(tienda)
 api_key = secret("ANTHROPIC_API_KEY")
 
-t_est, t_tag, t_limp, t_col, t_meta, t_dl = st.tabs(["🚦 Estados y canales", "🏷️ Tags y colecciones", "🧹 Limpiar tags",
-                                                     "📚 Ver colecciones", "🧩 Metacampos", "⬇️ Descargar productos"])
+t_est, t_tach, t_tag, t_limp, t_col, t_meta, t_dl = st.tabs(
+    ["🚦 Estados y canales", "💲 Precio tachado", "🏷️ Tags y colecciones", "🧹 Limpiar tags", "📚 Ver colecciones",
+     "🧩 Metacampos", "⬇️ Descargar productos"])
 
 
 def _filas(sel: pd.DataFrame, antes_col, despues) -> list[dict]:
@@ -540,3 +541,139 @@ with t_dl:
                      hide_index=True, width="stretch")
         st.download_button("⬇️ Descargar Excel", to_xlsx(out), f"productos_modelo_color_{_date.today():%Y%m%d}.xlsx",
                            type="primary", width="stretch", key="dl_xlsx")
+
+
+# ================================================================ precio tachado (compare-at) sin tocar el precio
+def _num(x) -> float | None:
+    t = str(x).strip().replace("$", "").replace(" ", "")
+    if not t:
+        return None
+    if "," in t and "." in t:
+        t = t.replace(".", "").replace(",", ".") if t.rfind(",") > t.rfind(".") else t.replace(",", "")
+    elif "," in t:
+        t = t.replace(",", ".")
+    elif t.count(".") > 1 or (t.count(".") == 1 and len(t.split(".")[1]) == 3):
+        t = t.replace(".", "")  # 129.999 → miles
+    try:
+        return float(t)
+    except ValueError:
+        return None
+
+
+def _redondear(v: float, modo: str) -> float:
+    if modo == "A $100":
+        return round(v / 100) * 100
+    if modo == "A $1.000":
+        return round(v / 1000) * 1000
+    if modo == "Terminado en 999":
+        return max(round(v / 1000) * 1000 - 1, 999)
+    return round(v, 2)
+
+
+with t_tach:
+    st.caption("Cambia **solo el precio tachado** (*compare at price*) de todas las variantes del producto. "
+               "El precio de venta **no se toca**. Se puede deshacer desde **Historial**.")
+    modo_t = st.segmented_control("¿Cómo calculo el tachado?", ["% OFF", "Monto fijo", "Precio de lista + %",
+                                                                "Desde Excel (código → tachado)", "Quitar tachado"],
+                                  default="% OFF", key="tach_modo") or "% OFF"
+    pegado: dict[str, float] = {}
+    if modo_t == "Desde Excel (código → tachado)":
+        from meli.ui import caja_texto
+        txt = caja_texto("Pegá 2 columnas desde Excel: código (modelo-color, SKU o handle) y precio tachado",
+                         "tach_pegar", "✅ Leer", placeholder="P14313300000310SS25\t129999\nK134-KSA02\t89999")
+        malos, faltan = [], []
+        for ln in txt.splitlines():
+            partes = [x for x in ln.replace(";", "\t").split("\t") if x.strip()]
+            if len(partes) < 2:
+                partes = ln.rsplit(" ", 1) if ln.strip() else []
+            if len(partes) < 2 or _num(partes[-1]) is None:
+                if ln.strip():
+                    malos.append(ln.strip())
+                continue
+            hit, _ = _match_codigos(P, partes[0])
+            if hit.empty:
+                faltan.append(partes[0].strip())
+            for pid in hit["product_id"]:
+                pegado[pid] = _num(partes[-1])
+        if malos:
+            st.warning(f"{len(malos)} línea(s) sin precio válido: " + ", ".join(malos[:10]))
+        if faltan:
+            st.warning(f"No encontré {len(faltan)}: " + ", ".join(faltan[:30]))
+        sel = P[P["product_id"].isin(pegado)]
+        if not sel.empty:
+            st.caption(f"**{len(sel)}** productos encontrados.")
+    else:
+        sel = selector(P, "tach")
+
+    if not sel.empty:
+        c1, c2 = st.columns(2)
+        valor = None
+        if modo_t == "% OFF":
+            valor = c1.number_input("Descuento a mostrar (%)", 1.0, 90.0, 30.0, 1.0, key="tach_pct",
+                                    help="Ej. 30% → tachado = precio ÷ 0,70. El cliente ve «antes $X, ahora $precio» = 30% OFF.")
+        elif modo_t == "Monto fijo":
+            valor = c1.number_input("Precio tachado ($)", 0.0, step=1000.0, key="tach_fijo")
+        elif modo_t == "Precio de lista + %":
+            valor = c1.number_input("Tachado = precio actual + (%)", 1.0, 300.0, 40.0, 1.0, key="tach_mas")
+        redondeo = c2.selectbox("Redondeo", ["Sin redondeo", "A $100", "A $1.000", "Terminado en 999"],
+                                index=0 if modo_t in ("Monto fijo", "Desde Excel (código → tachado)", "Quitar tachado") else 2,
+                                key="tach_red", disabled=modo_t == "Quitar tachado")
+
+        vv = V[V["product_id"].isin(sel["product_id"])].copy()
+
+        def _nuevo(r):
+            if modo_t == "Quitar tachado":
+                return None
+            if modo_t == "% OFF":
+                v = r["precio"] / (1 - valor / 100) if r["precio"] else None
+            elif modo_t == "Monto fijo":
+                v = valor
+            elif modo_t == "Precio de lista + %":
+                v = r["precio"] * (1 + valor / 100) if r["precio"] else None
+            else:
+                v = pegado.get(r["product_id"])
+            return _redondear(v, redondeo) if v else None
+
+        vv["nuevo"] = pd.to_numeric(vv.apply(_nuevo, axis=1), errors="coerce") if not vv.empty else float("nan")
+        if modo_t != "Quitar tachado":
+            vv["invalido"] = vv["nuevo"].isna() | (vv["nuevo"] <= vv["precio"].fillna(0))
+        else:
+            vv["invalido"] = False
+        mismo = (vv["nuevo"].fillna(-1).round(2) == vv["precio_tachado"].fillna(-1).round(2))
+        aplica = vv[~vv["invalido"] & ~mismo]
+
+        n_inv = int(vv["invalido"].sum())
+        st.caption(f"**{aplica['product_id'].nunique()}** productos · **{len(aplica)}** variantes cambian"
+                   + (f" · {int(mismo.sum())} ya tienen ese tachado" if int(mismo.sum()) else "")
+                   + (f" · ⚠️ {n_inv} variantes se omiten porque el tachado quedaría ≤ al precio "
+                      "(Shopify no lo mostraría)" if n_inv else ""))
+        if not aplica.empty:
+            tit = P.set_index("product_id")["titulo"]
+            prev = (aplica.assign(producto=aplica["product_id"].map(tit))
+                    .groupby("product_id")
+                    .agg(producto=("producto", "first"), variantes=("variant_id", "count"),
+                         precio=("precio", "max"), tachado_actual=("precio_tachado", "max"), tachado_nuevo=("nuevo", "max"))
+                    .reset_index(drop=True))
+            prev["% OFF"] = ((1 - prev["precio"] / prev["tachado_nuevo"]) * 100).round(0)
+            st.dataframe(prev, hide_index=True, width="stretch", height=min(40 + 35 * len(prev), 380),
+                         column_config={"producto": st.column_config.TextColumn("Producto", width="large"),
+                                        "precio": st.column_config.NumberColumn("Precio (no cambia)", format="$ %.0f"),
+                                        "tachado_actual": st.column_config.NumberColumn("Tachado actual", format="$ %.0f"),
+                                        "tachado_nuevo": st.column_config.NumberColumn("Tachado nuevo", format="$ %.0f"),
+                                        "% OFF": st.column_config.NumberColumn(format="%.0f%%")})
+
+        n_prod = aplica["product_id"].nunique()
+        if ejecutar_ui("💲 Aplicar precio tachado", n_prod, "tach",
+                       f"Confirmo cambiar el precio tachado de {n_prod} producto(s) ({len(aplica)} variantes)"):
+            tit = P.set_index("product_id")["titulo"]
+            f2 = lambda x: None if pd.isna(x) or x is None else f"{float(x):.2f}"  # noqa: E731
+            filas = [{"id": pid, "label": tit.get(pid, pid),
+                      "antes": [{"id": v["variant_id"], "compareAtPrice": f2(v["precio_tachado"])} for _, v in g.iterrows()],
+                      "despues": [{"id": v["variant_id"], "compareAtPrice": f2(v["nuevo"])} for _, v in g.iterrows()]}
+                     for pid, g in aplica.groupby("product_id")]
+            desc = (f"{valor:.0f}% OFF" if modo_t == "% OFF" else f"${valor:,.0f}" if modo_t == "Monto fijo"
+                    else f"precio +{valor:.0f}%" if modo_t == "Precio de lista + %"
+                    else "quitar" if modo_t == "Quitar tachado" else "desde Excel")
+            ops.mostrar_resultado(ops.aplicar(tienda, "precios", filas,
+                                              f"{nombre}: precio tachado {desc} en {len(filas)} productos",
+                                              progress=progreso("Precio tachado…")))
