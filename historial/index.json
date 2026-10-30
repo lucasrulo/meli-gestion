@@ -1,6 +1,20 @@
 {
   "ops": [
     {
+      "id": "20261030-174605-ac9378",
+      "fecha": "2026-10-30 17:46:05",
+      "usuario": "app",
+      "canal": "Shopify",
+      "tienda": "crocs",
+      "accion": "publicar",
+      "descripcion": "Crocs Argentina | Sitio Oficial: publicar 16 productos en 5 canal(es)",
+      "reversible": true,
+      "deshace": null,
+      "total": 16,
+      "ok": 16,
+      "deshecha_por": null
+    },
+    {
       "id": "20261030-174558-6a646e",
       "fecha": "2026-10-30 17:45:58",
       "usuario": "app",
