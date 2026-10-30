@@ -1,6 +1,20 @@
 {
   "ops": [
     {
+      "id": "20261030-134855-3d5314",
+      "fecha": "2026-10-30 13:48:55",
+      "usuario": "app",
+      "canal": "Shopify",
+      "tienda": "kappa",
+      "accion": "tags_set",
+      "descripcion": "Kappa Argentina : agregar «precyber, 30cyber» en 21 productos",
+      "reversible": true,
+      "deshace": null,
+      "total": 21,
+      "ok": 21,
+      "deshecha_por": null
+    },
+    {
       "id": "20261029-113201-d34d22",
       "fecha": "2026-10-29 11:32:01",
       "usuario": "app",
