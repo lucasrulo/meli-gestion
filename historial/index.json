@@ -1,6 +1,20 @@
 {
   "ops": [
     {
+      "id": "20261030-173114-479d45",
+      "fecha": "2026-10-30 17:31:14",
+      "usuario": "app",
+      "canal": "Shopify",
+      "tienda": "crocs",
+      "accion": "precios",
+      "descripcion": "Crocs Argentina | Sitio Oficial: precio tachado desde Excel en 15 productos",
+      "reversible": true,
+      "deshace": null,
+      "total": 15,
+      "ok": 15,
+      "deshecha_por": null
+    },
+    {
       "id": "20261030-134855-3d5314",
       "fecha": "2026-10-30 13:48:55",
       "usuario": "app",
