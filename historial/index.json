@@ -1,6 +1,20 @@
 {
   "ops": [
     {
+      "id": "20261102-185553-7642ef",
+      "fecha": "2026-11-02 18:55:53",
+      "usuario": "app",
+      "canal": "Shopify",
+      "tienda": "crocs",
+      "accion": "precios",
+      "descripcion": "Crocs: igualar precio de venta (igualar al precio de los talles con stock) en 53 variantes",
+      "reversible": true,
+      "deshace": null,
+      "total": 12,
+      "ok": 12,
+      "deshecha_por": null
+    },
+    {
       "id": "20261102-185502-c8c368",
       "fecha": "2026-11-02 18:55:02",
       "usuario": "app",
