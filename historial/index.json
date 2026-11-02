@@ -1,6 +1,20 @@
 {
   "ops": [
     {
+      "id": "20261102-185716-564a89",
+      "fecha": "2026-11-02 18:57:16",
+      "usuario": "app",
+      "canal": "Shopify",
+      "tienda": "kappa",
+      "accion": "precios",
+      "descripcion": "Kappa: igualar precio de venta (igualar al precio de los talles con stock) en 21 variantes",
+      "reversible": true,
+      "deshace": null,
+      "total": 6,
+      "ok": 6,
+      "deshecha_por": null
+    },
+    {
       "id": "20261102-185553-7642ef",
       "fecha": "2026-11-02 18:55:53",
       "usuario": "app",
