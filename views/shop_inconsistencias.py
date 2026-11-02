@@ -127,23 +127,58 @@ if summ.empty:
 
 # ---------------------------------------------------------------- 1. regla
 st.subheader("1 · Elegí el precio para cada artículo")
-regla = st.radio("Regla para todos", list(REGLAS), format_func=REGLAS.get, horizontal=True, key="sinc_regla")
+REGLAS = {"stock": "Igualar al precio de los talles CON STOCK", **REGLAS}
+c1, c2 = st.columns([2.2, 1])
+regla = c1.radio("Regla para todos", list(REGLAS), format_func=REGLAS.get, horizontal=True, key="sinc_regla",
+                 help="Con stock: Producteca solo actualiza precios de variantes con stock, así que ese es el precio correcto "
+                      "y los talles sin stock quedan desactualizados.")
+sin_stock_regla = "Mayor"
+if regla == "stock":
+    sin_stock_regla = c2.selectbox("Si ningún talle tiene stock", ["Mayor", "No tocar"], key="sinc_sinstock",
+                                   help="Artículos donde todas las variantes están sin stock: no hay precio de referencia.")
 
 
-def _fmt(s):
-    vc = s.value_counts().sort_index()
-    return " / ".join(f"${v:,.0f}".replace(",", ".") + (f" ×{n}" if n > 1 else "") for v, n in vc.items())
+def _fmt(gd):
+    out = []
+    for v, gv in gd.groupby("precio_cmp"):
+        n, con = len(gv), int((gv["stock"].fillna(0) > 0).sum())
+        out.append(f"${v:,.0f}".replace(",", ".") + (f" ×{n}" if n > 1 else "") + (f" 📦{con}" if con else " ∅"))
+    return " / ".join(out)
 
 
-summ["precios"] = summ["grupo"].map(det.groupby("grupo")["precio_cmp"].apply(_fmt))
-summ["precio_objetivo"] = {"max": summ["max"], "min": summ["min"], "moda": summ["moda"]}.get(
-    regla, pd.Series([None] * len(summ), index=summ.index, dtype="float"))
-summ.insert(0, "igualar", True)
+det["_con_stock"] = det["stock"].fillna(0) > 0
+summ["precios"] = summ["grupo"].map({k: _fmt(gd) for k, gd in det.groupby("grupo")})
+pst = det[det["_con_stock"]].groupby("grupo")["precio_cmp"]
+summ["n_precios_stock"] = summ["grupo"].map(pst.nunique()).fillna(0).astype(int)
+summ["precio_stock"] = summ["grupo"].map(pst.max())
+summ["criterio"] = ""
+if regla == "stock":
+    summ["precio_objetivo"] = summ["precio_stock"]
+    summ.loc[summ["n_precios_stock"] == 1, "criterio"] = "📦 precio con stock"
+    multi = summ["n_precios_stock"] > 1
+    summ.loc[multi, "criterio"] = "⚠️ con stock hay 2+ precios → mayor"
+    sin = summ["n_precios_stock"] == 0
+    if sin_stock_regla == "Mayor":
+        summ.loc[sin, "precio_objetivo"] = summ.loc[sin, "max"]
+        summ.loc[sin, "criterio"] = "∅ sin stock → mayor"
+    else:
+        summ.loc[sin, "criterio"] = "∅ sin stock → no se toca"
+else:
+    summ["precio_objetivo"] = {"max": summ["max"], "min": summ["min"], "moda": summ["moda"]}.get(
+        regla, pd.Series([None] * len(summ), index=summ.index, dtype="float"))
+summ.insert(0, "igualar", summ["precio_objetivo"].notna())
+if regla == "stock":
+    a, b, c = (int((summ["n_precios_stock"] == 1).sum()), int((summ["n_precios_stock"] > 1).sum()),
+               int((summ["n_precios_stock"] == 0).sum()))
+    st.caption(f"📦 **{a}** con un precio claro en los talles con stock · ⚠️ **{b}** con stock a 2+ precios (revisalos) · "
+               f"∅ **{c}** sin ningún talle con stock. En *Precios actuales*: 📦N = variantes con stock a ese precio, "
+               "∅ = todas sin stock.")
 cols = ["igualar", "foto"] + (["marca"] if len(claves) > 1 else []) + \
-       ["titulo", "modelo_color", "productos", "variantes", "precios", "min", "max", "dif_%", "precio_objetivo", "grupo"]
+       ["titulo", "modelo_color", "productos", "variantes", "precios", "min", "max", "dif_%", "precio_objetivo"] + \
+       (["criterio"] if regla == "stock" else []) + ["grupo"]
 ed = st.data_editor(
     summ[cols], hide_index=True, width="stretch", row_height=50, height=min(40 + 52 * len(summ), 460),
-    key=f"sinc_sum_{how}_{campo}_{regla}_{texto}_{min_diff}_{alcance}_{solo_stock}_{len(summ)}",
+    key=f"sinc_sum_{how}_{campo}_{regla}_{sin_stock_regla}_{texto}_{min_diff}_{alcance}_{solo_stock}_{len(summ)}",
     disabled=[c for c in cols if c not in ("igualar", "precio_objetivo")],
     column_config={
         "igualar": st.column_config.CheckboxColumn("Igualar", width="small"),
@@ -153,6 +188,7 @@ ed = st.data_editor(
         "min": st.column_config.NumberColumn("Mín.", format="localized"),
         "max": st.column_config.NumberColumn("Máx.", format="localized"),
         "precio_objetivo": st.column_config.NumberColumn(f"{CAMPOS[campo]} a aplicar", format="localized", min_value=0),
+        "criterio": st.column_config.TextColumn("Criterio", width="medium"),
         "grupo": None,
     },
 )
