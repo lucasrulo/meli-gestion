@@ -1,6 +1,20 @@
 {
   "ops": [
     {
+      "id": "20261102-185502-c8c368",
+      "fecha": "2026-11-02 18:55:02",
+      "usuario": "app",
+      "canal": "Shopify",
+      "tienda": "reebok",
+      "accion": "precios",
+      "descripcion": "Reebok: igualar precio de venta (igualar al precio de los talles con stock) en 977 variantes",
+      "reversible": true,
+      "deshace": null,
+      "total": 159,
+      "ok": 159,
+      "deshecha_por": null
+    },
+    {
       "id": "20261102-141137-719c01",
       "fecha": "2026-11-02 14:11:37",
       "usuario": "app",
