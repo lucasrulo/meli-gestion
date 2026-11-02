@@ -1,6 +1,20 @@
 {
   "ops": [
     {
+      "id": "20261102-190002-211251",
+      "fecha": "2026-11-02 19:00:02",
+      "usuario": "app",
+      "canal": "Shopify",
+      "tienda": "piccadilly",
+      "accion": "precios",
+      "descripcion": "Piccadilly: igualar precio de venta (igualar al precio de los talles con stock) en 1 variantes",
+      "reversible": true,
+      "deshace": null,
+      "total": 1,
+      "ok": 1,
+      "deshecha_por": null
+    },
+    {
       "id": "20261102-185716-564a89",
       "fecha": "2026-11-02 18:57:16",
       "usuario": "app",
