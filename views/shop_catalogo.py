@@ -21,9 +21,9 @@ nombre = stores()[tienda]["nombre"]
 P, V, M, MF = cargar(tienda)
 api_key = secret("ANTHROPIC_API_KEY")
 
-t_est, t_tach, t_tag, t_limp, t_col, t_meta, t_dl = st.tabs(
+t_est, t_tach, t_tag, t_limp, t_col, t_ord, t_meta, t_dl = st.tabs(
     ["🚦 Estados y canales", "💲 Precio tachado", "🏷️ Tags y colecciones", "🧹 Limpiar tags", "📚 Ver colecciones",
-     "🧩 Metacampos", "⬇️ Descargar productos"])
+     "↕️ Ordenar colección", "🧩 Metacampos", "⬇️ Descargar productos"])
 
 
 def _filas(sel: pd.DataFrame, antes_col, despues) -> list[dict]:
@@ -677,3 +677,116 @@ with t_tach:
             ops.mostrar_resultado(ops.aplicar(tienda, "precios", filas,
                                               f"{nombre}: precio tachado {desc} en {len(filas)} productos",
                                               progress=progreso("Precio tachado…")))
+
+
+# ================================================================ ordenar productos de una colección
+SORTS = {"MANUAL": "Manual", "BEST_SELLING": "Más vendidos", "ALPHA_ASC": "A-Z", "ALPHA_DESC": "Z-A",
+         "PRICE_ASC": "Precio menor a mayor", "PRICE_DESC": "Precio mayor a menor", "CREATED": "Más viejos primero",
+         "CREATED_DESC": "Más nuevos primero", "MANUAL_DESC": "Manual (invertido)"}
+
+
+@st.cache_data(ttl=600, show_spinner=False)
+def _orden_coleccion(key: str, cid: str, nonce) -> tuple[str, list[str]]:
+    q = """query($id: ID!, $c: String) { collection(id: $id) { sortOrder
+             products(first: 250, after: $c, sortKey: COLLECTION_DEFAULT) { pageInfo { hasNextPage endCursor } nodes { id } } } }"""
+    cli, ids, cur, sort = ShopifyClient(key), [], None, ""
+    while True:
+        c = cli.gql(q, {"id": cid, "c": cur}, version=ops.COLL_VERSION).get("collection") or {}
+        sort = c.get("sortOrder") or sort
+        d = c.get("products") or {}
+        ids += [n["id"] for n in d.get("nodes") or []]
+        if not (d.get("pageInfo") or {}).get("hasNextPage"):
+            return sort, ids
+        cur = d["pageInfo"]["endCursor"]
+
+
+with t_ord:
+    st.caption("Elegí una colección, pegá tu listado de **modelo-color** y esos productos quedan **primeros, en el orden "
+               "que pasaste**. El resto queda detrás. Se puede deshacer desde **Historial**.")
+    nko = f"ord_nonce_{tienda}"
+    try:
+        cols_o = _colecciones(tienda, st.session_state.get(f"coll_nonce_{tienda}", 0))
+    except ShopifyError as e:
+        st.error(str(e))
+        cols_o = pd.DataFrame(columns=["id", "titulo", "handle", "tipo", "productos"])
+    clo = cols_o.set_index("id")
+    cid = st.selectbox("Colección (escribí para buscar)", cols_o["id"].tolist(), index=None, key="ord_col",
+                       placeholder="Ej.: Zapatillas, Hombre, Cyber…",
+                       format_func=lambda i: f"{clo.loc[i, 'titulo']} · {clo.loc[i, 'tipo']} · {clo.loc[i, 'productos']} productos")
+    sort_actual = None
+    if cid:
+        try:
+            with st.spinner("Leyendo el orden actual de la colección…"):
+                sort_actual, actual = _orden_coleccion(tienda, cid, st.session_state.get(nko, 0))
+        except ShopifyError as e:
+            st.error(str(e))
+    if cid and sort_actual is not None:
+        info = P.set_index("product_id")
+        pos = {pid: i for i, pid in enumerate(actual)}
+        en_col = P[P["product_id"].isin(pos)].copy()
+        en_col["_pos"] = en_col["product_id"].map(pos)
+        en_col = en_col.sort_values("_pos")
+        st.caption(f"**{len(actual)}** productos · orden actual: **{SORTS.get(sort_actual, sort_actual)}**")
+        if sort_actual != "MANUAL":
+            st.info(f"La colección hoy se ordena por **{SORTS.get(sort_actual, sort_actual)}**. Para fijar tu orden "
+                    "la paso a **Manual** (si deshacés, vuelve a como estaba).")
+
+        c1, c2 = st.columns([1.4, 1])
+        from meli.ui import caja_texto
+        txt = caja_texto("Modelo-color en el orden que querés (uno por línea, se puede pegar desde Excel)", "ord_cod",
+                         "✅ Armar orden", placeholder="P14313300000310SS25\nK134-KSA02\n…", container=c1)
+        resto = c2.radio("¿Y el resto de la colección?", ["Mantener su orden actual", "Con stock primero, sin stock al final"],
+                         key="ord_resto")
+        c2.caption("Los productos de tu lista van siempre primero, aunque no tengan stock.")
+
+        codigos = [x.strip() for x in txt.replace(";", "\n").splitlines() if x.strip()]
+        primero, no_col, no_existe = [], [], []
+        for c in codigos:
+            hit, _ = _match_codigos(en_col, c)
+            if hit.empty:
+                (no_col if not _match_codigos(P, c)[0].empty else no_existe).append(c)
+            for pid in hit.sort_values("_pos")["product_id"]:
+                if pid not in primero:
+                    primero.append(pid)
+        if no_col:
+            st.warning(f"{len(no_col)} existen en la tienda pero **no están en esta colección**: " + ", ".join(no_col[:30]))
+        if no_existe:
+            st.warning(f"No encontré {len(no_existe)}: " + ", ".join(no_existe[:30]))
+
+        if primero or resto != "Mantener su orden actual":
+            resto_ids = [pid for pid in actual if pid not in set(primero)]
+            if resto != "Mantener su orden actual":
+                stock = info["stock"].reindex(resto_ids).fillna(0)
+                resto_ids = [p for p in resto_ids if stock.get(p, 0) > 0] + [p for p in resto_ids if not stock.get(p, 0) > 0]
+            deseado = primero + resto_ids
+            moves = ops.movimientos(actual, deseado)
+            prev = pd.DataFrame({"product_id": deseado})
+            prev["nueva"] = range(1, len(prev) + 1)
+            prev["actual"] = prev["product_id"].map(pos).add(1)
+            prev["foto"] = prev["product_id"].map(info["foto"]).fillna("")
+            prev["producto"] = prev["product_id"].map(info["titulo"]).fillna(prev["product_id"])
+            prev["skus"] = prev["product_id"].map(info["skus"]).fillna("")
+            prev["stock"] = prev["product_id"].map(info["stock"])
+            prev["origen"] = ["📌 Tu lista" if p in set(primero) else "" for p in prev["product_id"]]
+            prev["cambio"] = (prev["actual"] - prev["nueva"]).map(lambda d: f"▲ {int(d)}" if d > 0 else f"▼ {int(-d)}" if d < 0 else "=")
+            ver_todo = st.toggle("Ver la colección completa", value=False, key="ord_todo")
+            vista = prev if ver_todo else prev.head(max(len(primero) + 10, 20))
+            st.dataframe(vista, hide_index=True, width="stretch", row_height=50, height=min(40 + 52 * len(vista), 520),
+                         column_order=["nueva", "foto", "producto", "skus", "stock", "actual", "cambio", "origen"],
+                         column_config={"nueva": st.column_config.NumberColumn("#", width="small"),
+                                        "foto": st.column_config.ImageColumn("", width="small"),
+                                        "producto": st.column_config.TextColumn("Producto", width="large"),
+                                        "actual": st.column_config.NumberColumn("Posición actual"),
+                                        "cambio": "Cambio", "origen": ""})
+            st.caption(f"**{len(primero)}** productos de tu lista arriba · **{len(moves)}** movimientos en Shopify")
+            nom_col = clo.loc[cid, "titulo"]
+            if ejecutar_ui("↕️ Aplicar orden", len(moves), "ord",
+                           f"Confirmo reordenar «{nom_col}» ({len(primero)} primeros)"):
+                with st.spinner("Reordenando en Shopify…"):
+                    res = ops.aplicar(tienda, "coleccion_orden",
+                                      [{"id": cid, "label": nom_col, "antes": actual, "despues": deseado}],
+                                      f"{nombre}: ordenar «{nom_col}» ({len(primero)} primeros)",
+                                      meta={"sort_antes": sort_actual}, progress=progreso("Moviendo productos…"))
+                ops.mostrar_resultado(res)
+                st.session_state[nko] = st.session_state.get(nko, 0) + 1
+                _orden_coleccion.clear()

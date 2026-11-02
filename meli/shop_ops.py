@@ -2,6 +2,8 @@
 
 Cada acción recibe "filas": [{"id": <gid>, "label": <texto>, "antes": ..., "despues": ...}]
 """
+import time
+
 import pandas as pd
 import streamlit as st
 
@@ -42,7 +44,7 @@ NOMBRES = {
     "metacampos": "Metacampos", "redirect_add": "Crear redirecciones", "redirect_remove": "Borrar redirecciones",
     "precios": "Precios Shopify", "coleccion_add": "Agregar a colección", "coleccion_remove": "Quitar de colección",
     "contenido": "Descripción/SEO Shopify", "coleccion_seo": "SEO de colecciones", "meta_owner": "SEO de páginas/blog",
-    "imagen_ref_add": "Imagen compartida a productos", "imagen_ref_remove": "Quitar imagen compartida", "meli_descripcion": "Descripción MeLi", "meli_precio": "Precio MeLi", "meli_fotos": "Imagen en publicaciones MeLi", "meli_ads": "Publicidad MeLi",
+    "imagen_ref_add": "Imagen compartida a productos", "imagen_ref_remove": "Quitar imagen compartida", "meli_descripcion": "Descripción MeLi", "meli_precio": "Precio MeLi", "meli_fotos": "Imagen en publicaciones MeLi", "meli_ads": "Publicidad MeLi", "coleccion_orden": "Orden de colección",
 }
 
 
@@ -120,6 +122,8 @@ def aplicar(tienda: str, accion: str, filas: list[dict], descripcion: str, meta:
     meta = meta or {}
     if accion in ("coleccion_add", "coleccion_remove"):
         return _coleccion(tienda, accion, filas, descripcion, meta, deshace, progress)
+    if accion == "coleccion_orden":
+        return _orden(tienda, filas, descripcion, meta, deshace, progress)
     pares = [_vars(accion, f, meta) for f in filas]
     grupos: dict[str, list[int]] = {}
     for i, (mut, _) in enumerate(pares):
@@ -169,6 +173,65 @@ def _coleccion(tienda, accion, filas, descripcion, meta, deshace, progress):
     return df
 
 
+# ---------------------------------------------------------------- orden de productos en una colección
+M_COLL_SORT = """mutation($c: CollectionInput!) { collectionUpdate(input: $c) { collection { id sortOrder }
+                   userErrors { field message } } }"""
+M_COLL_REORDER = """mutation($id: ID!, $m: [MoveInput!]!) { collectionReorderProducts(id: $id, moves: $m) {
+                      job { id done } userErrors { field message } } }"""
+Q_JOB = "query($id: ID!) { job(id: $id) { id done } }"
+
+
+def movimientos(actual: list[str], deseado: list[str]) -> list[dict]:
+    """Moves mínimos (aplicados en orden) para que la colección quede en el orden `deseado`."""
+    cur = list(actual)
+    moves = []
+    for i, pid in enumerate(deseado):
+        if pid not in cur:
+            continue
+        if cur.index(pid) != i:
+            cur.remove(pid)
+            cur.insert(i, pid)
+            moves.append({"id": pid, "newPosition": str(i)})
+    return moves
+
+
+def _orden(tienda, filas, descripcion, meta, deshace, progress):
+    """filas = [{id: colección, label, antes: [ids en orden], despues: [ids en orden]}]
+    meta: sort_antes (orden previo de la colección), sort_final (si hay que dejar otro orden al terminar)."""
+    cli = ShopifyClient(tienda)
+    for f in filas:
+        err = ""
+        try:
+            if meta.get("sort_antes") != "MANUAL":
+                d = cli.gql(M_COLL_SORT, {"c": {"id": f["id"], "sortOrder": "MANUAL"}}, version=COLL_VERSION)
+                err = "; ".join(e["message"] for e in d["collectionUpdate"]["userErrors"])
+            moves = movimientos(f["antes"], f["despues"]) if not err else []
+            f["movidos"] = len(moves)
+            for i in range(0, len(moves), 250):
+                d = cli.gql(M_COLL_REORDER, {"id": f["id"], "m": moves[i:i + 250]}, version=COLL_VERSION)
+                r = d["collectionReorderProducts"]
+                if r["userErrors"]:
+                    err = "; ".join(e["message"] for e in r["userErrors"])
+                    break
+                job, t0 = r.get("job") or {}, time.time()
+                while job.get("id") and not job.get("done") and time.time() - t0 < 120:
+                    time.sleep(1.5)
+                    job = (cli.gql(Q_JOB, {"id": job["id"]}, version=COLL_VERSION).get("job")) or {}
+                if progress:
+                    progress(min((i + 250) / max(len(moves), 1), 1.0))
+            if not err and meta.get("sort_final") and meta["sort_final"] != "MANUAL":
+                d = cli.gql(M_COLL_SORT, {"c": {"id": f["id"], "sortOrder": meta["sort_final"]}}, version=COLL_VERSION)
+                err = "; ".join(e["message"] for e in d["collectionUpdate"]["userErrors"])
+        except Exception as e:  # noqa: BLE001
+            err = str(e)
+        f["ok"], f["error"] = not err, err
+    op = historial.registrar("Shopify", tienda, "coleccion_orden", descripcion, filas, meta, True, deshace)
+    df = pd.DataFrame([{"producto": f.get("label") or f["id"], "resultado": "OK" if f["ok"] else "ERROR",
+                        "movidos": f.get("movidos", 0), "error": f["error"]} for f in filas])
+    df.attrs["op_id"] = op
+    return df
+
+
 # ---------------------------------------------------------------- deshacer
 def inversa(entry: dict) -> tuple[str, list[dict], dict] | None:
     """Arma la operación que revierte `entry` (solo filas OK). None si no se puede."""
@@ -182,6 +245,8 @@ def inversa(entry: dict) -> tuple[str, list[dict], dict] | None:
         return acc, [sw(f) for f in ok], meta
     if acc == "precios":
         return acc, [sw(f) for f in ok], meta
+    if acc == "coleccion_orden":
+        return acc, [sw(f) for f in ok], {**meta, "sort_antes": "MANUAL", "sort_final": meta.get("sort_antes")}
     if acc in ("tags_add", "tags_remove"):
         otra = "tags_remove" if acc == "tags_add" else "tags_add"
         return otra, [{"id": f["id"], "label": f.get("label"), "antes": f["despues"], "despues": f["despues"]} for f in ok], meta
