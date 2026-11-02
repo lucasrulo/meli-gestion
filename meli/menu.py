@@ -12,6 +12,8 @@ MENU = {
          "Actualizar por modelo-color con redondeo inteligente.", "MELI"),
         ("views/inconsistencias.py", "Precios distintos MeLi", "balance", "⚖️",
          "Detectar e igualar talles/colores con precios diferentes.", "MELI"),
+        ("views/shop_inconsistencias.py", "Precios distintos Shopify", "balance", "⚖️",
+         "Mismo SKU o modelo-color con talles a distinto precio: igualar al mayor, menor o a mano.", "SHOPIFY"),
     ],
     "Promociones y Ads MeLi": [
         ("views/campanas.py", "Campañas", "campaign", "📣", "Crear, editar y auditar campañas propias y de MeLi.", "MELI"),
