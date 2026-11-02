@@ -1,6 +1,20 @@
 {
   "ops": [
     {
+      "id": "20261102-141137-719c01",
+      "fecha": "2026-11-02 14:11:37",
+      "usuario": "app",
+      "canal": "Shopify",
+      "tienda": "piccadilly",
+      "accion": "publicar",
+      "descripcion": "Piccadilly Argentina | Sitio Oficial: publicar 144 productos en 4 canal(es)",
+      "reversible": true,
+      "deshace": null,
+      "total": 144,
+      "ok": 144,
+      "deshecha_por": null
+    },
+    {
       "id": "20261102-141106-944d79",
       "fecha": "2026-11-02 14:11:06",
       "usuario": "app",
