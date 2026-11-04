@@ -42,6 +42,10 @@ MENU = {
         ("views/shop_seo.py", "SEO y calidad Shopify", "travel_explore", "🔎",
          "Auditoría y SEO de productos, colecciones, páginas y blog, más redirecciones 301.", "SHOPIFY"),
     ],
+    "Clientes": [
+        ("views/shop_clientes.py", "Clientes Shopify", "group", "👥",
+         "Pegá mails y ves nombre, apellido y tags; agregá o quitá tags en masa.", "SHOPIFY"),
+    ],
     "Marca y control": [
         ("views/proteccion.py", "Protección de marca", "shield", "🛡️",
          "Vendedores sospechosos y registro de denuncias.", "MELI"),
