@@ -9,7 +9,7 @@ from concurrent.futures import ThreadPoolExecutor
 
 import pandas as pd
 
-from .api import MeliClient
+from .api import MeliClient, MeliError
 
 
 def scan_item_ids(client: MeliClient, status: str | None = None) -> list[str]:
@@ -32,12 +32,56 @@ def scan_item_ids(client: MeliClient, status: str | None = None) -> list[str]:
     return list(dict.fromkeys(ids))
 
 
+def _parse_bulk(res) -> list[dict]:
+    """Acepta las respuestas de /items/bulk y del viejo multiget: [{code, body}], [item] o {results: [...]}."""
+    if isinstance(res, dict):
+        res = res.get("results") or res.get("items") or res.get("data") or []
+    out = []
+    for x in res or []:
+        if not isinstance(x, dict):
+            continue
+        if "body" in x:
+            if int(x.get("code") or 200) == 200 and isinstance(x["body"], dict) and x["body"].get("id"):
+                out.append(x["body"])
+        elif x.get("id"):
+            out.append(x)
+    return out
+
+
+_MODO = {"bulk": True}   # si /items/bulk falla por formato, se pasa a pedir de a uno
+
+
+def items_bulk(client: MeliClient, ids: list[str], params: dict | None = None) -> list[dict]:
+    """Trae hasta 20 publicaciones. MeLi deprecó el multiget /items?ids= (oct-2026) → usa /items/bulk?ids=;
+    si eso falla, cae a /items/{id} de a uno."""
+    params = dict(params or {})
+    if _MODO["bulk"]:
+        for extra in (params, {k: v for k, v in params.items() if k not in ("include_attributes", "attributes")}):
+            try:
+                out = _parse_bulk(client.get("/items/bulk", params={"ids": ",".join(ids), **extra}))
+                if out or not ids:
+                    return out
+            except MeliError as e:
+                if e.status in (401, 429) or e.status >= 500:
+                    raise
+        _MODO["bulk"] = False
+    out = []
+    for i in ids:
+        try:
+            it = client.get(f"/items/{i}", params=params or None)
+            if isinstance(it, dict) and it.get("id"):
+                out.append(it)
+        except MeliError as e:
+            if e.status in (401, 429) or e.status >= 500:
+                raise
+    return out
+
+
 def multiget(client: MeliClient, ids: list[str], workers: int = 6) -> list[dict]:
     chunks = [ids[i:i + 20] for i in range(0, len(ids), 20)]
 
     def fetch(chunk):
-        res = client.get("/items", params={"ids": ",".join(chunk), "include_attributes": "all"})
-        return [x["body"] for x in res if isinstance(x, dict) and x.get("code") == 200]
+        return items_bulk(client, chunk, {"include_attributes": "all"})
 
     out: list[dict] = []
     with ThreadPoolExecutor(max_workers=workers) as ex:

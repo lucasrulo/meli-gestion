@@ -7,6 +7,7 @@ from datetime import datetime
 import pandas as pd
 
 from .api import MeliClient, MeliError
+from .catalog import items_bulk
 from .token_store import GitHubTokenStore
 
 KEYWORDS = [
@@ -115,10 +116,9 @@ def fetch_items(client: MeliClient, ids: list[str]) -> list[dict]:
 
     def get(chunk):
         try:
-            res = client.get("/items", params={"ids": ",".join(chunk), "attributes": ITEM_ATTRS})
+            return items_bulk(client, chunk, {"attributes": ITEM_ATTRS})
         except MeliError:
             return []
-        return [x["body"] for x in res if isinstance(x, dict) and x.get("code") == 200]
 
     out = []
     with ThreadPoolExecutor(max_workers=6) as ex:
