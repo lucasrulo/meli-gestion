@@ -1,0 +1,114 @@
+{
+  "id": "20261105-131314-e7e797",
+  "fecha": "2026-11-05 13:13:14",
+  "usuario": "app",
+  "canal": "Shopify",
+  "tienda": "crocs",
+  "accion": "tags_set",
+  "descripcion": "Crocs Argentina | Sitio Oficial: quitar «mamá» en 4 productos",
+  "filas": [
+    {
+      "id": "gid://shopify/Product/9802993041694",
+      "label": "Botas Stomp Lined",
+      "antes": [
+        "bota",
+        "calzado",
+        "fuzzlined",
+        "invierno",
+        "mamá",
+        "mujer",
+        "outlet",
+        "stomp",
+        "style"
+      ],
+      "despues": [
+        "bota",
+        "calzado",
+        "fuzzlined",
+        "invierno",
+        "mujer",
+        "outlet",
+        "stomp",
+        "style"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9943661609246",
+      "label": "Crocs Soho Y-Strap Sandal",
+      "antes": [
+        "calzado",
+        "mamá",
+        "mujer",
+        "sandalia",
+        "sueco",
+        "ultimasunidades"
+      ],
+      "despues": [
+        "calzado",
+        "mujer",
+        "sandalia",
+        "sueco",
+        "ultimasunidades"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9944865440030",
+      "label": "Crocs Classic Mary Jane Clog",
+      "antes": [
+        "calzado",
+        "classic",
+        "EVERYDAY",
+        "mamá",
+        "mujer",
+        "plataforma"
+      ],
+      "despues": [
+        "calzado",
+        "classic",
+        "EVERYDAY",
+        "mujer",
+        "plataforma"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10064546627870",
+      "label": "Crocs Bae Slide",
+      "antes": [
+        "30Cybermonday",
+        "calzado",
+        "Cybermonday",
+        "mamá",
+        "mujer",
+        "nuevo",
+        "plataforma",
+        "sandalia",
+        "style",
+        "sueco",
+        "ultimasunidades"
+      ],
+      "despues": [
+        "30Cybermonday",
+        "calzado",
+        "Cybermonday",
+        "mujer",
+        "nuevo",
+        "plataforma",
+        "sandalia",
+        "style",
+        "sueco",
+        "ultimasunidades"
+      ],
+      "ok": true,
+      "error": ""
+    }
+  ],
+  "meta": {},
+  "reversible": true,
+  "deshace": null
+}
