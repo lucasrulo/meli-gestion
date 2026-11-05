@@ -1,6 +1,20 @@
 {
   "ops": [
     {
+      "id": "20261105-133128-77be2c",
+      "fecha": "2026-11-05 13:31:28",
+      "usuario": "app",
+      "canal": "Shopify",
+      "tienda": "kappa",
+      "accion": "tags_set",
+      "descripcion": "Kappa Argentina : quitar «mespadel» en 7 productos",
+      "reversible": true,
+      "deshace": null,
+      "total": 7,
+      "ok": 7,
+      "deshecha_por": null
+    },
+    {
       "id": "20261105-131314-e7e797",
       "fecha": "2026-11-05 13:13:14",
       "usuario": "app",
