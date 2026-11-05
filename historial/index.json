@@ -1,6 +1,20 @@
 {
   "ops": [
     {
+      "id": "20261105-130459-61bc19",
+      "fecha": "2026-11-05 13:04:59",
+      "usuario": "app",
+      "canal": "Shopify",
+      "tienda": "crocs",
+      "accion": "tags_set",
+      "descripcion": "Crocs Argentina | Sitio Oficial: quitar «ddm» en 29 productos",
+      "reversible": true,
+      "deshace": null,
+      "total": 29,
+      "ok": 29,
+      "deshecha_por": null
+    },
+    {
       "id": "20261104-183109-48e50d",
       "fecha": "2026-11-04 18:31:09",
       "usuario": "app",
