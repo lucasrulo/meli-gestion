@@ -1,6 +1,20 @@
 {
   "ops": [
     {
+      "id": "20261105-133617-16c766",
+      "fecha": "2026-11-05 13:36:17",
+      "usuario": "app",
+      "canal": "Shopify",
+      "tienda": "kappa",
+      "accion": "tags_set",
+      "descripcion": "Kappa Argentina : quitar «diadelniño» en 11 productos",
+      "reversible": true,
+      "deshace": null,
+      "total": 11,
+      "ok": 11,
+      "deshecha_por": null
+    },
+    {
       "id": "20261105-133128-77be2c",
       "fecha": "2026-11-05 13:31:28",
       "usuario": "app",
