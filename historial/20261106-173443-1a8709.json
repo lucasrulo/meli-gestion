@@ -1,0 +1,24 @@
+{
+  "id": "20261106-173443-1a8709",
+  "fecha": "2026-11-06 17:34:43",
+  "usuario": "app",
+  "canal": "MeLi",
+  "tienda": "REEBOK",
+  "accion": "meli_descripcion",
+  "descripcion": "Descripción MeLi: Botines Reebok Futbol Match 1 Ic Azules",
+  "filas": [
+    {
+      "id": "MLA1882764401",
+      "label": "Botines Reebok Futbol Match 1 Ic Azules",
+      "antes": "",
+      "despues": "Botines con exterior de material sintético con diferentes texturas antideslizantes para un mejor control de la pelota. permite el juego sobre cancha cubierta y superficies lisas, con diferentes grips en la suela que permiten al jugador realizar cambios de dirección, aceleraciones y frenadas sin resbalar.",
+      "ok": true,
+      "error": ""
+    }
+  ],
+  "meta": {
+    "user_id": "1159183396"
+  },
+  "reversible": true,
+  "deshace": null
+}

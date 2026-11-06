@@ -1,0 +1,775 @@
+{
+  "id": "20261105-130459-61bc19",
+  "fecha": "2026-11-05 13:04:59",
+  "usuario": "app",
+  "canal": "Shopify",
+  "tienda": "crocs",
+  "accion": "tags_set",
+  "descripcion": "Crocs Argentina | Sitio Oficial: quitar «ddm» en 29 productos",
+  "filas": [
+    {
+      "id": "gid://shopify/Product/9802988749086",
+      "label": "Crocs Classic Crush Rain Boot",
+      "antes": [
+        "calzado",
+        "classic",
+        "Cybermonday",
+        "ddm",
+        "falsodescuento",
+        "invierno",
+        "mujer",
+        "style"
+      ],
+      "despues": [
+        "calzado",
+        "classic",
+        "Cybermonday",
+        "falsodescuento",
+        "invierno",
+        "mujer",
+        "style"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802992550174",
+      "label": "Crocs Echo Boot",
+      "antes": [
+        "bota",
+        "calzado",
+        "ddm",
+        "echo",
+        "invierno",
+        "mujer",
+        "outlet",
+        "street"
+      ],
+      "despues": [
+        "bota",
+        "calzado",
+        "echo",
+        "invierno",
+        "mujer",
+        "outlet",
+        "street"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802992582942",
+      "label": "Crocs Echo Boot",
+      "antes": [
+        "bota",
+        "calzado",
+        "ddm",
+        "echo",
+        "invierno",
+        "mujer",
+        "outlet",
+        "street",
+        "unisex"
+      ],
+      "despues": [
+        "bota",
+        "calzado",
+        "echo",
+        "invierno",
+        "mujer",
+        "outlet",
+        "street",
+        "unisex"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802992779550",
+      "label": "Crocs Echo Boot",
+      "antes": [
+        "bota",
+        "calzado",
+        "ddm",
+        "echo",
+        "invierno",
+        "mujer",
+        "outlet",
+        "street"
+      ],
+      "despues": [
+        "bota",
+        "calzado",
+        "echo",
+        "invierno",
+        "mujer",
+        "outlet",
+        "street"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802992877854",
+      "label": "Botas Stomp Lined",
+      "antes": [
+        "bota",
+        "calzado",
+        "ddm",
+        "fuzzlined",
+        "invierno",
+        "mujer",
+        "outlet",
+        "stomp",
+        "style"
+      ],
+      "despues": [
+        "bota",
+        "calzado",
+        "fuzzlined",
+        "invierno",
+        "mujer",
+        "outlet",
+        "stomp",
+        "style"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802993041694",
+      "label": "Botas Stomp Lined",
+      "antes": [
+        "bota",
+        "calzado",
+        "ddm",
+        "fuzzlined",
+        "invierno",
+        "mamá",
+        "mujer",
+        "outlet",
+        "stomp",
+        "style"
+      ],
+      "despues": [
+        "bota",
+        "calzado",
+        "fuzzlined",
+        "invierno",
+        "mamá",
+        "mujer",
+        "outlet",
+        "stomp",
+        "style"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802993074462",
+      "label": "Botas Stomp Lined",
+      "antes": [
+        "bota",
+        "calzado",
+        "ddm",
+        "fuzzlined",
+        "invierno",
+        "mujer",
+        "outlet",
+        "stomp",
+        "style",
+        "unisex"
+      ],
+      "despues": [
+        "bota",
+        "calzado",
+        "fuzzlined",
+        "invierno",
+        "mujer",
+        "outlet",
+        "stomp",
+        "style",
+        "unisex"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9854671749406",
+      "label": "Crocs Caged Clog",
+      "antes": [
+        "20Cyber",
+        "20Cybermonday",
+        "calzado",
+        "Cybermonday",
+        "ddm",
+        "mujer",
+        "Precyber",
+        "style",
+        "sueco",
+        "youngmiko"
+      ],
+      "despues": [
+        "20Cyber",
+        "20Cybermonday",
+        "calzado",
+        "Cybermonday",
+        "mujer",
+        "Precyber",
+        "style",
+        "sueco",
+        "youngmiko"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9854671814942",
+      "label": "Crocs Caged Clog",
+      "antes": [
+        "20Cyber",
+        "20Cybermonday",
+        "calzado",
+        "Cybermonday",
+        "ddm",
+        "mujer",
+        "Precyber",
+        "style",
+        "sueco",
+        "youngmiko"
+      ],
+      "despues": [
+        "20Cyber",
+        "20Cybermonday",
+        "calzado",
+        "Cybermonday",
+        "mujer",
+        "Precyber",
+        "style",
+        "sueco",
+        "youngmiko"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9854671913246",
+      "label": "Crocs Caged Clog",
+      "antes": [
+        "20Cyber",
+        "20Cybermonday",
+        "calzado",
+        "Cybermonday",
+        "ddm",
+        "mujer",
+        "Precyber",
+        "style",
+        "sueco",
+        "youngmiko"
+      ],
+      "despues": [
+        "20Cyber",
+        "20Cybermonday",
+        "calzado",
+        "Cybermonday",
+        "mujer",
+        "Precyber",
+        "style",
+        "sueco",
+        "youngmiko"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9884794749214",
+      "label": "Crocs Classic Bae Clog",
+      "antes": [
+        "calzado",
+        "ddm",
+        "mujer",
+        "nuevo",
+        "plataforma",
+        "style",
+        "sueco"
+      ],
+      "despues": [
+        "calzado",
+        "mujer",
+        "nuevo",
+        "plataforma",
+        "style",
+        "sueco"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9884794814750",
+      "label": "Crocs Classic Bae Clog",
+      "antes": [
+        "calzado",
+        "ddm",
+        "mujer",
+        "nuevo",
+        "plataforma",
+        "style",
+        "sueco"
+      ],
+      "despues": [
+        "calzado",
+        "mujer",
+        "nuevo",
+        "plataforma",
+        "style",
+        "sueco"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9886435475742",
+      "label": "Crocs Classic Stacked Clog",
+      "antes": [
+        "20cyber",
+        "20Cybermonday",
+        "calzado",
+        "Cybermonday",
+        "ddm",
+        "EVERYDAY",
+        "mujer",
+        "plataforma",
+        "sueco",
+        "ultimasunidades"
+      ],
+      "despues": [
+        "20cyber",
+        "20Cybermonday",
+        "calzado",
+        "Cybermonday",
+        "EVERYDAY",
+        "mujer",
+        "plataforma",
+        "sueco",
+        "ultimasunidades"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9943567008030",
+      "label": "Crocs Classic Bae Clog",
+      "antes": [
+        "calzado",
+        "classic",
+        "ddm",
+        "mujer",
+        "nuevo",
+        "style",
+        "sueco"
+      ],
+      "despues": [
+        "calzado",
+        "classic",
+        "mujer",
+        "nuevo",
+        "style",
+        "sueco"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9943567073566",
+      "label": "Brooklyn Low Wedge",
+      "antes": [
+        "brooklyn",
+        "calzado",
+        "ddm",
+        "mujer",
+        "plataforma",
+        "sandalia",
+        "style"
+      ],
+      "despues": [
+        "brooklyn",
+        "calzado",
+        "mujer",
+        "plataforma",
+        "sandalia",
+        "style"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9943575757086",
+      "label": "Crocs Classic Bae Clog",
+      "antes": [
+        "calzado",
+        "classic",
+        "ddm",
+        "mujer",
+        "nuevo",
+        "plataforma",
+        "style",
+        "sueco"
+      ],
+      "despues": [
+        "calzado",
+        "classic",
+        "mujer",
+        "nuevo",
+        "plataforma",
+        "style",
+        "sueco"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9943575789854",
+      "label": "Brooklyn Low Wedge",
+      "antes": [
+        "brooklyn",
+        "calzado",
+        "ddm",
+        "mujer",
+        "plataforma",
+        "sandalia",
+        "style"
+      ],
+      "despues": [
+        "brooklyn",
+        "calzado",
+        "mujer",
+        "plataforma",
+        "sandalia",
+        "style"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9943661379870",
+      "label": "Crocs Classic Stacked Clog",
+      "antes": [
+        "20Cyber",
+        "20Cybermonday",
+        "calzado",
+        "classic",
+        "Cybermonday",
+        "ddm",
+        "EVERYDAY",
+        "mujer",
+        "plataforma",
+        "Precyber",
+        "sueco",
+        "ultimasunidades"
+      ],
+      "despues": [
+        "20Cyber",
+        "20Cybermonday",
+        "calzado",
+        "classic",
+        "Cybermonday",
+        "EVERYDAY",
+        "mujer",
+        "plataforma",
+        "Precyber",
+        "sueco",
+        "ultimasunidades"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9943661412638",
+      "label": "Crocs Classic Stacked Clog",
+      "antes": [
+        "20cyber",
+        "20Cybermonday",
+        "calzado",
+        "classic",
+        "Cybermonday",
+        "ddm",
+        "EVERYDAY",
+        "mujer",
+        "plataforma",
+        "sueco",
+        "ultimasunidades"
+      ],
+      "despues": [
+        "20cyber",
+        "20Cybermonday",
+        "calzado",
+        "classic",
+        "Cybermonday",
+        "EVERYDAY",
+        "mujer",
+        "plataforma",
+        "sueco",
+        "ultimasunidades"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9943661478174",
+      "label": "Crocs Soho Y-Strap Sandal",
+      "antes": [
+        "calzado",
+        "ddm",
+        "mujer",
+        "sandalia",
+        "style",
+        "sueco",
+        "ultimasunidades"
+      ],
+      "despues": [
+        "calzado",
+        "mujer",
+        "sandalia",
+        "style",
+        "sueco",
+        "ultimasunidades"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9943661543710",
+      "label": "Crocs Soho Y-Strap Sandal",
+      "antes": [
+        "calzado",
+        "ddm",
+        "mujer",
+        "sandalia",
+        "sueco",
+        "ultimasunidades"
+      ],
+      "despues": [
+        "calzado",
+        "mujer",
+        "sandalia",
+        "sueco",
+        "ultimasunidades"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9943661609246",
+      "label": "Crocs Soho Y-Strap Sandal",
+      "antes": [
+        "calzado",
+        "ddm",
+        "mamá",
+        "mujer",
+        "sandalia",
+        "sueco",
+        "ultimasunidades"
+      ],
+      "despues": [
+        "calzado",
+        "mamá",
+        "mujer",
+        "sandalia",
+        "sueco",
+        "ultimasunidades"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9943661642014",
+      "label": "Crocs Soho Y-Strap Sandal",
+      "antes": [
+        "calzado",
+        "ddm",
+        "mujer",
+        "sandalia",
+        "sueco"
+      ],
+      "despues": [
+        "calzado",
+        "mujer",
+        "sandalia",
+        "sueco"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10054831374622",
+      "label": "Crocs Classic Bae Clog",
+      "antes": [
+        "calzado",
+        "ddm",
+        "mamá",
+        "mujer",
+        "nuevo",
+        "style",
+        "sueco",
+        "ultimasunidades"
+      ],
+      "despues": [
+        "calzado",
+        "mamá",
+        "mujer",
+        "nuevo",
+        "style",
+        "sueco",
+        "ultimasunidades"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10054831440158",
+      "label": "Crocs Classic Bae Clog",
+      "antes": [
+        "calzado",
+        "ddm",
+        "mujer",
+        "nuevo",
+        "style",
+        "sueco",
+        "ultimasunidades"
+      ],
+      "despues": [
+        "calzado",
+        "mujer",
+        "nuevo",
+        "style",
+        "sueco",
+        "ultimasunidades"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10059465097502",
+      "label": "Crocs Classic Bae Clog",
+      "antes": [
+        "calzado",
+        "ddm",
+        "mujer",
+        "nuevo",
+        "plataforma",
+        "style",
+        "sueco",
+        "ultimasunidades"
+      ],
+      "despues": [
+        "calzado",
+        "mujer",
+        "nuevo",
+        "plataforma",
+        "style",
+        "sueco",
+        "ultimasunidades"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10059465359646",
+      "label": "Crocs Caged Clog",
+      "antes": [
+        "20Cyber",
+        "20Cybermonday",
+        "calzado",
+        "Cybermonday",
+        "ddm",
+        "mujer",
+        "plataforma",
+        "Precyber",
+        "style",
+        "sueco",
+        "youngmiko"
+      ],
+      "despues": [
+        "20Cyber",
+        "20Cybermonday",
+        "calzado",
+        "Cybermonday",
+        "mujer",
+        "plataforma",
+        "Precyber",
+        "style",
+        "sueco",
+        "youngmiko"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10064546562334",
+      "label": "Crocs Bae Slide",
+      "antes": [
+        "30Cybermonday",
+        "calzado",
+        "Cybermonday",
+        "ddm",
+        "mujer",
+        "nuevo",
+        "plataforma",
+        "sandalia",
+        "style",
+        "sueco",
+        "ultimasunidades"
+      ],
+      "despues": [
+        "30Cybermonday",
+        "calzado",
+        "Cybermonday",
+        "mujer",
+        "nuevo",
+        "plataforma",
+        "sandalia",
+        "style",
+        "sueco",
+        "ultimasunidades"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10064546627870",
+      "label": "Crocs Bae Slide",
+      "antes": [
+        "30Cybermonday",
+        "calzado",
+        "Cybermonday",
+        "ddm",
+        "mamá",
+        "mujer",
+        "nuevo",
+        "plataforma",
+        "sandalia",
+        "style",
+        "sueco",
+        "ultimasunidades"
+      ],
+      "despues": [
+        "30Cybermonday",
+        "calzado",
+        "Cybermonday",
+        "mamá",
+        "mujer",
+        "nuevo",
+        "plataforma",
+        "sandalia",
+        "style",
+        "sueco",
+        "ultimasunidades"
+      ],
+      "ok": true,
+      "error": ""
+    }
+  ],
+  "meta": {},
+  "reversible": true,
+  "deshace": null
+}

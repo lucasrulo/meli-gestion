@@ -1,0 +1,469 @@
+{
+  "id": "20261028-120912-4433ac",
+  "fecha": "2026-10-28 12:09:12",
+  "usuario": "app",
+  "canal": "Shopify",
+  "tienda": "piccadilly",
+  "accion": "publicar",
+  "descripcion": "Piccadilly Argentina | Sitio Oficial: publicar 35 productos en 4 canal(es)",
+  "filas": [
+    {
+      "id": "gid://shopify/Product/8629555134602",
+      "label": "Borcego Fabiana Caña Media",
+      "antes": null,
+      "despues": [
+        "gid://shopify/Publication/165700468874",
+        "gid://shopify/Publication/165700501642",
+        "gid://shopify/Publication/170149544074",
+        "gid://shopify/Publication/170254368906"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629570568330",
+      "label": "Sandalia Cati",
+      "antes": null,
+      "despues": [
+        "gid://shopify/Publication/165700468874",
+        "gid://shopify/Publication/165700501642",
+        "gid://shopify/Publication/170149544074",
+        "gid://shopify/Publication/170254368906"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629573976202",
+      "label": "Sandalia Cristine Cruzada",
+      "antes": null,
+      "despues": [
+        "gid://shopify/Publication/165700468874",
+        "gid://shopify/Publication/165700501642",
+        "gid://shopify/Publication/170149544074",
+        "gid://shopify/Publication/170254368906"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629574140042",
+      "label": "Sandalia Cristine Cruzada",
+      "antes": null,
+      "despues": [
+        "gid://shopify/Publication/165700468874",
+        "gid://shopify/Publication/165700501642",
+        "gid://shopify/Publication/170149544074",
+        "gid://shopify/Publication/170254368906"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629574271114",
+      "label": "Sandalia Cristine Cruzada",
+      "antes": null,
+      "despues": [
+        "gid://shopify/Publication/165700468874",
+        "gid://shopify/Publication/165700501642",
+        "gid://shopify/Publication/170149544074",
+        "gid://shopify/Publication/170254368906"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629638168714",
+      "label": "Zapato Deise",
+      "antes": null,
+      "despues": [
+        "gid://shopify/Publication/165700468874",
+        "gid://shopify/Publication/165700501642",
+        "gid://shopify/Publication/170149544074",
+        "gid://shopify/Publication/170254368906"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629638299786",
+      "label": "Zapato Deise",
+      "antes": null,
+      "despues": [
+        "gid://shopify/Publication/165700468874",
+        "gid://shopify/Publication/165700501642",
+        "gid://shopify/Publication/170149544074",
+        "gid://shopify/Publication/170254368906"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8630034694282",
+      "label": "Zapato Laura Hebilla",
+      "antes": null,
+      "despues": [
+        "gid://shopify/Publication/165700468874",
+        "gid://shopify/Publication/165700501642",
+        "gid://shopify/Publication/170149544074",
+        "gid://shopify/Publication/170254368906"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8630035284106",
+      "label": "Zapato Laura Scarpin",
+      "antes": null,
+      "despues": [
+        "gid://shopify/Publication/165700468874",
+        "gid://shopify/Publication/165700501642",
+        "gid://shopify/Publication/170149544074",
+        "gid://shopify/Publication/170254368906"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8630035447946",
+      "label": "Zapato Laura Scarpin",
+      "antes": null,
+      "despues": [
+        "gid://shopify/Publication/165700468874",
+        "gid://shopify/Publication/165700501642",
+        "gid://shopify/Publication/170149544074",
+        "gid://shopify/Publication/170254368906"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8630041575562",
+      "label": "Zapato Scarpin",
+      "antes": null,
+      "despues": [
+        "gid://shopify/Publication/165700468874",
+        "gid://shopify/Publication/165700501642",
+        "gid://shopify/Publication/170149544074",
+        "gid://shopify/Publication/170254368906"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8668776890506",
+      "label": "Zapato Laura",
+      "antes": null,
+      "despues": [
+        "gid://shopify/Publication/165700468874",
+        "gid://shopify/Publication/165700501642",
+        "gid://shopify/Publication/170149544074",
+        "gid://shopify/Publication/170254368906"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8668776923274",
+      "label": "Zapato Laura",
+      "antes": null,
+      "despues": [
+        "gid://shopify/Publication/165700468874",
+        "gid://shopify/Publication/165700501642",
+        "gid://shopify/Publication/170149544074",
+        "gid://shopify/Publication/170254368906"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8668776956042",
+      "label": "Zapato Ivone",
+      "antes": null,
+      "despues": [
+        "gid://shopify/Publication/165700468874",
+        "gid://shopify/Publication/165700501642",
+        "gid://shopify/Publication/170149544074",
+        "gid://shopify/Publication/170254368906"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8668779184266",
+      "label": "Sandalia Mari",
+      "antes": null,
+      "despues": [
+        "gid://shopify/Publication/165700468874",
+        "gid://shopify/Publication/165700501642",
+        "gid://shopify/Publication/170149544074",
+        "gid://shopify/Publication/170254368906"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8668779249802",
+      "label": "Sandalia Mari",
+      "antes": null,
+      "despues": [
+        "gid://shopify/Publication/165700468874",
+        "gid://shopify/Publication/165700501642",
+        "gid://shopify/Publication/170149544074",
+        "gid://shopify/Publication/170254368906"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8668779282570",
+      "label": "Sandalia Mari",
+      "antes": null,
+      "despues": [
+        "gid://shopify/Publication/165700468874",
+        "gid://shopify/Publication/165700501642",
+        "gid://shopify/Publication/170149544074",
+        "gid://shopify/Publication/170254368906"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8668779675786",
+      "label": "Sandalia Sol",
+      "antes": null,
+      "despues": [
+        "gid://shopify/Publication/165700468874",
+        "gid://shopify/Publication/165700501642",
+        "gid://shopify/Publication/170149544074",
+        "gid://shopify/Publication/170254368906"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8668779774090",
+      "label": "Sandalia Sol",
+      "antes": null,
+      "despues": [
+        "gid://shopify/Publication/165700468874",
+        "gid://shopify/Publication/165700501642",
+        "gid://shopify/Publication/170149544074",
+        "gid://shopify/Publication/170254368906"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8668780986506",
+      "label": "Sandalia Gabi",
+      "antes": null,
+      "despues": [
+        "gid://shopify/Publication/165700468874",
+        "gid://shopify/Publication/165700501642",
+        "gid://shopify/Publication/170149544074",
+        "gid://shopify/Publication/170254368906"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8668781052042",
+      "label": "Sandalia Gabi",
+      "antes": null,
+      "despues": [
+        "gid://shopify/Publication/165700468874",
+        "gid://shopify/Publication/165700501642",
+        "gid://shopify/Publication/170149544074",
+        "gid://shopify/Publication/170254368906"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8806320406666",
+      "label": "Sueco Sol",
+      "antes": null,
+      "despues": [
+        "gid://shopify/Publication/165700468874",
+        "gid://shopify/Publication/165700501642",
+        "gid://shopify/Publication/170149544074",
+        "gid://shopify/Publication/170254368906"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8903498793098",
+      "label": "Mocasín Fabiana",
+      "antes": null,
+      "despues": [
+        "gid://shopify/Publication/165700468874",
+        "gid://shopify/Publication/165700501642",
+        "gid://shopify/Publication/170149544074",
+        "gid://shopify/Publication/170254368906"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8903636910218",
+      "label": "Zapato Silvia",
+      "antes": null,
+      "despues": [
+        "gid://shopify/Publication/165700468874",
+        "gid://shopify/Publication/165700501642",
+        "gid://shopify/Publication/170149544074",
+        "gid://shopify/Publication/170254368906"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8903637041290",
+      "label": "Mocasín Fabiana",
+      "antes": null,
+      "despues": [
+        "gid://shopify/Publication/165700468874",
+        "gid://shopify/Publication/165700501642",
+        "gid://shopify/Publication/170149544074",
+        "gid://shopify/Publication/170254368906"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8903637827722",
+      "label": "Mocasín Gisa",
+      "antes": null,
+      "despues": [
+        "gid://shopify/Publication/165700468874",
+        "gid://shopify/Publication/165700501642",
+        "gid://shopify/Publication/170149544074",
+        "gid://shopify/Publication/170254368906"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8903637860490",
+      "label": "Mocasín Gisa",
+      "antes": null,
+      "despues": [
+        "gid://shopify/Publication/165700468874",
+        "gid://shopify/Publication/165700501642",
+        "gid://shopify/Publication/170149544074",
+        "gid://shopify/Publication/170254368906"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8903637893258",
+      "label": "Mocasín Gisa",
+      "antes": null,
+      "despues": [
+        "gid://shopify/Publication/165700468874",
+        "gid://shopify/Publication/165700501642",
+        "gid://shopify/Publication/170149544074",
+        "gid://shopify/Publication/170254368906"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9236565524618",
+      "label": "Zapato Laura",
+      "antes": null,
+      "despues": [
+        "gid://shopify/Publication/165700468874",
+        "gid://shopify/Publication/165700501642",
+        "gid://shopify/Publication/170149544074",
+        "gid://shopify/Publication/170254368906"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9236567326858",
+      "label": "Mocasín Fabiana",
+      "antes": null,
+      "despues": [
+        "gid://shopify/Publication/165700468874",
+        "gid://shopify/Publication/165700501642",
+        "gid://shopify/Publication/170149544074",
+        "gid://shopify/Publication/170254368906"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9236567359626",
+      "label": "Mocasín Gisa",
+      "antes": null,
+      "despues": [
+        "gid://shopify/Publication/165700468874",
+        "gid://shopify/Publication/165700501642",
+        "gid://shopify/Publication/170149544074",
+        "gid://shopify/Publication/170254368906"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9249932116106",
+      "label": "Mocasín Gisa",
+      "antes": null,
+      "despues": [
+        "gid://shopify/Publication/165700468874",
+        "gid://shopify/Publication/165700501642",
+        "gid://shopify/Publication/170149544074",
+        "gid://shopify/Publication/170254368906"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9269305999498",
+      "label": "Zapato SIlvia",
+      "antes": null,
+      "despues": [
+        "gid://shopify/Publication/165700468874",
+        "gid://shopify/Publication/165700501642",
+        "gid://shopify/Publication/170149544074",
+        "gid://shopify/Publication/170254368906"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9282606268554",
+      "label": "Chatita Raquel",
+      "antes": null,
+      "despues": [
+        "gid://shopify/Publication/165700468874",
+        "gid://shopify/Publication/165700501642",
+        "gid://shopify/Publication/170149544074",
+        "gid://shopify/Publication/170254368906"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9318103220362",
+      "label": "Zapato Deise",
+      "antes": null,
+      "despues": [
+        "gid://shopify/Publication/165700468874",
+        "gid://shopify/Publication/165700501642",
+        "gid://shopify/Publication/170149544074",
+        "gid://shopify/Publication/170254368906"
+      ],
+      "ok": true,
+      "error": ""
+    }
+  ],
+  "meta": {},
+  "reversible": true,
+  "deshace": null
+}

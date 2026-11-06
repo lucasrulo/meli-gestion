@@ -1,0 +1,86 @@
+{
+  "id": "20261026-102551-62076e",
+  "fecha": "2026-10-26 10:25:51",
+  "usuario": "app",
+  "canal": "Shopify",
+  "tienda": "crocs",
+  "accion": "estado",
+  "descripcion": "Crocs Argentina | Sitio Oficial: 9 productos → 🔗 No listado",
+  "filas": [
+    {
+      "id": "gid://shopify/Product/9802950213918",
+      "label": "Classic Clog",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802950672670",
+      "label": "Classic Clog",
+      "antes": "ACTIVE",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802952442142",
+      "label": "Classic Clog Kids",
+      "antes": "ACTIVE",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802973217054",
+      "label": "Crocband™ Clog",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802974200094",
+      "label": "Crocband™ Clog",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9821976363294",
+      "label": "Classic Clog Kids",
+      "antes": "ACTIVE",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9825093681438",
+      "label": "Classic Clog",
+      "antes": "ACTIVE",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9854506828062",
+      "label": "Crocband™ Clog Kids",
+      "antes": "ACTIVE",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9886435410206",
+      "label": "Classic Clog",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    }
+  ],
+  "meta": {},
+  "reversible": true,
+  "deshace": null
+}
