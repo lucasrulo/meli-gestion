@@ -21,8 +21,8 @@ nombre = stores()[tienda]["nombre"]
 P, V, M, MF = cargar(tienda)
 api_key = secret("ANTHROPIC_API_KEY")
 
-t_est, t_tach, t_tag, t_limp, t_col, t_ord, t_meta, t_dl = st.tabs(
-    ["🚦 Estados y canales", "💲 Precio tachado", "🏷️ Tags y colecciones", "🧹 Limpiar tags", "📚 Ver colecciones",
+t_est, t_tach, t_tal, t_tag, t_limp, t_col, t_ord, t_meta, t_dl = st.tabs(
+    ["🚦 Estados y canales", "💲 Precio tachado", "📏 Talles, EAN y stock", "🏷️ Tags y colecciones", "🧹 Limpiar tags", "📚 Ver colecciones",
      "↕️ Ordenar colección", "🧩 Metacampos", "⬇️ Descargar productos"])
 
 
@@ -790,3 +790,57 @@ with t_ord:
                 ops.mostrar_resultado(res)
                 st.session_state[nko] = st.session_state.get(nko, 0) + 1
                 _orden_coleccion.clear()
+
+
+# ================================================================ talles nuevos: SKU + EAN + stock
+with t_tal:
+    from meli import historial as _hist
+    from meli import shop_talles as stl
+    from meli.ui import caja_texto
+    st.caption("Pegá 3 columnas desde Excel: **SKU · EAN · Stock**. Cada SKU se asocia a su producto por modelo-color "
+               "(SKU sin el talle). Si el talle no existe **se crea** (con el precio y tachado del producto); si ya existe "
+               "se actualizan EAN y stock. Productos sin talles (variante única) pasan a tener la opción **Talle**.")
+    txt = caja_texto("SKU · EAN · Stock", "tal_txt", "✅ Leer", height=160,
+                     placeholder="K1342233W-KSA02-40\t7791234567890\t5\nK1342233W-KSA02-41\t7791234567891\t3")
+    df_in, malas = stl.parse(txt)
+    if malas:
+        st.warning(f"{len(malas)} línea(s) que no pude leer: " + " | ".join(malas[:10]))
+    if not df_in.empty:
+        plan = stl.asociar(df_in, P, V)
+        c1, c2, c3 = st.columns(3)
+        c1.metric("🆕 Talles a crear", int((plan["accion"] == "🆕 Crear talle").sum()))
+        c2.metric("✏️ A actualizar", int((plan["accion"] == "✏️ Actualizar").sum()))
+        c3.metric("⚠️ Con error", int((plan["accion"] == "⚠️ Error").sum()))
+        st.dataframe(plan[["accion", "producto", "sku", "talle", "ean", "stock", "detalle"]].sort_values(["accion", "producto", "sku"]),
+                     hide_index=True, width="stretch", height=min(40 + 36 * len(plan), 460),
+                     column_config={"accion": "Acción", "producto": st.column_config.TextColumn("Producto", width="large"),
+                                    "ean": "EAN", "detalle": "Detalle"})
+        c1, c2 = st.columns(2)
+        try:
+            locs = stl.ubicaciones(tienda)
+        except ShopifyError as e:
+            locs = []
+            st.error(f"No pude leer las ubicaciones de stock: {e}")
+            st.info("La app necesita los permisos **read_locations** y **write_inventory** (Dev Dashboard → nueva versión "
+                    "con esos scopes → Release → Cuentas → Conectar tienda de nuevo).")
+        loc = c1.selectbox("Ubicación del stock", [x["id"] for x in locs], key="tal_loc",
+                           format_func=lambda i: next(x["name"] for x in locs if x["id"] == i)) if locs else None
+        opcion = c2.text_input("Nombre de la opción (para productos sin talles)", "Talle", key="tal_opt")
+        validas = plan[plan["product_id"].notna()]
+        if loc and ejecutar_ui("📏 Cargar talles y stock", len(validas), "tal",
+                               f"Confirmo cargar {len(validas)} SKU en {validas['product_id'].nunique()} productos"):
+            res = stl.aplicar(tienda, validas, loc, opcion or "Talle", progress=progreso("Cargando talles…"))
+            ok = int(res["ok"].sum()) if not res.empty else 0
+            (st.success if ok == len(res) else st.warning)(f"✅ {ok} OK" + (f" · ❌ {len(res) - ok} con error"
+                                                                          if ok < len(res) else ""))
+            if ok < len(res):
+                st.dataframe(res.loc[~res["ok"], ["producto", "sku", "talle", "error"]], hide_index=True, width="stretch")
+            _hist.registrar("Shopify", tienda, "talles_stock", f"{nombre}: cargar {ok} SKU (talles, EAN y stock)",
+                            [{"id": r["variant_id"] or r["product_id"], "label": f"{r['producto']} · {r['sku']}",
+                              "antes": None, "despues": {"ean": r["ean"], "stock": r["stock"], "accion": r["accion"]},
+                              "ok": bool(r["ok"]), "error": r["error"]} for r in res.to_dict("records")],
+                            {}, False)
+            from meli.shop_bulk import invalidar as _inv
+            _inv(tienda)
+            st.download_button("⬇️ Resultado en Excel", to_xlsx(res[["accion", "producto", "sku", "talle", "ean", "stock",
+                                                                    "ok", "error"]]), f"talles_{tienda}.xlsx")

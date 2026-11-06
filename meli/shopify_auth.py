@@ -26,7 +26,7 @@ from .config import secret
 from .token_store import GitHubTokenStore
 
 DEFAULT_SCOPES = ("read_products,write_products,read_inventory,write_files,write_online_store_navigation,"
-                  "read_publications,write_publications,write_content,read_customers,write_customers")
+                  "read_publications,write_publications,write_content,read_customers,write_customers,write_inventory,read_locations")
 STATE_TTL = 15 * 60
 
 

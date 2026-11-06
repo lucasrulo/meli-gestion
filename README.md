@@ -98,7 +98,7 @@ Probar en **Cuentas → Probar conexión Shopify**.
 - Lectura del catálogo y cambios grandes (≥ 60 productos) usan **Bulk Operations** de Shopify (rápido y sin límite de API).
 
 Permisos (scopes) que necesita la app de Shopify:
-`read_products, write_products, read_inventory, write_files, write_online_store_navigation, read_publications, write_publications, write_content, read_customers, write_customers`
+`read_products, write_products, read_inventory, write_files, write_online_store_navigation, read_publications, write_publications, write_content, read_customers, write_customers, write_inventory, read_locations`
 (para Clientes además: Dev Dashboard → tu app → **API access → Protected customer data** → pedir acceso a datos de clientes + campos **Name** y **Email**)
 → Dev Dashboard → tu app → nueva versión con esos scopes → **Release** → en la app: Cuentas → **Conectar tienda** de nuevo en cada tienda.
 

@@ -45,7 +45,7 @@ NOMBRES = {
     "metacampos": "Metacampos", "redirect_add": "Crear redirecciones", "redirect_remove": "Borrar redirecciones",
     "precios": "Precios Shopify", "coleccion_add": "Agregar a colección", "coleccion_remove": "Quitar de colección",
     "contenido": "Descripción/SEO Shopify", "coleccion_seo": "SEO de colecciones", "meta_owner": "SEO de páginas/blog",
-    "imagen_ref_add": "Imagen compartida a productos", "imagen_ref_remove": "Quitar imagen compartida", "meli_descripcion": "Descripción MeLi", "meli_precio": "Precio MeLi", "meli_fotos": "Imagen en publicaciones MeLi", "meli_ads": "Publicidad MeLi", "coleccion_orden": "Orden de colección", "cliente_tags": "Tags de clientes",
+    "imagen_ref_add": "Imagen compartida a productos", "imagen_ref_remove": "Quitar imagen compartida", "meli_descripcion": "Descripción MeLi", "meli_precio": "Precio MeLi", "meli_fotos": "Imagen en publicaciones MeLi", "meli_ads": "Publicidad MeLi", "coleccion_orden": "Orden de colección", "cliente_tags": "Tags de clientes", "talles_stock": "Talles, EAN y stock",
 }
 
 
