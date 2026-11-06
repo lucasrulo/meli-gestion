@@ -1,6 +1,20 @@
 {
   "ops": [
     {
+      "id": "20261106-173443-1a8709",
+      "fecha": "2026-11-06 17:34:43",
+      "usuario": "app",
+      "canal": "MeLi",
+      "tienda": "REEBOK",
+      "accion": "meli_descripcion",
+      "descripcion": "Descripción MeLi: Botines Reebok Futbol Match 1 Ic Azules",
+      "reversible": true,
+      "deshace": null,
+      "total": 1,
+      "ok": 1,
+      "deshecha_por": null
+    },
+    {
       "id": "20261105-133617-16c766",
       "fecha": "2026-11-05 13:36:17",
       "usuario": "app",
