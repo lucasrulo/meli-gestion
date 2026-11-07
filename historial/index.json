@@ -1,6 +1,20 @@
 {
   "ops": [
     {
+      "id": "20261107-121016-945314",
+      "fecha": "2026-11-07 12:10:16",
+      "usuario": "app",
+      "canal": "Shopify",
+      "tienda": "kappa",
+      "accion": "tags_set",
+      "descripcion": "Kappa Argentina : agregar «40outlet» en 202 productos",
+      "reversible": true,
+      "deshace": null,
+      "total": 202,
+      "ok": 202,
+      "deshecha_por": null
+    },
+    {
       "id": "20261106-173443-1a8709",
       "fecha": "2026-11-06 17:34:43",
       "usuario": "app",
