@@ -1,6 +1,20 @@
 {
   "ops": [
     {
+      "id": "20261110-140530-e0dff8",
+      "fecha": "2026-11-10 14:05:30",
+      "usuario": "app",
+      "canal": "Shopify",
+      "tienda": "crocs",
+      "accion": "precios",
+      "descripcion": "Crocs Argentina | Sitio Oficial: precio tachado 50% OFF en 57 productos",
+      "reversible": true,
+      "deshace": null,
+      "total": 57,
+      "ok": 57,
+      "deshecha_por": null
+    },
+    {
       "id": "20261107-122901-4b6218",
       "fecha": "2026-11-07 12:29:01",
       "usuario": "app",
