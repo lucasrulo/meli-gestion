@@ -1,6 +1,20 @@
 {
   "ops": [
     {
+      "id": "20261110-144611-011d56",
+      "fecha": "2026-11-10 14:46:11",
+      "usuario": "app",
+      "canal": "Shopify",
+      "tienda": "kappa",
+      "accion": "talles_stock",
+      "descripcion": "Kappa Argentina : cargar 3 SKU (talles, EAN y stock)",
+      "reversible": false,
+      "deshace": null,
+      "total": 3,
+      "ok": 3,
+      "deshecha_por": null
+    },
+    {
       "id": "20261110-140530-e0dff8",
       "fecha": "2026-11-10 14:05:30",
       "usuario": "app",
