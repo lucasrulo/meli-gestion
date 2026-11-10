@@ -1,0 +1,134 @@
+{
+  "id": "20261110-145035-79e926",
+  "fecha": "2026-11-10 14:50:35",
+  "usuario": "app",
+  "canal": "Shopify",
+  "tienda": "kappa",
+  "accion": "talles_stock",
+  "descripcion": "Kappa Argentina : cargar 10 SKU (talles, EAN y stock)",
+  "filas": [
+    {
+      "id": "gid://shopify/ProductVariant/67945063448854",
+      "label": "Zapatillas Killian kids · K5381K7SW-K821B-28",
+      "antes": null,
+      "despues": {
+        "ean": "8058347115415",
+        "stock": 6,
+        "accion": "🆕 Crear talle"
+      },
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/ProductVariant/67945063514390",
+      "label": "Zapatillas Killian kids · K5381K7SW-KG9B-30",
+      "antes": null,
+      "despues": {
+        "ean": "8058347115279",
+        "stock": 4,
+        "accion": "🆕 Crear talle"
+      },
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/ProductVariant/67945063579926",
+      "label": "Zapatillas Logo Sanpuerto El kid · K536153ZW-KA4E-31",
+      "antes": null,
+      "despues": {
+        "ean": "8058128432540",
+        "stock": 2,
+        "accion": "🆕 Crear talle"
+      },
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/ProductVariant/67945063645462",
+      "label": "Zapatillas Empoli · K538132SW-KA08D-27",
+      "antes": null,
+      "despues": {
+        "ean": "8054936728851",
+        "stock": 3,
+        "accion": "🆕 Crear talle"
+      },
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/ProductVariant/67945063678230",
+      "label": "Zapatillas Empoli · K538132SW-KA08D-31",
+      "antes": null,
+      "despues": {
+        "ean": "8054936728899",
+        "stock": 2,
+        "accion": "🆕 Crear talle"
+      },
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/ProductVariant/67945063710998",
+      "label": "Zapatillas Empoli · K538132SW-KA08D-32",
+      "antes": null,
+      "despues": {
+        "ean": "8054936728905",
+        "stock": 1,
+        "accion": "🆕 Crear talle"
+      },
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/ProductVariant/67945063743766",
+      "label": "Zapatillas Empoli · K538132SW-KA08D-35",
+      "antes": null,
+      "despues": {
+        "ean": "8054936728936",
+        "stock": 1,
+        "accion": "🆕 Crear talle"
+      },
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/ProductVariant/67945063776534",
+      "label": "Zapatillas Empoli · K538132SW-KA08D-36",
+      "antes": null,
+      "despues": {
+        "ean": "8054936728943",
+        "stock": 1,
+        "accion": "🆕 Crear talle"
+      },
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/ProductVariant/67945063842070",
+      "label": "Zapatillas Logo Glinch 2 kids · K5381F58W-KA14D-36",
+      "antes": null,
+      "despues": {
+        "ean": "8058127206753",
+        "stock": 2,
+        "accion": "🆕 Crear talle"
+      },
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/ProductVariant/67945063874838",
+      "label": "Zapatillas Logo Glinch 2 kids · K5381F58W-KA14D-38",
+      "antes": null,
+      "despues": {
+        "ean": "8058127206890",
+        "stock": 3,
+        "accion": "🆕 Crear talle"
+      },
+      "ok": true,
+      "error": ""
+    }
+  ],
+  "meta": {},
+  "reversible": false,
+  "deshace": null
+}
