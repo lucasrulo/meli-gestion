@@ -1,0 +1,4224 @@
+{
+  "id": "20261110-140530-e0dff8",
+  "fecha": "2026-11-10 14:05:30",
+  "usuario": "app",
+  "canal": "Shopify",
+  "tienda": "crocs",
+  "accion": "precios",
+  "descripcion": "Crocs Argentina | Sitio Oficial: precio tachado 50% OFF en 57 productos",
+  "filas": [
+    {
+      "id": "gid://shopify/Product/10094951629086",
+      "label": "Classic Clog",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/51924567490846",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/51924567523614",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/51924567556382",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/51924567490846",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/51924567523614",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/51924567556382",
+          "compareAtPrice": "120000.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802949099806",
+      "label": "Classic Clog",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50014415749406",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014415782174",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014415814942",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014415880478",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932625379614",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014415946014",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014415978782",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014416011550",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014416044318",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014416077086",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50014415749406",
+          "compareAtPrice": "90000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014415782174",
+          "compareAtPrice": "90000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014415814942",
+          "compareAtPrice": "90000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014415880478",
+          "compareAtPrice": "90000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932625379614",
+          "compareAtPrice": "90000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014415946014",
+          "compareAtPrice": "90000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014415978782",
+          "compareAtPrice": "90000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014416011550",
+          "compareAtPrice": "90000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014416044318",
+          "compareAtPrice": "90000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014416077086",
+          "compareAtPrice": "90000.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802949689630",
+      "label": "Classic Clog (NO PUBLICAR)",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/49932627280158",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932627312926",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932627345694",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932627378462",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932627411230",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932627443998",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932627476766",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932627509534",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932627542302",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932627575070",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/49932627280158",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932627312926",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932627345694",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932627378462",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932627411230",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932627443998",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932627476766",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932627509534",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932627542302",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932627575070",
+          "compareAtPrice": "120000.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802950213918",
+      "label": "Classic Clog",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/49932628787486",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932628820254",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932628853022",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932628885790",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932628918558",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932628951326",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932628984094",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932629016862",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932629049630",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932629082398",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/49932628787486",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932628820254",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932628853022",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932628885790",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932628918558",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932628951326",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932628984094",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932629016862",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932629049630",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932629082398",
+          "compareAtPrice": "120000.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802950344990",
+      "label": "Classic Clog",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/49932629213470",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932629246238",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932629279006",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932629311774",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932629344542",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932629377310",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014417125662",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014417158430",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014417191198",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014417223966",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/49932629213470",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932629246238",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932629279006",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932629311774",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932629344542",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932629377310",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014417125662",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014417158430",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014417191198",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014417223966",
+          "compareAtPrice": "120000.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802952442142",
+      "label": "Classic Clog Kids",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/49938428592414",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938428625182",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938428657950",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938428526878",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938428559646",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938428690718",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938428723486",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938428756254",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/49938428592414",
+          "compareAtPrice": "100000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938428625182",
+          "compareAtPrice": "100000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938428657950",
+          "compareAtPrice": "100000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938428526878",
+          "compareAtPrice": "100000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938428559646",
+          "compareAtPrice": "100000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938428690718",
+          "compareAtPrice": "100000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938428723486",
+          "compareAtPrice": "100000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938428756254",
+          "compareAtPrice": "100000.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802952605982",
+      "label": "Classic Clog Kids",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50014422925598",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014422958366",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938377703710",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014422991134",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014423122206",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014423154974",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014423187742",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014423220510",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50014422925598",
+          "compareAtPrice": "60000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014422958366",
+          "compareAtPrice": "60000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938377703710",
+          "compareAtPrice": "60000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014422991134",
+          "compareAtPrice": "60000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014423122206",
+          "compareAtPrice": "60000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014423154974",
+          "compareAtPrice": "60000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014423187742",
+          "compareAtPrice": "60000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014423220510",
+          "compareAtPrice": "60000.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802970562846",
+      "label": "Crocband™ Clog Kids",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50014423580958",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938363220254",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938363253022",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014423646494",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014423712030",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014423744798",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014423777566",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014423843102",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50014423580958",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938363220254",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938363253022",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014423646494",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014423712030",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014423744798",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014423777566",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014423843102",
+          "compareAtPrice": "120000.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802977411358",
+      "label": "Classic Lined Clog K",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50014429020446",
+          "compareAtPrice": "41665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014429053214",
+          "compareAtPrice": "41665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014429085982",
+          "compareAtPrice": "41665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014429118750",
+          "compareAtPrice": "41665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014429151518",
+          "compareAtPrice": "41665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938357354782",
+          "compareAtPrice": "41665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014429184286",
+          "compareAtPrice": "41665.00"
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50014429020446",
+          "compareAtPrice": "50000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014429053214",
+          "compareAtPrice": "50000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014429085982",
+          "compareAtPrice": "50000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014429118750",
+          "compareAtPrice": "50000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014429151518",
+          "compareAtPrice": "50000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938357354782",
+          "compareAtPrice": "50000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014429184286",
+          "compareAtPrice": "50000.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802978001182",
+      "label": "Classic Lined Neo Puff Boot",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/49938357158174",
+          "compareAtPrice": "83332.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938357190942",
+          "compareAtPrice": "83332.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014430462238",
+          "compareAtPrice": "83332.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014430495006",
+          "compareAtPrice": "83332.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014430527774",
+          "compareAtPrice": "83332.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014430560542",
+          "compareAtPrice": "83332.00"
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/49938357158174",
+          "compareAtPrice": "100000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938357190942",
+          "compareAtPrice": "100000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014430462238",
+          "compareAtPrice": "100000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014430495006",
+          "compareAtPrice": "100000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014430527774",
+          "compareAtPrice": "100000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014430560542",
+          "compareAtPrice": "100000.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802981474590",
+      "label": "Crocs Classic Lined Clog T",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50014434459934",
+          "compareAtPrice": "33332.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014434492702",
+          "compareAtPrice": "33332.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938356371742",
+          "compareAtPrice": "33332.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014434525470",
+          "compareAtPrice": "33332.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938356404510",
+          "compareAtPrice": "33332.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014434558238",
+          "compareAtPrice": "33332.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938356338974",
+          "compareAtPrice": "33332.00"
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50014434459934",
+          "compareAtPrice": "40000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014434492702",
+          "compareAtPrice": "40000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938356371742",
+          "compareAtPrice": "40000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014434525470",
+          "compareAtPrice": "40000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938356404510",
+          "compareAtPrice": "40000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014434558238",
+          "compareAtPrice": "40000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938356338974",
+          "compareAtPrice": "40000.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802981867806",
+      "label": "Classic Lined Clog Kids",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50014434591006",
+          "compareAtPrice": "41665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938356207902",
+          "compareAtPrice": "41665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014434623774",
+          "compareAtPrice": "41665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938356240670",
+          "compareAtPrice": "41665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938356273438",
+          "compareAtPrice": "41665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938356306206",
+          "compareAtPrice": "41665.00"
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50014434591006",
+          "compareAtPrice": "50000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938356207902",
+          "compareAtPrice": "50000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014434623774",
+          "compareAtPrice": "50000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938356240670",
+          "compareAtPrice": "50000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938356273438",
+          "compareAtPrice": "50000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938356306206",
+          "compareAtPrice": "50000.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802982195486",
+      "label": "Classic Lined Clog Kids",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/49938356076830",
+          "compareAtPrice": "41665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014434689310",
+          "compareAtPrice": "41665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938356109598",
+          "compareAtPrice": "41665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938356142366",
+          "compareAtPrice": "41665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938356175134",
+          "compareAtPrice": "41665.00"
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/49938356076830",
+          "compareAtPrice": "50000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014434689310",
+          "compareAtPrice": "50000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938356109598",
+          "compareAtPrice": "50000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938356142366",
+          "compareAtPrice": "50000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938356175134",
+          "compareAtPrice": "50000.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802982261022",
+      "label": "Classic Lined Clog Kids",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/49938355945758",
+          "compareAtPrice": "41665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014434722078",
+          "compareAtPrice": "41665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938355978526",
+          "compareAtPrice": "41665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938356011294",
+          "compareAtPrice": "41665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938356044062",
+          "compareAtPrice": "41665.00"
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/49938355945758",
+          "compareAtPrice": "50000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014434722078",
+          "compareAtPrice": "50000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938355978526",
+          "compareAtPrice": "50000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938356011294",
+          "compareAtPrice": "50000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938356044062",
+          "compareAtPrice": "50000.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802982424862",
+      "label": "Classic Lined Clog Kids",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50014434787614",
+          "compareAtPrice": "41665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938355781918",
+          "compareAtPrice": "41665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014434853150",
+          "compareAtPrice": "41665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938355814686",
+          "compareAtPrice": "41665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938355847454",
+          "compareAtPrice": "41665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938355880222",
+          "compareAtPrice": "41665.00"
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50014434787614",
+          "compareAtPrice": "50000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938355781918",
+          "compareAtPrice": "50000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014434853150",
+          "compareAtPrice": "50000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938355814686",
+          "compareAtPrice": "50000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938355847454",
+          "compareAtPrice": "50000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938355880222",
+          "compareAtPrice": "50000.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802982588702",
+      "label": "Classic Lined Clog Kids",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50014434885918",
+          "compareAtPrice": "41665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014434918686",
+          "compareAtPrice": "41665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014434951454",
+          "compareAtPrice": "41665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938355650846",
+          "compareAtPrice": "41665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938355683614",
+          "compareAtPrice": "41665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938355716382",
+          "compareAtPrice": "41665.00"
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50014434885918",
+          "compareAtPrice": "50000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014434918686",
+          "compareAtPrice": "50000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014434951454",
+          "compareAtPrice": "50000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938355650846",
+          "compareAtPrice": "50000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938355683614",
+          "compareAtPrice": "50000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938355716382",
+          "compareAtPrice": "50000.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802982752542",
+      "label": "Classic Lined Clog Kids",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50014434984222",
+          "compareAtPrice": "41665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49979310997790",
+          "compareAtPrice": "41665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014435016990",
+          "compareAtPrice": "41665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938355519774",
+          "compareAtPrice": "41665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938355552542",
+          "compareAtPrice": "41665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938355585310",
+          "compareAtPrice": "41665.00"
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50014434984222",
+          "compareAtPrice": "50000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49979310997790",
+          "compareAtPrice": "50000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014435016990",
+          "compareAtPrice": "50000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938355519774",
+          "compareAtPrice": "50000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938355552542",
+          "compareAtPrice": "50000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938355585310",
+          "compareAtPrice": "50000.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802982981918",
+      "label": "Classic Lined Clog Kids",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50014435049758",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014435082526",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932710445342",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932710478110",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932710510878",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50014435049758",
+          "compareAtPrice": "50000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014435082526",
+          "compareAtPrice": "50000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932710445342",
+          "compareAtPrice": "50000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932710478110",
+          "compareAtPrice": "50000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932710510878",
+          "compareAtPrice": "50000.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802983440670",
+      "label": "Crocs Brooklin Buckle",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50014435377438",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49936928571678",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49936928604446",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49936928637214",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49936928669982",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014435410206",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49936928538910",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014435442974",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50014435377438",
+          "compareAtPrice": "170000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49936928571678",
+          "compareAtPrice": "170000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49936928604446",
+          "compareAtPrice": "170000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49936928637214",
+          "compareAtPrice": "170000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49936928669982",
+          "compareAtPrice": "170000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014435410206",
+          "compareAtPrice": "170000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49936928538910",
+          "compareAtPrice": "170000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014435442974",
+          "compareAtPrice": "170000.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802983899422",
+      "label": "Crocs Brooklin Buckle",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50036555907358",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50036555940126",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50036555972894",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50036556005662",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50036556038430",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50036556071198",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50036556103966",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50036556136734",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50036555907358",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50036555940126",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50036555972894",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50036556005662",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50036556038430",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50036556071198",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50036556103966",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50036556136734",
+          "compareAtPrice": "120000.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802983932190",
+      "label": "Classic Cozzzy Sandal",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50014435737886",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014435770654",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014435803422",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014435836190",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49976612258078",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49979321614622",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014435868958",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014435901726",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49976612225310",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014435934494",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014435967262",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50014435737886",
+          "compareAtPrice": "100000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014435770654",
+          "compareAtPrice": "100000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014435803422",
+          "compareAtPrice": "100000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014435836190",
+          "compareAtPrice": "100000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49976612258078",
+          "compareAtPrice": "100000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49979321614622",
+          "compareAtPrice": "100000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014435868958",
+          "compareAtPrice": "100000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014435901726",
+          "compareAtPrice": "100000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49976612225310",
+          "compareAtPrice": "100000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014435934494",
+          "compareAtPrice": "100000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014435967262",
+          "compareAtPrice": "100000.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802984128798",
+      "label": "Classic Cozzzy Sandal",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50014436000030",
+          "compareAtPrice": "66665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932712444190",
+          "compareAtPrice": "66665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932712476958",
+          "compareAtPrice": "66665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932712509726",
+          "compareAtPrice": "66665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932712542494",
+          "compareAtPrice": "66665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932712575262",
+          "compareAtPrice": "66665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932712608030",
+          "compareAtPrice": "66665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932712345886",
+          "compareAtPrice": "66665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932712378654",
+          "compareAtPrice": "66665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932712411422",
+          "compareAtPrice": "66665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014436032798",
+          "compareAtPrice": "66665.00"
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50014436000030",
+          "compareAtPrice": "80000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932712444190",
+          "compareAtPrice": "80000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932712476958",
+          "compareAtPrice": "80000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932712509726",
+          "compareAtPrice": "80000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932712542494",
+          "compareAtPrice": "80000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932712575262",
+          "compareAtPrice": "80000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932712608030",
+          "compareAtPrice": "80000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932712345886",
+          "compareAtPrice": "80000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932712378654",
+          "compareAtPrice": "80000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932712411422",
+          "compareAtPrice": "80000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014436032798",
+          "compareAtPrice": "80000.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802984194334",
+      "label": "Classic Cozzzy Sandal",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50014436065566",
+          "compareAtPrice": "83332.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014436098334",
+          "compareAtPrice": "83332.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014436131102",
+          "compareAtPrice": "83332.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014436163870",
+          "compareAtPrice": "83332.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014436196638",
+          "compareAtPrice": "83332.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014436229406",
+          "compareAtPrice": "83332.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014436294942",
+          "compareAtPrice": "83332.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014436360478",
+          "compareAtPrice": "83332.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014436426014",
+          "compareAtPrice": "83332.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49976612290846",
+          "compareAtPrice": "83332.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014436458782",
+          "compareAtPrice": "83332.00"
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50014436065566",
+          "compareAtPrice": "100000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014436098334",
+          "compareAtPrice": "100000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014436131102",
+          "compareAtPrice": "100000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014436163870",
+          "compareAtPrice": "100000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014436196638",
+          "compareAtPrice": "100000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014436229406",
+          "compareAtPrice": "100000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014436294942",
+          "compareAtPrice": "100000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014436360478",
+          "compareAtPrice": "100000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014436426014",
+          "compareAtPrice": "100000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49976612290846",
+          "compareAtPrice": "100000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014436458782",
+          "compareAtPrice": "100000.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802984390942",
+      "label": "Classic Cozzzy Sandal",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50014436491550",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014436524318",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014436557086",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014436589854",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014436622622",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932712968478",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932713001246",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932712902942",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932712935710",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014436655390",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014436720926",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50014436491550",
+          "compareAtPrice": "80000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014436524318",
+          "compareAtPrice": "80000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014436557086",
+          "compareAtPrice": "80000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014436589854",
+          "compareAtPrice": "80000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014436622622",
+          "compareAtPrice": "80000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932712968478",
+          "compareAtPrice": "80000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932713001246",
+          "compareAtPrice": "80000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932712902942",
+          "compareAtPrice": "80000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932712935710",
+          "compareAtPrice": "80000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014436655390",
+          "compareAtPrice": "80000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014436720926",
+          "compareAtPrice": "80000.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802984587550",
+      "label": "Classic Cozzzy Sandal",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50014436786462",
+          "compareAtPrice": "83332.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014436819230",
+          "compareAtPrice": "83332.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014436884766",
+          "compareAtPrice": "83332.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014437835038",
+          "compareAtPrice": "83332.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932713230622",
+          "compareAtPrice": "83332.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932713263390",
+          "compareAtPrice": "83332.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932713296158",
+          "compareAtPrice": "83332.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014437867806",
+          "compareAtPrice": "83332.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014437900574",
+          "compareAtPrice": "83332.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014437933342",
+          "compareAtPrice": "83332.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014437966110",
+          "compareAtPrice": "83332.00"
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50014436786462",
+          "compareAtPrice": "100000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014436819230",
+          "compareAtPrice": "100000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014436884766",
+          "compareAtPrice": "100000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014437835038",
+          "compareAtPrice": "100000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932713230622",
+          "compareAtPrice": "100000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932713263390",
+          "compareAtPrice": "100000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932713296158",
+          "compareAtPrice": "100000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014437867806",
+          "compareAtPrice": "100000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014437900574",
+          "compareAtPrice": "100000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014437933342",
+          "compareAtPrice": "100000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014437966110",
+          "compareAtPrice": "100000.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802988912926",
+      "label": "Crocs Classic Crush Rain Boot",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/49932726108446",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932726141214",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932726173982",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932726206750",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932726239518",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932726272286",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014443405598",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014443438366",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014443471134",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014443503902",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014443536670",
+          "compareAtPrice": "119998.00"
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/49932726108446",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932726141214",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932726173982",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932726206750",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932726239518",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932726272286",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014443405598",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014443438366",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014443471134",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014443503902",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014443536670",
+          "compareAtPrice": "120000.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802989437214",
+      "label": "Crocs Mega Crush Sandal",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50014444650782",
+          "compareAtPrice": "149998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014444683550",
+          "compareAtPrice": "149998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49979341635870",
+          "compareAtPrice": "149998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938424496414",
+          "compareAtPrice": "149998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938424529182",
+          "compareAtPrice": "149998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014444716318",
+          "compareAtPrice": "149998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014444749086",
+          "compareAtPrice": "149998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014444781854",
+          "compareAtPrice": "149998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014444912926",
+          "compareAtPrice": "149998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014444978462",
+          "compareAtPrice": "149998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014445371678",
+          "compareAtPrice": "149998.00"
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50014444650782",
+          "compareAtPrice": "180000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014444683550",
+          "compareAtPrice": "180000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49979341635870",
+          "compareAtPrice": "180000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938424496414",
+          "compareAtPrice": "180000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938424529182",
+          "compareAtPrice": "180000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014444716318",
+          "compareAtPrice": "180000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014444749086",
+          "compareAtPrice": "180000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014444781854",
+          "compareAtPrice": "180000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014444912926",
+          "compareAtPrice": "180000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014444978462",
+          "compareAtPrice": "180000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014445371678",
+          "compareAtPrice": "180000.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802989535518",
+      "label": "Crocs Mega Crush Sandal",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/49938350801182",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938350833950",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938350866718",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938350899486",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938350932254",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938350965022",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014445404446",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014445437214",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014445502750",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014445535518",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014445568286",
+          "compareAtPrice": "119998.00"
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/49938350801182",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938350833950",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938350866718",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938350899486",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938350932254",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938350965022",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014445404446",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014445437214",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014445502750",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014445535518",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014445568286",
+          "compareAtPrice": "120000.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802989863198",
+      "label": "Crocs Mega Crush Sandal",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/59483164147998",
+          "compareAtPrice": "99998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483164180766",
+          "compareAtPrice": "99998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483164213534",
+          "compareAtPrice": "99998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483164246302",
+          "compareAtPrice": "99998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483164279070",
+          "compareAtPrice": "99998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483164311838",
+          "compareAtPrice": "99998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483164344606",
+          "compareAtPrice": "99998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483164377374",
+          "compareAtPrice": "99998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483164410142",
+          "compareAtPrice": "99998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483164442910",
+          "compareAtPrice": "99998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483164475678",
+          "compareAtPrice": "99998.00"
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/59483164147998",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483164180766",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483164213534",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483164246302",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483164279070",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483164311838",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483164344606",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483164377374",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483164410142",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483164442910",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483164475678",
+          "compareAtPrice": "120000.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802992320798",
+      "label": "Crocs Echo Marbled Clog",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50014457004318",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938349031710",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938349064478",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014457037086",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938349097246",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014457102622",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014457135390",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014457168158",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014457200926",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014457233694",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014457266462",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50014457004318",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938349031710",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938349064478",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014457037086",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938349097246",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014457102622",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014457135390",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014457168158",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014457200926",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014457233694",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014457266462",
+          "compareAtPrice": "120000.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802992419102",
+      "label": "Crocs Disney Minnie Mouse Cls Clog T",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/59483231617310",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/59483231617310",
+          "compareAtPrice": "80000.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802992550174",
+      "label": "Crocs Echo Boot",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/49932735840542",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932735873310",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932735906078",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932735938846",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932735971614",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014457397534",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014457430302",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014457463070",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014457495838",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014457561374",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014457626910",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/49932735840542",
+          "compareAtPrice": "240000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932735873310",
+          "compareAtPrice": "240000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932735906078",
+          "compareAtPrice": "240000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932735938846",
+          "compareAtPrice": "240000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932735971614",
+          "compareAtPrice": "240000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014457397534",
+          "compareAtPrice": "240000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014457430302",
+          "compareAtPrice": "240000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014457463070",
+          "compareAtPrice": "240000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014457495838",
+          "compareAtPrice": "240000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014457561374",
+          "compareAtPrice": "240000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014457626910",
+          "compareAtPrice": "240000.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802992582942",
+      "label": "Crocs Echo Boot",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/49932736004382",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932736037150",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932736069918",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932736102686",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932736135454",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014457692446",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014457757982",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014457790750",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014457856286",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014457889054",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014457921822",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/49932736004382",
+          "compareAtPrice": "240000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932736037150",
+          "compareAtPrice": "240000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932736069918",
+          "compareAtPrice": "240000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932736102686",
+          "compareAtPrice": "240000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932736135454",
+          "compareAtPrice": "240000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014457692446",
+          "compareAtPrice": "240000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014457757982",
+          "compareAtPrice": "240000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014457790750",
+          "compareAtPrice": "240000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014457856286",
+          "compareAtPrice": "240000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014457889054",
+          "compareAtPrice": "240000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014457921822",
+          "compareAtPrice": "240000.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802992779550",
+      "label": "Crocs Echo Boot",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/49932736332062",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932736364830",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932736397598",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014457954590",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014457987358",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014458020126",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014458052894",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014458085662",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014458118430",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014458151198",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014458183966",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/49932736332062",
+          "compareAtPrice": "240000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932736364830",
+          "compareAtPrice": "240000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932736397598",
+          "compareAtPrice": "240000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014457954590",
+          "compareAtPrice": "240000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014457987358",
+          "compareAtPrice": "240000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014458020126",
+          "compareAtPrice": "240000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014458052894",
+          "compareAtPrice": "240000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014458085662",
+          "compareAtPrice": "240000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014458118430",
+          "compareAtPrice": "240000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014458151198",
+          "compareAtPrice": "240000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014458183966",
+          "compareAtPrice": "240000.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802992877854",
+      "label": "Botas Stomp Lined",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/49932736561438",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932736594206",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932736626974",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932736659742",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932736692510",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014458216734",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014458249502",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014458282270",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014458315038",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014458347806",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014458413342",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/49932736561438",
+          "compareAtPrice": "200000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932736594206",
+          "compareAtPrice": "200000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932736626974",
+          "compareAtPrice": "200000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932736659742",
+          "compareAtPrice": "200000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932736692510",
+          "compareAtPrice": "200000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014458216734",
+          "compareAtPrice": "200000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014458249502",
+          "compareAtPrice": "200000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014458282270",
+          "compareAtPrice": "200000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014458315038",
+          "compareAtPrice": "200000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014458347806",
+          "compareAtPrice": "200000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014458413342",
+          "compareAtPrice": "200000.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802993041694",
+      "label": "Botas Stomp Lined",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/49932736856350",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932736889118",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932736921886",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932736954654",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932736987422",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932737020190",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014458446110",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014458478878",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014458511646",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014458544414",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014458577182",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/49932736856350",
+          "compareAtPrice": "200000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932736889118",
+          "compareAtPrice": "200000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932736921886",
+          "compareAtPrice": "200000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932736954654",
+          "compareAtPrice": "200000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932736987422",
+          "compareAtPrice": "200000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932737020190",
+          "compareAtPrice": "200000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014458446110",
+          "compareAtPrice": "200000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014458478878",
+          "compareAtPrice": "200000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014458511646",
+          "compareAtPrice": "200000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014458544414",
+          "compareAtPrice": "200000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014458577182",
+          "compareAtPrice": "200000.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802993074462",
+      "label": "Botas Stomp Lined",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/49932737216798",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932737249566",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932737282334",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932737315102",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932737347870",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014458609950",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014458642718",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014458675486",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014458708254",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014458741022",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014458773790",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/49932737216798",
+          "compareAtPrice": "200000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932737249566",
+          "compareAtPrice": "200000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932737282334",
+          "compareAtPrice": "200000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932737315102",
+          "compareAtPrice": "200000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932737347870",
+          "compareAtPrice": "200000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014458609950",
+          "compareAtPrice": "200000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014458642718",
+          "compareAtPrice": "200000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014458675486",
+          "compareAtPrice": "200000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014458708254",
+          "compareAtPrice": "200000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014458741022",
+          "compareAtPrice": "200000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014458773790",
+          "compareAtPrice": "200000.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802993172766",
+      "label": "Crocs Crush Slide",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/49932737446174",
+          "compareAtPrice": "114998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932737478942",
+          "compareAtPrice": "114998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932737511710",
+          "compareAtPrice": "114998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932737544478",
+          "compareAtPrice": "114998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932737577246",
+          "compareAtPrice": "114998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014458806558",
+          "compareAtPrice": "114998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014458839326",
+          "compareAtPrice": "114998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014458872094",
+          "compareAtPrice": "114998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014458904862",
+          "compareAtPrice": "114998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014458937630",
+          "compareAtPrice": "114998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014458970398",
+          "compareAtPrice": "114998.00"
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/49932737446174",
+          "compareAtPrice": "138000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932737478942",
+          "compareAtPrice": "138000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932737511710",
+          "compareAtPrice": "138000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932737544478",
+          "compareAtPrice": "138000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932737577246",
+          "compareAtPrice": "138000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014458806558",
+          "compareAtPrice": "138000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014458839326",
+          "compareAtPrice": "138000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014458872094",
+          "compareAtPrice": "138000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014458904862",
+          "compareAtPrice": "138000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014458937630",
+          "compareAtPrice": "138000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014458970398",
+          "compareAtPrice": "138000.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802993336606",
+      "label": "Crocs Crush Slide",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/49932737741086",
+          "compareAtPrice": "99998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932737773854",
+          "compareAtPrice": "99998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932737806622",
+          "compareAtPrice": "99998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932737839390",
+          "compareAtPrice": "99998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932737872158",
+          "compareAtPrice": "99998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014459003166",
+          "compareAtPrice": "99998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014459035934",
+          "compareAtPrice": "99998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014459068702",
+          "compareAtPrice": "99998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014459101470",
+          "compareAtPrice": "99998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014459134238",
+          "compareAtPrice": "99998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014459167006",
+          "compareAtPrice": "99998.00"
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/49932737741086",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932737773854",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932737806622",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932737839390",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932737872158",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014459003166",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014459035934",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014459068702",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014459101470",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014459134238",
+          "compareAtPrice": "120000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014459167006",
+          "compareAtPrice": "120000.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802993402142",
+      "label": "Crocs Crush Slide",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/59483162902814",
+          "compareAtPrice": "79998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483162935582",
+          "compareAtPrice": "79998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483162968350",
+          "compareAtPrice": "79998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483163001118",
+          "compareAtPrice": "79998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483163033886",
+          "compareAtPrice": "79998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483163066654",
+          "compareAtPrice": "79998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483163099422",
+          "compareAtPrice": "79998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483163132190",
+          "compareAtPrice": "79998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483163164958",
+          "compareAtPrice": "79998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483163197726",
+          "compareAtPrice": "79998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483163230494",
+          "compareAtPrice": "79998.00"
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/59483162902814",
+          "compareAtPrice": "138000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483162935582",
+          "compareAtPrice": "138000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483162968350",
+          "compareAtPrice": "138000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483163001118",
+          "compareAtPrice": "138000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483163033886",
+          "compareAtPrice": "138000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483163066654",
+          "compareAtPrice": "138000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483163099422",
+          "compareAtPrice": "138000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483163132190",
+          "compareAtPrice": "138000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483163164958",
+          "compareAtPrice": "138000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483163197726",
+          "compareAtPrice": "138000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483163230494",
+          "compareAtPrice": "138000.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802993598750",
+      "label": "Crocs Duet Max II Boot",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50014459592990",
+          "compareAtPrice": "199998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014459625758",
+          "compareAtPrice": "199998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014459658526",
+          "compareAtPrice": "199998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014459691294",
+          "compareAtPrice": "199998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49979343307038",
+          "compareAtPrice": "199998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014459724062",
+          "compareAtPrice": "199998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014459756830",
+          "compareAtPrice": "199998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014459789598",
+          "compareAtPrice": "199998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49976612356382",
+          "compareAtPrice": "199998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014459822366",
+          "compareAtPrice": "199998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014459855134",
+          "compareAtPrice": "199998.00"
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50014459592990",
+          "compareAtPrice": "240000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014459625758",
+          "compareAtPrice": "240000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014459658526",
+          "compareAtPrice": "240000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014459691294",
+          "compareAtPrice": "240000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49979343307038",
+          "compareAtPrice": "240000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014459724062",
+          "compareAtPrice": "240000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014459756830",
+          "compareAtPrice": "240000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014459789598",
+          "compareAtPrice": "240000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49976612356382",
+          "compareAtPrice": "240000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014459822366",
+          "compareAtPrice": "240000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014459855134",
+          "compareAtPrice": "240000.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802993795358",
+      "label": "Crocs Duet Max II Clog K",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/49938348736798",
+          "compareAtPrice": "114998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938348769566",
+          "compareAtPrice": "114998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938348802334",
+          "compareAtPrice": "114998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938348835102",
+          "compareAtPrice": "114998.00"
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/49938348736798",
+          "compareAtPrice": "138000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938348769566",
+          "compareAtPrice": "138000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938348802334",
+          "compareAtPrice": "138000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938348835102",
+          "compareAtPrice": "138000.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802995040542",
+      "label": "Crocs Paw Patrol Off Court Clg T",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/49938347819294",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938347852062",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014460969246",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014461002014",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/49938347819294",
+          "compareAtPrice": "80000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938347852062",
+          "compareAtPrice": "80000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014460969246",
+          "compareAtPrice": "80000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014461002014",
+          "compareAtPrice": "80000.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802996515102",
+      "label": "Crocs Stomp Slide",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/49932748161310",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932748194078",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932748226846",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932748259614",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932748292382",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932748325150",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014463131934",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/49932748161310",
+          "compareAtPrice": "160000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932748194078",
+          "compareAtPrice": "160000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932748226846",
+          "compareAtPrice": "160000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932748259614",
+          "compareAtPrice": "160000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932748292382",
+          "compareAtPrice": "160000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932748325150",
+          "compareAtPrice": "160000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014463131934",
+          "compareAtPrice": "160000.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802996678942",
+      "label": "Crocs Stomp Slide",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/49932748587294",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014463164702",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932748620062",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932748652830",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932748685598",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932748718366",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014463197470",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/49932748587294",
+          "compareAtPrice": "160000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014463164702",
+          "compareAtPrice": "160000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932748620062",
+          "compareAtPrice": "160000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932748652830",
+          "compareAtPrice": "160000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932748685598",
+          "compareAtPrice": "160000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932748718366",
+          "compareAtPrice": "160000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014463197470",
+          "compareAtPrice": "160000.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9803000054046",
+      "label": "Crocs Kung Fu Panda",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/49938344116510",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938344149278",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938344182046",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938344214814",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/49938344116510",
+          "compareAtPrice": "160000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938344149278",
+          "compareAtPrice": "160000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938344182046",
+          "compareAtPrice": "160000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938344214814",
+          "compareAtPrice": "160000.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9803000414494",
+      "label": "Stitch Classic Clog T",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/59483210842398",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/59483210842398",
+          "compareAtPrice": "140000.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9803002904862",
+      "label": "Crocs Echo Sand Storm",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/59483186266398",
+          "compareAtPrice": "249998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483186299166",
+          "compareAtPrice": "249998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483186331934",
+          "compareAtPrice": "249998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483186364702",
+          "compareAtPrice": "249998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483186397470",
+          "compareAtPrice": "249998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483186430238",
+          "compareAtPrice": "249998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483186463006",
+          "compareAtPrice": "249998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483186495774",
+          "compareAtPrice": "249998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483186528542",
+          "compareAtPrice": "249998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483186561310",
+          "compareAtPrice": "249998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483186594078",
+          "compareAtPrice": "249998.00"
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/59483186266398",
+          "compareAtPrice": "300000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483186299166",
+          "compareAtPrice": "300000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483186331934",
+          "compareAtPrice": "300000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483186364702",
+          "compareAtPrice": "300000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483186397470",
+          "compareAtPrice": "300000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483186430238",
+          "compareAtPrice": "300000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483186463006",
+          "compareAtPrice": "300000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483186495774",
+          "compareAtPrice": "300000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483186528542",
+          "compareAtPrice": "300000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483186561310",
+          "compareAtPrice": "300000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483186594078",
+          "compareAtPrice": "300000.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9803003724062",
+      "label": "Crocs Classic Glow Black Cat Clog T Kids",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/49938341789982",
+          "compareAtPrice": "104165.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938341822750",
+          "compareAtPrice": "104165.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014471422238",
+          "compareAtPrice": "104165.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014471455006",
+          "compareAtPrice": "104165.00"
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/49938341789982",
+          "compareAtPrice": "125000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938341822750",
+          "compareAtPrice": "125000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014471422238",
+          "compareAtPrice": "125000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014471455006",
+          "compareAtPrice": "125000.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9803004018974",
+      "label": "Crocs Frozen Elsa Classic Clog T",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50036585038110",
+          "compareAtPrice": "116665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50036585070878",
+          "compareAtPrice": "116665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50036585103646",
+          "compareAtPrice": "116665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50036585136414",
+          "compareAtPrice": "116665.00"
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50036585038110",
+          "compareAtPrice": "140000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50036585070878",
+          "compareAtPrice": "140000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50036585103646",
+          "compareAtPrice": "140000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50036585136414",
+          "compareAtPrice": "140000.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9803004510494",
+      "label": "Crocs Classic Rocket Ship Clog T",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/49938341232926",
+          "compareAtPrice": "104165.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938341265694",
+          "compareAtPrice": "104165.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014472601886",
+          "compareAtPrice": "104165.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014472667422",
+          "compareAtPrice": "104165.00"
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/49938341232926",
+          "compareAtPrice": "125000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938341265694",
+          "compareAtPrice": "125000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014472601886",
+          "compareAtPrice": "125000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014472667422",
+          "compareAtPrice": "125000.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9803005296926",
+      "label": "Crocs Hello Kitty Classic Clog T",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/49938340872478",
+          "compareAtPrice": "116665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014474141982",
+          "compareAtPrice": "116665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014474174750",
+          "compareAtPrice": "116665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014474207518",
+          "compareAtPrice": "116665.00"
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/49938340872478",
+          "compareAtPrice": "140000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014474141982",
+          "compareAtPrice": "140000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014474174750",
+          "compareAtPrice": "140000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014474207518",
+          "compareAtPrice": "140000.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9815488692510",
+      "label": "Crocs NBA Echo Slide",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50014476206366",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49976443896094",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49976443928862",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49976443961630",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49976443994398",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49976444027166",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49976444059934",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49976443765022",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49976443797790",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49976443830558",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49976443863326",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50014476206366",
+          "compareAtPrice": "200000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49976443896094",
+          "compareAtPrice": "200000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49976443928862",
+          "compareAtPrice": "200000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49976443961630",
+          "compareAtPrice": "200000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49976443994398",
+          "compareAtPrice": "200000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49976444027166",
+          "compareAtPrice": "200000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49976444059934",
+          "compareAtPrice": "200000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49976443765022",
+          "compareAtPrice": "200000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49976443797790",
+          "compareAtPrice": "200000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49976443830558",
+          "compareAtPrice": "200000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49976443863326",
+          "compareAtPrice": "200000.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9821977051422",
+      "label": "Classic Lined Clog Toddler",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50014476370206",
+          "compareAtPrice": "41665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014476402974",
+          "compareAtPrice": "41665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014476435742",
+          "compareAtPrice": "41665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014476468510",
+          "compareAtPrice": "41665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014476501278",
+          "compareAtPrice": "41665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014478958878",
+          "compareAtPrice": "41665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50002131550494",
+          "compareAtPrice": "41665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014478991646",
+          "compareAtPrice": "41665.00"
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50014476370206",
+          "compareAtPrice": "50000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014476402974",
+          "compareAtPrice": "50000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014476435742",
+          "compareAtPrice": "50000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014476468510",
+          "compareAtPrice": "50000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014476501278",
+          "compareAtPrice": "50000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014478958878",
+          "compareAtPrice": "50000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50002131550494",
+          "compareAtPrice": "50000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014478991646",
+          "compareAtPrice": "50000.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9886435410206",
+      "label": "Classic Clog",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/51443393823006",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/51443393855774",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/51443393888542",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/51443393921310",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/51443393954078",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/51443393823006",
+          "compareAtPrice": "110000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/51443393855774",
+          "compareAtPrice": "110000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/51443393888542",
+          "compareAtPrice": "110000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/51443393921310",
+          "compareAtPrice": "110000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/51443393954078",
+          "compareAtPrice": "110000.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9897376907550",
+      "label": "Classic Lined Clog Toddler",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/51924595802398",
+          "compareAtPrice": "66665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/51924595835166",
+          "compareAtPrice": "66665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/51924595867934",
+          "compareAtPrice": "66665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/51924595900702",
+          "compareAtPrice": "66665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/51924595933470",
+          "compareAtPrice": "66665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/51924595966238",
+          "compareAtPrice": "66665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/51924595999006",
+          "compareAtPrice": "66665.00"
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/51924595802398",
+          "compareAtPrice": "80000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/51924595835166",
+          "compareAtPrice": "80000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/51924595867934",
+          "compareAtPrice": "80000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/51924595900702",
+          "compareAtPrice": "80000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/51924595933470",
+          "compareAtPrice": "80000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/51924595966238",
+          "compareAtPrice": "80000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/51924595999006",
+          "compareAtPrice": "80000.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9897377038622",
+      "label": "Crocs Classic Lined Clog T",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/51924594753822",
+          "compareAtPrice": "66665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/51924594786590",
+          "compareAtPrice": "66665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/51924594819358",
+          "compareAtPrice": "66665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/51924594852126",
+          "compareAtPrice": "66665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/51924594884894",
+          "compareAtPrice": "66665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/51924594917662",
+          "compareAtPrice": "66665.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/51924594950430",
+          "compareAtPrice": "66665.00"
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/51924594753822",
+          "compareAtPrice": "80000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/51924594786590",
+          "compareAtPrice": "80000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/51924594819358",
+          "compareAtPrice": "80000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/51924594852126",
+          "compareAtPrice": "80000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/51924594884894",
+          "compareAtPrice": "80000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/51924594917662",
+          "compareAtPrice": "80000.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/51924594950430",
+          "compareAtPrice": "80000.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    }
+  ],
+  "meta": {},
+  "reversible": true,
+  "deshace": null
+}
