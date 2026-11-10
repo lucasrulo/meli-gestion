@@ -1,0 +1,50 @@
+{
+  "id": "20261110-144611-011d56",
+  "fecha": "2026-11-10 14:46:11",
+  "usuario": "app",
+  "canal": "Shopify",
+  "tienda": "kappa",
+  "accion": "talles_stock",
+  "descripcion": "Kappa Argentina : cargar 3 SKU (talles, EAN y stock)",
+  "filas": [
+    {
+      "id": "gid://shopify/ProductVariant/67945060532502",
+      "label": "Zapatillas Logo Sanpuerto El kid · K536153ZW-KA0AB-29",
+      "antes": null,
+      "despues": {
+        "ean": "8054087041359",
+        "stock": 1,
+        "accion": "🆕 Crear talle"
+      },
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/ProductVariant/67945060565270",
+      "label": "Zapatillas Logo Sanpuerto El kid · K536153ZW-KA0AB-32",
+      "antes": null,
+      "despues": {
+        "ean": "8054087041410",
+        "stock": 1,
+        "accion": "🆕 Crear talle"
+      },
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/ProductVariant/67945060598038",
+      "label": "Zapatillas Logo Sanpuerto El kid · K536153ZW-KA0AB-33",
+      "antes": null,
+      "despues": {
+        "ean": "8054087041427",
+        "stock": 2,
+        "accion": "🆕 Crear talle"
+      },
+      "ok": true,
+      "error": ""
+    }
+  ],
+  "meta": {},
+  "reversible": false,
+  "deshace": null
+}
