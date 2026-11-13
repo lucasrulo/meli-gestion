@@ -1,0 +1,255 @@
+{
+  "id": "20261105-133617-16c766",
+  "fecha": "2026-11-05 13:36:17",
+  "usuario": "app",
+  "canal": "Shopify",
+  "tienda": "kappa",
+  "accion": "tags_set",
+  "descripcion": "Kappa Argentina : quitar «diadelniño» en 11 productos",
+  "filas": [
+    {
+      "id": "gid://shopify/Product/10456287412502",
+      "label": "Zapatillas Logo Cetona Kids",
+      "antes": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "diadelniño",
+        "kids",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10456337252630",
+      "label": "Zapatillas Kappa Logo Morine Kids",
+      "antes": [
+        "40cyber",
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "diadelniño",
+        "kids",
+        "precyber",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "precyber",
+        "zapatillas"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10456337285398",
+      "label": "Zapatillas Kappa Logo Morine Kids",
+      "antes": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "diadelniño",
+        "kids",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "zapatillas"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10456337350934",
+      "label": "Zapatillas Kappa Logo Morine Kids",
+      "antes": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "diadelniño",
+        "kids",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "zapatillas"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10456337383702",
+      "label": "Zapatillas Kappa Logo Marker Kids",
+      "antes": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "diadelniño",
+        "kids",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "zapatillas"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10456337416470",
+      "label": "Zapatillas Kappa Logo Marker Kids",
+      "antes": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "diadelniño",
+        "kids",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "zapatillas"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10639881044246",
+      "label": "Zapatillas Kappa Logo Maribel EV Kid",
+      "antes": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "diadelniño",
+        "kids",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "zapatillas"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10643604177174",
+      "label": "Zapatillas Logo Rernal 2 Ev Kids",
+      "antes": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "diadelniño",
+        "kids",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10643604242710",
+      "label": "Zapatillas Logo Rernal 2 Ev Kids",
+      "antes": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "diadelniño",
+        "kids",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10667764089110",
+      "label": "Zapatillas Kappa Logo Marker EV Kids",
+      "antes": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "diadelniño",
+        "kids",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "zapatillas"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10667764121878",
+      "label": "Zapatillas Kappa Logo Marker EV Kids",
+      "antes": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "diadelniño",
+        "kids",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "zapatillas"
+      ],
+      "ok": true,
+      "error": ""
+    }
+  ],
+  "meta": {},
+  "reversible": true,
+  "deshace": null
+}

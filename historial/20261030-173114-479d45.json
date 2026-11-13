@@ -1,0 +1,1156 @@
+{
+  "id": "20261030-173114-479d45",
+  "fecha": "2026-10-30 17:31:14",
+  "usuario": "app",
+  "canal": "Shopify",
+  "tienda": "crocs",
+  "accion": "precios",
+  "descripcion": "Crocs Argentina | Sitio Oficial: precio tachado desde Excel en 15 productos",
+  "filas": [
+    {
+      "id": "gid://shopify/Product/16030123065630",
+      "label": "Crocs Classic Crush Rain Boot",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/60764878340382",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/60764878340382",
+          "compareAtPrice": "119998.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802980557086",
+      "label": "Classic Hiker Clog",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/49936920477982",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49936920510750",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49936920543518",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49936920576286",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49936920609054",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49936920641822",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/49936920477982",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49936920510750",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49936920543518",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49936920576286",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49936920609054",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49936920641822",
+          "compareAtPrice": "119998.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802983670046",
+      "label": "Crocs Brooklin Buckle",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50014435475742",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932711592222",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932711624990",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932711657758",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932711690526",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932711723294",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014435508510",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014435574046",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50014435475742",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932711592222",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932711624990",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932711657758",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932711690526",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932711723294",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014435508510",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014435574046",
+          "compareAtPrice": "119998.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802983899422",
+      "label": "Crocs Brooklin Buckle",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50036555907358",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50036555940126",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50036555972894",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50036556005662",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50036556038430",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50036556071198",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50036556103966",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50036556136734",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50036555907358",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50036555940126",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50036555972894",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50036556005662",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50036556038430",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50036556071198",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50036556103966",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50036556136734",
+          "compareAtPrice": "119998.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802985931038",
+      "label": "Classic Crush Clog",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50014439538974",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938425151774",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938425184542",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938425217310",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938425250078",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938425282846",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014439571742",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014439604510",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014439637278",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014439670046",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014439702814",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50014439538974",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938425151774",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938425184542",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938425217310",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938425250078",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938425282846",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014439571742",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014439604510",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014439637278",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014439670046",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014439702814",
+          "compareAtPrice": "119998.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802987372830",
+      "label": "Classic Cutie Clog Kids",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50014441046302",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938352832798",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014441111838",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938352865566",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014441144606",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014441210142",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50014441046302",
+          "compareAtPrice": "69998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938352832798",
+          "compareAtPrice": "69998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014441111838",
+          "compareAtPrice": "69998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938352865566",
+          "compareAtPrice": "69998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014441144606",
+          "compareAtPrice": "69998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014441210142",
+          "compareAtPrice": "69998.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802988749086",
+      "label": "Crocs Classic Crush Rain Boot",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/59483161493790",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483161526558",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483161559326",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483161592094",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483161624862",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483161657630",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/59483161493790",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483161526558",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483161559326",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483161592094",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483161624862",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483161657630",
+          "compareAtPrice": "119998.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802988912926",
+      "label": "Crocs Classic Crush Rain Boot",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/49932726108446",
+          "compareAtPrice": "99998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932726141214",
+          "compareAtPrice": "99998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932726173982",
+          "compareAtPrice": "99998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932726206750",
+          "compareAtPrice": "99998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932726239518",
+          "compareAtPrice": "99998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932726272286",
+          "compareAtPrice": "99998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014443405598",
+          "compareAtPrice": "99998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014443438366",
+          "compareAtPrice": "99998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014443471134",
+          "compareAtPrice": "99998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014443503902",
+          "compareAtPrice": "99998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014443536670",
+          "compareAtPrice": "99998.00"
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/49932726108446",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932726141214",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932726173982",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932726206750",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932726239518",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932726272286",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014443405598",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014443438366",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014443471134",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014443503902",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014443536670",
+          "compareAtPrice": "119998.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802989535518",
+      "label": "Crocs Mega Crush Sandal",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/49938350801182",
+          "compareAtPrice": "99998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938350833950",
+          "compareAtPrice": "99998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938350866718",
+          "compareAtPrice": "99998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938350899486",
+          "compareAtPrice": "99998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938350932254",
+          "compareAtPrice": "99998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938350965022",
+          "compareAtPrice": "99998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014445404446",
+          "compareAtPrice": "99998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014445437214",
+          "compareAtPrice": "99998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014445502750",
+          "compareAtPrice": "99998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014445535518",
+          "compareAtPrice": "99998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014445568286",
+          "compareAtPrice": "99998.00"
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/49938350801182",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938350833950",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938350866718",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938350899486",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938350932254",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938350965022",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014445404446",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014445437214",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014445502750",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014445535518",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014445568286",
+          "compareAtPrice": "119998.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802989994270",
+      "label": "Crocs Mega Crush Sandal",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50014449074462",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938350211358",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938350244126",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938350276894",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938350309662",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938350342430",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014449107230",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014449172766",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014449336606",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014449369374",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014449434910",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50014449074462",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938350211358",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938350244126",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938350276894",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938350309662",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938350342430",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014449107230",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014449172766",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014449336606",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014449369374",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014449434910",
+          "compareAtPrice": "119998.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802990715166",
+      "label": "Crocs Hiker Xscape Sandal",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/49932729385246",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932729418014",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932729450782",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932729483550",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932729516318",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014452089118",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014452187422",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014452252958",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014452351262",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014452416798",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014452482334",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/49932729385246",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932729418014",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932729450782",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932729483550",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932729516318",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014452089118",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014452187422",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014452252958",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014452351262",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014452416798",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014452482334",
+          "compareAtPrice": "119998.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802990944542",
+      "label": "Crocs Hiker Xscape Sandal",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50014452547870",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932730892574",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932730925342",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932730958110",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932730990878",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014452613406",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014452711710",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014452777246",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014452842782",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014452908318",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014452973854",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50014452547870",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932730892574",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932730925342",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932730958110",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49932730990878",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014452613406",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014452711710",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014452777246",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014452842782",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014452908318",
+          "compareAtPrice": "119998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014452973854",
+          "compareAtPrice": "119998.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802991894814",
+      "label": "Crocs Hiker Xscape Clog",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50014456185118",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014456283422",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938349523230",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014456414494",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938349555998",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938349588766",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938349621534",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938349424926",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938349457694",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938349490462",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014456480030",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50014456185118",
+          "compareAtPrice": "137998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014456283422",
+          "compareAtPrice": "137998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938349523230",
+          "compareAtPrice": "137998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014456414494",
+          "compareAtPrice": "137998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938349555998",
+          "compareAtPrice": "137998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938349588766",
+          "compareAtPrice": "137998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938349621534",
+          "compareAtPrice": "137998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938349424926",
+          "compareAtPrice": "137998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938349457694",
+          "compareAtPrice": "137998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938349490462",
+          "compareAtPrice": "137998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014456480030",
+          "compareAtPrice": "137998.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802993402142",
+      "label": "Crocs Crush Slide",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/59483162902814",
+          "compareAtPrice": "114998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483162935582",
+          "compareAtPrice": "114998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483162968350",
+          "compareAtPrice": "114998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483163001118",
+          "compareAtPrice": "114998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483163033886",
+          "compareAtPrice": "114998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483163066654",
+          "compareAtPrice": "114998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483163099422",
+          "compareAtPrice": "114998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483163132190",
+          "compareAtPrice": "114998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483163164958",
+          "compareAtPrice": "114998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483163197726",
+          "compareAtPrice": "114998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483163230494",
+          "compareAtPrice": "114998.00"
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/59483162902814",
+          "compareAtPrice": "79998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483162935582",
+          "compareAtPrice": "79998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483162968350",
+          "compareAtPrice": "79998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483163001118",
+          "compareAtPrice": "79998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483163033886",
+          "compareAtPrice": "79998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483163066654",
+          "compareAtPrice": "79998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483163099422",
+          "compareAtPrice": "79998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483163132190",
+          "compareAtPrice": "79998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483163164958",
+          "compareAtPrice": "79998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483163197726",
+          "compareAtPrice": "79998.00"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/59483163230494",
+          "compareAtPrice": "79998.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9834195976478",
+      "label": "Classic Slipper Kids",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/51443425509662",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/51443425509662",
+          "compareAtPrice": "199998.00"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    }
+  ],
+  "meta": {},
+  "reversible": true,
+  "deshace": null
+}
