@@ -1,6 +1,20 @@
 {
   "ops": [
     {
+      "id": "20261113-130341-409acc",
+      "fecha": "2026-11-13 13:03:41",
+      "usuario": "app",
+      "canal": "Shopify",
+      "tienda": "piccadilly",
+      "accion": "estado",
+      "descripcion": "Piccadilly Argentina | Sitio Oficial: 148 productos → 🔗 No listado",
+      "reversible": true,
+      "deshace": null,
+      "total": 148,
+      "ok": 148,
+      "deshecha_por": null
+    },
+    {
       "id": "20261110-145035-79e926",
       "fecha": "2026-11-10 14:50:35",
       "usuario": "app",
