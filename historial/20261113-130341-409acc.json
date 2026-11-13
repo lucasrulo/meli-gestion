@@ -1,0 +1,1198 @@
+{
+  "id": "20261113-130341-409acc",
+  "fecha": "2026-11-13 13:03:41",
+  "usuario": "app",
+  "canal": "Shopify",
+  "tienda": "piccadilly",
+  "accion": "estado",
+  "descripcion": "Piccadilly Argentina | Sitio Oficial: 148 productos → 🔗 No listado",
+  "filas": [
+    {
+      "id": "gid://shopify/Product/8629551825034",
+      "label": "Bota Anabela Caña Media",
+      "antes": "ACTIVE",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629551956106",
+      "label": "Bota Beatriz Caña Baja",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629552152714",
+      "label": "Bota Beth Caña Alta",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629552283786",
+      "label": "Bota Beth Caña Alta",
+      "antes": "ACTIVE",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629552742538",
+      "label": "Bota Beth Caña Baja",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629552873610",
+      "label": "Bota Caña Baja",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629552939146",
+      "label": "Bota Caña Baja",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629552971914",
+      "label": "Bota Caña Baja",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629553135754",
+      "label": "Bota Caña Baja",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629553201290",
+      "label": "Bota Caña Baja",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629553299594",
+      "label": "Bota Danubia Caña Baja",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629553365130",
+      "label": "Bota Danubia Caña Baja",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629553496202",
+      "label": "Bota Danubia Caña Baja",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629553594506",
+      "label": "Bota Danubia Caña Baja",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629553692810",
+      "label": "Bota Deise Bordado Aplique Textura",
+      "antes": "ACTIVE",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629553758346",
+      "label": "Bota Deise Caña Baja",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629553856650",
+      "label": "Bota Deise Caña Baja",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629554020490",
+      "label": "Bota Deise Caña Baja",
+      "antes": "ACTIVE",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629554479242",
+      "label": "Bota Denise",
+      "antes": "ACTIVE",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629554577546",
+      "label": "Bota Denise Caña Baja",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629554806922",
+      "label": "Bota Denise Caña Baja",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629554905226",
+      "label": "Bota Estela Caña Baja",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629554970762",
+      "label": "Bota Estela Caña Baja",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629555134602",
+      "label": "Borcego Fabiana Caña Media",
+      "antes": "ACTIVE",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629555298442",
+      "label": "Borcego Fabiana Caña Media",
+      "antes": "ACTIVE",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629555429514",
+      "label": "Bota Fabiana Chelsea",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629555560586",
+      "label": "Bota Fabiana Chelsea",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629555691658",
+      "label": "Bota Giordana Caña Baja",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629555822730",
+      "label": "Bota Giordana Caña Baja",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629555953802",
+      "label": "Bota Gisa Caña Baja",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629556052106",
+      "label": "Bota Gisa Caña Baja",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629556445322",
+      "label": "Bota Gisa Chelsea",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629556609162",
+      "label": "Bota Gisa Chelsea",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629556773002",
+      "label": "Bota Ivone Caña Baja",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629556871306",
+      "label": "Botineta Ivone Caña Baja",
+      "antes": "ACTIVE",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629556969610",
+      "label": "Bota Ivone Caña Baja",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629557035146",
+      "label": "Bota Ivone Caña Baja",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629557100682",
+      "label": "Bota Laura Caña Baja",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629557231754",
+      "label": "Bota Laura Caña Baja",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629557330058",
+      "label": "Bota Laura Caña Baja",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629557362826",
+      "label": "Bota Laura Caña Baja",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629557559434",
+      "label": "Bota Laura Caña Baja",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629557690506",
+      "label": "Bota Leci Caña Baja",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629557756042",
+      "label": "Bota Leci Caña Baja",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629557919882",
+      "label": "Bota Leci Caña Baja",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629557985418",
+      "label": "Bota Leci Caña Baja",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629558116490",
+      "label": "Bota Leci Caña Media",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629558247562",
+      "label": "Bota Leci Caña Media",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629558345866",
+      "label": "Bota Luiza Caña Baja",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629558444170",
+      "label": "Bota Luiza Caña Baja",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629558509706",
+      "label": "Bota Luiza Caña Baja",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629558575242",
+      "label": "Bota Vicky Caña Baja",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629558673546",
+      "label": "Bota Vicky Caña Baja",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8713975660682",
+      "label": "Bota Laura",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8713975890058",
+      "label": "Botineta Raquel",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8713975955594",
+      "label": "Botineta Leci Hebillas",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8713975988362",
+      "label": "Bota Dalva Lisa",
+      "antes": "ACTIVE",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8713976021130",
+      "label": "Bota Dalva Diamante Nobuck",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8713976086666",
+      "label": "Botineta Gisa Cordon",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8713976119434",
+      "label": "Botineta Gisa Hebilla",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8713976184970",
+      "label": "Bota Silvana Pliegue",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8713976217738",
+      "label": "Borcego Lana Hebillas",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8713976283274",
+      "label": "Botineta Elaine Cordon Cruzado",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8713976316042",
+      "label": "Botineta Fascite Sin Cordon",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8713976348810",
+      "label": "Zapatilla Fabi Cordon Juanete",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8714869702794",
+      "label": "BOTA RAQUEL",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8714869735562",
+      "label": "Bota Anabella",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8714869768330",
+      "label": "Bota Sandy",
+      "antes": "ACTIVE",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8714869866634",
+      "label": "Bota Elisete",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8714869899402",
+      "label": "Bota Chelsea",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8714869964938",
+      "label": "Borcego Lleci",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8714869997706",
+      "label": "BOTA LECI",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8714870259850",
+      "label": "Bota Taci",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8714870718602",
+      "label": "Bota Giordana",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8714870751370",
+      "label": "Bota Lana",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8714870849674",
+      "label": "Borcego Fabi",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8714884251786",
+      "label": "Bota Tati",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8903490568330",
+      "label": "Bota Giordana",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8903491715210",
+      "label": "Bota Giordana",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8903492010122",
+      "label": "Bota Giordana",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8903492173962",
+      "label": "Bota Lina",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8903492272266",
+      "label": "Bota Lina",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8903492403338",
+      "label": "Bota Lina",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8903495811210",
+      "label": "Bota Softstep",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8903498891402",
+      "label": "Bota Fabiana",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8903498989706",
+      "label": "Bota Lina",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8903562526858",
+      "label": "Bota Laura",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8903635861642",
+      "label": "Bota Laura",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8903637139594",
+      "label": "Bota Fabiana",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8903637172362",
+      "label": "Bota Fabiana",
+      "antes": "ACTIVE",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8903637237898",
+      "label": "Borcego Fabiana",
+      "antes": "ACTIVE",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8903637270666",
+      "label": "Borcego Fabiana",
+      "antes": "ACTIVE",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8903637303434",
+      "label": "Bota Leci",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8903637368970",
+      "label": "Bota Leci",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8903637434506",
+      "label": "Borcego Leci",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8903637467274",
+      "label": "Borcego Leci",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8903637958794",
+      "label": "Bota Gisa",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8903637991562",
+      "label": "Bota Gisa",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9022481039498",
+      "label": "Botineta Vicky",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9043359105162",
+      "label": "Bota Denise",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9045041873034",
+      "label": "Botineta Sandy",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9055316770954",
+      "label": "Botineta Beth",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9055318114442",
+      "label": "Botineta sandy",
+      "antes": "ACTIVE",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9055320178826",
+      "label": "Bota leci",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9196284543114",
+      "label": "Bota Irene",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9208327635082",
+      "label": "Bota Laura Caña Baja",
+      "antes": "ACTIVE",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9208913428618",
+      "label": "Bota Deise",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9220992532618",
+      "label": "Bota beth caña baja",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9220993581194",
+      "label": "Bota beth caña baja",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9220994695306",
+      "label": "Bota beth caña baja",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9220995514506",
+      "label": "Bota danubia caña baja",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9236565459082",
+      "label": "Bota Beth",
+      "antes": "ACTIVE",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9236566474890",
+      "label": "Bota Beth",
+      "antes": "ACTIVE",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9240381620362",
+      "label": "Bota Ivone Caña Baja",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9240381685898",
+      "label": "Borcego Gisa",
+      "antes": "ACTIVE",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9240381915274",
+      "label": "Bota Gisa Chelsea",
+      "antes": "ACTIVE",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9241831243914",
+      "label": "Botineta Leci",
+      "antes": "ACTIVE",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9241831276682",
+      "label": "Botineta Irene",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9241831342218",
+      "label": "Botineta Elisete Elastico",
+      "antes": "ACTIVE",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9241831407754",
+      "label": "Bota Silvana Cierre",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9245484220554",
+      "label": "Bota Dalva",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9250841690250",
+      "label": "Bota Luiza",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9261049675914",
+      "label": "Bota Luiza",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9261075923082",
+      "label": "Bota Beth Con Aplique",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9261111738506",
+      "label": "Botineta Luiza Insignia",
+      "antes": "ACTIVE",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9267919257738",
+      "label": "Botineta Luiza",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9267919323274",
+      "label": "Botineta Denise",
+      "antes": "ACTIVE",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9269305671818",
+      "label": "Botineta Elaine",
+      "antes": "ACTIVE",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9269305770122",
+      "label": "Botineta Lana",
+      "antes": "ACTIVE",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9269305835658",
+      "label": "Bota Fascite Plantar",
+      "antes": "ACTIVE",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9269305901194",
+      "label": "Bota Fascite Plantar",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9269305966730",
+      "label": "Bota Angela Lisa",
+      "antes": "ACTIVE",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9271536877706",
+      "label": "Botineta Gisa",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9271536910474",
+      "label": "Bota Laura Caña Baja",
+      "antes": "ACTIVE",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9271537074314",
+      "label": "Bota Angela Caña Alta",
+      "antes": "ACTIVE",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9271537139850",
+      "label": "Bota Angela Caña Alta",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9271537467530",
+      "label": "Bota Luiza Caña Alta",
+      "antes": "ACTIVE",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9274370490506",
+      "label": "Botineta Sandy",
+      "antes": "ACTIVE",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9276362391690",
+      "label": "Botineta Denise",
+      "antes": "ACTIVE",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9276362489994",
+      "label": "Botineta Laura",
+      "antes": "DRAFT",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9276362555530",
+      "label": "Botineta Giordana",
+      "antes": "ACTIVE",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9276362588298",
+      "label": "Botineta Franciele",
+      "antes": "ACTIVE",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9279051399306",
+      "label": "Botineta Leci",
+      "antes": "ACTIVE",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9283773333642",
+      "label": "Botineta Beatriz",
+      "antes": "ACTIVE",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9291269669002",
+      "label": "Bota Fabi Cordon Corderito",
+      "antes": "ACTIVE",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9291270226058",
+      "label": "Botineta Dalva Glitter",
+      "antes": "ACTIVE",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9291270652042",
+      "label": "Bota Silvana Cierre",
+      "antes": "ACTIVE",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9291445993610",
+      "label": "Botineta Tati",
+      "antes": "ACTIVE",
+      "despues": "UNLISTED",
+      "ok": true,
+      "error": ""
+    }
+  ],
+  "meta": {},
+  "reversible": true,
+  "deshace": null
+}
