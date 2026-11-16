@@ -494,6 +494,9 @@ with t_dl:
         desde = d1.date_input("Creados desde", _date.today().replace(day=1), key="dl_desde", format="DD/MM/YYYY")
         hasta = d2.date_input("Hasta", _date.today(), key="dl_hasta", format="DD/MM/YYYY")
     est_dl = st.multiselect("Estados", list(ESTADOS), default=list(ESTADOS), format_func=ESTADOS.get, key="dl_est")
+    sku_full = st.checkbox("Agregar SKU completo", value=False, key="dl_sku",
+                           help="Agrega la columna SKU (con talle): una fila por cada talle, así que cada modelo-color "
+                                "se repite tantas veces como talles tenga. Suma también EAN, talle y stock de ese talle.")
     if st.button("⬇️ Generar Excel de productos", type="primary", width="stretch", disabled=not sel_t, key="dl_go"):
         filas, bar = [], st.progress(0.0, text="Leyendo catálogos…")
         for i, k in enumerate(sel_t, 1):
@@ -523,20 +526,34 @@ with t_dl:
                     "precio_tachado": g["precio_tachado"].max(), "fecha_creacion": p["creado"],
                     "tags": ", ".join(p["tags"]), "url": p["url"] or "", "foto": p["foto"] or "",
                 })
+                if sku_full:   # una fila por talle, con su SKU completo
+                    base = filas.pop()
+                    for _, v_ in g.iterrows():
+                        filas.append({**base, "sku": v_["sku"] or "", "talle": v_["talle"], "ean": v_["barcode"] or "",
+                                      "stock_talle": int(v_["stock"]) if pd.notna(v_["stock"]) else 0,
+                                      "precio_talle": v_["precio"], "precio_tachado_talle": v_["precio_tachado"]})
         bar.empty()
         out = pd.DataFrame(filas)
         if out.empty:
             st.info("No hay productos con esos filtros.")
         else:
-            out = out.sort_values(["marca", "fecha_creacion", "modelo_color"], ascending=[True, False, True])
+            if "sku" in out:
+                orden = ["marca", "modelo_color", "sku", "talle", "ean", "stock_talle", "precio_talle",
+                         "precio_tachado_talle"]
+                out = out[orden + [c for c in out.columns if c not in orden]]
+                out = out.sort_values(["marca", "fecha_creacion", "modelo_color", "sku"], ascending=[True, False, True, True])
+            else:
+                out = out.sort_values(["marca", "fecha_creacion", "modelo_color"], ascending=[True, False, True])
             st.session_state["dl_out"] = out
     out = st.session_state.get("dl_out")
     if out is not None and not out.empty:
         m1, m2, m3 = st.columns(3)
-        m1.metric("Modelo-color", f"{len(out):,}".replace(",", "."))
+        _mc = out.drop_duplicates(["marca", "modelo_color"])   # sin duplicar por talle
+        m1.metric("Modelo-color" + (f" · {len(out):,} SKU".replace(",", ".") if "sku" in out else ""),
+                  f"{len(_mc):,}".replace(",", "."))
         m2.metric("Marcas", out["marca"].nunique())
-        m3.metric("Stock total", f"{int(out['stock'].sum()):,}".replace(",", "."))
-        st.dataframe(out.groupby("marca").agg(modelo_color=("modelo_color", "count"), stock=("stock", "sum"),
+        m3.metric("Stock total", f"{int(_mc['stock'].sum()):,}".replace(",", "."))
+        st.dataframe(_mc.groupby("marca").agg(modelo_color=("modelo_color", "count"), stock=("stock", "sum"),
                                               con_stock=("stock", lambda s_: int((s_ > 0).sum()))).reset_index(),
                      hide_index=True, width="stretch")
         st.download_button("⬇️ Descargar Excel", to_xlsx(out), f"productos_modelo_color_{_date.today():%Y%m%d}.xlsx",
