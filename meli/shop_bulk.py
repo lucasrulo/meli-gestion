@@ -194,6 +194,58 @@ def color_por_producto(P: pd.DataFrame, MF: pd.DataFrame, fuente: str | None = N
 
 
 @st.cache_data(ttl=3600, show_spinner=False)
+def _nombres_metaobjetos(key: str, ids: tuple[str, ...]) -> dict[str, str]:
+    """gid de metaobjeto → nombre visible (ej. el color estándar de Shopify «shopify.color-pattern»)."""
+    out: dict[str, str] = {}
+    if not ids:
+        return out
+    cli = ShopifyClient(key)
+    q = "query($ids: [ID!]!) { nodes(ids: $ids) { ... on Metaobject { id displayName } } }"
+    for i in range(0, len(ids), 250):
+        try:
+            for n in cli.gql(q, {"ids": list(ids[i:i + 250])}).get("nodes") or []:
+                if n and n.get("id"):
+                    out[n["id"]] = n.get("displayName") or ""
+        except ShopifyError:
+            return out   # sin permiso read_metaobjects: se deja vacío
+    return out
+
+
+def color_lectura(key: str, P: pd.DataFrame, MF: pd.DataFrame) -> dict[str, str]:
+    """Color de cada producto para reportes, tomando lo primero que encuentre:
+    opción «Color» → metacampo de texto con «color» en el nombre → metacampo de color estándar (metaobjeto)."""
+    out: dict[str, str] = {}
+    for _, r in P.iterrows():
+        o = next((o for o in (r.get("opciones") or []) if str(o.get("name", "")).strip().lower() in COLOR_OPC), None)
+        if o and o.get("values"):
+            out[r["product_id"]] = " / ".join(v["name"] for v in o["values"])
+    if MF.empty:
+        return out
+    m = MF[MF["key"].str.lower().str.contains("color", na=False) & ~MF["product_id"].isin(out)]
+    txt = m[~m["type"].str.contains("reference", na=False)]
+    for pid, g in txt.groupby("product_id"):
+        v = next((x for x in (_txt_meta(t, val) for t, val in zip(g["type"], g["value"])) if x), "")
+        if v:
+            out[pid] = v
+    ref = m[m["type"].str.contains("metaobject_reference", na=False) & ~m["product_id"].isin(out)]
+    if not ref.empty:
+        def _ids(val):
+            try:
+                x = json.loads(val)
+                return x if isinstance(x, list) else [x]
+            except (ValueError, TypeError):
+                return [val] if val else []
+        todos = tuple(sorted({i for v in ref["value"] for i in _ids(v) if i}))
+        nombres = _nombres_metaobjetos(key, todos)
+        for pid, g in ref.groupby("product_id"):
+            ns = [nombres.get(i, "") for v in g["value"] for i in _ids(v)]
+            ns = [x for x in ns if x]
+            if ns:
+                out[pid] = " / ".join(dict.fromkeys(ns))
+    return out
+
+
+@st.cache_data(ttl=3600, show_spinner=False)
 def _catalogo_cached(key: str, nonce: float):
     cli = ShopifyClient(key)
     lines = bulk_query(cli, CATALOGO_Q)

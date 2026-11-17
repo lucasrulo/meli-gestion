@@ -515,8 +515,8 @@ with t_dl:
             vv["modelo_color"] = vv["sku"].map(lambda x: strip_size(x) if x else None).fillna("(sin SKU)")
             vv["talle"] = vv["variante"].map(_talle)
             info = Pk.set_index("product_id")
-            from meli.shop_bulk import color_por_producto
-            colmap = color_por_producto(Pk, MFk).set_index("product_id")["color"].to_dict()
+            from meli.shop_bulk import color_lectura
+            colmap = color_lectura(k, Pk, MFk)
             for (pid, mc), g in vv.groupby(["product_id", "modelo_color"]):
                 p = info.loc[pid]
                 filas.append({
@@ -559,6 +559,13 @@ with t_dl:
         st.dataframe(_mc.groupby("marca").agg(modelo_color=("modelo_color", "count"), stock=("stock", "sum"),
                                               con_stock=("stock", lambda s_: int((s_ > 0).sum()))).reset_index(),
                      hide_index=True, width="stretch")
+        cob = _mc.assign(color=_mc.get("color", ""), _c=_mc.get("color", pd.Series("", index=_mc.index)).fillna("").astype(str).str.strip() != "").groupby("marca")["_c"].agg(["sum", "count"])
+        st.caption("🎨 Color encontrado: " + " · ".join(f"**{m}** {int(r['sum'])}/{int(r['count'])}" for m, r in cob.iterrows())
+                   + ". Se toma de la opción «Color», de un metacampo con «color» en el nombre o del color estándar de "
+                   "Shopify. Si sale vacío, tocá 🔄 Releer catálogo.")
+        st.dataframe(out.head(200), hide_index=True, width="stretch", height=300,
+                     column_config={"foto": st.column_config.ImageColumn("", width="small"),
+                                    "url": st.column_config.LinkColumn("Link", display_text="ver")})
         st.download_button("⬇️ Descargar Excel", to_xlsx(out), f"productos_modelo_color_{_date.today():%Y%m%d}.xlsx",
                            type="primary", width="stretch", key="dl_xlsx")
 
