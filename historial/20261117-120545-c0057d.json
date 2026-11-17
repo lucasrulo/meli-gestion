@@ -1,0 +1,4924 @@
+{
+  "id": "20261117-120545-c0057d",
+  "fecha": "2026-11-17 12:05:45",
+  "usuario": "app",
+  "canal": "Shopify",
+  "tienda": "mhw",
+  "accion": "precios",
+  "descripcion": "Mountain Hardwear: cargar precios de 75 modelo-color (416 SKU)",
+  "filas": [
+    {
+      "id": "gid://shopify/Product/10310892093657",
+      "label": "Gorra MHW™ Logo",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511055356121",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511055356121",
+          "price": "79999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310892126425",
+      "label": "Gorra MHW™ Logo",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511055388889",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511055388889",
+          "price": "79999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310892159193",
+      "label": "Guantes All Tracks™ GORE-TEX®",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511055421657",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511055454425",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511055487193",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511055519961",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511055552729",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511055585497",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511055421657",
+          "price": "199999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511055454425",
+          "price": "199999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511055487193",
+          "price": "199999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511055519961",
+          "price": "199999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511055552729",
+          "price": "199999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511055585497",
+          "price": "199999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310892191961",
+      "label": "Mitón All Tracks™ GORE-TEX®",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511055618265",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511055651033",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511055683801",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511055716569",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511055749337",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511055618265",
+          "price": "199999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511055651033",
+          "price": "199999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511055683801",
+          "price": "199999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511055716569",
+          "price": "199999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511055749337",
+          "price": "199999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310892224729",
+      "label": "Guantes All Tracks™ GORE-TEX®",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511055782105",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511055814873",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511055847641",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511055880409",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511055782105",
+          "price": "199999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511055814873",
+          "price": "199999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511055847641",
+          "price": "199999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511055880409",
+          "price": "199999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310892257497",
+      "label": "Guantes All Tracks™ GORE-TEX®",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511055913177",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511055945945",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511055978713",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511056011481",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511056044249",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511055913177",
+          "price": "199999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511055945945",
+          "price": "199999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511055978713",
+          "price": "199999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511056011481",
+          "price": "199999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511056044249",
+          "price": "199999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310892323033",
+      "label": "Gorro Town Square™",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511056109785",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511056109785",
+          "price": "54999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310892355801",
+      "label": "Gorro Town Square™",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511056142553",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511056142553",
+          "price": "54999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310892388569",
+      "label": "Gorro Town Square™",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511056208089",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511056208089",
+          "price": "54999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310892486873",
+      "label": "Gorro Snow Capped™",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511056634073",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511056634073",
+          "price": "69999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310892585177",
+      "label": "Gorro Snow Capped™",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511056699609",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511056699609",
+          "price": "34999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310892650713",
+      "label": "Campera Microchill™",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511057092825",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511057125593",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511057158361",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511057191129",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511057223897",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511057256665",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511057092825",
+          "price": "159999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511057125593",
+          "price": "159999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511057158361",
+          "price": "159999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511057191129",
+          "price": "159999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511057223897",
+          "price": "159999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511057256665",
+          "price": "159999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310892683481",
+      "label": "Campera Microchill™",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511057289433",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511057322201",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511057354969",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511057387737",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511057420505",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511057453273",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511057289433",
+          "price": "159999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511057322201",
+          "price": "159999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511057354969",
+          "price": "159999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511057387737",
+          "price": "159999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511057420505",
+          "price": "159999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511057453273",
+          "price": "159999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310892716249",
+      "label": "Campera Microchill™",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511057486041",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511057518809",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511057551577",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511057584345",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511057617113",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511057649881",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511057486041",
+          "price": "159999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511057518809",
+          "price": "159999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511057551577",
+          "price": "159999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511057584345",
+          "price": "159999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511057617113",
+          "price": "159999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511057649881",
+          "price": "159999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310892749017",
+      "label": "Campera Microchill™",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511057682649",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511057715417",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511057748185",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511057780953",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511057813721",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511057846489",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511057682649",
+          "price": "159999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511057715417",
+          "price": "159999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511057748185",
+          "price": "159999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511057780953",
+          "price": "159999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511057813721",
+          "price": "159999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511057846489",
+          "price": "159999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310892781785",
+      "label": "Campera Microchill™",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511057879257",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511057912025",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511057944793",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511057977561",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511058010329",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511058043097",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511057879257",
+          "price": "159999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511057912025",
+          "price": "159999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511057944793",
+          "price": "159999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511057977561",
+          "price": "159999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511058010329",
+          "price": "159999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511058043097",
+          "price": "159999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310892814553",
+      "label": "Buzo con capucha Microchill™",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511058075865",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511058108633",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511058141401",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511058174169",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511058206937",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511058239705",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511058075865",
+          "price": "154999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511058108633",
+          "price": "154999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511058141401",
+          "price": "154999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511058174169",
+          "price": "154999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511058206937",
+          "price": "154999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511058239705",
+          "price": "154999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310892847321",
+      "label": "Buzo con capucha Microchill™",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511058272473",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511058305241",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511058338009",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511058370777",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511058403545",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511058436313",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511058272473",
+          "price": "154999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511058305241",
+          "price": "154999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511058338009",
+          "price": "154999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511058370777",
+          "price": "154999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511058403545",
+          "price": "154999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511058436313",
+          "price": "154999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310892912857",
+      "label": "Campera con capucha Firefall™ Trifecta",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511058501849",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511058534617",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511058567385",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511058600153",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511058632921",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511058665689",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511058501849",
+          "price": "829999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511058534617",
+          "price": "829999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511058567385",
+          "price": "829999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511058600153",
+          "price": "829999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511058632921",
+          "price": "829999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511058665689",
+          "price": "829999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310892978393",
+      "label": "Campera con capucha Firefall™ Trifecta",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511058731225",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511058763993",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511058796761",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511058829529",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511058862297",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511058895065",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511058731225",
+          "price": "829999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511058763993",
+          "price": "829999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511058796761",
+          "price": "829999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511058829529",
+          "price": "829999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511058862297",
+          "price": "829999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511058895065",
+          "price": "829999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310893043929",
+      "label": "Buzo medio cierre con capucha Summit Grid™",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511059189977",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511059222745",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511059255513",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511059288281",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511059321049",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511059353817",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511059189977",
+          "price": "179999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511059222745",
+          "price": "179999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511059255513",
+          "price": "179999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511059288281",
+          "price": "179999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511059321049",
+          "price": "179999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511059353817",
+          "price": "179999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310893076697",
+      "label": "Buzo medio cierre con capucha Summit Grid™",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511059386585",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511059419353",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511059452121",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511059484889",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511059517657",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511059550425",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511059386585",
+          "price": "179999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511059419353",
+          "price": "179999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511059452121",
+          "price": "179999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511059484889",
+          "price": "179999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511059517657",
+          "price": "179999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511059550425",
+          "price": "179999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310893109465",
+      "label": "Buzo medio cierre con capucha Summit Grid™",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511059583193",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511059615961",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511059648729",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511059681497",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511059714265",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511059747033",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511059583193",
+          "price": "179999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511059615961",
+          "price": "179999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511059648729",
+          "price": "179999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511059681497",
+          "price": "179999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511059714265",
+          "price": "179999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511059747033",
+          "price": "179999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310893175001",
+      "label": "Pantalón Warp Factor™",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511059976409",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511060009177",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511060041945",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511060074713",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511060107481",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511060140249",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511059976409",
+          "price": "649999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511060009177",
+          "price": "649999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511060041945",
+          "price": "649999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511060074713",
+          "price": "649999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511060107481",
+          "price": "649999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511060140249",
+          "price": "649999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310893207769",
+      "label": "Pantalón Warp Factor™",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511060173017",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511060205785",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511060238553",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511060271321",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511060304089",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511060336857",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511060173017",
+          "price": "649999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511060205785",
+          "price": "649999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511060238553",
+          "price": "649999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511060271321",
+          "price": "649999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511060304089",
+          "price": "649999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511060336857",
+          "price": "649999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310893240537",
+      "label": "Monoprenda Warp Factor™",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511060369625",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511060402393",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511060435161",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511060467929",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511060500697",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511060533465",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511060369625",
+          "price": "799999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511060402393",
+          "price": "799999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511060435161",
+          "price": "799999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511060467929",
+          "price": "799999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511060500697",
+          "price": "799999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511060533465",
+          "price": "799999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310893306073",
+      "label": "Monoprenda Warp Factor™",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511060599001",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511060631769",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511060664537",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511060697305",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511060730073",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511060762841",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511060599001",
+          "price": "799999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511060631769",
+          "price": "799999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511060664537",
+          "price": "799999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511060697305",
+          "price": "799999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511060730073",
+          "price": "799999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511060762841",
+          "price": "799999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310893338841",
+      "label": "Campera con capucha Warp Factor™ 3L",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511060795609",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511060828377",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511060861145",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511060893913",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511060926681",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511060959449",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511060795609",
+          "price": "999999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511060828377",
+          "price": "999999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511060861145",
+          "price": "999999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511060893913",
+          "price": "999999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511060926681",
+          "price": "999999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511060959449",
+          "price": "999999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310893404377",
+      "label": "Campera con capucha Warp Factor™ 3L",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511061254361",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511061287129",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511061319897",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511061352665",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511061385433",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511061418201",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511061254361",
+          "price": "999999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511061287129",
+          "price": "999999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511061319897",
+          "price": "999999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511061352665",
+          "price": "999999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511061385433",
+          "price": "999999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511061418201",
+          "price": "999999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310893437145",
+      "label": "Campera con capucha Free Element™",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511061450969",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511061483737",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511061516505",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511061549273",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511061582041",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511061614809",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511061450969",
+          "price": "499999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511061483737",
+          "price": "499999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511061516505",
+          "price": "499999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511061549273",
+          "price": "499999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511061582041",
+          "price": "499999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511061614809",
+          "price": "499999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310893535449",
+      "label": "Campera con capucha Free Element™",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511061942489",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511061975257",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511062008025",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511062040793",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511062073561",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511062106329",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511061942489",
+          "price": "499999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511061975257",
+          "price": "499999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511062008025",
+          "price": "499999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511062040793",
+          "price": "499999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511062073561",
+          "price": "499999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511062106329",
+          "price": "499999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310893568217",
+      "label": "Campera con capucha StretchDown™ Light",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511062139097",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511062171865",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511062204633",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511062237401",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511062270169",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511062302937",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511062139097",
+          "price": "609999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511062171865",
+          "price": "609999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511062204633",
+          "price": "609999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511062237401",
+          "price": "609999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511062270169",
+          "price": "609999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511062302937",
+          "price": "609999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310893600985",
+      "label": "Campera con capucha StretchDown™ Light",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511062335705",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511062368473",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511062401241",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511062434009",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511062466777",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511062499545",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511062335705",
+          "price": "609999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511062368473",
+          "price": "609999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511062401241",
+          "price": "609999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511062434009",
+          "price": "609999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511062466777",
+          "price": "609999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511062499545",
+          "price": "609999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310893633753",
+      "label": "Campera con capucha StretchDown™ Light",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511062532313",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511062565081",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511062597849",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511062630617",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511062663385",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511062696153",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511062532313",
+          "price": "599999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511062565081",
+          "price": "599999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511062597849",
+          "price": "599999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511062630617",
+          "price": "599999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511062663385",
+          "price": "599999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511062696153",
+          "price": "599999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310893666521",
+      "label": "Campera con capucha StretchDown™ Light",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511062728921",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511062761689",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511062794457",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511062827225",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511062859993",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511062892761",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511062728921",
+          "price": "599999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511062761689",
+          "price": "599999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511062794457",
+          "price": "599999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511062827225",
+          "price": "599999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511062859993",
+          "price": "599999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511062892761",
+          "price": "599999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310893699289",
+      "label": "Campera StretchDown™",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511062925529",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511062958297",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511062991065",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511063023833",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511063056601",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511063089369",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511062925529",
+          "price": "609999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511062958297",
+          "price": "609999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511062991065",
+          "price": "609999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511063023833",
+          "price": "609999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511063056601",
+          "price": "609999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511063089369",
+          "price": "609999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310893732057",
+      "label": "Campera StretchDown™",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511063122137",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511063154905",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511063187673",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511063220441",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511063253209",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511063285977",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511063122137",
+          "price": "609999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511063154905",
+          "price": "609999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511063187673",
+          "price": "609999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511063220441",
+          "price": "609999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511063253209",
+          "price": "609999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511063285977",
+          "price": "609999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310893764825",
+      "label": "Campera con capucha StretchDown™",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511063318745",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511063351513",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511063384281",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511063417049",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511063449817",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511063482585",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511063318745",
+          "price": "629999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511063351513",
+          "price": "629999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511063384281",
+          "price": "629999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511063417049",
+          "price": "629999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511063449817",
+          "price": "629999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511063482585",
+          "price": "629999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310893797593",
+      "label": "Campera con capucha StretchDown™",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511063515353",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511063548121",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511063580889",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511063613657",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511063646425",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511063679193",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511063515353",
+          "price": "629999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511063548121",
+          "price": "629999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511063580889",
+          "price": "629999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511063613657",
+          "price": "629999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511063646425",
+          "price": "629999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511063679193",
+          "price": "629999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310893830361",
+      "label": "Campera Firefall™ Jacket",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511063711961",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511063744729",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511063777497",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511063810265",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511063843033",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511063875801",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511063711961",
+          "price": "659999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511063744729",
+          "price": "659999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511063777497",
+          "price": "659999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511063810265",
+          "price": "659999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511063843033",
+          "price": "659999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511063875801",
+          "price": "659999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310893961433",
+      "label": "Monoprenda Warp Factor™",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511064170713",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511064203481",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511064236249",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511064269017",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511064301785",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511064334553",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511064170713",
+          "price": "769999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511064203481",
+          "price": "769999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511064236249",
+          "price": "769999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511064269017",
+          "price": "769999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511064301785",
+          "price": "769999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511064334553",
+          "price": "769999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310894026969",
+      "label": "Monoprenda Warp Factor™",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511064400089",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511064432857",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511064465625",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511064498393",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511064531161",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511064563929",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511064400089",
+          "price": "769999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511064432857",
+          "price": "769999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511064465625",
+          "price": "769999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511064498393",
+          "price": "769999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511064531161",
+          "price": "769999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511064563929",
+          "price": "769999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310894059737",
+      "label": "Campera con capucha Warp Factor™ Insulated",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511064596697",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511064629465",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511064662233",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511064695001",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511064727769",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511064760537",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511064596697",
+          "price": "899999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511064629465",
+          "price": "899999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511064662233",
+          "price": "899999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511064695001",
+          "price": "899999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511064727769",
+          "price": "899999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511064760537",
+          "price": "899999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310894092505",
+      "label": "Campera con capucha Warp Factor™ Insulated",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511064793305",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511064826073",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511064858841",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511064891609",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511064924377",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511064957145",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511064793305",
+          "price": "899999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511064826073",
+          "price": "899999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511064858841",
+          "price": "899999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511064891609",
+          "price": "899999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511064924377",
+          "price": "899999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511064957145",
+          "price": "899999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310894125273",
+      "label": "Pantalón Warp Factor™ 3L",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511064989913",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511065022681",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511065055449",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511065088217",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511065120985",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511065153753",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511064989913",
+          "price": "754999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511065022681",
+          "price": "754999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511065055449",
+          "price": "754999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511065088217",
+          "price": "754999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511065120985",
+          "price": "754999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511065153753",
+          "price": "754999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310894158041",
+      "label": "Campera con capucha StretchDown™ Light",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511065186521",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511065219289",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511065252057",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511065284825",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511065317593",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511065350361",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511065186521",
+          "price": "609999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511065219289",
+          "price": "609999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511065252057",
+          "price": "609999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511065284825",
+          "price": "609999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511065317593",
+          "price": "609999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511065350361",
+          "price": "609999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310894190809",
+      "label": "Campera con capucha StretchDown™ Light",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511065383129",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511065415897",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511065448665",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511065481433",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511065514201",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511065546969",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511065383129",
+          "price": "609999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511065415897",
+          "price": "609999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511065448665",
+          "price": "609999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511065481433",
+          "price": "609999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511065514201",
+          "price": "609999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511065546969",
+          "price": "609999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310894223577",
+      "label": "Campera con capucha StretchDown™ Light",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511065579737",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511065612505",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511065645273",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511065678041",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511065710809",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511065743577",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511065579737",
+          "price": "599999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511065612505",
+          "price": "599999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511065645273",
+          "price": "599999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511065678041",
+          "price": "599999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511065710809",
+          "price": "599999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511065743577",
+          "price": "599999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310894256345",
+      "label": "Campera StretchDown™",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511065776345",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511065809113",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511065841881",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511065874649",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511065907417",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511065940185",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511065776345",
+          "price": "609999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511065809113",
+          "price": "609999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511065841881",
+          "price": "609999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511065874649",
+          "price": "609999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511065907417",
+          "price": "609999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511065940185",
+          "price": "609999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310894321881",
+      "label": "Campera con capucha StretchDown™",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511066005721",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511066038489",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511066071257",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511066104025",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511066136793",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511066169561",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511066005721",
+          "price": "629999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511066038489",
+          "price": "629999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511066071257",
+          "price": "629999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511066104025",
+          "price": "629999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511066136793",
+          "price": "629999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511066169561",
+          "price": "629999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310894354649",
+      "label": "Campera con capucha StretchDown™",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511066202329",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511066235097",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511066267865",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511066300633",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511066333401",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511066366169",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511066202329",
+          "price": "629999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511066235097",
+          "price": "629999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511066267865",
+          "price": "629999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511066300633",
+          "price": "629999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511066333401",
+          "price": "629999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511066366169",
+          "price": "629999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310894420185",
+      "label": "Campera con capucha Threshold™",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511066431705",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511066464473",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511066497241",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511066530009",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511066562777",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511066595545",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511066431705",
+          "price": "519999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511066464473",
+          "price": "519999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511066497241",
+          "price": "519999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511066530009",
+          "price": "519999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511066562777",
+          "price": "519999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511066595545",
+          "price": "519999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310894452953",
+      "label": "Campera con capucha Threshold™",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511066628313",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511066661081",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511066693849",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511066726617",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511066759385",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511066792153",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511066628313",
+          "price": "519999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511066661081",
+          "price": "519999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511066693849",
+          "price": "519999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511066726617",
+          "price": "519999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511066759385",
+          "price": "519999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511066792153",
+          "price": "519999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310894518489",
+      "label": "Campera con capucha Threshold™",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511067087065",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511067119833",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511067152601",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511067185369",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511067218137",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511067250905",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511067087065",
+          "price": "529999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511067119833",
+          "price": "529999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511067152601",
+          "price": "529999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511067185369",
+          "price": "529999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511067218137",
+          "price": "529999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511067250905",
+          "price": "529999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310894551257",
+      "label": "Campera con capucha Threshold™",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511067283673",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511067316441",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511067349209",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511067381977",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511067414745",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511067447513",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511067283673",
+          "price": "529999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511067316441",
+          "price": "529999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511067349209",
+          "price": "529999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511067381977",
+          "price": "529999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511067414745",
+          "price": "529999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511067447513",
+          "price": "529999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310894584025",
+      "label": "Campera con capucha Threshold™",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511067480281",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511067513049",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511067545817",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511067578585",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511067611353",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511067644121",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511067480281",
+          "price": "529999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511067513049",
+          "price": "529999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511067545817",
+          "price": "529999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511067578585",
+          "price": "529999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511067611353",
+          "price": "529999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511067644121",
+          "price": "529999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310894616793",
+      "label": "Buzo con capucha y medio cierre Crater Lake™ Heavyweight",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511067676889",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511067709657",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511067742425",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511067775193",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511067807961",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511067840729",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511067676889",
+          "price": "189999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511067709657",
+          "price": "189999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511067742425",
+          "price": "189999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511067775193",
+          "price": "189999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511067807961",
+          "price": "189999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511067840729",
+          "price": "189999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310894682329",
+      "label": "Buzo con capucha AirMesh™",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511068070105",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511068102873",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511068135641",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511068168409",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511068201177",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511068233945",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511068070105",
+          "price": "199999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511068102873",
+          "price": "199999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511068135641",
+          "price": "199999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511068168409",
+          "price": "199999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511068201177",
+          "price": "199999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511068233945",
+          "price": "199999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310894715097",
+      "label": "Buzo con capucha AirMesh™",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511068266713",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511068299481",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511068332249",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511068365017",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511068397785",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511068430553",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511068266713",
+          "price": "199999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511068299481",
+          "price": "199999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511068332249",
+          "price": "199999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511068365017",
+          "price": "199999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511068397785",
+          "price": "199999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511068430553",
+          "price": "199999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310894747865",
+      "label": "Buzo con capucha y medio cierre Crater Lake™ Heavyweight",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511068856537",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511068889305",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511068922073",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511068954841",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511068987609",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511069020377",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511068856537",
+          "price": "189999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511068889305",
+          "price": "189999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511068922073",
+          "price": "189999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511068954841",
+          "price": "189999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511068987609",
+          "price": "189999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511069020377",
+          "price": "189999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310894813401",
+      "label": "Buzo con capucha y medio cierre Crater Lake™ Heavyweight",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511069053145",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511069085913",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511069118681",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511069151449",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511069184217",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511069216985",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511069053145",
+          "price": "189999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511069085913",
+          "price": "189999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511069118681",
+          "price": "189999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511069151449",
+          "price": "189999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511069184217",
+          "price": "189999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511069216985",
+          "price": "189999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310894878937",
+      "label": "Buzo con capucha y medio cierre Crater Lake™ Heavyweight",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511069282521",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511069315289",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511069348057",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511069380825",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511069413593",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511069446361",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511069282521",
+          "price": "189999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511069315289",
+          "price": "189999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511069348057",
+          "price": "189999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511069380825",
+          "price": "189999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511069413593",
+          "price": "189999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511069446361",
+          "price": "189999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310894911705",
+      "label": "Buzo con capucha AirMesh™",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511069479129",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511069511897",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511069544665",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511069577433",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511069610201",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511069642969",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511069479129",
+          "price": "199999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511069511897",
+          "price": "199999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511069544665",
+          "price": "199999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511069577433",
+          "price": "199999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511069610201",
+          "price": "199999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511069642969",
+          "price": "199999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310894944473",
+      "label": "Buzo con capucha AirMesh™",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511069675737",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511069708505",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511069741273",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511069774041",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511069806809",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511069839577",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511069675737",
+          "price": "199999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511069708505",
+          "price": "199999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511069741273",
+          "price": "199999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511069774041",
+          "price": "199999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511069806809",
+          "price": "199999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511069839577",
+          "price": "199999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310894977241",
+      "label": "Pantalón Hardwear AP™",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511069872345",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511069905113",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511069937881",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511069970649",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511070003417",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511070036185",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511070068953",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511070101721",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511070134489",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511070167257",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511070200025",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511069872345",
+          "price": "179999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511069905113",
+          "price": "179999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511069937881",
+          "price": "179999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511069970649",
+          "price": "179999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511070003417",
+          "price": "179999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511070036185",
+          "price": "179999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511070068953",
+          "price": "179999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511070101721",
+          "price": "179999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511070134489",
+          "price": "179999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511070167257",
+          "price": "179999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511070200025",
+          "price": "179999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310895075545",
+      "label": "Campera con capucha Polartec® Power Grid™",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511070855385",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511070888153",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511070920921",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511070953689",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511070986457",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511071019225",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511070855385",
+          "price": "354999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511070888153",
+          "price": "354999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511070920921",
+          "price": "354999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511070953689",
+          "price": "354999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511070986457",
+          "price": "354999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511071019225",
+          "price": "354999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310895108313",
+      "label": "Campera con capucha Polartec® Power Grid™",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511071051993",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511071084761",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511071117529",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511071150297",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511071183065",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511071215833",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511071051993",
+          "price": "354999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511071084761",
+          "price": "354999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511071117529",
+          "price": "354999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511071150297",
+          "price": "354999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511071183065",
+          "price": "354999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511071215833",
+          "price": "354999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310895141081",
+      "label": "Campera con capucha Polartec® Power Grid™",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511071248601",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511071281369",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511071314137",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511071346905",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511071379673",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511071412441",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511071248601",
+          "price": "354999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511071281369",
+          "price": "354999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511071314137",
+          "price": "354999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511071346905",
+          "price": "354999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511071379673",
+          "price": "354999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511071412441",
+          "price": "354999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310895206617",
+      "label": "Campera con capucha Polartec® Power Grid™",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511071641817",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511071674585",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511071707353",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511071740121",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511071772889",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511071805657",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511071641817",
+          "price": "354999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511071674585",
+          "price": "354999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511071707353",
+          "price": "354999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511071740121",
+          "price": "354999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511071772889",
+          "price": "354999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511071805657",
+          "price": "354999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310895239385",
+      "label": "Pantalón Dynama™",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511071838425",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511071871193",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511071903961",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511071936729",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511071969497",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511072002265",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511071838425",
+          "price": "179999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511071871193",
+          "price": "179999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511071903961",
+          "price": "179999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511071936729",
+          "price": "179999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511071969497",
+          "price": "179999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511072002265",
+          "price": "179999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310895272153",
+      "label": "Pantalón Dynama™",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511072035033",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511072067801",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511072100569",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511072133337",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511072166105",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511072198873",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511072035033",
+          "price": "179999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511072067801",
+          "price": "179999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511072100569",
+          "price": "179999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511072133337",
+          "price": "179999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511072166105",
+          "price": "179999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511072198873",
+          "price": "179999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310895337689",
+      "label": "Pantalón Chockstone™ Alpine",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511072264409",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511072297177",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511072329945",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511072362713",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511072395481",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511072428249",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511072264409",
+          "price": "359999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511072297177",
+          "price": "359999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511072329945",
+          "price": "359999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511072362713",
+          "price": "359999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511072395481",
+          "price": "359999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511072428249",
+          "price": "359999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310895435993",
+      "label": "Pantalón Chockstone™ Alpine LT",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511072624857",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511072657625",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511072690393",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511072723161",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511072755929",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511072788697",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511072624857",
+          "price": "319999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511072657625",
+          "price": "319999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511072690393",
+          "price": "319999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511072723161",
+          "price": "319999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511072755929",
+          "price": "319999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511072788697",
+          "price": "319999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310895468761",
+      "label": "Buzo con capucha Crater Lake™",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511072821465",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511072854233",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511072887001",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511072919769",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511072952537",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511072985305",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511072821465",
+          "price": "119999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511072854233",
+          "price": "119999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511072887001",
+          "price": "119999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511072919769",
+          "price": "119999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511072952537",
+          "price": "119999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511072985305",
+          "price": "119999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310895501529",
+      "label": "Buzo con capucha Crater Lake™",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50511073018073",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511073050841",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511073083609",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511073116377",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511073149145",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511073181913",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50511073018073",
+          "price": "119999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511073050841",
+          "price": "119999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511073083609",
+          "price": "119999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511073116377",
+          "price": "119999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511073149145",
+          "price": "119999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50511073181913",
+          "price": "119999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    }
+  ],
+  "meta": {},
+  "reversible": true,
+  "deshace": null
+}
