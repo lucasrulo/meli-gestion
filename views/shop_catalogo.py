@@ -21,8 +21,8 @@ nombre = stores()[tienda]["nombre"]
 P, V, M, MF = cargar(tienda)
 api_key = secret("ANTHROPIC_API_KEY")
 
-t_est, t_tach, t_tal, t_tag, t_limp, t_col, t_ord, t_meta, t_dl = st.tabs(
-    ["🚦 Estados y canales", "💲 Precio tachado", "📏 Talles, EAN y stock", "🏷️ Tags y colecciones", "🧹 Limpiar tags", "📚 Ver colecciones",
+t_est, t_pre, t_tach, t_tal, t_tag, t_limp, t_col, t_ord, t_meta, t_dl = st.tabs(
+    ["🚦 Estados y canales", "💰 Cargar precios", "💲 Precio tachado", "📏 Talles, EAN y stock", "🏷️ Tags y colecciones", "🧹 Limpiar tags", "📚 Ver colecciones",
      "↕️ Ordenar colección", "🧩 Metacampos", "⬇️ Descargar productos"])
 
 
@@ -861,3 +861,113 @@ with t_tal:
             _inv(tienda)
             st.download_button("⬇️ Resultado en Excel", to_xlsx(res[["accion", "producto", "sku", "talle", "ean", "stock",
                                                                     "ok", "error"]]), f"talles_{tienda}.xlsx")
+
+
+# ================================================================ cargar precios por modelo-color (a todos sus SKU)
+with t_pre:
+    from meli.catalog import norm as _norm
+    from meli.ui import caja_texto
+    st.caption("Pegá desde Excel **modelo-color · precio** y opcional **· precio tachado**. El precio se aplica a "
+               "**todos los SKU (talles)** de ese modelo-color. También acepta un SKU completo para cambiar un solo talle. "
+               "Se puede deshacer desde **Historial**.")
+    txt = caja_texto("Modelo-color · Precio · Precio tachado (opcional)", "pre_txt", "✅ Leer", height=160,
+                     placeholder="K1342233W-KSA02\t89999\t129999\nP14313300000310SS25\t74999")
+    c1, c2 = st.columns(2)
+    sin_tach = c1.radio("Si no pego precio tachado", ["No tocar el tachado actual", "Quitar el tachado"],
+                        key="pre_sintach", horizontal=True)
+    tach_inval = c2.radio("Si el tachado queda menor o igual al precio",
+                          ["Quitarlo (Shopify no lo mostraría)", "Dejarlo igual"], key="pre_inval", horizontal=True)
+
+    lineas, malas = [], []
+    for ln in txt.splitlines():
+        if not ln.strip():
+            continue
+        partes = [x.strip() for x in (ln.split("\t") if "\t" in ln else ln.split(";"))]
+        if len(partes) == 1:
+            partes = ln.split()
+        cod = partes[0].upper() if partes else ""
+        precio = _num(partes[1]) if len(partes) > 1 else None
+        tach = _num(partes[2]) if len(partes) > 2 and partes[2] else None
+        if cod.lower() in ("modelo", "modelo-color", "modelo_color", "sku", "codigo", "código"):
+            continue
+        if not cod or not precio:
+            malas.append(ln.strip())
+            continue
+        lineas.append({"codigo": cod, "precio": precio, "tachado": tach})
+    if malas:
+        st.warning(f"{len(malas)} línea(s) sin precio válido: " + " | ".join(malas[:10]))
+
+    if lineas:
+        tit = P.set_index("product_id")["titulo"]
+        _sku_n = V["sku"].fillna("").map(lambda x: _norm(x) if x else "")
+        _mc_n = V["sku"].fillna("").map(lambda x: _norm(strip_size(x) or "") if x else "")
+        cambios, faltan = [], []
+        for ln in lineas:
+            n = _norm(ln["codigo"])
+            vv = V[(_sku_n == n) | (_mc_n == n)]   # SKU completo exacto o modelo-color exacto
+            if vv.empty:   # sin SKU que coincida: buscar el producto por código / handle y aplicar a todas sus variantes
+                hit, _ = _match_codigos(P, ln["codigo"])
+                vv = V[V["product_id"].isin(hit["product_id"])]
+            if vv.empty:
+                faltan.append(ln["codigo"])
+                continue
+            for _, v in vv.iterrows():
+                if ln["tachado"] is not None:
+                    nt = ln["tachado"]
+                elif sin_tach.startswith("Quitar"):
+                    nt = None
+                else:
+                    nt = v["precio_tachado"] if pd.notna(v["precio_tachado"]) else None
+                if nt is not None and nt <= ln["precio"] and tach_inval.startswith("Quitarlo"):
+                    nt = None
+                cambios.append({"codigo": ln["codigo"], "product_id": v["product_id"], "variant_id": v["variant_id"],
+                                "producto": tit.get(v["product_id"], ""), "sku": v["sku"], "talle": v["variante"],
+                                "precio_actual": v["precio"], "precio_nuevo": ln["precio"],
+                                "tachado_actual": v["precio_tachado"] if pd.notna(v["precio_tachado"]) else None,
+                                "tachado_nuevo": nt})
+        if faltan:
+            st.warning(f"No encontré {len(faltan)}: " + ", ".join(faltan[:30]))
+        cd = pd.DataFrame(cambios)
+        if not cd.empty:
+            cd = cd.drop_duplicates("variant_id", keep="last")
+            for c_ in ("precio_actual", "precio_nuevo", "tachado_actual", "tachado_nuevo"):
+                cd[c_] = pd.to_numeric(cd[c_], errors="coerce")
+            mismo = lambda a, b: (a.fillna(-1).round(2) == b.fillna(-1).round(2))  # noqa: E731
+            cd = cd[~(mismo(cd["precio_actual"], cd["precio_nuevo"]) & mismo(cd["tachado_actual"], cd["tachado_nuevo"]))]
+        if cd.empty:
+            st.info("No hay cambios: los precios ya son esos.")
+        else:
+            cd["var_%"] = ((cd["precio_nuevo"] / cd["precio_actual"] - 1) * 100).round(1)
+            res_ = (cd.groupby(["codigo", "producto"], sort=False)
+                    .agg(talles=("variant_id", "count"), precio_actual=("precio_actual", "max"),
+                         precio_nuevo=("precio_nuevo", "max"), tachado_actual=("tachado_actual", "max"),
+                         tachado_nuevo=("tachado_nuevo", "max"), var=("var_%", "max")).reset_index())
+            m1, m2, m3 = st.columns(3)
+            m1.metric("Modelo-color", cd["codigo"].nunique())
+            m2.metric("SKU (talles) que cambian", len(cd))
+            grandes = int((cd["var_%"].abs() > 50).sum())
+            m3.metric("⚠️ Cambios > 50%", grandes)
+            if grandes:
+                st.warning(f"{grandes} SKU cambian más de 50% de precio: revisá que no falte o sobre un cero.")
+            st.dataframe(res_, hide_index=True, width="stretch", height=min(40 + 36 * len(res_), 420),
+                         column_config={"codigo": "Modelo-color", "producto": st.column_config.TextColumn("Producto", width="large"),
+                                        "precio_actual": st.column_config.NumberColumn("Precio actual", format="$ %.0f"),
+                                        "precio_nuevo": st.column_config.NumberColumn("Precio nuevo", format="$ %.0f"),
+                                        "tachado_actual": st.column_config.NumberColumn("Tachado actual", format="$ %.0f"),
+                                        "tachado_nuevo": st.column_config.NumberColumn("Tachado nuevo", format="$ %.0f"),
+                                        "var": st.column_config.NumberColumn("Var. %", format="%.1f%%")})
+            with st.expander("Ver detalle por SKU"):
+                st.dataframe(cd.drop(columns=["product_id", "variant_id"]), hide_index=True, width="stretch")
+            n_prod = cd["product_id"].nunique()
+            if ejecutar_ui("💰 Aplicar precios", len(cd), "pre",
+                           f"Confirmo cambiar el precio de {len(cd)} SKU ({cd['codigo'].nunique()} modelo-color)"):
+                f2 = lambda x: None if x is None or pd.isna(x) else f"{float(x):.2f}"  # noqa: E731
+                filas = [{"id": pid, "label": g["producto"].iloc[0],
+                          "antes": [{"id": r["variant_id"], "price": f2(r["precio_actual"]),
+                                     "compareAtPrice": f2(r["tachado_actual"])} for _, r in g.iterrows()],
+                          "despues": [{"id": r["variant_id"], "price": f2(r["precio_nuevo"]),
+                                       "compareAtPrice": f2(r["tachado_nuevo"])} for _, r in g.iterrows()]}
+                         for pid, g in cd.groupby("product_id")]
+                ops.mostrar_resultado(ops.aplicar(tienda, "precios", filas,
+                                                  f"{nombre}: cargar precios de {cd['codigo'].nunique()} modelo-color "
+                                                  f"({len(cd)} SKU)", progress=progreso("Cargando precios…")))
