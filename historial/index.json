@@ -1,6 +1,20 @@
 {
   "ops": [
     {
+      "id": "20261117-122311-88ec3b",
+      "fecha": "2026-11-17 12:23:11",
+      "usuario": "app",
+      "canal": "MeLi",
+      "tienda": "REEBOK",
+      "accion": "meli_descripcion",
+      "descripcion": "Descripción MeLi: Campera Reebok Deportiva Heritage Dance Blocked Rosa",
+      "reversible": true,
+      "deshace": null,
+      "total": 1,
+      "ok": 1,
+      "deshecha_por": null
+    },
+    {
       "id": "20261117-120545-c0057d",
       "fecha": "2026-11-17 12:05:45",
       "usuario": "app",
