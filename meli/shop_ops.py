@@ -32,6 +32,8 @@ M_REDIR_ADD = """mutation($r: UrlRedirectInput!) { urlRedirectCreate(urlRedirect
 M_REDIR_DEL = """mutation($id: ID!) { urlRedirectDelete(id: $id) { deletedUrlRedirectId userErrors { field message } } }"""
 M_PRECIOS = """mutation($pid: ID!, $v: [ProductVariantsBulkInput!]!) { productVariantsBulkUpdate(productId: $pid, variants: $v) {
                  userErrors { field message } } }"""
+M_OPT_UPD = """mutation($p: ID!, $o: OptionUpdateInput!, $v: [OptionValueUpdateInput!]) {
+  productOptionUpdate(productId: $p, option: $o, optionValuesToUpdate: $v) { product { id } userErrors { field message } } }"""
 M_CUST_TAGS = """mutation($c: CustomerInput!) { customerUpdate(input: $c) { customer { id tags } userErrors { field message } } }"""
 M_COLL_ADD = """mutation($id: ID!, $ids: [ID!]!) { collectionAddProductsV2(id: $id, productIds: $ids) { job { id }
                   userErrors { field message } } }"""
@@ -45,7 +47,7 @@ NOMBRES = {
     "metacampos": "Metacampos", "redirect_add": "Crear redirecciones", "redirect_remove": "Borrar redirecciones",
     "precios": "Precios Shopify", "coleccion_add": "Agregar a colección", "coleccion_remove": "Quitar de colección",
     "contenido": "Descripción/SEO Shopify", "coleccion_seo": "SEO de colecciones", "meta_owner": "SEO de páginas/blog",
-    "imagen_ref_add": "Imagen compartida a productos", "imagen_ref_remove": "Quitar imagen compartida", "meli_descripcion": "Descripción MeLi", "meli_precio": "Precio MeLi", "meli_fotos": "Imagen en publicaciones MeLi", "meli_ads": "Publicidad MeLi", "coleccion_orden": "Orden de colección", "cliente_tags": "Tags de clientes", "talles_stock": "Talles, EAN y stock",
+    "imagen_ref_add": "Imagen compartida a productos", "imagen_ref_remove": "Quitar imagen compartida", "meli_descripcion": "Descripción MeLi", "meli_precio": "Precio MeLi", "meli_fotos": "Imagen en publicaciones MeLi", "meli_ads": "Publicidad MeLi", "coleccion_orden": "Orden de colección", "cliente_tags": "Tags de clientes", "talles_stock": "Talles, EAN y stock", "color_opcion": "Color (opción de variante)",
 }
 
 
@@ -66,6 +68,9 @@ def _vars(accion: str, f: dict, meta: dict):
             return M_META_DEL, {"m": [{"ownerId": f["id"], "namespace": m["namespace"], "key": m["key"]}]}
         return M_META_SET, {"m": [{"ownerId": f["id"], "namespace": m["namespace"], "key": m["key"],
                                    "type": m.get("type", "single_line_text_field"), "value": str(d)}]}
+    if accion == "color_opcion":   # renombra el valor de la opción Color: f["meta"] = {option_id, value_id}
+        return M_OPT_UPD, {"p": f["id"], "o": {"id": f["meta"]["option_id"]},
+                           "v": [{"id": f["meta"]["value_id"], "name": str(d)}]}
     if accion == "cliente_tags":
         return M_CUST_TAGS, {"c": {"id": f["id"], "tags": list(d or [])}}
     if accion == "estado":
@@ -244,7 +249,7 @@ def inversa(entry: dict) -> tuple[str, list[dict], dict] | None:
         return None
     sw = lambda f, **k: {**{x: f[x] for x in ("meta", "alt") if x in f}, "id": f["id"], "label": f.get("label"),  # noqa: E731
                          "antes": f["despues"], "despues": f["antes"], **k}
-    if acc in ("estado", "tags_set", "cliente_tags", "seo", "coleccion_seo", "meta_owner", "alt", "metacampos", "contenido", "meli_descripcion", "meli_precio", "meli_fotos", "meli_ads"):
+    if acc in ("estado", "tags_set", "cliente_tags", "color_opcion", "seo", "coleccion_seo", "meta_owner", "alt", "metacampos", "contenido", "meli_descripcion", "meli_precio", "meli_fotos", "meli_ads"):
         return acc, [sw(f) for f in ok], meta
     if acc == "precios":
         return acc, [sw(f) for f in ok], meta

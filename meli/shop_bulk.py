@@ -25,6 +25,7 @@ CATALOGO_Q = """
     edges { node {
       id title handle status vendor productType tags descriptionHtml onlineStoreUrl totalInventory updatedAt createdAt
       seo { title description }
+      options { id name optionValues { id name } }
       variants { edges { node {
         id sku barcode price compareAtPrice inventoryQuantity title
         inventoryItem { measurement { weight { value unit } } }
@@ -37,7 +38,9 @@ CATALOGO_Q = """
 
 PROD_COLS = ["tienda", "product_id", "titulo", "handle", "estado", "vendor", "tipo", "tags", "descripcion_html",
              "seo_title", "seo_description", "url", "stock", "actualizado", "creado", "n_variantes", "n_fotos", "foto",
-             "skus", "codigos"]
+             "skus", "codigos", "opciones"]
+
+COLOR_OPC = ("color", "colour", "colores", "color principal")
 
 
 # ---------------------------------------------------------------- bulk query
@@ -126,10 +129,68 @@ def parse_catalogo(lines: list[dict], key: str, vendor: str = "") -> tuple[pd.Da
             "creado": (p.get("createdAt") or "")[:10],
             "n_variantes": len(sk), "n_fotos": nfot.get(pid, 0), "foto": foto1.get(pid) or "",
             "skus": ", ".join(s for s in sk if s)[:200], "codigos": _codigos(sk, p.get("handle") or ""),
+            "opciones": [{"id": o.get("id"), "name": o.get("name"),
+                          "values": [{"id": v.get("id"), "name": v.get("name")} for v in (o.get("optionValues") or [])]}
+                         for o in (p.get("options") or [])],
         })
     P = pd.DataFrame(rows, columns=PROD_COLS)
     ids = set(P["product_id"])
     return P, V[V["product_id"].isin(ids)], M[M["product_id"].isin(ids)], MF[MF["product_id"].isin(ids)]
+
+
+# ---------------------------------------------------------------- color del producto
+def _txt_meta(tipo: str, valor) -> str | None:
+    """Valor de un metacampo de texto legible (None si es una referencia, ej. metaobjeto)."""
+    tipo = str(tipo or "")
+    if "reference" in tipo:
+        return None
+    if tipo.startswith("list."):
+        try:
+            return " / ".join(str(x) for x in json.loads(valor or "[]"))
+        except (ValueError, TypeError):
+            return str(valor or "")
+    return str(valor or "")
+
+
+def fuentes_color(P: pd.DataFrame, MF: pd.DataFrame) -> dict[str, int]:
+    """Dónde está cargado el color en esta tienda → cuántos productos lo tienen. Claves: 'opcion' o 'meta:ns.key'."""
+    out: dict[str, int] = {}
+    n_opt = sum(1 for ops in P.get("opciones", []) if any(str(o.get("name", "")).strip().lower() in COLOR_OPC
+                                                           for o in (ops or [])))
+    if n_opt:
+        out["opcion"] = n_opt
+    if not MF.empty:
+        m = MF[MF["key"].str.lower().str.contains("color", na=False) & ~MF["type"].str.contains("reference", na=False)]
+        for (ns, k), g in m.groupby(["namespace", "key"]):
+            out[f"meta:{ns}.{k}"] = int(g["product_id"].nunique())
+    return dict(sorted(out.items(), key=lambda x: -x[1]))
+
+
+def color_por_producto(P: pd.DataFrame, MF: pd.DataFrame, fuente: str | None = None) -> pd.DataFrame:
+    """product_id → color (+ datos para modificarlo). Si no se indica fuente, usa la que más productos cubre."""
+    fs = fuentes_color(P, MF)
+    fuente = fuente or (next(iter(fs)) if fs else None)
+    cols = ["product_id", "color", "fuente", "option_id", "value_id", "n_valores", "mf_type", "mf_raw"]
+    if not fuente:
+        return pd.DataFrame(columns=cols)
+    rows = []
+    if fuente == "opcion":
+        for _, r in P.iterrows():
+            o = next((o for o in (r["opciones"] or []) if str(o.get("name", "")).strip().lower() in COLOR_OPC), None)
+            if o:
+                vals = o.get("values") or []
+                rows.append({"product_id": r["product_id"], "color": " / ".join(v["name"] for v in vals),
+                             "fuente": f"Opción «{o['name']}»", "option_id": o["id"],
+                             "value_id": vals[0]["id"] if len(vals) == 1 else None, "n_valores": len(vals), "mf_type": None,
+                             "mf_raw": None})
+    else:
+        ns, k = fuente[5:].split(".", 1)
+        m = MF[(MF["namespace"] == ns) & (MF["key"] == k)].drop_duplicates("product_id")
+        for _, r in m.iterrows():
+            rows.append({"product_id": r["product_id"], "color": _txt_meta(r["type"], r["value"]) or "",
+                         "fuente": f"Metacampo {ns}.{k}", "option_id": None, "value_id": None, "n_valores": 1,
+                         "mf_type": r["type"], "mf_raw": r["value"]})
+    return pd.DataFrame(rows, columns=cols)
 
 
 @st.cache_data(ttl=3600, show_spinner=False)
