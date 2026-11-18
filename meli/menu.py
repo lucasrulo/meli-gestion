@@ -50,7 +50,7 @@ MENU = {
          "Qué está en un canal y no en el otro, brechas de precio y stock.", "MELI + SHOPIFY"),
         ("views/omnicanal.py", "Precios omnicanal", "sync_alt", "🔀",
          "Un precio por modelo-color aplicado en MeLi, Shopify o ambos.", "MELI + SHOPIFY"),
-        ("views/omni_descripciones.py", "Descripciones entre canales", "swap_horiz", "📝",
+        ("views/omni_descripciones.py", "Copiar descripciones", "swap_horiz", "📝",
          "Copiar descripciones de MeLi a Shopify (o al revés) por modelo-color.", "MELI + SHOPIFY"),
     ],
     "Configuración": [

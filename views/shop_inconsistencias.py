@@ -13,7 +13,7 @@ from meli.shop_ui import ESTADOS, pick_store, progreso
 from meli.shopify import ShopifyError, stores
 from meli.theme import hero
 
-hero("Precios distintos Shopify", "Detecta el mismo artículo con variantes a precios diferentes y las iguala en bloque.",
+hero("Precios distintos", "Detecta el mismo artículo con variantes a precios diferentes y las iguala en bloque.",
      "SHOPIFY · AUDITORÍA")
 
 AGRUPAR = {

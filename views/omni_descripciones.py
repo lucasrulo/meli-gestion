@@ -14,7 +14,7 @@ from meli.inconsistencias import strip_size
 from meli.theme import hero
 from meli.ui import catalog_index, pick_account, show_results
 
-hero("Descripciones entre canales", "Traé la descripción de MeLi o de Shopify y cargala en el otro canal, por modelo-color. "
+hero("Copiar descripciones", "Traé la descripción de MeLi o de Shopify y cargala en el otro canal, por modelo-color. "
      "Con Excel (para BUSCARV) o directo.", "MELI ↔ SHOPIFY · CONTENIDO")
 client = pick_account()
 index = catalog_index(client)
@@ -32,7 +32,6 @@ def analizadas() -> pd.DataFrame | None:   # mismo análisis que «Descripciones
     return st.session_state.get(f"cont_{client.user_id}")
 
 
-tab_xl = st.container()
 with st.expander("📥 Descripciones de MeLi leídas: " + (f"{len(analizadas())} publicaciones" if analizadas() is not None
                                                      else "ninguna todavía"), expanded=analizadas() is None):
     st.caption("Para traer descripciones **de MeLi** hay que leerlas primero (1–3 min según el catálogo).")
@@ -54,6 +53,7 @@ with st.expander("📥 Descripciones de MeLi leídas: " + (f"{len(analizadas())}
         st.session_state[f"cont_{client.user_id}"] = res
         st.rerun()
 
+tab_xl = st.container()
 def _es_html(t: str) -> bool:
     t = str(t or "")
     return "<" in t and ">" in t and any(x in t.lower() for x in ("<p", "<br", "<ul", "<li", "<div", "<h", "<strong", "<b>"))
@@ -111,8 +111,8 @@ with tab_xl:
     desc_pub = df.set_index("pub")["descripcion"].to_dict() if df is not None and not df.empty else {}
     meli_mc["desc_meli"] = meli_mc["pub"].map(desc_pub)
     if origen == "MeLi" and not desc_pub:
-        st.info("Para traer las descripciones de MeLi primero tocá **📥 Leer descripciones** (arriba). "
-                "(las publicaciones no analizadas salen con la descripción vacía).")
+        st.info("Para traer las descripciones de MeLi primero leelas en **📥 Descripciones de MeLi leídas** (arriba) "
+                "(las publicaciones no leídas salen con la descripción vacía).")
 
     # ---- Shopify por modelo-color
     shop = pd.DataFrame(columns=["modelo_color", "tienda", "product_id", "producto_shopify", "html", "seo_title",

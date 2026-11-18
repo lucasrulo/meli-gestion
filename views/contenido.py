@@ -18,7 +18,7 @@ from meli.inconsistencias import strip_size
 from meli.ui import catalog_index, pick_account, show_results
 
 st.session_state["_page"] = "contenido"
-hero("Descripciones y ficha MeLi", "Descripciones y ficha técnica optimizadas para el buscador de MeLi y los asistentes de IA.", "MERCADOLIBRE · CONTENIDO")
+hero("Descripciones y ficha", "Descripciones y ficha técnica optimizadas para el buscador de MeLi y los asistentes de IA.", "MERCADOLIBRE · CONTENIDO")
 client = pick_account()
 index = catalog_index(client)
 api_key = secret("ANTHROPIC_API_KEY")
@@ -39,7 +39,7 @@ pubs = (ix.groupby("pub")
 pubs["nombre"] = pubs["familia"].fillna(pubs["titulo"])
 
 tab_an, tab_ed, tab_ia = st.tabs(["📊 Analizar catálogo", "✏️ Editar publicación", "✨ IA masiva"])
-st.caption("¿Querés copiar descripciones entre MeLi y Shopify por Excel? Está en **MeLi ↔ Shopify → Descripciones entre canales**.")
+st.caption("¿Querés copiar descripciones entre MeLi y Shopify por Excel? Está en **MeLi ↔ Shopify → Copiar descripciones**.")
 
 def analizadas() -> pd.DataFrame | None:
     return st.session_state.get(f"cont_{client.user_id}")
@@ -61,14 +61,15 @@ with tab_an:
             res = ct.analyze(client, sel["rep"].tolist(), progress=lambda p: bar.progress(p))
         except MeliError as e:
             st.error(str(e))
-            st.stop()
+            res = None
         bar.empty()
-        res = res.merge(sel[["rep", "pub", "nombre", "variantes", "item_ids", "skus", "link"]],
-                        left_on="item_id", right_on="rep", how="left")
-        prev = analizadas()
-        if prev is not None:  # acumula análisis anteriores
-            res = pd.concat([prev[~prev["pub"].isin(res["pub"])], res], ignore_index=True)
-        st.session_state[f"cont_{client.user_id}"] = res
+        if res is not None:
+            res = res.merge(sel[["rep", "pub", "nombre", "variantes", "item_ids", "skus", "link"]],
+                            left_on="item_id", right_on="rep", how="left")
+            prev = analizadas()
+            if prev is not None:  # acumula análisis anteriores
+                res = pd.concat([prev[~prev["pub"].isin(res["pub"])], res], ignore_index=True)
+            st.session_state[f"cont_{client.user_id}"] = res
 
     df = analizadas()
     if df is not None and not df.empty:

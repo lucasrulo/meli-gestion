@@ -9,7 +9,7 @@ from meli.api import MeliError
 from meli.bulk import run_bulk
 from meli.carga import compute_promo, grid_block, mode_picker, preview, resolve
 from meli.credibilidad import render_last, save_run
-from meli.ui import catalog_index, pick_account
+from meli.ui import catalog_index, pick_account, invalidar_meli
 
 st.session_state["_page"] = "descuentos"
 hero("Descuentos masivos", "Descuentos con nombre o individuales, aplicados a todo un modelo-color de una vez.", "PROMOCIONES")
@@ -131,7 +131,7 @@ if st.button(f"🚀 {accion} ({len(todo)})", type="primary", disabled=not ok):
     res = run_bulk(todo.to_dict("records"), job, label=accion)
     res.insert(0, "descuento", etiqueta)
     save_run("desc", res, client, ptype, promo_id, start, finish)
-    st.cache_data.clear()
+    invalidar_meli(client.user_id)
 
 render_last(client, "desc", f"resultado_descuentos_{datetime.now():%Y%m%d_%H%M}.xlsx",
             ["descuento", "clave", "item_id", "titulo", "precio_lista", "precio_nuevo", "dto_%"])

@@ -12,7 +12,7 @@ from meli.shop_ui import ESTADOS, _match_codigos, cargar, ejecutar_ui, pick_stor
 from meli.shopify import ShopifyClient, ShopifyError, stores
 from meli.theme import hero
 
-hero("Imágenes Shopify", "Fotos de productos desde Azure, texto alternativo de productos y de banners/archivos de la tienda.",
+hero("Imágenes", "Fotos de productos desde Azure, texto alternativo de productos y de banners/archivos de la tienda.",
      "SHOPIFY · IMÁGENES")
 tienda = pick_store()
 nombre = stores()[tienda]["nombre"]

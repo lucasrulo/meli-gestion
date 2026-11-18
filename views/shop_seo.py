@@ -9,7 +9,7 @@ from meli.shop_ui import ESTADOS, cargar, colecciones, ejecutar_ui, pick_store, 
 from meli.shopify import ShopifyClient, ShopifyError, html_to_text, stores
 from meli.theme import hero
 
-hero("SEO y calidad Shopify", "Auditoría del catálogo y SEO de productos, colecciones, páginas y blog, más redirecciones 301.",
+hero("SEO y calidad", "Auditoría del catálogo y SEO de productos, colecciones, páginas y blog, más redirecciones 301.",
      "SHOPIFY · SEO")
 tienda = pick_store()
 nombre = stores()[tienda]["nombre"]

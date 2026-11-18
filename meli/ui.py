@@ -55,6 +55,13 @@ def index_for(user_id: str) -> pd.DataFrame:
     return _cached_index(str(user_id), st.session_state.get(f"catalog_nonce_{user_id}", 0))
 
 
+def invalidar_meli(*user_ids) -> None:
+    """Fuerza a releer el catálogo de esas cuentas MeLi (sin borrar el resto de los cachés, ej. Shopify)."""
+    for u in user_ids:
+        if u:
+            st.session_state[f"catalog_nonce_{u}"] = int(time.time() * 1000)
+
+
 def catalog_index(client: MeliClient) -> pd.DataFrame:
     """Índice SKU→item cacheado 1 h por cuenta, con botón para refrescar."""
     key = f"catalog_nonce_{client.user_id}"

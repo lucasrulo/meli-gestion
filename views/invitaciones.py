@@ -14,7 +14,7 @@ from meli.excel import to_number
 from meli.ui import catalog_index, pick_account, show_results
 
 st.session_state["_page"] = "invit"
-hero("Invitaciones de MeLi", "Campañas de MercadoLibre donde tus publicaciones son candidatas.", "PROMOCIONES")
+hero("Invitaciones", "Campañas de MercadoLibre donde tus publicaciones son candidatas.", "PROMOCIONES")
 client = pick_account()
 
 key = f"promos_{client.user_id}"

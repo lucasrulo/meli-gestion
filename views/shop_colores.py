@@ -14,7 +14,7 @@ from meli.excel import to_xlsx
 from meli.inconsistencias import strip_size
 from meli.theme import hero
 
-hero("Colores Shopify", "Ver y cambiar el color de muchos productos, en todas las tiendas a la vez.", "SHOPIFY · COLORES")
+hero("Colores", "Ver y cambiar el color de muchos productos, en todas las tiendas a la vez.", "SHOPIFY · COLORES")
 
 t_colr = st.container()
 

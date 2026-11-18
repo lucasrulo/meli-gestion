@@ -121,7 +121,7 @@ textarea {{ font-family: 'Inter', sans-serif !important; line-height: 1.5 !impor
   box-shadow: 0 10px 30px rgba(0,0,0,.25);
 }}
 [data-testid="stMetric"]::before {{
-  content:""; position:absolute; left:0; top:0; height:2px; width:100%; background: var(--grad); opacity:.85;
+  content:""; position:absolute; left:0; top:0; height:2px; width:100%; background: var(--accent-grad, var(--grad)); opacity:.9;
 }}
 [data-testid="stMetricLabel"] p {{ color: var(--muted) !important; text-transform: uppercase; letter-spacing: .08em; font-size: .72rem !important; }}
 [data-testid="stMetricValue"] {{ font-family: 'Space Grotesk', sans-serif !important; font-weight: 700; color: var(--text); }}
@@ -136,7 +136,7 @@ textarea {{ font-family: 'Inter', sans-serif !important; line-height: 1.5 !impor
   font-family: 'Space Grotesk', sans-serif !important; font-weight: 600;
 }}
 [data-baseweb="tab"][aria-selected="true"] {{ color: var(--text) !important; background: rgba(34,211,238,.08) !important; }}
-[data-baseweb="tab-highlight"] {{ background: var(--grad) !important; height: 3px !important; border-radius: 3px; }}
+[data-baseweb="tab-highlight"] {{ background: var(--accent-grad, var(--grad)) !important; height: 3px !important; border-radius: 3px; }}
 [data-testid="stExpander"] details {{
   background: var(--surface); border: 1px solid var(--border) !important; border-radius: 14px !important;
 }}
@@ -153,22 +153,22 @@ textarea {{ font-family: 'Inter', sans-serif !important; line-height: 1.5 !impor
 ::-webkit-scrollbar-track {{ background: transparent; }}
 
 /* ---------- componentes propios ---------- */
-.mo-hero {{ position: relative; padding: 4px 0 18px; margin-bottom: 8px; }}
+.mo-hero {{ position: relative; padding: 0 0 10px; margin-bottom: 4px; }}
 .mo-kicker {{
   display:inline-flex; align-items:center; gap:8px; font-family:'JetBrains Mono',monospace; font-size:.72rem;
-  letter-spacing:.18em; text-transform:uppercase; color: var(--cyan);
-  padding: 4px 10px; border: 1px solid rgba(34,211,238,.35); border-radius: 999px; background: rgba(34,211,238,.07);
+  letter-spacing:.16em; text-transform:uppercase; color: var(--accent, var(--cyan));
+  padding: 4px 10px; border: 1px solid var(--accent-soft, rgba(34,211,238,.35)); border-radius: 999px; background: var(--accent-bg, rgba(34,211,238,.07));
 }}
-.mo-kicker::before {{ content:""; width:7px; height:7px; border-radius:50%; background: var(--cyan);
-  box-shadow: 0 0 10px var(--cyan); animation: mo-pulse 2s infinite; }}
+.mo-kicker::before {{ content:""; width:7px; height:7px; border-radius:50%; background: var(--accent, var(--cyan));
+  box-shadow: 0 0 10px var(--accent, var(--cyan)); animation: mo-pulse 2s infinite; }}
 @keyframes mo-pulse {{ 0%,100% {{ opacity:1 }} 50% {{ opacity:.35 }} }}
 .mo-title {{
-  font-family:'Space Grotesk',sans-serif; font-weight:700; font-size: clamp(1.9rem, 3.2vw, 2.8rem); line-height:1.1;
-  margin: 12px 0 6px; background: linear-gradient(90deg, #F1F5FF 0%, #C7D2FE 45%, var(--cyan) 100%);
+  font-family:'Space Grotesk',sans-serif; font-weight:700; font-size: clamp(1.6rem, 2.6vw, 2.3rem); line-height:1.1;
+  margin: 10px 0 4px; background: linear-gradient(90deg, #F1F5FF 0%, #C7D2FE 45%, var(--accent, var(--cyan)) 100%);
   -webkit-background-clip:text; background-clip:text; color: transparent;
 }}
-.mo-sub {{ color: var(--muted); font-size: 1rem; max-width: 860px; }}
-.mo-line {{ height:1px; margin-top:16px; background: linear-gradient(90deg, var(--cyan), rgba(139,92,246,.6), transparent); }}
+.mo-sub {{ color: var(--muted); font-size: .95rem; max-width: 900px; }}
+.mo-line {{ height:2px; margin-top:12px; border-radius:2px; background: linear-gradient(90deg, var(--accent, var(--cyan)), rgba(139,92,246,.35), transparent); }}
 .mo-card {{
   background: var(--surface); border:1px solid var(--border); border-radius:18px; padding:18px 18px 14px;
   backdrop-filter: blur(10px); height:100%; transition: transform .15s, border-color .2s, box-shadow .2s;
@@ -181,6 +181,13 @@ textarea {{ font-family: 'Inter', sans-serif !important; line-height: 1.5 !impor
 .mo-card p {{ color: var(--muted); font-size: .88rem; margin: 0; min-height: 4.2em; }}
 .mo-badge {{ display:inline-block; font-family:'JetBrains Mono',monospace; font-size:.7rem; padding:2px 8px; border-radius:999px;
   border:1px solid var(--border); color: var(--muted); }}
+.mo-badge.meli {{ color:#FFE600; border-color: rgba(255,230,0,.45); background: rgba(255,230,0,.07); }}
+.mo-badge.shop {{ color:#A6D157; border-color: rgba(149,191,71,.5); background: rgba(149,191,71,.08); }}
+.mo-badge.omni {{ color:#E6EAF2; border-color: rgba(255,255,255,.25);
+  background: linear-gradient(90deg, rgba(255,230,0,.14), rgba(149,191,71,.14)); }}
+.mo-help ol {{ margin: 0 0 6px 1.1rem; padding: 0; }}
+.mo-help li {{ margin: 4px 0; color: var(--text); font-size: .9rem; }}
+.mo-help .tip {{ color: var(--muted); font-size: .84rem; margin-top: 6px; }}
 .mo-login {{ max-width: 420px; margin: 8vh auto 0; text-align:center; }}
 .mo-login img {{ width: 84px; filter: drop-shadow(0 0 24px rgba(139,92,246,.55)); }}
 /* ---------- tarjeta de producto (Contenido) ---------- */
@@ -207,14 +214,59 @@ def apply_theme() -> None:
     st.markdown(CSS, unsafe_allow_html=True)
 
 
+CANAL = {   # sección del menú → (etiqueta, color, gradiente, color de texto en botones)
+    "MercadoLibre": ("MERCADOLIBRE", "#FFE600", "linear-gradient(135deg,#FFE600 0%,#FFB800 100%)", "#1B1B1B"),
+    "Shopify": ("SHOPIFY", "#95BF47", "linear-gradient(135deg,#A6D157 0%,#5E8E3E 100%)", "#FFFFFF"),
+    "MeLi ↔ Shopify": ("MELI ↔ SHOPIFY", "#C8E04A", "linear-gradient(135deg,#FFE600 0%,#95BF47 100%)", "#1B1B1B"),
+    "Configuración": ("CONFIGURACIÓN", "#22D3EE", GRAD, "#FFFFFF"),
+}
+
+
+def _acento(seccion: str) -> None:
+    if seccion not in CANAL:
+        return
+    _, col, grad, txt = CANAL[seccion]
+    r, g, b = (int(col[i:i + 2], 16) for i in (1, 3, 5))
+    st.markdown(f"""<style>
+:root {{ --accent:{col}; --accent-soft:rgba({r},{g},{b},.45); --accent-bg:rgba({r},{g},{b},.08); --accent-grad:{grad}; }}
+button[kind="primary"], button[data-testid="stBaseButton-primary"], a[data-testid="stBaseLinkButton-primary"] {{
+  background:{grad} !important; color:{txt} !important; box-shadow: 0 6px 22px rgba({r},{g},{b},.28) !important; }}
+button[kind="primary"] p, button[data-testid="stBaseButton-primary"] p {{ color:{txt} !important; }}
+[data-baseweb="tab"][aria-selected="true"] {{ color:{col} !important; background: rgba({r},{g},{b},.07) !important; }}
+[data-baseweb="tag"] {{ background: rgba({r},{g},{b},.18) !important; border-color: rgba({r},{g},{b},.45) !important; }}
+[data-baseweb="input"]:focus-within, [data-baseweb="textarea"]:focus-within, [data-baseweb="select"] > div:focus-within {{
+  border-color:{col} !important; box-shadow: 0 0 0 3px rgba({r},{g},{b},.15) !important; }}
+</style>""", unsafe_allow_html=True)
+
+
 def hero(title: str, subtitle: str = "", kicker: str = "") -> None:
+    """Encabezado de página: color del canal (según la sección del menú) + botón «❓ Cómo se usa»."""
+    seccion = st.session_state.get("_seccion", "")
+    pagina = st.session_state.get("_pagina", "")
+    _acento(seccion)
+    etiqueta = CANAL.get(seccion, ("", "", "", ""))[0]
+    if etiqueta:
+        k_ = kicker.upper()
+        for x in ("MELI ↔ SHOPIFY · ", "MERCADOLIBRE · ", "SHOPIFY · ", "MELI · ", "PRECIOS · MELI + SHOPIFY"):
+            k_ = k_.replace(x, "")
+        kicker = f"{etiqueta} · {k_}" if k_ and k_ not in etiqueta else etiqueta
     k = f'<span class="mo-kicker">{kicker}</span>' if kicker else ""
     s = f'<div class="mo-sub">{subtitle}</div>' if subtitle else ""
-    st.markdown(f'<div class="mo-hero">{k}<div class="mo-title">{title}</div>{s}<div class="mo-line"></div></div>',
+    from .ayuda import AYUDA
+    ay = AYUDA.get(pagina)
+    c1, c2 = st.columns([1, 0.13], vertical_alignment="top") if ay else (st.container(), None)
+    c1.markdown(f'<div class="mo-hero">{k}<div class="mo-title">{title}</div>{s}<div class="mo-line"></div></div>',
                 unsafe_allow_html=True)
+    if ay and c2 is not None:
+        with c2.popover("❓ Ayuda", width="stretch", help="Cómo se usa esta página"):
+            pasos = "".join(f"<li>{p}</li>" for p in ay.get("pasos", []))
+            tips = "".join(f'<div class="tip">💡 {t}</div>' for t in ay.get("tips", []))
+            st.markdown(f'<div class="mo-help"><ol>{pasos}</ol>{tips}</div>', unsafe_allow_html=True)
 
 
 def card(icon: str, title: str, text: str, badge: str = "") -> None:
-    b = f'<div style="margin-top:10px"><span class="mo-badge">{badge}</span></div>' if badge else ""
+    cls = "omni" if "+" in badge or "↔" in badge else "meli" if "MELI" in badge.upper() else \
+        "shop" if "SHOPIFY" in badge.upper() else ""
+    b = f'<div style="margin-top:10px"><span class="mo-badge {cls}">{badge}</span></div>' if badge else ""
     st.markdown(f'<div class="mo-card"><div class="ic">{icon}</div><h4>{title}</h4><p>{text}</p>{b}</div>',
                 unsafe_allow_html=True)

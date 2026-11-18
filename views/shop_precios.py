@@ -14,7 +14,7 @@ from meli.excel import to_xlsx
 from meli.inconsistencias import strip_size
 from meli.theme import hero
 
-hero("Precios Shopify", "Cargar precios por modelo-color y manejar el precio tachado, sin tocar lo demás.", "SHOPIFY · PRECIOS")
+hero("Precios", "Cargar precios por modelo-color y manejar el precio tachado, sin tocar lo demás.", "SHOPIFY · PRECIOS")
 tienda = pick_store()
 nombre = stores()[tienda]["nombre"]
 P, V, M, MF = cargar(tienda)

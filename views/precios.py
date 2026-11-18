@@ -7,7 +7,7 @@ from meli.theme import hero
 from meli.bulk import run_bulk
 from meli.carga import compute_precio, grid_block, mode_picker, preview, resolve
 from meli.prices import update_price
-from meli.ui import catalog_index, pick_account, show_results
+from meli.ui import catalog_index, pick_account, show_results, invalidar_meli
 
 st.session_state["_page"] = "precios"
 hero("Precios masivos", "Actualizá precios por modelo-color con vista previa, % masivos y redondeo inteligente.", "PRECIOS")
@@ -41,4 +41,4 @@ if st.button(f"🚀 Actualizar {len(todo)} publicaciones", type="primary", disab
     keep = [c for c in ["clave", "item_id", "titulo", "precio_lista", "precio_nuevo", "var_%", "resultado", "error",
                         "procesado"] if c in res]
     show_results(res[keep], f"resultado_precios_{datetime.now():%Y%m%d_%H%M}.xlsx")
-    st.cache_data.clear()
+    invalidar_meli(client.user_id)

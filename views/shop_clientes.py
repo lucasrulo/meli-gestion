@@ -12,7 +12,7 @@ from meli.shopify import ShopifyClient, ShopifyError, stores
 from meli.theme import hero
 from meli.ui import caja_texto
 
-hero("Clientes Shopify", "Pegá un listado de mails: te traigo nombre, apellido y tags, y podés agregar o quitar tags en masa.",
+hero("Clientes", "Pegá un listado de mails: te traigo nombre, apellido y tags, y podés agregar o quitar tags en masa.",
      "SHOPIFY · CLIENTES")
 tienda = pick_store()
 nombre = stores()[tienda]["nombre"]

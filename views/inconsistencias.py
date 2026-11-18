@@ -11,7 +11,7 @@ from meli.auth import get_token_manager
 from meli.bulk import run_bulk
 from meli.excel import to_xlsx
 from meli.prices import update_price
-from meli.ui import catalog_index, index_for, pick_account, show_results
+from meli.ui import catalog_index, index_for, pick_account, show_results, invalidar_meli
 
 st.session_state["_page"] = "inconsistencias"
 hero("Precios distintos", "Detecta el mismo artículo con precios diferentes y los iguala en bloque.", "PRECIOS · AUDITORÍA")
@@ -156,4 +156,4 @@ if st.button(f"🚀 Igualar {len(todo)} publicaciones", type="primary", disabled
     keep = [c for c in ["cuenta", "titulo", "color", "skus", "item_id", "precio_lista", "precio_nuevo", "resultado", "error",
                         "procesado"] if c in res]
     show_results(res[keep], f"resultado_igualar_{datetime.now():%Y%m%d_%H%M}.xlsx")
-    st.cache_data.clear()
+    invalidar_meli(client.user_id, *todo["uid"].dropna().unique())

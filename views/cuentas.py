@@ -8,7 +8,7 @@ from meli.theme import hero
 
 from meli.auth import get_token_manager
 
-hero("Cuentas", "Conexión segura de tus tiendas oficiales de MercadoLibre.", "CONFIGURACIÓN")
+hero("Cuentas y tiendas", "Conectá tus cuentas oficiales de MercadoLibre y tus tiendas Shopify, y vinculá cada marca entre los dos canales.", "CONEXIONES")
 
 if msg := st.session_state.pop("flash", None):
     (st.success if msg.startswith("✅") else st.error)(msg)

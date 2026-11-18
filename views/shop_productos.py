@@ -14,7 +14,7 @@ from meli.excel import to_xlsx
 from meli.inconsistencias import strip_size
 from meli.theme import hero
 
-hero("Productos Shopify", "Estado, canales, talles con EAN y stock, y metacampos — en masa y con deshacer.", "SHOPIFY · PRODUCTOS")
+hero("Productos y stock", "Estado, canales, talles con EAN y stock, y metacampos — en masa y con deshacer.", "SHOPIFY · PRODUCTOS")
 tienda = pick_store()
 nombre = stores()[tienda]["nombre"]
 P, V, M, MF = cargar(tienda)

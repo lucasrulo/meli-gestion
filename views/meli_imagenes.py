@@ -15,7 +15,7 @@ from meli.theme import hero
 from meli.ui import catalog_index, pick_account, show_results
 
 st.session_state["_page"] = "meli_imagenes"
-hero("Imágenes MeLi", "Agregá una misma imagen (ej. la tabla de talles) a muchas publicaciones de una vez.", "MELI · IMÁGENES")
+hero("Imágenes", "Agregá una misma imagen (ej. la tabla de talles) a muchas publicaciones de una vez.", "MELI · IMÁGENES")
 client = pick_account()
 index = catalog_index(client)
 alias = get_token_manager().accounts().get(client.user_id, {}).get("alias") or client.user_id

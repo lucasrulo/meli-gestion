@@ -35,11 +35,17 @@ if "code" in qp:
 
 from meli.menu import MENU  # noqa: E402
 
-nav = {"": [st.Page("views/inicio.py", title="Inicio", icon=":material/space_dashboard:", default=True)]}
+inicio = st.Page("views/inicio.py", title="Inicio", icon=":material/space_dashboard:", default=True)
+nav, donde = {"": [inicio]}, {inicio.url_path or "inicio": ("", "inicio")}
 for seccion, paginas in MENU.items():
     _pre = {"MercadoLibre": "🟡 ", "Shopify": "🟢 ", "MeLi ↔ Shopify": "🔀 ", "Configuración": "⚙️ "}.get(seccion, "")
-    nav[_pre + seccion] = [st.Page(f, title=t, icon=f":material/{ic}:") for f, t, ic, *_ in paginas]
+    nav[_pre + seccion] = []
+    for f, t, ic, *_ in paginas:
+        p_ = st.Page(f, title=t, icon=f":material/{ic}:")
+        nav[_pre + seccion].append(p_)
+        donde[p_.url_path] = (seccion, Path(f).stem)
 pg = st.navigation(nav, expanded=True)
+st.session_state["_seccion"], st.session_state["_pagina"] = donde.get(pg.url_path, ("", "inicio"))
 if _msg := st.session_state.pop("flash", None):
     (st.success if _msg.startswith("✅") else st.error)(_msg)
 pg.run()

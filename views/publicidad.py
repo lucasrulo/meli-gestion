@@ -12,7 +12,7 @@ from meli.excel import to_xlsx
 from meli.theme import hero
 from meli.ui import pick_account, show_results
 
-hero("Publicidad MeLi", "Campañas de Product Ads: presupuesto, estrategia, ROAS objetivo y ajuste automático de presupuesto, "
+hero("Publicidad (Ads)", "Campañas de Product Ads: presupuesto, estrategia, ROAS objetivo y ajuste automático de presupuesto, "
      "en masa y con métricas.", "MELI · ADS")
 client = pick_account()
 alias = get_token_manager().accounts().get(client.user_id, {}).get("alias") or client.user_id
