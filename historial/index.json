@@ -1,6 +1,20 @@
 {
   "ops": [
     {
+      "id": "20261118-144011-875d36",
+      "fecha": "2026-11-18 14:40:11",
+      "usuario": "app",
+      "canal": "Shopify",
+      "tienda": "piccadilly",
+      "accion": "tags_set",
+      "descripcion": "Piccadilly Argentina | Sitio Oficial: agregar «fiestas» en 46 productos",
+      "reversible": true,
+      "deshace": null,
+      "total": 46,
+      "ok": 46,
+      "deshecha_por": null
+    },
+    {
       "id": "20261118-143815-d0995c",
       "fecha": "2026-11-18 14:38:15",
       "usuario": "app",
