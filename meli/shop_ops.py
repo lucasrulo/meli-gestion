@@ -329,5 +329,11 @@ def mostrar_resultado(df: pd.DataFrame) -> None:
     (st.success if not err else st.warning)(
         f"✅ {ok} OK" + (f" · ❌ {err} con error" if err else "")
         + (" · guardado en **Historial**" if df.attrs.get("op_id") else ""))
+    if df.attrs.get("op_id") and ok:   # barra «deshacer» arriba de la página hasta que la cierres
+        st.session_state["_ultimo_op"] = {"id": df.attrs["op_id"], "pagina": st.session_state.get("_pagina"),
+                                          "txt": f"{ok} cambio(s) aplicados"}
+        c1, c2 = st.columns([3, 1], vertical_alignment="center")
+        c1.caption("¿Te equivocaste? Podés deshacerlo ahora mismo.")
+        c2.button("↩️ Deshacer", key=f"undo_{df.attrs['op_id']}", width="stretch")   # lo procesa la barra de arriba
     if err:
         st.dataframe(df[df["resultado"] != "OK"], hide_index=True, width="stretch")

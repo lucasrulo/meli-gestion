@@ -239,6 +239,33 @@ button[kind="primary"] p, button[data-testid="stBaseButton-primary"] p {{ color:
 </style>""", unsafe_allow_html=True)
 
 
+def _barra_deshacer(pagina: str) -> None:
+    """Después de un cambio masivo: barra con «↩️ Deshacer» en la misma página (sin ir a Historial)."""
+    u = st.session_state.get("_ultimo_op")
+    if not u or u.get("pagina") != pagina:
+        return
+    with st.container(border=True):
+        c1, c2, c3 = st.columns([3, 1, 0.5], vertical_alignment="center")
+        c1.markdown(f"✅ **Último cambio:** {u['txt']} · queda en Historial")
+        if c2.button("↩️ Deshacer", key=f"undo_{u['id']}", width="stretch"):
+            from . import historial
+            from . import shop_ops
+            try:
+                with st.spinner("Deshaciendo…"):
+                    res = shop_ops.deshacer(historial.detalle(u["id"]))
+                st.session_state.pop("_ultimo_op", None)
+                if res is None:
+                    st.warning("Este cambio no se puede deshacer automáticamente.")
+                else:
+                    st.toast("↩️ Cambio deshecho")
+                    st.rerun()
+            except Exception as e:  # noqa: BLE001
+                st.error(f"No pude deshacer: {e}")
+        if c3.button("✕", key=f"undo_x_{u['id']}", help="Ocultar"):
+            st.session_state.pop("_ultimo_op", None)
+            st.rerun()
+
+
 def hero(title: str, subtitle: str = "", kicker: str = "") -> None:
     """Encabezado de página: color del canal (según la sección del menú) + botón «❓ Cómo se usa»."""
     seccion = st.session_state.get("_seccion", "")
@@ -257,6 +284,7 @@ def hero(title: str, subtitle: str = "", kicker: str = "") -> None:
     c1, c2 = st.columns([1, 0.13], vertical_alignment="top") if ay else (st.container(), None)
     c1.markdown(f'<div class="mo-hero">{k}<div class="mo-title">{title}</div>{s}<div class="mo-line"></div></div>',
                 unsafe_allow_html=True)
+    _barra_deshacer(pagina)
     if ay and c2 is not None:
         with c2.popover("❓ Ayuda", width="stretch", help="Cómo se usa esta página"):
             pasos = "".join(f"<li>{p}</li>" for p in ay.get("pasos", []))
