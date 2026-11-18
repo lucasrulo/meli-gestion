@@ -114,7 +114,9 @@ def parse_catalogo(lines: list[dict], key: str, vendor: str = "") -> tuple[pd.Da
     vg = V.groupby("product_id")
     skus = vg["sku"].apply(list).to_dict() if not V.empty else {}
     nfot = M.groupby("product_id").size().to_dict() if not M.empty else {}
-    foto1 = M.drop_duplicates("product_id").set_index("product_id")["url"].to_dict() if not M.empty else {}
+    from .imagen import thumb
+    foto1 = {k: thumb(v) for k, v in M.drop_duplicates("product_id").set_index("product_id")["url"].items()} \
+        if not M.empty else {}
     rows = []
     for pid, p in prods.items():
         if vendor and str(p.get("vendor", "")).strip().lower() != vendor.strip().lower():

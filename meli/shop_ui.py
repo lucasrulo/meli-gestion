@@ -15,7 +15,7 @@ ESTADOS = {"ACTIVE": "🟢 Activo", "UNLISTED": "🔗 No listado", "DRAFT": "�
 def pick_store(key: str = "shop_store") -> str | None:
     st_ = stores()
     if not st_:
-        st.warning("No hay tiendas Shopify conectadas. Andá a **Cuentas → Conectar tienda**.")
+        st.warning("No hay tiendas Shopify conectadas. Andá a **Configuración → Cuentas y tiendas → Conectar tienda**.")
         st.stop()
     from .selector_marca import elegir_tienda
     return elegir_tienda(st_)

@@ -36,7 +36,7 @@ def pick_account() -> MeliClient:
     tm = get_token_manager()
     accounts = tm.accounts()
     if not accounts:
-        st.warning("No hay cuentas conectadas. Andá a **Cuentas** y conectá al menos una.")
+        st.warning("No hay cuentas conectadas. Andá a **Configuración → Cuentas y tiendas** y conectá al menos una.")
         st.stop()
     from .selector_marca import elegir_cuenta
     return MeliClient(tm, elegir_cuenta(accounts))

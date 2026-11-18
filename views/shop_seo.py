@@ -102,7 +102,7 @@ with t_aud:
             with cfix:
                 if ejecutar_ui("🖼️ Completar alt con el título (gratis)", len(pids), "fix_alt"):
                     _aplicar_alt(_alt_reglas(pids), f"{nombre}: alt con reglas desde auditoría")
-                st.caption("Para un alt que describa cada foto, usá **Imágenes Shopify → Alt de productos** con IA.")
+                st.caption("Para un alt que describa cada foto, usá **Shopify → Imágenes → Alt de productos** con IA.")
         elif fix == "tachado":
             with cfix:
                 if ejecutar_ui("🧹 Quitar tachados inválidos", len(pids), "fix_tach"):
@@ -128,9 +128,9 @@ with t_aud:
                                                       progress=progreso("Estados…")))
         elif fix == "fotos":
             try:
-                cfix.page_link("views/shop_imagenes.py", label="Ir a Imágenes Shopify → Fotos de productos", icon="🖼️")
+                cfix.page_link("views/shop_imagenes.py", label="Ir a Shopify → Imágenes → Fotos de productos", icon="🖼️")
             except Exception:  # noqa: BLE001
-                cfix.caption("Cargalas desde **Imágenes Shopify → Fotos de productos**.")
+                cfix.caption("Cargalas desde **Shopify → Imágenes → Fotos de productos**.")
 
 # ================================================================ 2. SEO masivo
 with t_seo:

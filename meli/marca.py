@@ -8,6 +8,7 @@ import pandas as pd
 
 from .api import MeliClient, MeliError
 from .catalog import items_bulk
+from .imagen import foto_meli
 from .token_store import GitHubTokenStore
 
 KEYWORDS = [
@@ -153,7 +154,7 @@ def item_row(it: dict, busqueda: str) -> dict:
         "provincia": (addr.get("state") or {}).get("name"),
         "estado": it.get("status"),
         "creada": str(it.get("date_created") or "")[:10],
-        "foto": it.get("thumbnail"),
+        "foto": foto_meli(it),
         "link": it.get("permalink"),
     }
 

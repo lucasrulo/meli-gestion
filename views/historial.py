@@ -11,8 +11,8 @@ hero("Historial", "Todos los cambios masivos con su antes y después. Elegí uno
 
 ops_ = hs.listar()
 if not ops_:
-    st.info("Todavía no hay cambios registrados. Se registran los de Catálogo Shopify, SEO y calidad, "
-            "Precios omnicanal / Análisis de precios y Contenido SEO.")
+    st.info("Todavía no hay cambios registrados. Acá aparecen todos los cambios masivos de MeLi y Shopify "
+            "(precios, productos, tags, colores, SEO, descripciones…), con su botón para deshacer.")
     st.stop()
 
 tiendas = {k: v["nombre"] for k, v in stores().items()}

@@ -37,7 +37,8 @@ from meli.menu import MENU  # noqa: E402
 
 nav = {"": [st.Page("views/inicio.py", title="Inicio", icon=":material/space_dashboard:", default=True)]}
 for seccion, paginas in MENU.items():
-    nav[seccion] = [st.Page(f, title=t, icon=f":material/{ic}:") for f, t, ic, *_ in paginas]
+    _pre = {"MercadoLibre": "🟡 ", "Shopify": "🟢 ", "MeLi ↔ Shopify": "🔀 ", "Configuración": "⚙️ "}.get(seccion, "")
+    nav[_pre + seccion] = [st.Page(f, title=t, icon=f":material/{ic}:") for f, t, ic, *_ in paginas]
 pg = st.navigation(nav, expanded=True)
 if _msg := st.session_state.pop("flash", None):
     (st.success if _msg.startswith("✅") else st.error)(_msg)

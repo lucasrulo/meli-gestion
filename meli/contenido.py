@@ -129,9 +129,8 @@ def comparar(title: str, desc_actual: str, desc_nueva: str, filled_act: int, fil
 
 
 def _foto_url(it: dict) -> str:
-    pics = it.get("pictures") or []
-    u = (pics[0].get("secure_url") or pics[0].get("url")) if pics else it.get("thumbnail")
-    return (u or "").replace("http://", "https://")
+    from .imagen import foto_meli
+    return foto_meli(it)
 
 
 def analyze(client: MeliClient, rep_ids: list[str], progress=None) -> pd.DataFrame:

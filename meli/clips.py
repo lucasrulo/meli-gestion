@@ -11,6 +11,7 @@ import pandas as pd
 
 from .api import MeliClient, MeliError
 from .catalog import multiget
+from .imagen import foto_meli
 
 _VIDEO = re.compile(r"video|clip|short", re.I)
 
@@ -69,7 +70,7 @@ def relevar(client: MeliClient, item_ids: list[str], progress=None, workers: int
         pics = it.get("pictures") or []
         rows.append({
             "item_id": iid, "titulo": it.get("title"), "estado_pub": it.get("status"),
-            "foto": ((pics[0].get("secure_url") if pics else it.get("thumbnail")) or "").replace("http://", "https://"),
+            "foto": foto_meli(it),
             "vendidos": it.get("sold_quantity") or 0, "stock": it.get("available_quantity"),
             "video": sit, "regla": regla, "crear_link": link_crear, "calidad": perf.get("score"),
             "video_clasico": bool(it.get("video_id")), "link": it.get("permalink"), "error": err,

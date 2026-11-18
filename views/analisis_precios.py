@@ -13,8 +13,8 @@ from meli.theme import hero
 from meli.ui import catalog_index, index_for, pick_account
 
 st.session_state["_page"] = "analisis"
-hero("Análisis de precios", "Todo el catálogo cruzado entre MercadoLibre y Shopify: brechas de precio, cobertura de "
-     "canales, stock y promos, con ajuste masivo en un clic.", "PRECIOS · INTELIGENCIA")
+hero("Comparar catálogos", "Todo el catálogo cruzado entre MercadoLibre y Shopify: qué hay en cada canal, brechas de precio, "
+     "stock y promos, con ajuste masivo en un clic.", "MELI ↔ SHOPIFY · CATÁLOGO")
 
 stores = sh.stores()
 if not stores:
