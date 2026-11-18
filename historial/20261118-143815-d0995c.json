@@ -1,0 +1,338 @@
+{
+  "id": "20261118-143815-d0995c",
+  "fecha": "2026-11-18 14:38:15",
+  "usuario": "app",
+  "canal": "Shopify",
+  "tienda": "piccadilly",
+  "accion": "tags_set",
+  "descripcion": "Piccadilly Argentina | Sitio Oficial: agregar «fiestas30» en 12 productos",
+  "filas": [
+    {
+      "id": "gid://shopify/Product/8629573976202",
+      "label": "Sandalia Cristine Cruzada",
+      "antes": [
+        "30Cyber",
+        "calzado",
+        "Cybermonday",
+        "oportunidades",
+        "Precyber",
+        "sandalia",
+        "women"
+      ],
+      "despues": [
+        "30Cyber",
+        "calzado",
+        "Cybermonday",
+        "oportunidades",
+        "Precyber",
+        "sandalia",
+        "women",
+        "fiestas30"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629574140042",
+      "label": "Sandalia Cristine Cruzada",
+      "antes": [
+        "30Cyber",
+        "calzado",
+        "Cybermonday",
+        "oportunidades",
+        "Precyber",
+        "sandalia",
+        "ultimasunidades",
+        "women"
+      ],
+      "despues": [
+        "30Cyber",
+        "calzado",
+        "Cybermonday",
+        "oportunidades",
+        "Precyber",
+        "sandalia",
+        "ultimasunidades",
+        "women",
+        "fiestas30"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629574271114",
+      "label": "Sandalia Cristine Cruzada",
+      "antes": [
+        "30Cyber",
+        "calzado",
+        "Cybermonday",
+        "oportunidades",
+        "Precyber",
+        "sandalia",
+        "women"
+      ],
+      "despues": [
+        "30Cyber",
+        "calzado",
+        "Cybermonday",
+        "oportunidades",
+        "Precyber",
+        "sandalia",
+        "women",
+        "fiestas30"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629589213322",
+      "label": "Sandalia Cristine Glitter Cerrado",
+      "antes": [
+        "30Cyber",
+        "calzado",
+        "Cybermonday",
+        "Precyber",
+        "sandalia",
+        "ultimasunidades",
+        "women"
+      ],
+      "despues": [
+        "30Cyber",
+        "calzado",
+        "Cybermonday",
+        "Precyber",
+        "sandalia",
+        "ultimasunidades",
+        "women",
+        "fiestas30"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629589541002",
+      "label": "Sandalia Cristine Glitter",
+      "antes": [
+        "30Cyber",
+        "calzado",
+        "Cybermonday",
+        "Precyber",
+        "sandalia",
+        "women"
+      ],
+      "despues": [
+        "30Cyber",
+        "calzado",
+        "Cybermonday",
+        "Precyber",
+        "sandalia",
+        "women",
+        "fiestas30"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629638168714",
+      "label": "Zapato Deise",
+      "antes": [
+        "30black",
+        "30Cyber",
+        "blackfriday",
+        "calzado",
+        "coleccionanterior",
+        "Cybermonday",
+        "fw26",
+        "maxiterapy",
+        "oportunidades",
+        "Precyber",
+        "tecnologia",
+        "ultimasunidades",
+        "women"
+      ],
+      "despues": [
+        "30black",
+        "30Cyber",
+        "blackfriday",
+        "calzado",
+        "coleccionanterior",
+        "Cybermonday",
+        "fw26",
+        "maxiterapy",
+        "oportunidades",
+        "Precyber",
+        "tecnologia",
+        "ultimasunidades",
+        "women",
+        "fiestas30"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8629638299786",
+      "label": "Zapato Deise",
+      "antes": [
+        "30black",
+        "30Cyber",
+        "blackfriday",
+        "calzado",
+        "coleccionanterior",
+        "Cybermonday",
+        "maxiterapy",
+        "oportunidades",
+        "Precyber",
+        "tecnologia",
+        "ultimasunidades",
+        "women"
+      ],
+      "despues": [
+        "30black",
+        "30Cyber",
+        "blackfriday",
+        "calzado",
+        "coleccionanterior",
+        "Cybermonday",
+        "maxiterapy",
+        "oportunidades",
+        "Precyber",
+        "tecnologia",
+        "ultimasunidades",
+        "women",
+        "fiestas30"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8668784787594",
+      "label": "Sandalia Rafa",
+      "antes": [
+        "30Cyber",
+        "calzado",
+        "Cybermonday",
+        "Precyber",
+        "primaveraverano",
+        "sandalia",
+        "women"
+      ],
+      "despues": [
+        "30Cyber",
+        "calzado",
+        "Cybermonday",
+        "Precyber",
+        "primaveraverano",
+        "sandalia",
+        "women",
+        "fiestas30"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8668784820362",
+      "label": "Sandalia Rafa",
+      "antes": [
+        "30Cyber",
+        "calzado",
+        "Cybermonday",
+        "Precyber",
+        "primaveraverano",
+        "sandalia",
+        "women"
+      ],
+      "despues": [
+        "30Cyber",
+        "calzado",
+        "Cybermonday",
+        "Precyber",
+        "primaveraverano",
+        "sandalia",
+        "women",
+        "fiestas30"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8668784951434",
+      "label": "Sandalia Cristine",
+      "antes": [
+        "30Cyber",
+        "calzado",
+        "Cybermonday",
+        "Precyber",
+        "primaveraverano",
+        "sandalia",
+        "women"
+      ],
+      "despues": [
+        "30Cyber",
+        "calzado",
+        "Cybermonday",
+        "Precyber",
+        "primaveraverano",
+        "sandalia",
+        "women",
+        "fiestas30"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8668784984202",
+      "label": "Sandalia Cristine",
+      "antes": [
+        "30Cyber",
+        "calzado",
+        "Cybermonday",
+        "Precyber",
+        "primaveraverano",
+        "sandalia",
+        "women"
+      ],
+      "despues": [
+        "30Cyber",
+        "calzado",
+        "Cybermonday",
+        "Precyber",
+        "primaveraverano",
+        "sandalia",
+        "women",
+        "fiestas30"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9318103220362",
+      "label": "Zapato Deise",
+      "antes": [
+        "30black",
+        "30Cyber",
+        "blackfriday",
+        "calzado",
+        "Cybermonday",
+        "Precyber",
+        "women",
+        "zapato"
+      ],
+      "despues": [
+        "30black",
+        "30Cyber",
+        "blackfriday",
+        "calzado",
+        "Cybermonday",
+        "Precyber",
+        "women",
+        "zapato",
+        "fiestas30"
+      ],
+      "ok": true,
+      "error": ""
+    }
+  ],
+  "meta": {},
+  "reversible": true,
+  "deshace": null
+}
