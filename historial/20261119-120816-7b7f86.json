@@ -1,0 +1,727 @@
+{
+  "id": "20261119-120816-7b7f86",
+  "fecha": "2026-11-19 12:08:16",
+  "usuario": "app",
+  "canal": "Shopify",
+  "tienda": "mhw",
+  "accion": "tags_set",
+  "descripcion": "Mountain Hardwear: agregar «trail» en 29 productos",
+  "filas": [
+    {
+      "id": "gid://shopify/Product/10310892650713",
+      "label": "Campera Microchill™",
+      "antes": [
+        "acampar",
+        "bestsellers",
+        "campera",
+        "escalar",
+        "indumentaria",
+        "outdoor",
+        "polar",
+        "women"
+      ],
+      "despues": [
+        "acampar",
+        "bestsellers",
+        "campera",
+        "escalar",
+        "indumentaria",
+        "outdoor",
+        "polar",
+        "women",
+        "trail"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310892683481",
+      "label": "Campera Microchill™",
+      "antes": [
+        "acampar",
+        "bestsellers",
+        "campera",
+        "escalar",
+        "indumentaria",
+        "outdoor",
+        "polar",
+        "women"
+      ],
+      "despues": [
+        "acampar",
+        "bestsellers",
+        "campera",
+        "escalar",
+        "indumentaria",
+        "outdoor",
+        "polar",
+        "women",
+        "trail"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310892716249",
+      "label": "Campera Microchill™",
+      "antes": [
+        "acampar",
+        "bestsellers",
+        "campera",
+        "escalar",
+        "indumentaria",
+        "men",
+        "outdoor"
+      ],
+      "despues": [
+        "acampar",
+        "bestsellers",
+        "campera",
+        "escalar",
+        "indumentaria",
+        "men",
+        "outdoor",
+        "trail"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310892749017",
+      "label": "Campera Microchill™",
+      "antes": [
+        "acampar",
+        "bestsellers",
+        "campera",
+        "escalar",
+        "indumentaria",
+        "men",
+        "outdoor"
+      ],
+      "despues": [
+        "acampar",
+        "bestsellers",
+        "campera",
+        "escalar",
+        "indumentaria",
+        "men",
+        "outdoor",
+        "trail"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310892781785",
+      "label": "Campera Microchill™",
+      "antes": [
+        "acampar",
+        "bestsellers",
+        "campera",
+        "escalar",
+        "indumentaria",
+        "men",
+        "outdoor"
+      ],
+      "despues": [
+        "acampar",
+        "bestsellers",
+        "campera",
+        "escalar",
+        "indumentaria",
+        "men",
+        "outdoor",
+        "trail"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310892814553",
+      "label": "Buzo con capucha Microchill™",
+      "antes": [
+        "acampar",
+        "buzo",
+        "indumentaria",
+        "outdoor",
+        "women"
+      ],
+      "despues": [
+        "acampar",
+        "buzo",
+        "indumentaria",
+        "outdoor",
+        "women",
+        "trail"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310892847321",
+      "label": "Buzo con capucha Microchill™",
+      "antes": [
+        "acampar",
+        "buzo",
+        "indumentaria",
+        "outdoor",
+        "women"
+      ],
+      "despues": [
+        "acampar",
+        "buzo",
+        "indumentaria",
+        "outdoor",
+        "women",
+        "trail"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310893043929",
+      "label": "Buzo medio cierre con capucha Summit Grid™",
+      "antes": [
+        "acampar",
+        "buzo",
+        "escalar",
+        "indumentaria",
+        "men",
+        "outdoor"
+      ],
+      "despues": [
+        "acampar",
+        "buzo",
+        "escalar",
+        "indumentaria",
+        "men",
+        "outdoor",
+        "trail"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310893076697",
+      "label": "Buzo medio cierre con capucha Summit Grid™",
+      "antes": [
+        "acampar",
+        "buzo",
+        "escalar",
+        "indumentaria",
+        "men",
+        "outdoor"
+      ],
+      "despues": [
+        "acampar",
+        "buzo",
+        "escalar",
+        "indumentaria",
+        "men",
+        "outdoor",
+        "trail"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310893109465",
+      "label": "Buzo medio cierre con capucha Summit Grid™",
+      "antes": [
+        "alpino",
+        "buzo",
+        "indumentaria",
+        "nieve",
+        "outdoor",
+        "women"
+      ],
+      "despues": [
+        "alpino",
+        "buzo",
+        "indumentaria",
+        "nieve",
+        "outdoor",
+        "women",
+        "trail"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310893142233",
+      "label": "Buzo medio cierre con capucha Summit Grid™",
+      "antes": [
+        "alpino",
+        "buzo",
+        "escalar",
+        "indumentaria",
+        "nieve",
+        "outdoor",
+        "women"
+      ],
+      "despues": [
+        "alpino",
+        "buzo",
+        "escalar",
+        "indumentaria",
+        "nieve",
+        "outdoor",
+        "women",
+        "trail"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310894420185",
+      "label": "Campera con capucha Threshold™",
+      "antes": [
+        "campera",
+        "impermeable",
+        "indumentaria",
+        "outdoor",
+        "women"
+      ],
+      "despues": [
+        "campera",
+        "impermeable",
+        "indumentaria",
+        "outdoor",
+        "women",
+        "trail"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310894452953",
+      "label": "Campera con capucha Threshold™",
+      "antes": [
+        "campera",
+        "impermeable",
+        "indumentaria",
+        "outdoor",
+        "women"
+      ],
+      "despues": [
+        "campera",
+        "impermeable",
+        "indumentaria",
+        "outdoor",
+        "women",
+        "trail"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310894518489",
+      "label": "Campera con capucha Threshold™",
+      "antes": [
+        "campera",
+        "impermeable",
+        "indumentaria",
+        "men",
+        "outdoor"
+      ],
+      "despues": [
+        "campera",
+        "impermeable",
+        "indumentaria",
+        "men",
+        "outdoor",
+        "trail"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310894551257",
+      "label": "Campera con capucha Threshold™",
+      "antes": [
+        "campera",
+        "impermeable",
+        "indumentaria",
+        "men",
+        "outdoor"
+      ],
+      "despues": [
+        "campera",
+        "impermeable",
+        "indumentaria",
+        "men",
+        "outdoor",
+        "trail"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310894584025",
+      "label": "Campera con capucha Threshold™",
+      "antes": [
+        "campera",
+        "impermeable",
+        "indumentaria",
+        "men",
+        "outdoor"
+      ],
+      "despues": [
+        "campera",
+        "impermeable",
+        "indumentaria",
+        "men",
+        "outdoor",
+        "trail"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310894616793",
+      "label": "Buzo con capucha y medio cierre Crater Lake™ Heavyweight",
+      "antes": [
+        "acampar",
+        "alpino",
+        "buzo",
+        "escalar",
+        "indumentaria",
+        "nieve",
+        "outdoor",
+        "proteccionsolar",
+        "women"
+      ],
+      "despues": [
+        "acampar",
+        "alpino",
+        "buzo",
+        "escalar",
+        "indumentaria",
+        "nieve",
+        "outdoor",
+        "proteccionsolar",
+        "women",
+        "trail"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310894682329",
+      "label": "Buzo con capucha AirMesh™",
+      "antes": [
+        "acampar",
+        "alpino",
+        "buzo",
+        "escalar",
+        "indumentaria",
+        "nieve",
+        "outdoor",
+        "women"
+      ],
+      "despues": [
+        "acampar",
+        "alpino",
+        "buzo",
+        "escalar",
+        "indumentaria",
+        "nieve",
+        "outdoor",
+        "women",
+        "trail"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310894715097",
+      "label": "Buzo con capucha AirMesh™",
+      "antes": [
+        "acampar",
+        "alpino",
+        "buzo",
+        "escalar",
+        "indumentaria",
+        "nieve",
+        "outdoor",
+        "women"
+      ],
+      "despues": [
+        "acampar",
+        "alpino",
+        "buzo",
+        "escalar",
+        "indumentaria",
+        "nieve",
+        "outdoor",
+        "women",
+        "trail"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310894747865",
+      "label": "Buzo con capucha y medio cierre Crater Lake™ Heavyweight",
+      "antes": [
+        "acampar",
+        "buzo",
+        "escalar",
+        "indumentaria",
+        "men",
+        "nieve",
+        "outdoor",
+        "proteccionsolar"
+      ],
+      "despues": [
+        "acampar",
+        "buzo",
+        "escalar",
+        "indumentaria",
+        "men",
+        "nieve",
+        "outdoor",
+        "proteccionsolar",
+        "trail"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310894813401",
+      "label": "Buzo con capucha y medio cierre Crater Lake™ Heavyweight",
+      "antes": [
+        "acampar",
+        "buzo",
+        "escalar",
+        "indumentaria",
+        "men",
+        "nieve",
+        "outdoor",
+        "proteccionsolar"
+      ],
+      "despues": [
+        "acampar",
+        "buzo",
+        "escalar",
+        "indumentaria",
+        "men",
+        "nieve",
+        "outdoor",
+        "proteccionsolar",
+        "trail"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310894878937",
+      "label": "Buzo con capucha y medio cierre Crater Lake™ Heavyweight",
+      "antes": [
+        "acampar",
+        "buzo",
+        "escalar",
+        "indumentaria",
+        "men",
+        "nieve",
+        "outdoor",
+        "proteccionsolar"
+      ],
+      "despues": [
+        "acampar",
+        "buzo",
+        "escalar",
+        "indumentaria",
+        "men",
+        "nieve",
+        "outdoor",
+        "proteccionsolar",
+        "trail"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310894911705",
+      "label": "Buzo con capucha AirMesh™",
+      "antes": [
+        "acampar",
+        "buzo",
+        "indumentaria",
+        "men",
+        "nieve",
+        "outdoor"
+      ],
+      "despues": [
+        "acampar",
+        "buzo",
+        "indumentaria",
+        "men",
+        "nieve",
+        "outdoor",
+        "trail"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310894944473",
+      "label": "Buzo con capucha AirMesh™",
+      "antes": [
+        "acampar",
+        "buzo",
+        "indumentaria",
+        "men",
+        "nieve",
+        "outdoor"
+      ],
+      "despues": [
+        "acampar",
+        "buzo",
+        "indumentaria",
+        "men",
+        "nieve",
+        "outdoor",
+        "trail"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310894977241",
+      "label": "Pantalón Hardwear AP™",
+      "antes": [
+        "acampar",
+        "escalar",
+        "indumentaria",
+        "men",
+        "outdoor",
+        "pantalon"
+      ],
+      "despues": [
+        "acampar",
+        "escalar",
+        "indumentaria",
+        "men",
+        "outdoor",
+        "pantalon",
+        "trail"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310895075545",
+      "label": "Campera con capucha Polartec® Power Grid™",
+      "antes": [
+        "acampar",
+        "alpino",
+        "campera",
+        "escalar",
+        "indumentaria",
+        "outdoor",
+        "polartec",
+        "women"
+      ],
+      "despues": [
+        "acampar",
+        "alpino",
+        "campera",
+        "escalar",
+        "indumentaria",
+        "outdoor",
+        "polartec",
+        "women",
+        "trail"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310895108313",
+      "label": "Campera con capucha Polartec® Power Grid™",
+      "antes": [
+        "acampar",
+        "alpino",
+        "campera",
+        "escalar",
+        "indumentaria",
+        "outdoor",
+        "polartec",
+        "women"
+      ],
+      "despues": [
+        "acampar",
+        "alpino",
+        "campera",
+        "escalar",
+        "indumentaria",
+        "outdoor",
+        "polartec",
+        "women",
+        "trail"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310895141081",
+      "label": "Campera con capucha Polartec® Power Grid™",
+      "antes": [
+        "acampar",
+        "alpino",
+        "bestsellers",
+        "campera",
+        "escalar",
+        "indumentaria",
+        "men",
+        "outdoor",
+        "polar"
+      ],
+      "despues": [
+        "acampar",
+        "alpino",
+        "bestsellers",
+        "campera",
+        "escalar",
+        "indumentaria",
+        "men",
+        "outdoor",
+        "polar",
+        "trail"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310895501529",
+      "label": "Buzo con capucha Crater Lake™",
+      "antes": [
+        "acampar",
+        "alpino",
+        "buzo",
+        "escalar",
+        "indumentaria",
+        "men",
+        "outdoor",
+        "proteccionsolar"
+      ],
+      "despues": [
+        "acampar",
+        "alpino",
+        "buzo",
+        "escalar",
+        "indumentaria",
+        "men",
+        "outdoor",
+        "proteccionsolar",
+        "trail"
+      ],
+      "ok": true,
+      "error": ""
+    }
+  ],
+  "meta": {},
+  "reversible": true,
+  "deshace": null
+}
