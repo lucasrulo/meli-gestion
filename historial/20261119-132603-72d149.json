@@ -1,0 +1,56 @@
+{
+  "id": "20261119-132603-72d149",
+  "fecha": "2026-11-19 13:26:03",
+  "usuario": "app",
+  "canal": "Shopify",
+  "tienda": "mhw",
+  "accion": "tags_set",
+  "descripcion": "Mountain Hardwear: agregar «nieve» en 2 productos",
+  "filas": [
+    {
+      "id": "gid://shopify/Product/10310893961433",
+      "label": "Monoprenda Warp Factor™",
+      "antes": [
+        "impermeable",
+        "indumentaria",
+        "men",
+        "monoprenda",
+        "snowsports"
+      ],
+      "despues": [
+        "impermeable",
+        "indumentaria",
+        "men",
+        "monoprenda",
+        "snowsports",
+        "nieve"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310894026969",
+      "label": "Monoprenda Warp Factor™",
+      "antes": [
+        "impermeable",
+        "indumentaria",
+        "men",
+        "monoprenda",
+        "snowsports"
+      ],
+      "despues": [
+        "impermeable",
+        "indumentaria",
+        "men",
+        "monoprenda",
+        "snowsports",
+        "nieve"
+      ],
+      "ok": true,
+      "error": ""
+    }
+  ],
+  "meta": {},
+  "reversible": true,
+  "deshace": null
+}
