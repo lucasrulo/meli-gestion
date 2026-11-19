@@ -1,6 +1,20 @@
 {
   "ops": [
     {
+      "id": "20261119-132603-72d149",
+      "fecha": "2026-11-19 13:26:03",
+      "usuario": "app",
+      "canal": "Shopify",
+      "tienda": "mhw",
+      "accion": "tags_set",
+      "descripcion": "Mountain Hardwear: agregar «nieve» en 2 productos",
+      "reversible": true,
+      "deshace": null,
+      "total": 2,
+      "ok": 2,
+      "deshecha_por": null
+    },
+    {
       "id": "20261119-132523-52d7c0",
       "fecha": "2026-11-19 13:25:23",
       "usuario": "app",
