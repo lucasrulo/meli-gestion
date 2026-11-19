@@ -1,6 +1,20 @@
 {
   "ops": [
     {
+      "id": "20261119-120725-56a033",
+      "fecha": "2026-11-19 12:07:25",
+      "usuario": "app",
+      "canal": "Shopify",
+      "tienda": "mhw",
+      "accion": "tags_set",
+      "descripcion": "Mountain Hardwear: agregar «alpino» en 9 productos",
+      "reversible": true,
+      "deshace": null,
+      "total": 9,
+      "ok": 9,
+      "deshecha_por": null
+    },
+    {
       "id": "20261119-120610-f9219c",
       "fecha": "2026-11-19 12:06:10",
       "usuario": "app",
