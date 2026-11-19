@@ -1,6 +1,20 @@
 {
   "ops": [
     {
+      "id": "20261119-120411-697f7f",
+      "fecha": "2026-11-19 12:04:11",
+      "usuario": "app",
+      "canal": "Shopify",
+      "tienda": "mhw",
+      "accion": "tags_set",
+      "descripcion": "Mountain Hardwear: agregar «escalar» en 23 productos",
+      "reversible": true,
+      "deshace": null,
+      "total": 23,
+      "ok": 23,
+      "deshecha_por": null
+    },
+    {
       "id": "20261119-115752-91f7f6",
       "fecha": "2026-11-19 11:57:52",
       "usuario": "app",
