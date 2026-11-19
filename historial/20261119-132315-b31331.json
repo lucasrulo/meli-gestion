@@ -1,0 +1,396 @@
+{
+  "id": "20261119-132315-b31331",
+  "fecha": "2026-11-19 13:23:15",
+  "usuario": "app",
+  "canal": "Shopify",
+  "tienda": "mhw",
+  "accion": "tags_set",
+  "descripcion": "Mountain Hardwear: agregar «trail» en 16 productos",
+  "filas": [
+    {
+      "id": "gid://shopify/Product/10310893437145",
+      "label": "Campera con capucha Free Element™",
+      "antes": [
+        "abrigo",
+        "aislamiento",
+        "campera",
+        "indumentaria",
+        "outdoor",
+        "women"
+      ],
+      "despues": [
+        "abrigo",
+        "aislamiento",
+        "campera",
+        "indumentaria",
+        "outdoor",
+        "women",
+        "trail"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310893535449",
+      "label": "Campera con capucha Free Element™",
+      "antes": [
+        "abrigo",
+        "aislamiento",
+        "campera",
+        "indumentaria",
+        "outdoor",
+        "women"
+      ],
+      "despues": [
+        "abrigo",
+        "aislamiento",
+        "campera",
+        "indumentaria",
+        "outdoor",
+        "women",
+        "trail"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310893568217",
+      "label": "Campera con capucha StretchDown™ Light",
+      "antes": [
+        "abrigo",
+        "aislamiento",
+        "campera",
+        "impermeable",
+        "indumentaria",
+        "outdoor",
+        "women"
+      ],
+      "despues": [
+        "abrigo",
+        "aislamiento",
+        "campera",
+        "impermeable",
+        "indumentaria",
+        "outdoor",
+        "women",
+        "trail"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310893600985",
+      "label": "Campera con capucha StretchDown™ Light",
+      "antes": [
+        "abrigo",
+        "aislamiento",
+        "campera",
+        "impermeable",
+        "indumentaria",
+        "outdoor",
+        "women"
+      ],
+      "despues": [
+        "abrigo",
+        "aislamiento",
+        "campera",
+        "impermeable",
+        "indumentaria",
+        "outdoor",
+        "women",
+        "trail"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310893633753",
+      "label": "Campera con capucha StretchDown™ Light",
+      "antes": [
+        "abrigo",
+        "aislamiento",
+        "campera",
+        "impermeable",
+        "indumentaria",
+        "outdoor",
+        "women"
+      ],
+      "despues": [
+        "abrigo",
+        "aislamiento",
+        "campera",
+        "impermeable",
+        "indumentaria",
+        "outdoor",
+        "women",
+        "trail"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310893666521",
+      "label": "Campera con capucha StretchDown™ Light",
+      "antes": [
+        "abrigo",
+        "aislamiento",
+        "campera",
+        "impermeable",
+        "indumentaria",
+        "outdoor",
+        "women"
+      ],
+      "despues": [
+        "abrigo",
+        "aislamiento",
+        "campera",
+        "impermeable",
+        "indumentaria",
+        "outdoor",
+        "women",
+        "trail"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310893699289",
+      "label": "Campera StretchDown™",
+      "antes": [
+        "abrigo",
+        "aislamiento",
+        "bestsellers",
+        "campera",
+        "indumentaria",
+        "outdoor",
+        "women"
+      ],
+      "despues": [
+        "abrigo",
+        "aislamiento",
+        "bestsellers",
+        "campera",
+        "indumentaria",
+        "outdoor",
+        "women",
+        "trail"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310893732057",
+      "label": "Campera StretchDown™",
+      "antes": [
+        "abrigo",
+        "aislamiento",
+        "bestsellers",
+        "campera",
+        "indumentaria",
+        "outdoor",
+        "women"
+      ],
+      "despues": [
+        "abrigo",
+        "aislamiento",
+        "bestsellers",
+        "campera",
+        "indumentaria",
+        "outdoor",
+        "women",
+        "trail"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310893764825",
+      "label": "Campera con capucha StretchDown™",
+      "antes": [
+        "bestsellers",
+        "campera",
+        "impermeable",
+        "indumentaria",
+        "outdoor",
+        "women"
+      ],
+      "despues": [
+        "bestsellers",
+        "campera",
+        "impermeable",
+        "indumentaria",
+        "outdoor",
+        "women",
+        "trail"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310893797593",
+      "label": "Campera con capucha StretchDown™",
+      "antes": [
+        "bestsellers",
+        "campera",
+        "impermeable",
+        "indumentaria",
+        "outdoor",
+        "women"
+      ],
+      "despues": [
+        "bestsellers",
+        "campera",
+        "impermeable",
+        "indumentaria",
+        "outdoor",
+        "women",
+        "trail"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310894158041",
+      "label": "Campera con capucha StretchDown™ Light",
+      "antes": [
+        "aislamiento",
+        "campera",
+        "indumentaria",
+        "men",
+        "outdoor"
+      ],
+      "despues": [
+        "aislamiento",
+        "campera",
+        "indumentaria",
+        "men",
+        "outdoor",
+        "trail"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310894190809",
+      "label": "Campera con capucha StretchDown™ Light",
+      "antes": [
+        "aislamiento",
+        "campera",
+        "indumentaria",
+        "men",
+        "outdoor"
+      ],
+      "despues": [
+        "aislamiento",
+        "campera",
+        "indumentaria",
+        "men",
+        "outdoor",
+        "trail"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310894223577",
+      "label": "Campera con capucha StretchDown™ Light",
+      "antes": [
+        "aislamiento",
+        "bestsellers",
+        "campera",
+        "indumentaria",
+        "men",
+        "outdoor"
+      ],
+      "despues": [
+        "aislamiento",
+        "bestsellers",
+        "campera",
+        "indumentaria",
+        "men",
+        "outdoor",
+        "trail"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310894256345",
+      "label": "Campera StretchDown™",
+      "antes": [
+        "aislamiento",
+        "bestsellers",
+        "campera",
+        "impermeable",
+        "indumentaria",
+        "men",
+        "outdoor"
+      ],
+      "despues": [
+        "aislamiento",
+        "bestsellers",
+        "campera",
+        "impermeable",
+        "indumentaria",
+        "men",
+        "outdoor",
+        "trail"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310894321881",
+      "label": "Campera con capucha StretchDown™",
+      "antes": [
+        "aislamiento",
+        "bestsellers",
+        "campera",
+        "impermeable",
+        "indumentaria",
+        "men",
+        "outdoor"
+      ],
+      "despues": [
+        "aislamiento",
+        "bestsellers",
+        "campera",
+        "impermeable",
+        "indumentaria",
+        "men",
+        "outdoor",
+        "trail"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310894354649",
+      "label": "Campera con capucha StretchDown™",
+      "antes": [
+        "aislamiento",
+        "bestsellers",
+        "campera",
+        "impermeable",
+        "indumentaria",
+        "men",
+        "outdoor"
+      ],
+      "despues": [
+        "aislamiento",
+        "bestsellers",
+        "campera",
+        "impermeable",
+        "indumentaria",
+        "men",
+        "outdoor",
+        "trail"
+      ],
+      "ok": true,
+      "error": ""
+    }
+  ],
+  "meta": {},
+  "reversible": true,
+  "deshace": null
+}
