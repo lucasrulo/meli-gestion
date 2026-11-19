@@ -1,6 +1,20 @@
 {
   "ops": [
     {
+      "id": "20261119-132435-a26349",
+      "fecha": "2026-11-19 13:24:35",
+      "usuario": "app",
+      "canal": "Shopify",
+      "tienda": "mhw",
+      "accion": "tags_set",
+      "descripcion": "Mountain Hardwear: agregar «acampar» en 16 productos",
+      "reversible": true,
+      "deshace": null,
+      "total": 16,
+      "ok": 16,
+      "deshecha_por": null
+    },
+    {
       "id": "20261119-132315-b31331",
       "fecha": "2026-11-19 13:23:15",
       "usuario": "app",
