@@ -1,0 +1,139 @@
+{
+  "id": "20261104-183109-48e50d",
+  "fecha": "2026-11-04 18:31:09",
+  "usuario": "app",
+  "canal": "Shopify",
+  "tienda": "crocs",
+  "accion": "cliente_tags",
+  "descripcion": "Crocs Argentina | Sitio Oficial: tags de 12 clientes (+influencer)",
+  "filas": [
+    {
+      "id": "gid://shopify/Customer/26622372348190",
+      "label": "bautistadelatorre9@gmail.com",
+      "antes": [],
+      "despues": [
+        "influencer"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Customer/26622555783454",
+      "label": "magaepsztein@gmail.com",
+      "antes": [],
+      "despues": [
+        "influencer"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Customer/26622584652062",
+      "label": "suffernbautista@gmail.com",
+      "antes": [
+        "newsletter",
+        "shopify-forms-550007"
+      ],
+      "despues": [
+        "newsletter",
+        "shopify-forms-550007",
+        "influencer"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Customer/26622796890398",
+      "label": "pilar.m4rtinez@gmail.com",
+      "antes": [],
+      "despues": [
+        "influencer"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Customer/26622808981790",
+      "label": "delfisiga@gmail.com",
+      "antes": [],
+      "despues": [
+        "influencer"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Customer/26622848106782",
+      "label": "barbinovelino@gmail.com",
+      "antes": [],
+      "despues": [
+        "influencer"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Customer/26622852530462",
+      "label": "franyperezconsultas@hotmail.com",
+      "antes": [],
+      "despues": [
+        "influencer"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Customer/26622898602270",
+      "label": "cordoneines@gmail.com",
+      "antes": [],
+      "despues": [
+        "influencer"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Customer/26622916133150",
+      "label": "todolo.inquires@gmail.com",
+      "antes": [],
+      "despues": [
+        "influencer"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Customer/26622942544158",
+      "label": "nfcontenidos@gmail.com",
+      "antes": [],
+      "despues": [
+        "influencer"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Customer/26623084790046",
+      "label": "apirovano@gmail.com",
+      "antes": [],
+      "despues": [
+        "influencer"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Customer/26623175819550",
+      "label": "valentina.azaroo@gmail.com",
+      "antes": [],
+      "despues": [
+        "influencer"
+      ],
+      "ok": true,
+      "error": ""
+    }
+  ],
+  "meta": {},
+  "reversible": true,
+  "deshace": null
+}

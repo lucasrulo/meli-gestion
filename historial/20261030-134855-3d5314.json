@@ -1,0 +1,626 @@
+{
+  "id": "20261030-134855-3d5314",
+  "fecha": "2026-10-30 13:48:55",
+  "usuario": "app",
+  "canal": "Shopify",
+  "tienda": "kappa",
+  "accion": "tags_set",
+  "descripcion": "Kappa Argentina : agregar «precyber, 30cyber» en 21 productos",
+  "filas": [
+    {
+      "id": "gid://shopify/Product/10103728668950",
+      "label": "Zapatillas Kappa Logo Reena",
+      "antes": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "unisex",
+        "women",
+        "zapatillas",
+        "precyber",
+        "30cyber"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103734927638",
+      "label": "Zapatillas Logo Maserta 2",
+      "antes": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "precyber",
+        "30cyber"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103737811222",
+      "label": "Zapatillas Kombat Padel Loop",
+      "antes": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "men",
+        "padel",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "men",
+        "padel",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "precyber",
+        "30cyber"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103737876758",
+      "label": "Zapatillas Kombat Padel Loop",
+      "antes": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "men",
+        "padel",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "men",
+        "padel",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "precyber",
+        "30cyber"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103738401046",
+      "label": "Zapatillas Kombat Padel Match",
+      "antes": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "hombre",
+        "men",
+        "mujer",
+        "padel",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "hombre",
+        "men",
+        "mujer",
+        "padel",
+        "unisex",
+        "women",
+        "zapatillas",
+        "precyber",
+        "30cyber"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103745806614",
+      "label": "Zapatillas Authentic 3 pro",
+      "antes": [
+        "50cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "outlethombre",
+        "outletmujer",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "50cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "outlethombre",
+        "outletmujer",
+        "unisex",
+        "women",
+        "zapatillas",
+        "precyber",
+        "30cyber"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103745937686",
+      "label": "Zapatillas Authentic 3 pro",
+      "antes": [
+        "50cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "50cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "unisex",
+        "women",
+        "zapatillas",
+        "precyber",
+        "30cyber"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103746068758",
+      "label": "Zapatillas Authentic 3 pro",
+      "antes": [
+        "50cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "50cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "precyber",
+        "30cyber"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103746265366",
+      "label": "Zapatillas Authentic 3 pro",
+      "antes": [
+        "50cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "outlethombre",
+        "outletmujer",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "50cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "outlethombre",
+        "outletmujer",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "precyber",
+        "30cyber"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103751606550",
+      "label": "Zapatillas Logo Berkley",
+      "antes": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "outlethombre",
+        "outletmujer",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "outlethombre",
+        "outletmujer",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "precyber",
+        "30cyber"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10256025977110",
+      "label": "Zapatillas Logo Berlin 3",
+      "antes": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "unisex",
+        "women",
+        "zapatillas",
+        "precyber",
+        "30cyber"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10256026042646",
+      "label": "Zapatillas Logo Berlin 3",
+      "antes": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "women",
+        "zapatillas",
+        "precyber",
+        "30cyber"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10256026075414",
+      "label": "Zapatillas Logo Berlin 3",
+      "antes": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "women",
+        "zapatillas",
+        "precyber",
+        "30cyber"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10262105358614",
+      "label": "Botines Veloce Fg",
+      "antes": [
+        "50cybermonday",
+        "botines",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "futbol",
+        "men",
+        "salialacancha",
+        "ultimasunidades",
+        "unisex",
+        "women"
+      ],
+      "despues": [
+        "50cybermonday",
+        "botines",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "futbol",
+        "men",
+        "salialacancha",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "precyber",
+        "30cyber"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10262105522454",
+      "label": "Zapatillas Kombat Performance 1 Base",
+      "antes": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "precyber",
+        "30cyber"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10262106439958",
+      "label": "Zapatillas Authentic Altin 3",
+      "antes": [
+        "50cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "50cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "unisex",
+        "women",
+        "zapatillas",
+        "precyber",
+        "30cyber"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10303003623702",
+      "label": "Zapatillas Authentic Atlanta 3",
+      "antes": [
+        "50cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "50cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "precyber",
+        "30cyber"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10303003656470",
+      "label": "Zapatillas Authentic Atlanta 3",
+      "antes": [
+        "50cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "50cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "precyber",
+        "30cyber"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/15401857515798",
+      "label": "Zapatillas Authentic Mood",
+      "antes": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "precyber",
+        "30cyber"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/15401857548566",
+      "label": "Zapatillas Authentic Mood",
+      "antes": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "precyber",
+        "30cyber"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/15401857777942",
+      "label": "Zapatillas Authentic Denver II",
+      "antes": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "precyber",
+        "30cyber"
+      ],
+      "ok": true,
+      "error": ""
+    }
+  ],
+  "meta": {},
+  "reversible": true,
+  "deshace": null
+}

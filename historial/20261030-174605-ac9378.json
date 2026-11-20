@@ -1,0 +1,238 @@
+{
+  "id": "20261030-174605-ac9378",
+  "fecha": "2026-10-30 17:46:05",
+  "usuario": "app",
+  "canal": "Shopify",
+  "tienda": "crocs",
+  "accion": "publicar",
+  "descripcion": "Crocs Argentina | Sitio Oficial: publicar 16 productos en 5 canal(es)",
+  "filas": [
+    {
+      "id": "gid://shopify/Product/9802980557086",
+      "label": "Classic Hiker Clog",
+      "antes": null,
+      "despues": [
+        "gid://shopify/Publication/274422530334",
+        "gid://shopify/Publication/274422563102",
+        "gid://shopify/Publication/276359807262",
+        "gid://shopify/Publication/277048623390",
+        "gid://shopify/Publication/277049606430"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802983670046",
+      "label": "Crocs Brooklin Buckle",
+      "antes": null,
+      "despues": [
+        "gid://shopify/Publication/274422530334",
+        "gid://shopify/Publication/274422563102",
+        "gid://shopify/Publication/276359807262",
+        "gid://shopify/Publication/277048623390",
+        "gid://shopify/Publication/277049606430"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802983899422",
+      "label": "Crocs Brooklin Buckle",
+      "antes": null,
+      "despues": [
+        "gid://shopify/Publication/274422530334",
+        "gid://shopify/Publication/274422563102",
+        "gid://shopify/Publication/276359807262",
+        "gid://shopify/Publication/277048623390",
+        "gid://shopify/Publication/277049606430"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802985931038",
+      "label": "Classic Crush Clog",
+      "antes": null,
+      "despues": [
+        "gid://shopify/Publication/274422530334",
+        "gid://shopify/Publication/274422563102",
+        "gid://shopify/Publication/276359807262",
+        "gid://shopify/Publication/277048623390",
+        "gid://shopify/Publication/277049606430"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802987372830",
+      "label": "Classic Cutie Clog Kids",
+      "antes": null,
+      "despues": [
+        "gid://shopify/Publication/274422530334",
+        "gid://shopify/Publication/274422563102",
+        "gid://shopify/Publication/276359807262",
+        "gid://shopify/Publication/277048623390",
+        "gid://shopify/Publication/277049606430"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802988749086",
+      "label": "Crocs Classic Crush Rain Boot",
+      "antes": null,
+      "despues": [
+        "gid://shopify/Publication/274422530334",
+        "gid://shopify/Publication/274422563102",
+        "gid://shopify/Publication/276359807262",
+        "gid://shopify/Publication/277048623390",
+        "gid://shopify/Publication/277049606430"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802988912926",
+      "label": "Crocs Classic Crush Rain Boot",
+      "antes": null,
+      "despues": [
+        "gid://shopify/Publication/274422530334",
+        "gid://shopify/Publication/274422563102",
+        "gid://shopify/Publication/276359807262",
+        "gid://shopify/Publication/277048623390",
+        "gid://shopify/Publication/277049606430"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802989535518",
+      "label": "Crocs Mega Crush Sandal",
+      "antes": null,
+      "despues": [
+        "gid://shopify/Publication/274422530334",
+        "gid://shopify/Publication/274422563102",
+        "gid://shopify/Publication/276359807262",
+        "gid://shopify/Publication/277048623390",
+        "gid://shopify/Publication/277049606430"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802989994270",
+      "label": "Crocs Mega Crush Sandal",
+      "antes": null,
+      "despues": [
+        "gid://shopify/Publication/274422530334",
+        "gid://shopify/Publication/274422563102",
+        "gid://shopify/Publication/276359807262",
+        "gid://shopify/Publication/277048623390",
+        "gid://shopify/Publication/277049606430"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802990715166",
+      "label": "Crocs Hiker Xscape Sandal",
+      "antes": null,
+      "despues": [
+        "gid://shopify/Publication/274422530334",
+        "gid://shopify/Publication/274422563102",
+        "gid://shopify/Publication/276359807262",
+        "gid://shopify/Publication/277048623390",
+        "gid://shopify/Publication/277049606430"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802990944542",
+      "label": "Crocs Hiker Xscape Sandal",
+      "antes": null,
+      "despues": [
+        "gid://shopify/Publication/274422530334",
+        "gid://shopify/Publication/274422563102",
+        "gid://shopify/Publication/276359807262",
+        "gid://shopify/Publication/277048623390",
+        "gid://shopify/Publication/277049606430"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802991894814",
+      "label": "Crocs Hiker Xscape Clog",
+      "antes": null,
+      "despues": [
+        "gid://shopify/Publication/274422530334",
+        "gid://shopify/Publication/274422563102",
+        "gid://shopify/Publication/276359807262",
+        "gid://shopify/Publication/277048623390",
+        "gid://shopify/Publication/277049606430"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802993402142",
+      "label": "Crocs Crush Slide",
+      "antes": null,
+      "despues": [
+        "gid://shopify/Publication/274422530334",
+        "gid://shopify/Publication/274422563102",
+        "gid://shopify/Publication/276359807262",
+        "gid://shopify/Publication/277048623390",
+        "gid://shopify/Publication/277049606430"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802995040542",
+      "label": "Crocs Paw Patrol Off Court Clg T",
+      "antes": null,
+      "despues": [
+        "gid://shopify/Publication/274422530334",
+        "gid://shopify/Publication/274422563102",
+        "gid://shopify/Publication/276359807262",
+        "gid://shopify/Publication/277048623390",
+        "gid://shopify/Publication/277049606430"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9834195976478",
+      "label": "Classic Slipper Kids",
+      "antes": null,
+      "despues": [
+        "gid://shopify/Publication/274422530334",
+        "gid://shopify/Publication/274422563102",
+        "gid://shopify/Publication/276359807262",
+        "gid://shopify/Publication/277048623390",
+        "gid://shopify/Publication/277049606430"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/16030123065630",
+      "label": "Crocs Classic Crush Rain Boot",
+      "antes": null,
+      "despues": [
+        "gid://shopify/Publication/274422530334",
+        "gid://shopify/Publication/274422563102",
+        "gid://shopify/Publication/276359807262",
+        "gid://shopify/Publication/277048623390",
+        "gid://shopify/Publication/277049606430"
+      ],
+      "ok": true,
+      "error": ""
+    }
+  ],
+  "meta": {},
+  "reversible": true,
+  "deshace": null
+}

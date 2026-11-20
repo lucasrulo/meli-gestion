@@ -1,0 +1,5585 @@
+{
+  "id": "20261107-121016-945314",
+  "fecha": "2026-11-07 12:10:16",
+  "usuario": "app",
+  "canal": "Shopify",
+  "tienda": "kappa",
+  "accion": "tags_set",
+  "descripcion": "Kappa Argentina : agregar «40outlet» en 202 productos",
+  "filas": [
+    {
+      "id": "gid://shopify/Product/10103705075990",
+      "label": "Ojotas 225 Banda Adam 9",
+      "antes": [
+        "40cyber",
+        "authentic",
+        "calzado",
+        "chinela",
+        "men",
+        "ojotas",
+        "ojotasysandalias",
+        "precyber",
+        "ultimasunidades",
+        "unisex"
+      ],
+      "despues": [
+        "40cyber",
+        "authentic",
+        "calzado",
+        "chinela",
+        "men",
+        "ojotas",
+        "ojotasysandalias",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103705829654",
+      "label": "Ojotas Kappa Authentic JPN Mitel 1",
+      "antes": [
+        "40cyber",
+        "authentic",
+        "calzado",
+        "men",
+        "ojotas",
+        "ojotasysandalias",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women"
+      ],
+      "despues": [
+        "40cyber",
+        "authentic",
+        "calzado",
+        "men",
+        "ojotas",
+        "ojotasysandalias",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103705927958",
+      "label": "Ojotas Kappa Authentic JPN Mitel 1",
+      "antes": [
+        "40cyber",
+        "50cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "ojotas",
+        "ojotasysandalias",
+        "precyber",
+        "women"
+      ],
+      "despues": [
+        "40cyber",
+        "50cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "ojotas",
+        "ojotasysandalias",
+        "precyber",
+        "women",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103706321174",
+      "label": "Ojotas Kappa Authentic JPN Mitel 1",
+      "antes": [
+        "40cyber",
+        "50cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "ojotas",
+        "ojotasysandalias",
+        "precyber",
+        "ultimasunidades",
+        "unisex"
+      ],
+      "despues": [
+        "40cyber",
+        "50cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "ojotas",
+        "ojotasysandalias",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103706485014",
+      "label": "Sandalias Authentic 222 Banda Aster 1",
+      "antes": [
+        "40cyber",
+        "authentic",
+        "calzado",
+        "men",
+        "ojotasysandalias",
+        "precyber",
+        "ultimasunidades",
+        "unisex"
+      ],
+      "despues": [
+        "40cyber",
+        "authentic",
+        "calzado",
+        "men",
+        "ojotasysandalias",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103707468054",
+      "label": "Zapatillas Kappa Logo Beirut",
+      "antes": [
+        "40cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103707697430",
+      "label": "Zapatillas Kombat Performance 1 Pro",
+      "antes": [
+        "40cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "hombre",
+        "men",
+        "mujer",
+        "precyber",
+        "training",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "hombre",
+        "men",
+        "mujer",
+        "precyber",
+        "training",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103708057878",
+      "label": "Zapatillas Kombat Performance 1 Pro",
+      "antes": [],
+      "despues": [
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103708156182",
+      "label": "Zapatillas Kombat Performance 1 Pro",
+      "antes": [],
+      "despues": [
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103709368598",
+      "label": "Zapatillas Logo Monsi",
+      "antes": [
+        "40cyber",
+        "calzado",
+        "hombre",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "calzado",
+        "hombre",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103709630742",
+      "label": "Sandalias Authentic Aalys 1",
+      "antes": [
+        "40cyber",
+        "authentic",
+        "calzado",
+        "men",
+        "ojotasysandalias",
+        "precyber",
+        "ultimasunidades",
+        "unisex"
+      ],
+      "despues": [
+        "40cyber",
+        "authentic",
+        "calzado",
+        "men",
+        "ojotasysandalias",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103720182038",
+      "label": "Kappa 222 Banda Marlam 2",
+      "antes": [
+        "40cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "ojotasysandalias",
+        "precyber",
+        "unisex"
+      ],
+      "despues": [
+        "40cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "ojotasysandalias",
+        "precyber",
+        "unisex",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103720935702",
+      "label": "Sandalias Authentic JPN Tasillaq 1",
+      "antes": [
+        "40cyber",
+        "50cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "ojotasysandalias",
+        "precyber",
+        "unisex"
+      ],
+      "despues": [
+        "40cyber",
+        "50cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "ojotasysandalias",
+        "precyber",
+        "unisex",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103721722134",
+      "label": "Kappa 222 Banda Marlam 1",
+      "antes": [
+        "50cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "ojotasysandalias",
+        "precyber",
+        "unisex",
+        "women"
+      ],
+      "despues": [
+        "50cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "ojotasysandalias",
+        "precyber",
+        "unisex",
+        "women",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103721951510",
+      "label": "Zapatillas Logo Asivat 2",
+      "antes": [
+        "40cyber",
+        "calzado",
+        "men",
+        "Out of stock",
+        "precyber",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "calzado",
+        "men",
+        "Out of stock",
+        "precyber",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103724933398",
+      "label": "Zapatillas Kombat Padel Kage",
+      "antes": [
+        "50cyber",
+        "50cybermonday",
+        "cybermonday",
+        "deportes",
+        "hombre",
+        "men",
+        "mujer",
+        "padel",
+        "precyber",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "50cyber",
+        "50cybermonday",
+        "cybermonday",
+        "deportes",
+        "hombre",
+        "men",
+        "mujer",
+        "padel",
+        "precyber",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103725097238",
+      "label": "Zapatillas Kombat Padel Kage",
+      "antes": [
+        "50cyber",
+        "50cybermonday",
+        "cybermonday",
+        "deportes",
+        "hombre",
+        "men",
+        "mujer",
+        "padel",
+        "precyber",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "50cyber",
+        "50cybermonday",
+        "cybermonday",
+        "deportes",
+        "hombre",
+        "men",
+        "mujer",
+        "padel",
+        "precyber",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103725261078",
+      "label": "Zapatillas Kombat Padel Kage",
+      "antes": [
+        "50cyber",
+        "50cybermonday",
+        "cybermonday",
+        "deportes",
+        "hombre",
+        "men",
+        "mujer",
+        "padel",
+        "precyber",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "50cyber",
+        "50cybermonday",
+        "cybermonday",
+        "deportes",
+        "hombre",
+        "men",
+        "mujer",
+        "padel",
+        "precyber",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103725392150",
+      "label": "Zapatillas Kombat Padel Kage",
+      "antes": [
+        "40cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "hombre",
+        "men",
+        "mujer",
+        "padel",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "hombre",
+        "men",
+        "mujer",
+        "padel",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103726440726",
+      "label": "Zapatillas Kappa Kombat Padel Score 2",
+      "antes": [
+        "40cyber",
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "hombre",
+        "men",
+        "mujer",
+        "padel",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "hombre",
+        "men",
+        "mujer",
+        "padel",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103726997782",
+      "label": "Zapatillas Kappa Kombat Padel Score 2",
+      "antes": [
+        "40cyber",
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "padel",
+        "precyber",
+        "precyberhombre",
+        "precybermujer",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "padel",
+        "precyber",
+        "precyberhombre",
+        "precybermujer",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103727489302",
+      "label": "Zapatillas Kombat Performance 1",
+      "antes": [
+        "40cyber",
+        "calzado",
+        "deportes",
+        "hombre",
+        "men",
+        "mujer",
+        "precyber",
+        "training",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "calzado",
+        "deportes",
+        "hombre",
+        "men",
+        "mujer",
+        "precyber",
+        "training",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103727980822",
+      "label": "Zapatillas Kombat Performance 1 Base",
+      "antes": [
+        "40cyber",
+        "calzado",
+        "deportes",
+        "hombre",
+        "men",
+        "mujer",
+        "precyber",
+        "training",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "calzado",
+        "deportes",
+        "hombre",
+        "men",
+        "mujer",
+        "precyber",
+        "training",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103728046358",
+      "label": "Zapatillas Kombat Performance 1 Base",
+      "antes": [
+        "40cyber",
+        "calzado",
+        "deportes",
+        "men",
+        "Out of stock",
+        "precyber",
+        "training",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "calzado",
+        "deportes",
+        "men",
+        "Out of stock",
+        "precyber",
+        "training",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103728177430",
+      "label": "Zapatillas Kombat Performance 1 Base",
+      "antes": [
+        "40cyber",
+        "calzado",
+        "hombre",
+        "men",
+        "mujer",
+        "precyber",
+        "training",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "calzado",
+        "hombre",
+        "men",
+        "mujer",
+        "precyber",
+        "training",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103728472342",
+      "label": "Zapatillas Authentic Linat 2",
+      "antes": [
+        "40cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103728865558",
+      "label": "Zapatillas Logo Arvikaw",
+      "antes": [
+        "40cyber",
+        "calzadomujer",
+        "precyber",
+        "ultimasunidades",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "calzadomujer",
+        "precyber",
+        "ultimasunidades",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103729324310",
+      "label": "Zapatillas Performance 1",
+      "antes": [
+        "40cyber",
+        "calzado",
+        "hombre",
+        "men",
+        "mujer",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "calzado",
+        "hombre",
+        "men",
+        "mujer",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103729488150",
+      "label": "Zapatillas Performance 1",
+      "antes": [
+        "40cyber",
+        "calzado",
+        "hombre",
+        "men",
+        "mujer",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "calzado",
+        "hombre",
+        "men",
+        "mujer",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103731028246",
+      "label": "Zapatillas Authentic Marcus 1",
+      "antes": [
+        "40cyber",
+        "50cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "50cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103731159318",
+      "label": "Zapatillas Authentic Marcus 1",
+      "antes": [
+        "40cyber",
+        "50cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "50cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103731486998",
+      "label": "Zapatillas Logo Holborn",
+      "antes": [
+        "40cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103731683606",
+      "label": "Zapatillas Logo Holborn",
+      "antes": [
+        "40cyber",
+        "calzado",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "calzado",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103731781910",
+      "label": "Zapatillas Logo Holborn",
+      "antes": [
+        "40cyber",
+        "calzado",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "calzado",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103731847446",
+      "label": "Zapatillas Logo Holborn",
+      "antes": [
+        "40cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103732109590",
+      "label": "Zapatillas Logo Holborn",
+      "antes": [
+        "40cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103735910678",
+      "label": "Zapatillas Kappa Logo Tangos",
+      "antes": [
+        "40cyber",
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103736172822",
+      "label": "Zapatillas Kappa Logo Tangos",
+      "antes": [
+        "40cyber",
+        "calzado",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "calzado",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103736467734",
+      "label": "Zapatillas Kappa Logo Tangos",
+      "antes": [
+        "40cyber",
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103736631574",
+      "label": "Zapatillas Kappa Logo Tangos",
+      "antes": [
+        "40cyber",
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103737385238",
+      "label": "Zapatillas Nomadw",
+      "antes": [
+        "40cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "precyber",
+        "ultimasunidades",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "precyber",
+        "ultimasunidades",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103737516310",
+      "label": "Zapatillas Nomadw",
+      "antes": [
+        "40cyber",
+        "calzado",
+        "calzadoprecybermujer",
+        "precyber",
+        "ultimasunidades",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "calzado",
+        "calzadoprecybermujer",
+        "precyber",
+        "ultimasunidades",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103738302742",
+      "label": "Zapatillas Getano",
+      "antes": [
+        "40cyber",
+        "calzado",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "calzado",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103738532118",
+      "label": "Zapatillas Kombat Padel Match",
+      "antes": [
+        "50cyber",
+        "50cybermonday",
+        "cybermonday",
+        "deportes",
+        "hombre",
+        "men",
+        "mujer",
+        "padel",
+        "precyber",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "50cyber",
+        "50cybermonday",
+        "cybermonday",
+        "deportes",
+        "hombre",
+        "men",
+        "mujer",
+        "padel",
+        "precyber",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103738630422",
+      "label": "Zapatillas Kombat Padel Match",
+      "antes": [
+        "50cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "hombre",
+        "men",
+        "mujer",
+        "padel",
+        "precyber",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "50cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "hombre",
+        "men",
+        "mujer",
+        "padel",
+        "precyber",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103738728726",
+      "label": "Zapatillas Kombat Padel Match",
+      "antes": [
+        "40cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "hombre",
+        "men",
+        "mujer",
+        "padel",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "hombre",
+        "men",
+        "mujer",
+        "padel",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103738859798",
+      "label": "Zapatillas Kombat Padel Score",
+      "antes": [
+        "50cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "hombre",
+        "men",
+        "mujer",
+        "padel",
+        "precyber",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "50cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "hombre",
+        "men",
+        "mujer",
+        "padel",
+        "precyber",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103738958102",
+      "label": "Zapatillas Kombat Padel Score",
+      "antes": [
+        "40cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "hombre",
+        "men",
+        "mujer",
+        "padel",
+        "precyber",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "hombre",
+        "men",
+        "mujer",
+        "padel",
+        "precyber",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103739121942",
+      "label": "Zapatillas Kombat Padel Score",
+      "antes": [
+        "40cyber",
+        "calzado",
+        "deportes",
+        "hombre",
+        "lajoaqui2",
+        "men",
+        "mujer",
+        "padel",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "calzado",
+        "deportes",
+        "hombre",
+        "lajoaqui2",
+        "men",
+        "mujer",
+        "padel",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103740072214",
+      "label": "Sandalias Authentic Cloty 1",
+      "antes": [
+        "40cyber",
+        "authentic",
+        "calzado",
+        "men",
+        "ojotasysandalias",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women"
+      ],
+      "despues": [
+        "40cyber",
+        "authentic",
+        "calzado",
+        "men",
+        "ojotasysandalias",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103740203286",
+      "label": "Zapatillas Authentic vicky 2",
+      "antes": [
+        "40cyber",
+        "authentic",
+        "calzado",
+        "men",
+        "Out of stock",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "authentic",
+        "calzado",
+        "men",
+        "Out of stock",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103740301590",
+      "label": "Zapatillas Logo Sanpuerto",
+      "antes": [
+        "40cyber",
+        "50cybermonday",
+        "50off",
+        "calzado",
+        "cybermonday",
+        "ddm",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "50cybermonday",
+        "50off",
+        "calzado",
+        "cybermonday",
+        "ddm",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103740432662",
+      "label": "Zapatillas Logo Sanpuerto",
+      "antes": [
+        "40cyber",
+        "50off",
+        "calzado",
+        "ddm",
+        "men",
+        "Out of stock",
+        "precyber",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "50off",
+        "calzado",
+        "ddm",
+        "men",
+        "Out of stock",
+        "precyber",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103740530966",
+      "label": "Zapatillas Logo Sanpuerto",
+      "antes": [
+        "40cyber",
+        "50cybermonday",
+        "50off",
+        "calzado",
+        "cybermonday",
+        "ddm",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "50cybermonday",
+        "50off",
+        "calzado",
+        "cybermonday",
+        "ddm",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103741743382",
+      "label": "Zapatillas Kappa Logo Astos",
+      "antes": [
+        "40cyber",
+        "calzado",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "calzado",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103741907222",
+      "label": "Zapatillas Kappa Logo Astos",
+      "antes": [
+        "40cyber",
+        "calzado",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "calzado",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103742497046",
+      "label": "Zapatillas Authentic Denver II",
+      "antes": [
+        "40cyber",
+        "authentic",
+        "calzado",
+        "men",
+        "Out of stock",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "authentic",
+        "calzado",
+        "men",
+        "Out of stock",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103742726422",
+      "label": "Sandalias Authentic Lucien 1",
+      "antes": [
+        "40cyber",
+        "50cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "ojotasysandalias",
+        "precyber",
+        "unisex",
+        "women"
+      ],
+      "despues": [
+        "40cyber",
+        "50cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "ojotasysandalias",
+        "precyber",
+        "unisex",
+        "women",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103743086870",
+      "label": "Zapatillas Kombat Clean 2",
+      "antes": [
+        "40cyber",
+        "calzado",
+        "men",
+        "precyber",
+        "training",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "calzado",
+        "men",
+        "precyber",
+        "training",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103743578390",
+      "label": "Zapatillas Logo Tango",
+      "antes": [
+        "40cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103744659734",
+      "label": "Zapatillas Authentic Altin 3",
+      "antes": [
+        "40cyber",
+        "50cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "50cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103745151254",
+      "label": "Zapatillas Authentic 2 Pro",
+      "antes": [
+        "40cyber",
+        "authentic",
+        "calzado",
+        "men",
+        "precyber",
+        "precyberhombre",
+        "precybermujer",
+        "ultimasunidades",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "authentic",
+        "calzado",
+        "men",
+        "precyber",
+        "precyberhombre",
+        "precybermujer",
+        "ultimasunidades",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103745216790",
+      "label": "Zapatillas Authentic 2 Pro",
+      "antes": [
+        "40cyber",
+        "authentic",
+        "calzado",
+        "men",
+        "precyber",
+        "precyberhombre",
+        "precybermujer",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "authentic",
+        "calzado",
+        "men",
+        "precyber",
+        "precyberhombre",
+        "precybermujer",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103746691350",
+      "label": "Zapatillas Kombat Performance 4",
+      "antes": [
+        "40cyber",
+        "calzado",
+        "men",
+        "precyber",
+        "training",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "calzado",
+        "men",
+        "precyber",
+        "training",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103746887958",
+      "label": "Zapatillas Kombat Performance 4",
+      "antes": [
+        "40cyber",
+        "calzado",
+        "men",
+        "Out of stock",
+        "precyber",
+        "training",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "calzado",
+        "men",
+        "Out of stock",
+        "precyber",
+        "training",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103747674390",
+      "label": "Zapatillas Kappa Logo Fillmore Md",
+      "antes": [
+        "40cyber",
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103747936534",
+      "label": "Zapatillas Authentic Kai 1",
+      "antes": [
+        "40cyber",
+        "50cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "50cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103749378326",
+      "label": "Zapatillas Kombat Performance 2",
+      "antes": [
+        "40cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "hombre",
+        "men",
+        "mujer",
+        "precyber",
+        "training",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "hombre",
+        "men",
+        "mujer",
+        "precyber",
+        "training",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103749476630",
+      "label": "Zapatillas Kombat Performance 2",
+      "antes": [
+        "40cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "hombre",
+        "men",
+        "mujer",
+        "precyber",
+        "training",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "hombre",
+        "men",
+        "mujer",
+        "precyber",
+        "training",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103764844822",
+      "label": "Zapatillas Logo Monsi Md Ev Kids",
+      "antes": [
+        "calzado",
+        "kids",
+        "outletkids",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "calzado",
+        "kids",
+        "outletkids",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103764975894",
+      "label": "Zapatillas Logo Galter 5 Kids",
+      "antes": [
+        "40cyber",
+        "calzado",
+        "kids",
+        "Out of stock",
+        "precyber",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "calzado",
+        "kids",
+        "Out of stock",
+        "precyber",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103765598486",
+      "label": "Sandalias Kappa Logo Nefari Kids",
+      "antes": [
+        "50cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "ojotasysandalias",
+        "precyber"
+      ],
+      "despues": [
+        "50cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "ojotasysandalias",
+        "precyber",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103765696790",
+      "label": "Sandalias Kappa Logo Nefari Kids",
+      "antes": [
+        "50cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "ojotasysandalias",
+        "precyber"
+      ],
+      "despues": [
+        "50cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "ojotasysandalias",
+        "precyber",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103766450454",
+      "label": "Zapatillas Logo Kary Md Ev Kids",
+      "antes": [
+        "40cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "precyber",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "precyber",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103767597334",
+      "label": "Zapatillas Logo Isabel Kids",
+      "antes": [
+        "40cyber",
+        "calzado",
+        "kids",
+        "outlet",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "calzado",
+        "kids",
+        "outlet",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103769039126",
+      "label": "Zapatillas Kappa Logo London Kids",
+      "antes": [
+        "40cyber",
+        "calzado",
+        "kids",
+        "outlet",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "calzado",
+        "kids",
+        "outlet",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103771955478",
+      "label": "Zapatillas Logo Sanpuerto El Kids",
+      "antes": [
+        "40cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "outlet",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "outlet",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103772184854",
+      "label": "Zapatillas Logo Sanpuerto El Kids",
+      "antes": [
+        "40cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "outlet",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "outlet",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103772348694",
+      "label": "Zapatillas Logo Sanpuerto El Kids",
+      "antes": [
+        "40cyber",
+        "calzado",
+        "kids",
+        "outlet",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "calzado",
+        "kids",
+        "outlet",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103772512534",
+      "label": "Zapatillas Logo Sanpuerto El Kids",
+      "antes": [
+        "40cyber",
+        "calzado",
+        "kids",
+        "outlet",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "calzado",
+        "kids",
+        "outlet",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103772610838",
+      "label": "Zapatillas Logo Astos Md Ev Kids",
+      "antes": [
+        "40cyber",
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "outlet",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "outlet",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103772741910",
+      "label": "Zapatillas Logo Astos Md Ev Kids",
+      "antes": [
+        "40cyber",
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "outlet",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "outlet",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103775101206",
+      "label": "Zapatillas Logo Linate V Kids",
+      "antes": [
+        "40cyber",
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "outlet",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "outlet",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103775166742",
+      "label": "Zapatillas Logo Linate V Kids",
+      "antes": [
+        "40cyber",
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "outlet",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "outlet",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103775265046",
+      "label": "Zapatillas Logo Linate V Kids",
+      "antes": [
+        "40cyber",
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "outlet",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "outlet",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103775363350",
+      "label": "Zapatillas Logo Linate V Kids",
+      "antes": [
+        "40cyber",
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "outlet",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "outlet",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10130970837270",
+      "label": "Zapatillas Kappa Logo Arvikaw 3",
+      "antes": [
+        "40cyber",
+        "50cybermonday",
+        "calzado",
+        "calzadomujer",
+        "cybermonday",
+        "precyber",
+        "ultimasunidades",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "50cybermonday",
+        "calzado",
+        "calzadomujer",
+        "cybermonday",
+        "precyber",
+        "ultimasunidades",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10147734257942",
+      "label": "Zapatillas Kappa Paco",
+      "antes": [
+        "40cyber",
+        "authentic",
+        "calzado",
+        "hombre",
+        "men",
+        "mujer",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "authentic",
+        "calzado",
+        "hombre",
+        "men",
+        "mujer",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10147734389014",
+      "label": "Zapatillas Kappa Kombat Boldypu 2",
+      "antes": [
+        "40cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10147734520086",
+      "label": "Zapatillas Kappa Kombat Boldypu 2",
+      "antes": [
+        "40cyber",
+        "calzado",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "calzado",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10147734618390",
+      "label": "Zapatillas Kappa Logo Montero",
+      "antes": [
+        "40cyber",
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10147742482710",
+      "label": "Zapatillas Logo Maserta Kids",
+      "antes": [
+        "40cyber",
+        "calzado",
+        "kids",
+        "outlet",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "calzado",
+        "kids",
+        "outlet",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10147742515478",
+      "label": "Zapatillas Logo Maserta Kids",
+      "antes": [
+        "40cyber",
+        "calzado",
+        "kids",
+        "outlet",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "calzado",
+        "kids",
+        "outlet",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10147742744854",
+      "label": "Zapatillas Kappa Authentic Memphis Kids 1",
+      "antes": [
+        "40cyber",
+        "authentic",
+        "calzado",
+        "kids",
+        "outlet",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "authentic",
+        "calzado",
+        "kids",
+        "outlet",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10147742810390",
+      "label": "Zapatillas Kappa Authentic Memphis Kids 1",
+      "antes": [
+        "40cyber",
+        "authentic",
+        "calzado",
+        "kids",
+        "outlet",
+        "outletkids",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "authentic",
+        "calzado",
+        "kids",
+        "outlet",
+        "outletkids",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10147743531286",
+      "label": "Zapatillas Bota Kappa Andem Kids",
+      "antes": [
+        "40cyber",
+        "calzado",
+        "kids",
+        "outlet",
+        "outletkids",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "calzado",
+        "kids",
+        "outlet",
+        "outletkids",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10147744022806",
+      "label": "Botines Kappa Kombat Marsella Fg Kids",
+      "antes": [
+        "2x1botines",
+        "40cybermonday",
+        "botines",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "fg",
+        "futbol",
+        "men",
+        "ultimasunidades",
+        "unisex",
+        "women"
+      ],
+      "despues": [
+        "2x1botines",
+        "40cybermonday",
+        "botines",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "fg",
+        "futbol",
+        "men",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10147744481558",
+      "label": "Zapatillas Kappa Logo Oscar EV Kids",
+      "antes": [
+        "40cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "outlet",
+        "outletkids",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "outlet",
+        "outletkids",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10147744514326",
+      "label": "Zapatillas Kappa Logo Oscar EV Kids",
+      "antes": [
+        "40cyber",
+        "calzado",
+        "kids",
+        "outlet",
+        "outletkids",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "calzado",
+        "kids",
+        "outlet",
+        "outletkids",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10147744940310",
+      "label": "Zapatillas Kappa Logo Delvis EV Kids",
+      "antes": [
+        "40cyber",
+        "calzado",
+        "kids",
+        "outlet",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "calzado",
+        "kids",
+        "outlet",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10147744973078",
+      "label": "Zapatillas Kappa Logo Delvis EV Kids",
+      "antes": [
+        "40cyber",
+        "calzado",
+        "kids",
+        "outlet",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "calzado",
+        "kids",
+        "outlet",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10152673575190",
+      "label": "Zapatillas Positano",
+      "antes": [
+        "40cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "hombre",
+        "men",
+        "mujer",
+        "precyber",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "hombre",
+        "men",
+        "mujer",
+        "precyber",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10173171073302",
+      "label": "Zapatillas Kappa Paco",
+      "antes": [],
+      "despues": [
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10173171138838",
+      "label": "Zapatillas Authentic Linat 2",
+      "antes": [
+        "40cyber",
+        "50cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "50cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10173171335446",
+      "label": "Zapatillas Astos Md",
+      "antes": [
+        "40cyber",
+        "calzado",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "calzado",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10173171466518",
+      "label": "Zapatillas Authentic Sibari",
+      "antes": [
+        "40cyber",
+        "authentic",
+        "calzado",
+        "men",
+        "nuevacoleccion",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "authentic",
+        "calzado",
+        "men",
+        "nuevacoleccion",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10173171499286",
+      "label": "Zapatillas Authentic Altin 3",
+      "antes": [
+        "40cyber",
+        "authentic",
+        "calzado",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "authentic",
+        "calzado",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10173171663126",
+      "label": "Zapatillas Logo Monsi Mid Kids",
+      "antes": [
+        "40cyber",
+        "calzado",
+        "kids",
+        "precyber",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "calzado",
+        "kids",
+        "precyber",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10210885370134",
+      "label": "Ojotas Logo Matese",
+      "antes": [
+        "40cyber",
+        "calzado",
+        "men",
+        "ojotas",
+        "ojotasysandalias",
+        "precyber",
+        "ultimasunidades"
+      ],
+      "despues": [
+        "40cyber",
+        "calzado",
+        "men",
+        "ojotas",
+        "ojotasysandalias",
+        "precyber",
+        "ultimasunidades",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10210885599510",
+      "label": "Zapatillas Logo Asivat 2",
+      "antes": [
+        "40cyber",
+        "calzado",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "calzado",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10210885665046",
+      "label": "Zapatillas Logo Sanpuerto",
+      "antes": [
+        "40cyber",
+        "calzado",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "calzado",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10210885894422",
+      "label": "Zapatillas Logo Sanpuerto",
+      "antes": [
+        "40cyber",
+        "calzado",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "calzado",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10220093931798",
+      "label": "Zapatillas Kappa Kombat Galvi Pro 1",
+      "antes": [
+        "40cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10220093964566",
+      "label": "Zapatillas Forli",
+      "antes": [
+        "40cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10220094718230",
+      "label": "Zapatillas Logo Abstract",
+      "antes": [
+        "40cyber",
+        "calzado",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "calzado",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10220094947606",
+      "label": "Zapatillas K-530 RUN",
+      "antes": [
+        "40cyber",
+        "calzado",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "calzado",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10220095078678",
+      "label": "Zapatillas Logo Sanpuerto",
+      "antes": [
+        "40cyber",
+        "calzado",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "calzado",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10220095701270",
+      "label": "Zapatillas Logo Kary Md Ev Kids",
+      "antes": [
+        "40cyber",
+        "calzado",
+        "kids",
+        "precyber",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "calzado",
+        "kids",
+        "precyber",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10222669627670",
+      "label": "Botin Kombat Marsella Tg",
+      "antes": [
+        "40cyber",
+        "40cybermonday",
+        "botines",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "tg",
+        "ultimasunidades",
+        "unisex",
+        "women"
+      ],
+      "despues": [
+        "40cyber",
+        "40cybermonday",
+        "botines",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "tg",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10222669889814",
+      "label": "Zapatillas Mantua",
+      "antes": [
+        "40cyber",
+        "calzado",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "calzado",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10222670020886",
+      "label": "Zapatillas Mantua",
+      "antes": [
+        "40cyber",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10222670971158",
+      "label": "Zapatillas Logo Monsi Mid Kids",
+      "antes": [
+        "40cyber",
+        "calzado",
+        "kids",
+        "precyber",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "calzado",
+        "kids",
+        "precyber",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10222671102230",
+      "label": "Zapatillas Logo Kary Ev Kids",
+      "antes": [
+        "40cyber",
+        "calzado",
+        "kids",
+        "precyber",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "calzado",
+        "kids",
+        "precyber",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10239808602390",
+      "label": "Zapatillas Logo Salento",
+      "antes": [
+        "40cyber",
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10247946502422",
+      "label": "Zapatillas Authentic Martin 2",
+      "antes": [
+        "40cyber",
+        "40cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "40cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10262104277270",
+      "label": "Ojotas Authentic Adam 2",
+      "antes": [
+        "40cyber",
+        "authentic",
+        "calzado",
+        "men",
+        "ojotas",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women"
+      ],
+      "despues": [
+        "40cyber",
+        "authentic",
+        "calzado",
+        "men",
+        "ojotas",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10262104441110",
+      "label": "Sandalias Authentic 222 Banda Aster 1",
+      "antes": [
+        "40cyber",
+        "authentic",
+        "calzado",
+        "men",
+        "precyber",
+        "sandalias",
+        "ultimasunidades",
+        "unisex",
+        "women"
+      ],
+      "despues": [
+        "40cyber",
+        "authentic",
+        "calzado",
+        "men",
+        "precyber",
+        "sandalias",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10262104572182",
+      "label": "Sandalias Authentic Caius 1",
+      "antes": [
+        "40cyber",
+        "authentic",
+        "calzado",
+        "men",
+        "precyber",
+        "sandalias",
+        "ultimasunidades",
+        "unisex",
+        "women"
+      ],
+      "despues": [
+        "40cyber",
+        "authentic",
+        "calzado",
+        "men",
+        "precyber",
+        "sandalias",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10262104768790",
+      "label": "Zapatillas Banda Raesa",
+      "antes": [
+        "40cyber",
+        "authentic",
+        "calzado",
+        "precyber",
+        "ultimasunidades",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "authentic",
+        "calzado",
+        "precyber",
+        "ultimasunidades",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10262104867094",
+      "label": "Zapatillas Authentic Banda Barnel 7",
+      "antes": [
+        "40cyber",
+        "authentic",
+        "calzado",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "authentic",
+        "calzado",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10262105686294",
+      "label": "Zapatillas Authentic Linat 2",
+      "antes": [
+        "40cyber",
+        "50cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "50cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10262106112278",
+      "label": "Sandalias Authentic Cloty 1",
+      "antes": [
+        "40cyber",
+        "authentic",
+        "calzado",
+        "men",
+        "precyber",
+        "sandalias",
+        "ultimasunidades",
+        "unisex",
+        "women"
+      ],
+      "despues": [
+        "40cyber",
+        "authentic",
+        "calzado",
+        "men",
+        "precyber",
+        "sandalias",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10262106177814",
+      "label": "Sandalias Authentic Cloty 1",
+      "antes": [
+        "40cyber",
+        "50cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "sandalias",
+        "unisex",
+        "women"
+      ],
+      "despues": [
+        "40cyber",
+        "50cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "sandalias",
+        "unisex",
+        "women",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10262106308886",
+      "label": "Zapatillas Logo Sanpuerto",
+      "antes": [
+        "40cyber",
+        "calzado",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "calzado",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10262106767638",
+      "label": "Zapatillas Authentic Kai 1",
+      "antes": [
+        "40cyber",
+        "50cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "50cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10262107226390",
+      "label": "Zapatillas Funny Kids",
+      "antes": [
+        "40cyber",
+        "calzado",
+        "kids",
+        "outlet",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "calzado",
+        "kids",
+        "outlet",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10262107980054",
+      "label": "Zapatillas Logo Maserta Md Kids",
+      "antes": [
+        "40cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "outlet",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "outlet",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10262108078358",
+      "label": "Zapatillas Logo Maserta Md Kids",
+      "antes": [
+        "40cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "outlet",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "outlet",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10262108143894",
+      "label": "Zapatillas Logo Maserta 2",
+      "antes": [
+        "40cyber",
+        "calzado",
+        "kids",
+        "outlet",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "calzado",
+        "kids",
+        "outlet",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10267787526422",
+      "label": "Zapatillas Padel Burano",
+      "antes": [
+        "40cyber",
+        "calzado",
+        "deportes",
+        "men",
+        "padel",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "calzado",
+        "deportes",
+        "men",
+        "padel",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10273367163158",
+      "label": "Zapatillas Kombat Performance 4",
+      "antes": [
+        "40cyber",
+        "calzado",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "calzado",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10273367523606",
+      "label": "Zapatillas Logo Sanpuerto Kids",
+      "antes": [
+        "40cyber",
+        "calzado",
+        "kids",
+        "outlet",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "calzado",
+        "kids",
+        "outlet",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10339845472534",
+      "label": "Zapatillas Authentic Kai 4",
+      "antes": [
+        "40cyber",
+        "40cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "40cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10378762125590",
+      "label": "Zapatillas Logo Linate Kids",
+      "antes": [
+        "40cyber",
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "outlet",
+        "ultimasunidades",
+        "unisex",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "outlet",
+        "ultimasunidades",
+        "unisex",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10400434487574",
+      "label": "Zapatillas Logo Maserta MD",
+      "antes": [
+        "50cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "precyber",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "50cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "precyber",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10400434520342",
+      "label": "Zapatillas Authentic Kai 2",
+      "antes": [
+        "40cyber",
+        "40cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "40cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10400434553110",
+      "label": "Zapatillas Authentic Kai 2",
+      "antes": [
+        "40cyber",
+        "40cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "40cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10401475658006",
+      "label": "Zapatillas Kappa Authentic Oregon",
+      "antes": [
+        "40cyber",
+        "40cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "40cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10438125486358",
+      "label": "Zapatillas Kappa Logo Maserta 2 MD",
+      "antes": [
+        "40cyber",
+        "40cybermonday",
+        "cybermonday",
+        "men",
+        "precyber",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "40cybermonday",
+        "cybermonday",
+        "men",
+        "precyber",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10438125519126",
+      "label": "Zapatillas Kappa Logo Suri",
+      "antes": [
+        "40calzado",
+        "40cyber",
+        "40cybermonday",
+        "cybermonday",
+        "precyber",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40calzado",
+        "40cyber",
+        "40cybermonday",
+        "cybermonday",
+        "precyber",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10438125551894",
+      "label": "Zapatillas Kappa Logo Suri",
+      "antes": [
+        "40calzado",
+        "40cyber",
+        "40cybermonday",
+        "cybermonday",
+        "precyber",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40calzado",
+        "40cyber",
+        "40cybermonday",
+        "cybermonday",
+        "precyber",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10438125584662",
+      "label": "Zapatillas Kappa Logo Suri",
+      "antes": [
+        "40calzado",
+        "40cyber",
+        "40cybermonday",
+        "cybermonday",
+        "precyber",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40calzado",
+        "40cyber",
+        "40cybermonday",
+        "cybermonday",
+        "precyber",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10455621271830",
+      "label": "Zapatillas Kappa Rernal 2",
+      "antes": [
+        "40cyber",
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10455621304598",
+      "label": "Zapatillas Kappa Rernal 2",
+      "antes": [
+        "40cyber",
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10455621370134",
+      "label": "Zapatillas Logo Arwikaw 2",
+      "antes": [
+        "40cyber",
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10456287052054",
+      "label": "Zapatillas Logo Arvika 2",
+      "antes": [
+        "40cyber",
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10456287084822",
+      "label": "Zapatillas Logo Arvika 2",
+      "antes": [
+        "40cyber",
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10481843536150",
+      "label": "Zapatillas Kappa Authentic Parker",
+      "antes": [
+        "40cyber",
+        "40cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "40cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10590479089942",
+      "label": "Zapatillas Logo Maserta MD",
+      "antes": [
+        "50cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "50cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10606218150166",
+      "label": "Zapatillas Kappa Logo Tango",
+      "antes": [
+        "40cyber",
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10675187450134",
+      "label": "Zapatillas Authentic Martin 2",
+      "antes": [
+        "40cyber",
+        "40cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "40cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10692720591126",
+      "label": "Zapatillas Kappa Logo Tango",
+      "antes": [
+        "40cyber",
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "Logo",
+        "men",
+        "precyber",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "Logo",
+        "men",
+        "precyber",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10765826031894",
+      "label": "Zapatillas Empoli",
+      "antes": [
+        "40cyber",
+        "calzado",
+        "kids",
+        "outlet",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "calzado",
+        "kids",
+        "outlet",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10765826228502",
+      "label": "Zapatillas Logo Faster Hombre",
+      "antes": [
+        "40cyber",
+        "calzado",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "calzado",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10765826261270",
+      "label": "Zapatillas Kappa Kombat Galvi Pro 1",
+      "antes": [
+        "40cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10765826359574",
+      "label": "Zapatillas Kappa Ostuni",
+      "antes": [
+        "40cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/15401857515798",
+      "label": "Zapatillas Authentic Mood",
+      "antes": [
+        "30cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "30cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/15401857548566",
+      "label": "Zapatillas Authentic Mood",
+      "antes": [
+        "30cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "30cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/15401857777942",
+      "label": "Zapatillas Authentic Denver II",
+      "antes": [
+        "30cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "30cyber",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/15403265130774",
+      "label": "Zapatillas Authentic Altin 3",
+      "antes": [
+        "50cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "50cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/15403265163542",
+      "label": "Zapatillas Logo Maserta Kid",
+      "antes": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/15403265229078",
+      "label": "Zapatillas Logo Maserta Kid",
+      "antes": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/15403265261846",
+      "label": "Zapatillas Logo Glinch Kid",
+      "antes": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "Logo",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "Logo",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/15403265294614",
+      "label": "Zapatillas Logo Isabel",
+      "antes": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "Logo",
+        "ultimasunidades",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "Logo",
+        "ultimasunidades",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/15403317166358",
+      "label": "Zapatillas Killian kids",
+      "antes": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "zapatillas"
+      ],
+      "despues": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/15403317723414",
+      "label": "Zapatillas Killian kids",
+      "antes": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/15403318116630",
+      "label": "Zapatillas Killian kids",
+      "antes": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/15403318542614",
+      "label": "Zapatillas Kappa Cool",
+      "antes": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/15403318771990",
+      "label": "Zapatillas Logo Quindy Kids",
+      "antes": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/15403319525654",
+      "label": "Zapatillas Authentic Kai 1",
+      "antes": [
+        "50cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "50cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/15403319951638",
+      "label": "Zapatillas Authentic Dallas",
+      "antes": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/15403320181014",
+      "label": "Zapatillas Authentic Kai 1",
+      "antes": [
+        "50cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "50cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/15403320410390",
+      "label": "Zapatillas Logo Fesant 2 Kid",
+      "antes": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "Logo",
+        "zapatillas"
+      ],
+      "despues": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "Logo",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/15403320869142",
+      "label": "Zapatillas Logo Sanpuerto El kid",
+      "antes": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/15403321295126",
+      "label": "Zapatillas Logo Fiore Kids",
+      "antes": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/15403322016022",
+      "label": "Zapatillas Forli",
+      "antes": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/15403322573078",
+      "label": "Sandalias Kappa Logo Nefari Kids",
+      "antes": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "ojotasysandalias",
+        "sandalias",
+        "ultimasunidades"
+      ],
+      "despues": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "ojotasysandalias",
+        "sandalias",
+        "ultimasunidades",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/15403322966294",
+      "label": "Zapatillas Logo Storm 3",
+      "antes": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "Logo",
+        "men",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "Logo",
+        "men",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/15403323359510",
+      "label": "Zapatillas Logo Galter 5 Kid",
+      "antes": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/15403323818262",
+      "label": "Zapatillas Petra",
+      "antes": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/15403324244246",
+      "label": "Zapatillas Logo Fasterpu EV kids",
+      "antes": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/15403324440854",
+      "label": "Zapatillas Empoli",
+      "antes": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/15403324801302",
+      "label": "Zapatillas Logo Glinch 2 kids",
+      "antes": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/15403325030678",
+      "label": "Zapatillas Glinchpu 2V 2",
+      "antes": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/15403325358358",
+      "label": "Zapatillas Logo Sanpuerto El kid",
+      "antes": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/15403325620502",
+      "label": "Zapatillas Logo Sanpuerto El kid",
+      "antes": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/15403325882646",
+      "label": "Zapatillas Logo Sanpuerto El kid",
+      "antes": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/15403326439702",
+      "label": "Zapatillas Logo Berlin 2 Kids",
+      "antes": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/15403327521046",
+      "label": "Zapatillas Ray kids",
+      "antes": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "zapatillas"
+      ],
+      "despues": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/15403327881494",
+      "label": "Zapatillas Joke kids",
+      "antes": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "ultimasunidades",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/15411530563862",
+      "label": "Zapatillas Kappa Paco",
+      "antes": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/15460215783702",
+      "label": "Zapatilla Logo Lena",
+      "antes": [
+        "calzado",
+        "ultimasunidades",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "calzado",
+        "ultimasunidades",
+        "women",
+        "zapatillas",
+        "40outlet"
+      ],
+      "ok": true,
+      "error": ""
+    }
+  ],
+  "meta": {},
+  "reversible": true,
+  "deshace": null
+}

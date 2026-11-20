@@ -1,0 +1,284 @@
+{
+  "id": "20261102-185716-564a89",
+  "fecha": "2026-11-02 18:57:16",
+  "usuario": "app",
+  "canal": "Shopify",
+  "tienda": "kappa",
+  "accion": "precios",
+  "descripcion": "Kappa: igualar precio de venta (igualar al precio de los talles con stock) en 21 variantes",
+  "filas": [
+    {
+      "id": "gid://shopify/Product/10103707697430",
+      "label": "Zapatillas Kombat Performance 1 Pro",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50316462915862",
+          "price": "79999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50316462948630",
+          "price": "79999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50316462915862",
+          "price": "89999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50316462948630",
+          "price": "89999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103711170838",
+      "label": "Botines Merano Tg",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50316471206166",
+          "price": "64999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50316471238934",
+          "price": "64999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50316471271702",
+          "price": "64999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50316471304470",
+          "price": "64999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50316471206166",
+          "price": "69999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50316471238934",
+          "price": "69999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50316471271702",
+          "price": "69999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50316471304470",
+          "price": "69999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103711367446",
+      "label": "Botines Kappa Merano Ic",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50316472779030",
+          "price": "59999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50316472779030",
+          "price": "69999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103734337814",
+      "label": "Botines Kappa Pescara Ic",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50316589957398",
+          "price": "54999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50316589957398",
+          "price": "64999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103748264214",
+      "label": "Zapatillas Logo Fonni",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50316652052758",
+          "price": "53999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50316652085526",
+          "price": "53999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50316652118294",
+          "price": "53999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50316652151062",
+          "price": "53999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50316652183830",
+          "price": "53999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50316652216598",
+          "price": "53999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50316652249366",
+          "price": "53999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50316652282134",
+          "price": "53999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50316652314902",
+          "price": "53999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50316652052758",
+          "price": "69999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50316652085526",
+          "price": "69999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50316652118294",
+          "price": "69999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50316652151062",
+          "price": "69999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50316652183830",
+          "price": "69999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50316652216598",
+          "price": "69999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50316652249366",
+          "price": "69999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50316652282134",
+          "price": "69999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50316652314902",
+          "price": "69999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10371966304534",
+      "label": "Ojotas Authentic Adam 3",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50935544021270",
+          "price": "36299.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50935544054038",
+          "price": "36299.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50935544086806",
+          "price": "36299.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50935544119574",
+          "price": "36299.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50935544021270",
+          "price": "59999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50935544054038",
+          "price": "59999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50935544086806",
+          "price": "59999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50935544119574",
+          "price": "59999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    }
+  ],
+  "meta": {},
+  "reversible": true,
+  "deshace": null
+}

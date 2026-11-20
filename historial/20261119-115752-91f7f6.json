@@ -1,0 +1,128 @@
+{
+  "id": "20261119-115752-91f7f6",
+  "fecha": "2026-11-19 11:57:52",
+  "usuario": "app",
+  "canal": "Shopify",
+  "tienda": "mhw",
+  "accion": "tags_set",
+  "descripcion": "Mountain Hardwear: agregar «nieve» en 6 productos",
+  "filas": [
+    {
+      "id": "gid://shopify/Product/10310893109465",
+      "label": "Buzo medio cierre con capucha Summit Grid™",
+      "antes": [
+        "buzo",
+        "indumentaria",
+        "outdoor",
+        "women"
+      ],
+      "despues": [
+        "buzo",
+        "indumentaria",
+        "outdoor",
+        "women",
+        "nieve"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310893142233",
+      "label": "Buzo medio cierre con capucha Summit Grid™",
+      "antes": [
+        "buzo",
+        "indumentaria",
+        "outdoor",
+        "women"
+      ],
+      "despues": [
+        "buzo",
+        "indumentaria",
+        "outdoor",
+        "women",
+        "nieve"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310894682329",
+      "label": "Buzo con capucha AirMesh™",
+      "antes": [
+        "buzo",
+        "indumentaria",
+        "outdoor",
+        "women"
+      ],
+      "despues": [
+        "buzo",
+        "indumentaria",
+        "outdoor",
+        "women",
+        "nieve"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310894715097",
+      "label": "Buzo con capucha AirMesh™",
+      "antes": [
+        "buzo",
+        "indumentaria",
+        "outdoor",
+        "women"
+      ],
+      "despues": [
+        "buzo",
+        "indumentaria",
+        "outdoor",
+        "women",
+        "nieve"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310894911705",
+      "label": "Buzo con capucha AirMesh™",
+      "antes": [
+        "buzo",
+        "indumentaria",
+        "men",
+        "outdoor"
+      ],
+      "despues": [
+        "buzo",
+        "indumentaria",
+        "men",
+        "outdoor",
+        "nieve"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10310894944473",
+      "label": "Buzo con capucha AirMesh™",
+      "antes": [
+        "buzo",
+        "indumentaria",
+        "men",
+        "outdoor"
+      ],
+      "despues": [
+        "buzo",
+        "indumentaria",
+        "men",
+        "outdoor",
+        "nieve"
+      ],
+      "ok": true,
+      "error": ""
+    }
+  ],
+  "meta": {},
+  "reversible": true,
+  "deshace": null
+}
