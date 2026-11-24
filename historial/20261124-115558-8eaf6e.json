@@ -1,0 +1,2833 @@
+{
+  "id": "20261124-115558-8eaf6e",
+  "fecha": "2026-11-24 11:55:58",
+  "usuario": "app",
+  "canal": "Shopify",
+  "tienda": "kappa",
+  "accion": "tags_set",
+  "descripcion": "Kappa Argentina : agregar «30outlet» en 103 productos",
+  "filas": [
+    {
+      "id": "gid://shopify/Product/10103721492758",
+      "label": "Zapatillas Logo Maserta",
+      "antes": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "hombre",
+        "men",
+        "mujer",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "hombre",
+        "men",
+        "mujer",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103722180886",
+      "label": "Botines Kappa Player Pro Fg",
+      "antes": [
+        "50cybermonday",
+        "botines",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "fg",
+        "futbol",
+        "men",
+        "salialacancha",
+        "ultimasunidades"
+      ],
+      "despues": [
+        "50cybermonday",
+        "botines",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "fg",
+        "futbol",
+        "men",
+        "salialacancha",
+        "ultimasunidades",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103722508566",
+      "label": "Botines Kappa Player Pro Fg 2",
+      "antes": [
+        "2x1botines",
+        "50cybermonday",
+        "botines",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "fg",
+        "futbol",
+        "men",
+        "salialacancha",
+        "ultimasunidades"
+      ],
+      "despues": [
+        "2x1botines",
+        "50cybermonday",
+        "botines",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "fg",
+        "futbol",
+        "men",
+        "salialacancha",
+        "ultimasunidades",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103725818134",
+      "label": "Botines Napoles IC",
+      "antes": [
+        "50cybermonday",
+        "botines",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "futbol",
+        "ic",
+        "men"
+      ],
+      "despues": [
+        "50cybermonday",
+        "botines",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "futbol",
+        "ic",
+        "men",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103728734486",
+      "label": "Zapatillas Kappa Logo Reena",
+      "antes": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "outlethombre",
+        "outletmujer",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "outlethombre",
+        "outletmujer",
+        "unisex",
+        "women",
+        "zapatillas",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103733158166",
+      "label": "Zapatillas Kappa Logo Turin",
+      "antes": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103734927638",
+      "label": "Zapatillas Logo Maserta 2",
+      "antes": [
+        "30cyber",
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "30cyber",
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103740989718",
+      "label": "Botines Player Mid Fg",
+      "antes": [
+        "50cybermonday",
+        "botines",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "fg",
+        "futbol",
+        "men",
+        "salialacancha",
+        "ultimasunidades"
+      ],
+      "despues": [
+        "50cybermonday",
+        "botines",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "fg",
+        "futbol",
+        "men",
+        "salialacancha",
+        "ultimasunidades",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103741120790",
+      "label": "Botines Player Mid Fg",
+      "antes": [
+        "50cybermonday",
+        "botines",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "fg",
+        "futbol",
+        "men",
+        "outlethombre"
+      ],
+      "despues": [
+        "50cybermonday",
+        "botines",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "fg",
+        "futbol",
+        "men",
+        "outlethombre",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103741251862",
+      "label": "Botines Player Base Fg",
+      "antes": [
+        "50cybermonday",
+        "botines",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "fg",
+        "futbol",
+        "men",
+        "salialacancha",
+        "ultimasunidades"
+      ],
+      "despues": [
+        "50cybermonday",
+        "botines",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "fg",
+        "futbol",
+        "men",
+        "salialacancha",
+        "ultimasunidades",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103744561430",
+      "label": "Botines Termoli Ic",
+      "antes": [
+        "50cybermonday",
+        "botines",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "futbol",
+        "hombre",
+        "ic",
+        "men",
+        "mujer",
+        "salialacancha",
+        "ultimasunidades",
+        "unisex",
+        "women"
+      ],
+      "despues": [
+        "50cybermonday",
+        "botines",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "futbol",
+        "hombre",
+        "ic",
+        "men",
+        "mujer",
+        "salialacancha",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103745282326",
+      "label": "Zapatillas Authentic 2 Pro",
+      "antes": [
+        "50cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "50cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103745577238",
+      "label": "Zapatillas Authentic 2 Pro",
+      "antes": [
+        "50cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "outlethombre",
+        "outletmujer",
+        "ultimasunidades",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "50cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "outlethombre",
+        "outletmujer",
+        "ultimasunidades",
+        "women",
+        "zapatillas",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103746265366",
+      "label": "Zapatillas Authentic 3 pro",
+      "antes": [
+        "30cyber",
+        "50cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "outlethombre",
+        "outletmujer",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "30cyber",
+        "50cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "outlethombre",
+        "outletmujer",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103752032534",
+      "label": "Zapatillas Logo Berkley",
+      "antes": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "unisex",
+        "women",
+        "zapatillas",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103755964694",
+      "label": "Botines Milan Tg",
+      "antes": [
+        "40cybermonday",
+        "botines",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "futbol",
+        "men",
+        "tg",
+        "ultimasunidades",
+        "unisex",
+        "women"
+      ],
+      "despues": [
+        "40cybermonday",
+        "botines",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "futbol",
+        "men",
+        "tg",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103760847126",
+      "label": "Riñonera Logo Dressy",
+      "antes": [
+        "50cybermonday",
+        "50hotsale",
+        "cybermonday",
+        "hombre",
+        "hotsale",
+        "indumentaria",
+        "men",
+        "mujer",
+        "riñonera",
+        "ultimasunidades",
+        "unisex",
+        "waistbag",
+        "women"
+      ],
+      "despues": [
+        "50cybermonday",
+        "50hotsale",
+        "cybermonday",
+        "hombre",
+        "hotsale",
+        "indumentaria",
+        "men",
+        "mujer",
+        "riñonera",
+        "ultimasunidades",
+        "unisex",
+        "waistbag",
+        "women",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103762813206",
+      "label": "Bolso Kappa Heather",
+      "antes": [
+        "40cybermonday",
+        "accesorios",
+        "bolso",
+        "cybermonday",
+        "mochila",
+        "ultimasunidades",
+        "women"
+      ],
+      "despues": [
+        "40cybermonday",
+        "accesorios",
+        "bolso",
+        "cybermonday",
+        "mochila",
+        "ultimasunidades",
+        "women",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103762977046",
+      "label": "Mochila Kappa Judy",
+      "antes": [
+        "40cybermonday",
+        "accesorios",
+        "cybermonday",
+        "men",
+        "mochila",
+        "ultimasunidades",
+        "unisex",
+        "women"
+      ],
+      "despues": [
+        "40cybermonday",
+        "accesorios",
+        "cybermonday",
+        "men",
+        "mochila",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103763108118",
+      "label": "Bolso Kappa Heather Stripes",
+      "antes": [
+        "40cybermonday",
+        "accesorios",
+        "bolso",
+        "cybermonday",
+        "men",
+        "mochila",
+        "ultimasunidades",
+        "unisex",
+        "women"
+      ],
+      "despues": [
+        "40cybermonday",
+        "accesorios",
+        "bolso",
+        "cybermonday",
+        "men",
+        "mochila",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103763173654",
+      "label": "Bolso Kappa Heather Stripes",
+      "antes": [
+        "40cybermonday",
+        "accesorios",
+        "bolso",
+        "cybermonday",
+        "men",
+        "mochila",
+        "ultimasunidades",
+        "unisex",
+        "women"
+      ],
+      "despues": [
+        "40cybermonday",
+        "accesorios",
+        "bolso",
+        "cybermonday",
+        "men",
+        "mochila",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103766712598",
+      "label": "Zapatillas Logo Kary Md Ev Kids",
+      "antes": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "zapatillas"
+      ],
+      "despues": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "zapatillas",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103767400726",
+      "label": "Zapatillas Logo Maserta Kids",
+      "antes": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "ultimasunidades",
+        "zapatillas",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103769334038",
+      "label": "Botines Merano Fg Kids",
+      "antes": [
+        "50cybermonday",
+        "botines",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "fg",
+        "futbol",
+        "kids",
+        "salialacancha",
+        "ultimasunidades"
+      ],
+      "despues": [
+        "50cybermonday",
+        "botines",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "fg",
+        "futbol",
+        "kids",
+        "salialacancha",
+        "ultimasunidades",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103770349846",
+      "label": "Botines Verona Ic Kids",
+      "antes": [
+        "50cybermonday",
+        "botines",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "futbol",
+        "ic",
+        "kids",
+        "ultimasunidades"
+      ],
+      "despues": [
+        "50cybermonday",
+        "botines",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "futbol",
+        "ic",
+        "kids",
+        "ultimasunidades",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103770415382",
+      "label": "Botines Verona Ic Kids",
+      "antes": [
+        "50cybermonday",
+        "botines",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "futbol",
+        "ic",
+        "kids",
+        "salialacancha",
+        "ultimasunidades"
+      ],
+      "despues": [
+        "50cybermonday",
+        "botines",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "futbol",
+        "ic",
+        "kids",
+        "salialacancha",
+        "ultimasunidades",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103771037974",
+      "label": "Zapatillas Logo Berkley MD Kids",
+      "antes": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "ultimasunidades",
+        "zapatillas",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103771300118",
+      "label": "Zapatillas Logo Berkley MD Kids",
+      "antes": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "ultimasunidades",
+        "zapatillas",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103774970134",
+      "label": "Zapatillas Logo Linate Kids",
+      "antes": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "ultimasunidades",
+        "zapatillas",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103775691030",
+      "label": "Zapatillas Logo Linate V Kids",
+      "antes": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "zapatillas",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10103797973270",
+      "label": "Pantalón Logo tape Lodz",
+      "antes": [
+        "50cybermonday",
+        "50hotsale",
+        "cybermonday",
+        "hotsale",
+        "indumentaria",
+        "mujer",
+        "pantalonesyshorts",
+        "pantalón",
+        "ultimasunidades",
+        "women"
+      ],
+      "despues": [
+        "50cybermonday",
+        "50hotsale",
+        "cybermonday",
+        "hotsale",
+        "indumentaria",
+        "mujer",
+        "pantalonesyshorts",
+        "pantalón",
+        "ultimasunidades",
+        "women",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10104612389142",
+      "label": "Campera Logo Arseco 2",
+      "antes": [
+        "40cybermonday",
+        "buzosycampera",
+        "campera",
+        "cybermonday",
+        "indumentaria",
+        "men",
+        "ultimasunidades"
+      ],
+      "despues": [
+        "40cybermonday",
+        "buzosycampera",
+        "campera",
+        "cybermonday",
+        "indumentaria",
+        "men",
+        "ultimasunidades",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10104612454678",
+      "label": "Campera Logo Arseco 2",
+      "antes": [
+        "40cybermonday",
+        "buzosycampera",
+        "campera",
+        "cybermonday",
+        "indumentaria",
+        "men",
+        "ultimasunidades"
+      ],
+      "despues": [
+        "40cybermonday",
+        "buzosycampera",
+        "campera",
+        "cybermonday",
+        "indumentaria",
+        "men",
+        "ultimasunidades",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10104620843286",
+      "label": "Musculosa Kappa Logo Eta",
+      "antes": [
+        "60off",
+        "ddm",
+        "indumentaria",
+        "musculosa",
+        "Out of stockmujer",
+        "remerasycamisetas",
+        "remerasytop",
+        "ultimasunidades",
+        "women"
+      ],
+      "despues": [
+        "60off",
+        "ddm",
+        "indumentaria",
+        "musculosa",
+        "Out of stockmujer",
+        "remerasycamisetas",
+        "remerasytop",
+        "ultimasunidades",
+        "women",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10104631820566",
+      "label": "Calza Corta Kombat Saiph Biker",
+      "antes": [
+        "60off",
+        "calza",
+        "ddm",
+        "deportes",
+        "indumentaria",
+        "leggingmujer",
+        "training",
+        "women"
+      ],
+      "despues": [
+        "60off",
+        "calza",
+        "ddm",
+        "deportes",
+        "indumentaria",
+        "leggingmujer",
+        "training",
+        "women",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10104645189910",
+      "label": "Short Authentic Gabriellax",
+      "antes": [
+        "60off",
+        "authentic",
+        "ddm",
+        "indumentaria",
+        "Out of stockmujer",
+        "pantalonesyshorts",
+        "short",
+        "women"
+      ],
+      "despues": [
+        "60off",
+        "authentic",
+        "ddm",
+        "indumentaria",
+        "Out of stockmujer",
+        "pantalonesyshorts",
+        "short",
+        "women",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10104645386518",
+      "label": "Short Authentic Gabriellax",
+      "antes": [
+        "50cybermonday",
+        "authentic",
+        "cybermonday",
+        "indumentaria",
+        "pantalonesyshorts",
+        "short",
+        "ultimasunidades",
+        "women"
+      ],
+      "despues": [
+        "50cybermonday",
+        "authentic",
+        "cybermonday",
+        "indumentaria",
+        "pantalonesyshorts",
+        "short",
+        "ultimasunidades",
+        "women",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10104648007958",
+      "label": "Musculosa Kombat Doffi",
+      "antes": [
+        "60off",
+        "ddm",
+        "deportes",
+        "indumentaria",
+        "mujer",
+        "musculosa",
+        "remerasycamisetas",
+        "remerasytop",
+        "training",
+        "ultimasunidades",
+        "women"
+      ],
+      "despues": [
+        "60off",
+        "ddm",
+        "deportes",
+        "indumentaria",
+        "mujer",
+        "musculosa",
+        "remerasycamisetas",
+        "remerasytop",
+        "training",
+        "ultimasunidades",
+        "women",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10104657215766",
+      "label": "Pantalón Logo Kappa",
+      "antes": [
+        "60off",
+        "ddm",
+        "indumentaria",
+        "jogger",
+        "pantalonesyshorts",
+        "pantalón",
+        "women"
+      ],
+      "despues": [
+        "60off",
+        "ddm",
+        "indumentaria",
+        "jogger",
+        "pantalonesyshorts",
+        "pantalón",
+        "women",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10104689131798",
+      "label": "Calza 222 Banda Dicles 2",
+      "antes": [
+        "60off",
+        "authentic",
+        "calza",
+        "ddm",
+        "indumentaria",
+        "mujer",
+        "ultimasunidades",
+        "women"
+      ],
+      "despues": [
+        "60off",
+        "authentic",
+        "calza",
+        "ddm",
+        "indumentaria",
+        "mujer",
+        "ultimasunidades",
+        "women",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10104690671894",
+      "label": "Top Dalo",
+      "antes": [
+        "60off",
+        "ddm",
+        "indumentaria",
+        "lajoaqui",
+        "Out of stockmujer",
+        "remerasytop",
+        "top",
+        "ultimasunidades",
+        "women"
+      ],
+      "despues": [
+        "60off",
+        "ddm",
+        "indumentaria",
+        "lajoaqui",
+        "Out of stockmujer",
+        "remerasytop",
+        "top",
+        "ultimasunidades",
+        "women",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10104691491094",
+      "label": "Remera Dassi Training",
+      "antes": [
+        "60off",
+        "ddm",
+        "indumentaria",
+        "mujer",
+        "remera",
+        "remerasytop",
+        "t-shirt",
+        "women"
+      ],
+      "despues": [
+        "60off",
+        "ddm",
+        "indumentaria",
+        "mujer",
+        "remera",
+        "remerasytop",
+        "t-shirt",
+        "women",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10104691720470",
+      "label": "Remera Dassi Training",
+      "antes": [
+        "60off",
+        "ddm",
+        "indumentaria",
+        "mujer",
+        "remera",
+        "remerasytop",
+        "t-shirt",
+        "women"
+      ],
+      "despues": [
+        "60off",
+        "ddm",
+        "indumentaria",
+        "mujer",
+        "remera",
+        "remerasytop",
+        "t-shirt",
+        "women",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10104697618710",
+      "label": "Campera Kappa Arsaco 2024",
+      "antes": [
+        "40cybermonday",
+        "50hotsale",
+        "buzosycampera",
+        "campera",
+        "cybermonday",
+        "hotsale",
+        "indumentaria",
+        "men blackfriday",
+        "ultimasunidades"
+      ],
+      "despues": [
+        "40cybermonday",
+        "50hotsale",
+        "buzosycampera",
+        "campera",
+        "cybermonday",
+        "hotsale",
+        "indumentaria",
+        "men blackfriday",
+        "ultimasunidades",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10147734782230",
+      "label": "Botines Kappa Venzone Ic",
+      "antes": [
+        "40cybermonday",
+        "botines",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "futbol",
+        "ic",
+        "men",
+        "ultimasunidades",
+        "unisex",
+        "women"
+      ],
+      "despues": [
+        "40cybermonday",
+        "botines",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "futbol",
+        "ic",
+        "men",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10147742974230",
+      "label": "Zapatillas Kappa Logo Adenis 2 V Kids",
+      "antes": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "outletkids",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "outletkids",
+        "ultimasunidades",
+        "zapatillas",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10147743170838",
+      "label": "Zapatillas Kappa Sorano TG Kids",
+      "antes": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "tg",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "tg",
+        "ultimasunidades",
+        "zapatillas",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10147743924502",
+      "label": "Botines Kappa Kombat Marsella Fg Kids",
+      "antes": [
+        "40cybermonday",
+        "botines",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "fg",
+        "futbol",
+        "men",
+        "ultimasunidades",
+        "unisex",
+        "women"
+      ],
+      "despues": [
+        "40cybermonday",
+        "botines",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "fg",
+        "futbol",
+        "men",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10147744055574",
+      "label": "Botines Kappa Kombat Marsella Fg Kids",
+      "antes": [
+        "40cybermonday",
+        "botines",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "fg",
+        "futbol",
+        "men",
+        "unisex",
+        "women"
+      ],
+      "despues": [
+        "40cybermonday",
+        "botines",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "fg",
+        "futbol",
+        "men",
+        "unisex",
+        "women",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10147744121110",
+      "label": "Botines Kappa Kombat Marsella TG Kids",
+      "antes": [
+        "40cybermonday",
+        "botines",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "futbol",
+        "ic",
+        "men",
+        "ultimasunidades",
+        "unisex",
+        "women"
+      ],
+      "despues": [
+        "40cybermonday",
+        "botines",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "futbol",
+        "ic",
+        "men",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10147744284950",
+      "label": "Botines Kappa Kombat Marsella Ic Kids",
+      "antes": [
+        "40cybermonday",
+        "botines",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "futbol",
+        "ic",
+        "men",
+        "ultimasunidades",
+        "unisex",
+        "women"
+      ],
+      "despues": [
+        "40cybermonday",
+        "botines",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "futbol",
+        "ic",
+        "men",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10147787899158",
+      "label": "Mochila Kappa Logo Cartus 2",
+      "antes": [
+        "40cybermonday",
+        "accesorios",
+        "accesoriosmen",
+        "cybermonday",
+        "mochila",
+        "ultimasunidades",
+        "unisex",
+        "women"
+      ],
+      "despues": [
+        "40cybermonday",
+        "accesorios",
+        "accesoriosmen",
+        "cybermonday",
+        "mochila",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10147788488982",
+      "label": "Gorra Kappa Authentic Nordiky 2",
+      "antes": [
+        "40cybermonday",
+        "accesorios",
+        "authentic",
+        "cybermonday",
+        "gorra",
+        "men",
+        "ultimasunidades",
+        "unisex",
+        "women"
+      ],
+      "despues": [
+        "40cybermonday",
+        "accesorios",
+        "authentic",
+        "cybermonday",
+        "gorra",
+        "men",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10148631576854",
+      "label": "Musculosa Kappa Logo Eta",
+      "antes": [
+        "60off",
+        "ddm",
+        "indumentaria",
+        "mujer",
+        "musculosa",
+        "remerasycamisetas",
+        "remerasytop",
+        "ultimasunidades",
+        "women"
+      ],
+      "despues": [
+        "60off",
+        "ddm",
+        "indumentaria",
+        "mujer",
+        "musculosa",
+        "remerasycamisetas",
+        "remerasytop",
+        "ultimasunidades",
+        "women",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10173171171606",
+      "label": "Zapatillas Logo Pisa",
+      "antes": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10173171237142",
+      "label": "Zapatillas Logo Pisa",
+      "antes": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10173171368214",
+      "label": "Zapatillas Authentic Sibari",
+      "antes": [
+        "35authentic",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "35authentic",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10194118738198",
+      "label": "Camiseta Kappa Manga Larga Lida",
+      "antes": [
+        "30cybermonday",
+        "authentic",
+        "buzo",
+        "buzosycamperas",
+        "cybermonday",
+        "indumentaria",
+        "lajoaqui",
+        "women"
+      ],
+      "despues": [
+        "30cybermonday",
+        "authentic",
+        "buzo",
+        "buzosycamperas",
+        "cybermonday",
+        "indumentaria",
+        "lajoaqui",
+        "women",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10194119885078",
+      "label": "Campera Kappa 222 Banda Carlise 2",
+      "antes": [
+        "40cybermonday",
+        "authentic",
+        "buzosycamperas",
+        "campera",
+        "cybermonday",
+        "indumentaria",
+        "lajoaqui",
+        "lajoaquiultimasunidades",
+        "women"
+      ],
+      "despues": [
+        "40cybermonday",
+        "authentic",
+        "buzosycamperas",
+        "campera",
+        "cybermonday",
+        "indumentaria",
+        "lajoaqui",
+        "lajoaquiultimasunidades",
+        "women",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10194120147222",
+      "label": "Campera Kappa 222 Banda Carlise 2",
+      "antes": [
+        "40cybermonday",
+        "authentic",
+        "buzosycamperas",
+        "campera",
+        "cybermonday",
+        "indumentaria",
+        "lajoaqui",
+        "lajoaquiwomen"
+      ],
+      "despues": [
+        "40cybermonday",
+        "authentic",
+        "buzosycamperas",
+        "campera",
+        "cybermonday",
+        "indumentaria",
+        "lajoaqui",
+        "lajoaquiwomen",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10194120278294",
+      "label": "Polo Kappa 222 Banda Notilox",
+      "antes": [
+        "25cybermonday",
+        "authentic",
+        "cybermonday",
+        "indumentaria",
+        "lajoaqui",
+        "polo",
+        "ultimasunidades",
+        "unisex",
+        "women"
+      ],
+      "despues": [
+        "25cybermonday",
+        "authentic",
+        "cybermonday",
+        "indumentaria",
+        "lajoaqui",
+        "polo",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10220094849302",
+      "label": "Botines Player Fg",
+      "antes": [
+        "2x1botines",
+        "50cybermonday",
+        "botines",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "fg",
+        "futbol",
+        "men",
+        "salialacancha",
+        "ultimasunidades"
+      ],
+      "despues": [
+        "2x1botines",
+        "50cybermonday",
+        "botines",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "fg",
+        "futbol",
+        "men",
+        "salialacancha",
+        "ultimasunidades",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10222669496598",
+      "label": "Botines Imola Tg",
+      "antes": [
+        "2x1botines",
+        "50cybermonday",
+        "botines",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "futbol",
+        "kids",
+        "men",
+        "tg",
+        "ultimasunidades",
+        "unisex",
+        "women"
+      ],
+      "despues": [
+        "2x1botines",
+        "50cybermonday",
+        "botines",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "futbol",
+        "kids",
+        "men",
+        "tg",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10222669627670",
+      "label": "Botin Kombat Marsella Tg",
+      "antes": [
+        "40cyber",
+        "40cybermonday",
+        "40outlet",
+        "botines",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "tg",
+        "ultimasunidades",
+        "unisex",
+        "women"
+      ],
+      "despues": [
+        "40cyber",
+        "40cybermonday",
+        "40outlet",
+        "botines",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "tg",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10229537636630",
+      "label": "Remera Kappa Authentic Estessi 4",
+      "antes": [
+        "40cybermonday",
+        "authentic",
+        "basic",
+        "cybermonday",
+        "indumentaria",
+        "men",
+        "remera",
+        "remerasycamisetas",
+        "ultimasunidades"
+      ],
+      "despues": [
+        "40cybermonday",
+        "authentic",
+        "basic",
+        "cybermonday",
+        "indumentaria",
+        "men",
+        "remera",
+        "remerasycamisetas",
+        "ultimasunidades",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10229537866006",
+      "label": "Remera Kappa Authentic Estessi 4",
+      "antes": [
+        "40cybermonday",
+        "authentic",
+        "basic",
+        "cybermonday",
+        "indumentaria",
+        "men",
+        "nuevacoleccion",
+        "remera",
+        "remerasycamisetas",
+        "ultimasunidades"
+      ],
+      "despues": [
+        "40cybermonday",
+        "authentic",
+        "basic",
+        "cybermonday",
+        "indumentaria",
+        "men",
+        "nuevacoleccion",
+        "remera",
+        "remerasycamisetas",
+        "ultimasunidades",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10256576315670",
+      "label": "Zapatillas Logo Shay EV Kids",
+      "antes": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "ultimasunidades",
+        "zapatillas",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10264723980566",
+      "label": "Zapatillas Kappa Logo Karushi",
+      "antes": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "unisex",
+        "women",
+        "zapatillas",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10273367261462",
+      "label": "Botines Player Base Tg",
+      "antes": [
+        "2x1botines",
+        "50cybermonday",
+        "botines",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "futbol",
+        "men",
+        "salialacancha",
+        "tg",
+        "ultimasunidades"
+      ],
+      "despues": [
+        "2x1botines",
+        "50cybermonday",
+        "botines",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "futbol",
+        "men",
+        "salialacancha",
+        "tg",
+        "ultimasunidades",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10303003623702",
+      "label": "Zapatillas Authentic Atlanta 3",
+      "antes": [
+        "30cyber",
+        "50cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "30cyber",
+        "50cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10312378548502",
+      "label": "Short Kombat Pro Ryder Aldosivi",
+      "antes": [
+        "2025",
+        "2x1aldosivi",
+        "40cybermonday",
+        "aldosivi",
+        "clubes",
+        "cybermonday",
+        "indumentaria",
+        "men",
+        "pantalonesyshorts",
+        "short",
+        "ultimasunidades"
+      ],
+      "despues": [
+        "2025",
+        "2x1aldosivi",
+        "40cybermonday",
+        "aldosivi",
+        "clubes",
+        "cybermonday",
+        "indumentaria",
+        "men",
+        "pantalonesyshorts",
+        "short",
+        "ultimasunidades",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10312378581270",
+      "label": "Zapatillas Killian Kids",
+      "antes": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "ultimasunidades",
+        "zapatillas",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10328736956694",
+      "label": "Ojotas Logo Steeve",
+      "antes": [
+        "calzado",
+        "men",
+        "ojotas",
+        "ultimasunidades",
+        "unisex",
+        "women"
+      ],
+      "despues": [
+        "calzado",
+        "men",
+        "ojotas",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10348261081366",
+      "label": "Zapatillas Kappa Logo Visso Kids",
+      "antes": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "ultimasunidades",
+        "zapatillas",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10378788798742",
+      "label": "Zapatillas Logo Shay Kids",
+      "antes": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "zapatillas",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10401475625238",
+      "label": "Zapatillas Kappa Authentic Oregon",
+      "antes": [
+        "40cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cybermonday",
+        "authentic",
+        "calzado",
+        "cybermonday",
+        "men",
+        "unisex",
+        "women",
+        "zapatillas",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10401475854614",
+      "label": "Pantalón Kappa 4 Football Gaston",
+      "antes": [
+        "40cybermonday",
+        "cybermonday",
+        "indumentaria",
+        "men",
+        "pantalonesyshorts",
+        "pantalón",
+        "ultimasunidades"
+      ],
+      "despues": [
+        "40cybermonday",
+        "cybermonday",
+        "indumentaria",
+        "men",
+        "pantalonesyshorts",
+        "pantalón",
+        "ultimasunidades",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10401476116758",
+      "label": "Zapatillas Logo Verezzi Ev Kids",
+      "antes": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "ultimasunidades",
+        "zapatillas",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10401476182294",
+      "label": "Zapatillas Logo Verezzi Ev Kids",
+      "antes": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "ultimasunidades",
+        "zapatillas",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10406350684438",
+      "label": "Camiseta Kombat Third Kids Tigre",
+      "antes": [
+        "50clubes",
+        "50cybermonday",
+        "50tigre",
+        "camiseta",
+        "clubes",
+        "cybermonday",
+        "indumentaria",
+        "kids",
+        "tigre",
+        "ultimasunidades"
+      ],
+      "despues": [
+        "50clubes",
+        "50cybermonday",
+        "50tigre",
+        "camiseta",
+        "clubes",
+        "cybermonday",
+        "indumentaria",
+        "kids",
+        "tigre",
+        "ultimasunidades",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10438126043414",
+      "label": "Camiseta Kombat Pro GK Huracán con sponsor",
+      "antes": [
+        "50cybermonday",
+        "50huracan",
+        "camiseta",
+        "clubes",
+        "cybermonday",
+        "huracán",
+        "indumentaria",
+        "men",
+        "remerasycamisetas",
+        "ultimasunidades"
+      ],
+      "despues": [
+        "50cybermonday",
+        "50huracan",
+        "camiseta",
+        "clubes",
+        "cybermonday",
+        "huracán",
+        "indumentaria",
+        "men",
+        "remerasycamisetas",
+        "ultimasunidades",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10456286855446",
+      "label": "Zapatillas Logo Isabel 2",
+      "antes": [
+        "40cyber",
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "precyber",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cyber",
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "precyber",
+        "women",
+        "zapatillas",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10456287019286",
+      "label": "Botines Kappa Verona Tg",
+      "antes": [
+        "50cybermonday",
+        "botines",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "futbol",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women"
+      ],
+      "despues": [
+        "50cybermonday",
+        "botines",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "futbol",
+        "men",
+        "precyber",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10456287543574",
+      "label": "Zapatillas Kappa Logo Marlon Kid",
+      "antes": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "zapatillas",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10456287576342",
+      "label": "Zapatillas Kappa Logo Marlon Kid",
+      "antes": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "zapatillas",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10456337350934",
+      "label": "Zapatillas Kappa Logo Morine Kids",
+      "antes": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "zapatillas",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10667764089110",
+      "label": "Zapatillas Kappa Logo Marker EV Kids",
+      "antes": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "zapatillas",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10667764121878",
+      "label": "Zapatillas Kappa Logo Marker EV Kids",
+      "antes": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "zapatillas",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10676749369622",
+      "label": "Zapatillas Kappa Logo Manis 2.0",
+      "antes": [
+        "calzado",
+        "Logo",
+        "men",
+        "zapatillas"
+      ],
+      "despues": [
+        "calzado",
+        "Logo",
+        "men",
+        "zapatillas",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10676750516502",
+      "label": "Zapatillas Kappa Logo Elini",
+      "antes": [
+        "calzado",
+        "kids",
+        "Logo",
+        "zapatillas"
+      ],
+      "despues": [
+        "calzado",
+        "kids",
+        "Logo",
+        "zapatillas",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10745931923734",
+      "label": "Calza corta Kappa Kombat",
+      "antes": [
+        "25cybermonday",
+        "calza",
+        "clubes",
+        "cybermonday",
+        "indumentaria",
+        "men"
+      ],
+      "despues": [
+        "25cybermonday",
+        "calza",
+        "clubes",
+        "cybermonday",
+        "indumentaria",
+        "men",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/15401857581334",
+      "label": "Botines Player Fg",
+      "antes": [
+        "2x1botines",
+        "50cybermonday",
+        "botines",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "fg",
+        "men",
+        "ultimasunidades"
+      ],
+      "despues": [
+        "2x1botines",
+        "50cybermonday",
+        "botines",
+        "calzado",
+        "cybermonday",
+        "deportes",
+        "fg",
+        "men",
+        "ultimasunidades",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/15403265163542",
+      "label": "Zapatillas Logo Maserta Kid",
+      "antes": [
+        "40outlet",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "40outlet",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "ultimasunidades",
+        "zapatillas",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/15403318542614",
+      "label": "Zapatillas Kappa Cool",
+      "antes": [
+        "40outlet",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40outlet",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "men",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/15403319951638",
+      "label": "Zapatillas Authentic Dallas",
+      "antes": [
+        "40cybermonday",
+        "40outlet",
+        "calzado",
+        "cybermonday",
+        "men",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "40cybermonday",
+        "40outlet",
+        "calzado",
+        "cybermonday",
+        "men",
+        "ultimasunidades",
+        "unisex",
+        "women",
+        "zapatillas",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/15403326439702",
+      "label": "Zapatillas Logo Berlin 2 Kids",
+      "antes": [
+        "40outlet",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "ultimasunidades",
+        "zapatillas"
+      ],
+      "despues": [
+        "40outlet",
+        "50cybermonday",
+        "calzado",
+        "cybermonday",
+        "kids",
+        "ultimasunidades",
+        "zapatillas",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/15436346327318",
+      "label": "Zapatilla Kappa Logo Marlon",
+      "antes": [
+        "calzado",
+        "Logo",
+        "men",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "calzado",
+        "Logo",
+        "men",
+        "unisex",
+        "women",
+        "zapatillas",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/15436346523926",
+      "label": "Zapatilla Kappa Logo Marlon",
+      "antes": [
+        "calzado",
+        "Logo",
+        "men",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "calzado",
+        "Logo",
+        "men",
+        "unisex",
+        "women",
+        "zapatillas",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/15440345170198",
+      "label": "Remera Logo Tape W",
+      "antes": [
+        "indumentaria",
+        "remera",
+        "t-shirt",
+        "ultimasunidades",
+        "women"
+      ],
+      "despues": [
+        "indumentaria",
+        "remera",
+        "t-shirt",
+        "ultimasunidades",
+        "women",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/15440345563414",
+      "label": "Top Dara Training",
+      "antes": [
+        "indumentaria",
+        "remerasytop",
+        "top",
+        "ultimasunidades",
+        "women"
+      ],
+      "despues": [
+        "indumentaria",
+        "remerasytop",
+        "top",
+        "ultimasunidades",
+        "women",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/15443190448406",
+      "label": "Zapatillas Kappa Authentic Parker",
+      "antes": [
+        "calzado",
+        "unisex",
+        "zapatillas"
+      ],
+      "despues": [
+        "calzado",
+        "unisex",
+        "zapatillas",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/15451599765782",
+      "label": "Zapatillas Kappa Logo Dereck",
+      "antes": [
+        "calzado",
+        "Logo",
+        "men",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "calzado",
+        "Logo",
+        "men",
+        "unisex",
+        "women",
+        "zapatillas",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/15460215226646",
+      "label": "Zapatillas Authentic Memphis 1",
+      "antes": [
+        "calzado",
+        "men",
+        "unisex",
+        "women",
+        "zapatillas"
+      ],
+      "despues": [
+        "calzado",
+        "men",
+        "unisex",
+        "women",
+        "zapatillas",
+        "30outlet"
+      ],
+      "ok": true,
+      "error": ""
+    }
+  ],
+  "meta": {},
+  "reversible": true,
+  "deshace": null
+}
