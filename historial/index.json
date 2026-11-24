@@ -1,6 +1,20 @@
 {
   "ops": [
     {
+      "id": "20261124-115558-8eaf6e",
+      "fecha": "2026-11-24 11:55:58",
+      "usuario": "app",
+      "canal": "Shopify",
+      "tienda": "kappa",
+      "accion": "tags_set",
+      "descripcion": "Kappa Argentina : agregar «30outlet» en 103 productos",
+      "reversible": true,
+      "deshace": null,
+      "total": 103,
+      "ok": 103,
+      "deshecha_por": null
+    },
+    {
       "id": "20261119-132603-72d149",
       "fecha": "2026-11-19 13:26:03",
       "usuario": "app",
