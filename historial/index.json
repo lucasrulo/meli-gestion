@@ -1,6 +1,20 @@
 {
   "ops": [
     {
+      "id": "20261125-110716-ba22a7",
+      "fecha": "2026-11-25 11:07:16",
+      "usuario": "app",
+      "canal": "Shopify",
+      "tienda": "columbia",
+      "accion": "tags_set",
+      "descripcion": "Columbia Sportwear: agregar «outlet» en 195 productos",
+      "reversible": true,
+      "deshace": null,
+      "total": 195,
+      "ok": 195,
+      "deshecha_por": null
+    },
+    {
       "id": "20261125-110439-5b1453",
       "fecha": "2026-11-25 11:04:39",
       "usuario": "app",
