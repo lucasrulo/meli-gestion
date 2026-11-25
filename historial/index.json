@@ -1,6 +1,20 @@
 {
   "ops": [
     {
+      "id": "20261125-180550-ce9ae1",
+      "fecha": "2026-11-25 18:05:50",
+      "usuario": "app",
+      "canal": "Shopify",
+      "tienda": "columbia",
+      "accion": "precios",
+      "descripcion": "Columbia Sportwear: cargar precios de 740 modelo-color (4644 SKU)",
+      "reversible": true,
+      "deshace": null,
+      "total": 740,
+      "ok": 740,
+      "deshecha_por": null
+    },
+    {
       "id": "20261125-110900-e5d99b",
       "fecha": "2026-11-25 11:09:00",
       "usuario": "app",
