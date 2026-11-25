@@ -1,0 +1,3112 @@
+{
+  "id": "20261125-110439-5b1453",
+  "fecha": "2026-11-25 11:04:39",
+  "usuario": "app",
+  "canal": "Shopify",
+  "tienda": "columbia",
+  "accion": "tags_set",
+  "descripcion": "Columbia Sportwear: reemplazar «sale» por «outlet» en 111 productos",
+  "filas": [
+    {
+      "id": "gid://shopify/Product/9132679954686",
+      "label": "Botas impermeables de senderismo Strata Trail™ Mid de Columbia para mujer",
+      "antes": [
+        "40off",
+        "actividades",
+        "botas",
+        "CALZADO",
+        "impermeable",
+        "sale",
+        "senderismo",
+        "WOMEN"
+      ],
+      "despues": [
+        "40off",
+        "actividades",
+        "botas",
+        "CALZADO",
+        "impermeable",
+        "outlet",
+        "senderismo",
+        "WOMEN"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9132680020222",
+      "label": "Botas impermeables de senderismo Strata Trail™ Mid de Columbia para mujer",
+      "antes": [
+        "40off",
+        "actividades",
+        "botas",
+        "CALZADO",
+        "impermeable",
+        "sale",
+        "senderismo",
+        "WOMEN"
+      ],
+      "despues": [
+        "40off",
+        "actividades",
+        "botas",
+        "CALZADO",
+        "impermeable",
+        "outlet",
+        "senderismo",
+        "WOMEN"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9132680544510",
+      "label": "Zapatillas de senderismo Peakfreak™ II Outdry™ de Columbia para hombre",
+      "antes": [
+        "20off",
+        "actividades",
+        "CALZADO",
+        "impermeable",
+        "MEN",
+        "sale",
+        "senderismo",
+        "ZAPATILLA"
+      ],
+      "despues": [
+        "20off",
+        "actividades",
+        "CALZADO",
+        "impermeable",
+        "MEN",
+        "outlet",
+        "senderismo",
+        "ZAPATILLA"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9132680839422",
+      "label": "Zapatillas Terrastride™ ARO de Columbia para mujer",
+      "antes": [
+        "30off",
+        "argentina",
+        "CALZADO",
+        "outdoor",
+        "sale",
+        "WOMEN",
+        "ZAPATILLA"
+      ],
+      "despues": [
+        "30off",
+        "argentina",
+        "CALZADO",
+        "outdoor",
+        "outlet",
+        "WOMEN",
+        "ZAPATILLA"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9132684411134",
+      "label": "Camisa Bahama™ II de Columbia para hombre",
+      "antes": [
+        "30off",
+        "actividades",
+        "bestsellers",
+        "camisa",
+        "INDUMENTARIA",
+        "MEN",
+        "pesca",
+        "proteccionsolar",
+        "sale"
+      ],
+      "despues": [
+        "30off",
+        "actividades",
+        "bestsellers",
+        "camisa",
+        "INDUMENTARIA",
+        "MEN",
+        "pesca",
+        "proteccionsolar",
+        "outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9132684542206",
+      "label": "Camisa Bahama™ II de Columbia para hombre",
+      "antes": [
+        "40off",
+        "actividades",
+        "bestsellers",
+        "camisa",
+        "INDUMENTARIA",
+        "MEN",
+        "pesca",
+        "proteccionsolar",
+        "sale"
+      ],
+      "despues": [
+        "40off",
+        "actividades",
+        "bestsellers",
+        "camisa",
+        "INDUMENTARIA",
+        "MEN",
+        "pesca",
+        "proteccionsolar",
+        "outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9132685590782",
+      "label": "Chaleco de polar Columbia Fast Trek™ para hombre",
+      "antes": [
+        "40off",
+        "actividades",
+        "camperasychalecos",
+        "chaleco",
+        "INDUMENTARIA",
+        "lana",
+        "MEN",
+        "outdoor",
+        "sale",
+        "senderismo"
+      ],
+      "despues": [
+        "40off",
+        "actividades",
+        "camperasychalecos",
+        "chaleco",
+        "INDUMENTARIA",
+        "lana",
+        "MEN",
+        "outdoor",
+        "outlet",
+        "senderismo"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9132685623550",
+      "label": "Chaleco de polar Columbia Fast Trek™ para hombre",
+      "antes": [
+        "40off",
+        "camperasychalecos",
+        "chaleco",
+        "INDUMENTARIA",
+        "lana",
+        "MEN",
+        "outdoor",
+        "sale"
+      ],
+      "despues": [
+        "40off",
+        "camperasychalecos",
+        "chaleco",
+        "INDUMENTARIA",
+        "lana",
+        "MEN",
+        "outdoor",
+        "outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9132685852926",
+      "label": "Campera Fast Trek™ II de Columbia para mujer",
+      "antes": [
+        "40off",
+        "camperasychalecos",
+        "INDUMENTARIA",
+        "JACKET",
+        "lana",
+        "outdoor",
+        "sale",
+        "WOMEN"
+      ],
+      "despues": [
+        "40off",
+        "camperasychalecos",
+        "INDUMENTARIA",
+        "JACKET",
+        "lana",
+        "outdoor",
+        "outlet",
+        "WOMEN"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9132685918462",
+      "label": "Campera Fast Trek™ II de Columbia para mujer",
+      "antes": [
+        "40off",
+        "camperasychalecos",
+        "INDUMENTARIA",
+        "JACKET",
+        "lana",
+        "outdoor",
+        "sale",
+        "WOMEN"
+      ],
+      "despues": [
+        "40off",
+        "camperasychalecos",
+        "INDUMENTARIA",
+        "JACKET",
+        "lana",
+        "outdoor",
+        "outlet",
+        "WOMEN"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9132686311678",
+      "label": "Campera de polar Steens Mountain™ 2.0 de Columbia para hombre",
+      "antes": [
+        "40cybermonday",
+        "40off",
+        "camperasychalecos",
+        "cybermonday",
+        "INDUMENTARIA",
+        "JACKET",
+        "lana",
+        "MEN",
+        "outdoor",
+        "sale"
+      ],
+      "despues": [
+        "40cybermonday",
+        "40off",
+        "camperasychalecos",
+        "cybermonday",
+        "INDUMENTARIA",
+        "JACKET",
+        "lana",
+        "MEN",
+        "outdoor",
+        "outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9132686901502",
+      "label": "Campera de polar Zing™ III de Columbia para niño",
+      "antes": [
+        "30off",
+        "40cybermonday",
+        "camperasychalecos",
+        "cybermonday",
+        "diadelniño",
+        "INDUMENTARIA",
+        "JACKET",
+        "KIDS",
+        "lana",
+        "niño30off",
+        "outdoor",
+        "sale"
+      ],
+      "despues": [
+        "30off",
+        "40cybermonday",
+        "camperasychalecos",
+        "cybermonday",
+        "diadelniño",
+        "INDUMENTARIA",
+        "JACKET",
+        "KIDS",
+        "lana",
+        "niño30off",
+        "outdoor",
+        "outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9132686967038",
+      "label": "Campera de polar Zing™ III de Columbia para niño",
+      "antes": [
+        "40off",
+        "camperasychalecos",
+        "diadelniño",
+        "INDUMENTARIA",
+        "JACKET",
+        "KIDS",
+        "lana",
+        "niño30off",
+        "outdoor",
+        "sale"
+      ],
+      "despues": [
+        "40off",
+        "camperasychalecos",
+        "diadelniño",
+        "INDUMENTARIA",
+        "JACKET",
+        "KIDS",
+        "lana",
+        "niño30off",
+        "outdoor",
+        "outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9132687163646",
+      "label": "Campera de Polar estampado Columbia Benton Springs™ II para niño",
+      "antes": [
+        "20off",
+        "40cybermonday",
+        "camperasychalecos",
+        "cybermonday",
+        "diadelniño",
+        "INDUMENTARIA",
+        "JACKET",
+        "KIDS",
+        "lana",
+        "niño40off",
+        "outdoor",
+        "sale"
+      ],
+      "despues": [
+        "20off",
+        "40cybermonday",
+        "camperasychalecos",
+        "cybermonday",
+        "diadelniño",
+        "INDUMENTARIA",
+        "JACKET",
+        "KIDS",
+        "lana",
+        "niño40off",
+        "outdoor",
+        "outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9132687491326",
+      "label": "Chaleco de polar Columbia Steens Mountain™ para hombre",
+      "antes": [
+        "30off",
+        "40cybermonday",
+        "camperasychalecos",
+        "chaleco",
+        "cybermonday",
+        "INDUMENTARIA",
+        "lana",
+        "MEN",
+        "outdoor",
+        "sale"
+      ],
+      "despues": [
+        "30off",
+        "40cybermonday",
+        "camperasychalecos",
+        "chaleco",
+        "cybermonday",
+        "INDUMENTARIA",
+        "lana",
+        "MEN",
+        "outdoor",
+        "outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9132688834814",
+      "label": "Calzas Move™ de Columbia para mujer",
+      "antes": [
+        "40off",
+        "actividades",
+        "calza",
+        "INDUMENTARIA",
+        "PANT",
+        "sale",
+        "senderismo",
+        "trailrunning",
+        "WOMEN"
+      ],
+      "despues": [
+        "40off",
+        "actividades",
+        "calza",
+        "INDUMENTARIA",
+        "PANT",
+        "outlet",
+        "senderismo",
+        "trailrunning",
+        "WOMEN"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9132688933118",
+      "label": "Calzas Move™ de Columbia para mujer",
+      "antes": [
+        "40off",
+        "actividades",
+        "calza",
+        "INDUMENTARIA",
+        "PANT",
+        "sale",
+        "senderismo",
+        "trailrunning",
+        "WOMEN"
+      ],
+      "despues": [
+        "40off",
+        "actividades",
+        "calza",
+        "INDUMENTARIA",
+        "PANT",
+        "outlet",
+        "senderismo",
+        "trailrunning",
+        "WOMEN"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9132689522942",
+      "label": "Buzo de polar con medio cierre Benton Springs™ II de Columbia para mujer",
+      "antes": [
+        "40off",
+        "INDUMENTARIA",
+        "lana",
+        "outdoor",
+        "pullover",
+        "sale",
+        "WOMEN"
+      ],
+      "despues": [
+        "40off",
+        "INDUMENTARIA",
+        "lana",
+        "outdoor",
+        "pullover",
+        "outlet",
+        "WOMEN"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9132689686782",
+      "label": "Buzo de polar con medio cierre Benton Springs™ II de Columbia para mujer",
+      "antes": [
+        "40off",
+        "INDUMENTARIA",
+        "lana",
+        "outdoor",
+        "pullover",
+        "sale",
+        "WOMEN"
+      ],
+      "despues": [
+        "40off",
+        "INDUMENTARIA",
+        "lana",
+        "outdoor",
+        "pullover",
+        "outlet",
+        "WOMEN"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9132689785086",
+      "label": "Campera resistente al agua Columbia Switchback™ IV para mujer",
+      "antes": [
+        "20cyber",
+        "20cybermonday",
+        "camperalluvia",
+        "camperasychalecos",
+        "cybermonday",
+        "impermeable",
+        "INDUMENTARIA",
+        "JACKET",
+        "outdoor",
+        "precyber",
+        "sale",
+        "WOMEN"
+      ],
+      "despues": [
+        "20cyber",
+        "20cybermonday",
+        "camperalluvia",
+        "camperasychalecos",
+        "cybermonday",
+        "impermeable",
+        "INDUMENTARIA",
+        "JACKET",
+        "outdoor",
+        "precyber",
+        "outlet",
+        "WOMEN"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9132689817854",
+      "label": "Campera resistente al agua Columbia Switchback™ IV para mujer",
+      "antes": [
+        "30off",
+        "camperalluvia",
+        "camperasychalecos",
+        "impermeable",
+        "INDUMENTARIA",
+        "JACKET",
+        "outdoor",
+        "sale",
+        "WOMEN"
+      ],
+      "despues": [
+        "30off",
+        "camperalluvia",
+        "camperasychalecos",
+        "impermeable",
+        "INDUMENTARIA",
+        "JACKET",
+        "outdoor",
+        "outlet",
+        "WOMEN"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9132689850622",
+      "label": "Campera resistente al agua Columbia Switchback™ IV para mujer",
+      "antes": [
+        "30off",
+        "camperalluvia",
+        "camperasychalecos",
+        "impermeable",
+        "INDUMENTARIA",
+        "JACKET",
+        "outdoor",
+        "sale",
+        "WOMEN"
+      ],
+      "despues": [
+        "30off",
+        "camperalluvia",
+        "camperasychalecos",
+        "impermeable",
+        "INDUMENTARIA",
+        "JACKET",
+        "outdoor",
+        "outlet",
+        "WOMEN"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9132689916158",
+      "label": "Campera resistente al agua Columbia Switchback™ IV para mujer",
+      "antes": [
+        "40off",
+        "camperalluvia",
+        "camperasychalecos",
+        "impermeable",
+        "INDUMENTARIA",
+        "JACKET",
+        "outdoor",
+        "sale",
+        "WOMEN"
+      ],
+      "despues": [
+        "40off",
+        "camperalluvia",
+        "camperasychalecos",
+        "impermeable",
+        "INDUMENTARIA",
+        "JACKET",
+        "outdoor",
+        "outlet",
+        "WOMEN"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9132689948926",
+      "label": "Campera resistente al agua Columbia Switchback™ IV para mujer",
+      "antes": [
+        "20off",
+        "40cybermonday",
+        "camperalluvia",
+        "camperasychalecos",
+        "cybermonday",
+        "impermeable",
+        "INDUMENTARIA",
+        "JACKET",
+        "outdoor",
+        "sale",
+        "WOMEN"
+      ],
+      "despues": [
+        "20off",
+        "40cybermonday",
+        "camperalluvia",
+        "camperasychalecos",
+        "cybermonday",
+        "impermeable",
+        "INDUMENTARIA",
+        "JACKET",
+        "outdoor",
+        "outlet",
+        "WOMEN"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9132690079998",
+      "label": "Campera resistente al agua Columbia Switchback™ IV para mujer",
+      "antes": [
+        "30off",
+        "camperalluvia",
+        "camperasychalecos",
+        "impermeable",
+        "INDUMENTARIA",
+        "JACKET",
+        "outdoor",
+        "sale",
+        "WOMEN"
+      ],
+      "despues": [
+        "30off",
+        "camperalluvia",
+        "camperasychalecos",
+        "impermeable",
+        "INDUMENTARIA",
+        "JACKET",
+        "outdoor",
+        "outlet",
+        "WOMEN"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9132690440446",
+      "label": "Campera impermeable Hikebound™ II de Columbia para hombre",
+      "antes": [
+        "30off",
+        "40cybermonday",
+        "actividades",
+        "camperasychalecos",
+        "cybermonday",
+        "impermeable",
+        "INDUMENTARIA",
+        "JACKET",
+        "MEN",
+        "sale",
+        "senderismo"
+      ],
+      "despues": [
+        "30off",
+        "40cybermonday",
+        "actividades",
+        "camperasychalecos",
+        "cybermonday",
+        "impermeable",
+        "INDUMENTARIA",
+        "JACKET",
+        "MEN",
+        "outlet",
+        "senderismo"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9132690669822",
+      "label": "Buzo Columbia Meridian Creek™ para hombre",
+      "antes": [
+        "40off",
+        "HOODY",
+        "INDUMENTARIA",
+        "MEN",
+        "outdoor",
+        "pullover",
+        "sale"
+      ],
+      "despues": [
+        "40off",
+        "HOODY",
+        "INDUMENTARIA",
+        "MEN",
+        "outdoor",
+        "pullover",
+        "outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9132690735358",
+      "label": "Buzo Columbia Meridian Creek™ para hombre",
+      "antes": [
+        "40off",
+        "HOODY",
+        "INDUMENTARIA",
+        "MEN",
+        "outdoor",
+        "sale"
+      ],
+      "despues": [
+        "40off",
+        "HOODY",
+        "INDUMENTARIA",
+        "MEN",
+        "outdoor",
+        "outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9132691161342",
+      "label": "Campera de polar Columbia Sequoia Grove™ para hombre",
+      "antes": [
+        "40off",
+        "camperasychalecos",
+        "INDUMENTARIA",
+        "JACKET",
+        "lana",
+        "MEN",
+        "outdoor",
+        "sale"
+      ],
+      "despues": [
+        "40off",
+        "camperasychalecos",
+        "INDUMENTARIA",
+        "JACKET",
+        "lana",
+        "MEN",
+        "outdoor",
+        "outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9132692930814",
+      "label": "Rompevientos con capucha Spire Valley™ de Columbia para hombre",
+      "antes": [
+        "40off",
+        "camperasychalecos",
+        "impermeable",
+        "INDUMENTARIA",
+        "JACKET",
+        "MEN",
+        "outdoor",
+        "sale"
+      ],
+      "despues": [
+        "40off",
+        "camperasychalecos",
+        "impermeable",
+        "INDUMENTARIA",
+        "JACKET",
+        "MEN",
+        "outdoor",
+        "outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9132693618942",
+      "label": "Pantalones deportivos Hike™ II de Columbia para niño",
+      "antes": [
+        "40off",
+        "actividades",
+        "diadelniño",
+        "INDUMENTARIA",
+        "KIDS",
+        "niño30off",
+        "PANT",
+        "pantalonesyshort",
+        "sale",
+        "senderismo"
+      ],
+      "despues": [
+        "40off",
+        "actividades",
+        "diadelniño",
+        "INDUMENTARIA",
+        "KIDS",
+        "niño30off",
+        "PANT",
+        "pantalonesyshort",
+        "outlet",
+        "senderismo"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9132693750014",
+      "label": "Pantalones deportivos Hike™ II de Columbia para niño",
+      "antes": [
+        "40off",
+        "actividades",
+        "diadelniño",
+        "INDUMENTARIA",
+        "KIDS",
+        "niño30off",
+        "PANT",
+        "pantalonesyshort",
+        "sale",
+        "senderismo"
+      ],
+      "despues": [
+        "40off",
+        "actividades",
+        "diadelniño",
+        "INDUMENTARIA",
+        "KIDS",
+        "niño30off",
+        "PANT",
+        "pantalonesyshort",
+        "outlet",
+        "senderismo"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9132701778174",
+      "label": "Campera de polar lBackbowl™ II de Columbia para hombre",
+      "antes": [
+        "40off",
+        "actividades",
+        "camperasychalecos",
+        "INDUMENTARIA",
+        "JACKET",
+        "lana",
+        "MEN",
+        "outdoor",
+        "sale",
+        "senderismo"
+      ],
+      "despues": [
+        "40off",
+        "actividades",
+        "camperasychalecos",
+        "INDUMENTARIA",
+        "JACKET",
+        "lana",
+        "MEN",
+        "outdoor",
+        "outlet",
+        "senderismo"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9132702892286",
+      "label": "Pantalones de esquí impermeables Winter District™ de Columbia para hombre",
+      "antes": [
+        "30off",
+        "40cybermonday",
+        "actividades",
+        "cybermonday",
+        "impermeable",
+        "INDUMENTARIA",
+        "MEN",
+        "nieve",
+        "PANT",
+        "pantalonesyshort",
+        "sale",
+        "ski"
+      ],
+      "despues": [
+        "30off",
+        "40cybermonday",
+        "actividades",
+        "cybermonday",
+        "impermeable",
+        "INDUMENTARIA",
+        "MEN",
+        "nieve",
+        "PANT",
+        "pantalonesyshort",
+        "outlet",
+        "ski"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9132703121662",
+      "label": "Pantalones deportivos con tejido antidesgarro ROC™ de Columbia para mujer",
+      "antes": [
+        "30off",
+        "bestsellers",
+        "INDUMENTARIA",
+        "outdoor",
+        "PANT",
+        "pantalonesyshort",
+        "ROC",
+        "sale",
+        "WOMEN"
+      ],
+      "despues": [
+        "30off",
+        "bestsellers",
+        "INDUMENTARIA",
+        "outdoor",
+        "PANT",
+        "pantalonesyshort",
+        "ROC",
+        "outlet",
+        "WOMEN"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9132703482110",
+      "label": "Campera de polar Essential Hike™ Grid de Columbia para hombre",
+      "antes": [
+        "40cybermonday",
+        "40off",
+        "actividades",
+        "camperasychalecos",
+        "cybermonday",
+        "INDUMENTARIA",
+        "JACKET",
+        "lana",
+        "MEN",
+        "sale",
+        "senderismo"
+      ],
+      "despues": [
+        "40cybermonday",
+        "40off",
+        "actividades",
+        "camperasychalecos",
+        "cybermonday",
+        "INDUMENTARIA",
+        "JACKET",
+        "lana",
+        "MEN",
+        "outlet",
+        "senderismo"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9132709773566",
+      "label": "Campera softshell híbrida Trailborne™ de Columbia para hombre",
+      "antes": [
+        "40off",
+        "actividades",
+        "camperasychalecos",
+        "capasuave",
+        "INDUMENTARIA",
+        "JACKET",
+        "MEN",
+        "sale",
+        "senderismo"
+      ],
+      "despues": [
+        "40off",
+        "actividades",
+        "camperasychalecos",
+        "capasuave",
+        "INDUMENTARIA",
+        "JACKET",
+        "MEN",
+        "outlet",
+        "senderismo"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9132710035710",
+      "label": "Campera softshell con capucha Tall Heights™ III de Columbia para hombre",
+      "antes": [
+        "40off",
+        "actividades",
+        "camperasychalecos",
+        "capasuave",
+        "INDUMENTARIA",
+        "JACKET",
+        "MEN",
+        "sale",
+        "senderismo"
+      ],
+      "despues": [
+        "40off",
+        "actividades",
+        "camperasychalecos",
+        "capasuave",
+        "INDUMENTARIA",
+        "JACKET",
+        "MEN",
+        "outlet",
+        "senderismo"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9132710101246",
+      "label": "Campera softshell con capucha Tall Heights™ III de Columbia para hombre",
+      "antes": [
+        "40off",
+        "actividades",
+        "argentina",
+        "camperasychalecos",
+        "capasuave",
+        "INDUMENTARIA",
+        "JACKET",
+        "MEN",
+        "sale",
+        "senderismo"
+      ],
+      "despues": [
+        "40off",
+        "actividades",
+        "argentina",
+        "camperasychalecos",
+        "capasuave",
+        "INDUMENTARIA",
+        "JACKET",
+        "MEN",
+        "outlet",
+        "senderismo"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9132711444734",
+      "label": "Campera de polar Fast Trek™ V de Columbia para niño",
+      "antes": [
+        "40off",
+        "actividades",
+        "camperasychalecos",
+        "diadelniño",
+        "INDUMENTARIA",
+        "JACKET",
+        "KIDS",
+        "lana",
+        "niño40off",
+        "sale",
+        "senderismo"
+      ],
+      "despues": [
+        "40off",
+        "actividades",
+        "camperasychalecos",
+        "diadelniño",
+        "INDUMENTARIA",
+        "JACKET",
+        "KIDS",
+        "lana",
+        "niño40off",
+        "outlet",
+        "senderismo"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9132712001790",
+      "label": "Remera técnica de manga larga Alpine Chill™ Pro II de Columbia para hombre",
+      "antes": [
+        "40off",
+        "actividades",
+        "camiseta",
+        "INDUMENTARIA",
+        "mangalarga",
+        "MEN",
+        "sale",
+        "senderismo",
+        "T-SHIRT"
+      ],
+      "despues": [
+        "40off",
+        "actividades",
+        "camiseta",
+        "INDUMENTARIA",
+        "mangalarga",
+        "MEN",
+        "outlet",
+        "senderismo",
+        "T-SHIRT"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9132713476350",
+      "label": "Pantalones cargo Chill Creek™ de Columbia para mujer",
+      "antes": [
+        "30off",
+        "INDUMENTARIA",
+        "outdoor",
+        "PANT",
+        "pantalonesyshort",
+        "sale",
+        "WOMEN"
+      ],
+      "despues": [
+        "30off",
+        "INDUMENTARIA",
+        "outdoor",
+        "PANT",
+        "pantalonesyshort",
+        "outlet",
+        "WOMEN"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135309848830",
+      "label": "Botas impermeables de senderismo Crestwood™ Mid Waterproof de Columbia para mujer",
+      "antes": [
+        "40off",
+        "actividades",
+        "botas",
+        "CALZADO",
+        "impermeable",
+        "sale",
+        "senderismo",
+        "WOMEN"
+      ],
+      "despues": [
+        "40off",
+        "actividades",
+        "botas",
+        "CALZADO",
+        "impermeable",
+        "outlet",
+        "senderismo",
+        "WOMEN"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135309881598",
+      "label": "Botas impermeables de senderismo Crestwood™ Mid Waterproof de Columbia para mujer",
+      "antes": [
+        "30off",
+        "actividades",
+        "botas",
+        "CALZADO",
+        "impermeable",
+        "sale",
+        "senderismo",
+        "WOMEN"
+      ],
+      "despues": [
+        "30off",
+        "actividades",
+        "botas",
+        "CALZADO",
+        "impermeable",
+        "outlet",
+        "senderismo",
+        "WOMEN"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135310864638",
+      "label": "Camisa Tamiami™ II  manga corta con protección solar Columbia para hombre",
+      "antes": [
+        "20off",
+        "actividades",
+        "camisa",
+        "INDUMENTARIA",
+        "mangacorta",
+        "MEN",
+        "pesca",
+        "proteccionsolar",
+        "sale"
+      ],
+      "despues": [
+        "20off",
+        "actividades",
+        "camisa",
+        "INDUMENTARIA",
+        "mangacorta",
+        "MEN",
+        "pesca",
+        "proteccionsolar",
+        "outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135310995710",
+      "label": "Camisa Tamiami™ II  manga corta con protección solar Columbia para hombre",
+      "antes": [
+        "30off",
+        "actividades",
+        "argentina",
+        "camisa",
+        "INDUMENTARIA",
+        "mangacorta",
+        "MEN",
+        "pesca",
+        "proteccionsolar",
+        "sale"
+      ],
+      "despues": [
+        "30off",
+        "actividades",
+        "argentina",
+        "camisa",
+        "INDUMENTARIA",
+        "mangacorta",
+        "MEN",
+        "pesca",
+        "proteccionsolar",
+        "outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135314043134",
+      "label": "Campera de polar Benton Springs™ con cierre delantero  Columbia para niño",
+      "antes": [
+        "40off",
+        "camperasychalecos",
+        "diadelniño",
+        "INDUMENTARIA",
+        "JACKET",
+        "KIDS",
+        "lana",
+        "niño30off",
+        "outdoor",
+        "sale"
+      ],
+      "despues": [
+        "40off",
+        "camperasychalecos",
+        "diadelniño",
+        "INDUMENTARIA",
+        "JACKET",
+        "KIDS",
+        "lana",
+        "niño30off",
+        "outdoor",
+        "outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135315058942",
+      "label": "Remera Terminal Tackle™ manga larga con capucha y protección solar Columbia para hombre",
+      "antes": [
+        "30off",
+        "actividades",
+        "INDUMENTARIA",
+        "MEN",
+        "pesca",
+        "proteccionsolar",
+        "sale",
+        "T-SHIRT"
+      ],
+      "despues": [
+        "30off",
+        "actividades",
+        "INDUMENTARIA",
+        "MEN",
+        "pesca",
+        "proteccionsolar",
+        "outlet",
+        "T-SHIRT"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135315124478",
+      "label": "Remera Terminal Tackle™ manga larga con capucha y protección solar Columbia para hombre",
+      "antes": [
+        "30off",
+        "actividades",
+        "INDUMENTARIA",
+        "MEN",
+        "pesca",
+        "proteccionsolar",
+        "sale",
+        "T-SHIRT"
+      ],
+      "despues": [
+        "30off",
+        "actividades",
+        "INDUMENTARIA",
+        "MEN",
+        "pesca",
+        "proteccionsolar",
+        "outlet",
+        "T-SHIRT"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135317811454",
+      "label": "Remera térmica Midweight Stretch manga larga Columbia para mujer",
+      "antes": [
+        "40off",
+        "camiseta",
+        "INDUMENTARIA",
+        "mangalarga",
+        "nieve",
+        "sale",
+        "ski",
+        "T-SHIRT",
+        "WOMEN"
+      ],
+      "despues": [
+        "40off",
+        "camiseta",
+        "INDUMENTARIA",
+        "mangalarga",
+        "nieve",
+        "outlet",
+        "ski",
+        "T-SHIRT",
+        "WOMEN"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135318139134",
+      "label": "Campera Heavenly™ Columbia para mujer",
+      "antes": [
+        "40off",
+        "actividades",
+        "camperasychalecos",
+        "INDUMENTARIA",
+        "JACKET",
+        "sale",
+        "senderismo",
+        "WOMEN"
+      ],
+      "despues": [
+        "40off",
+        "actividades",
+        "camperasychalecos",
+        "INDUMENTARIA",
+        "JACKET",
+        "outlet",
+        "senderismo",
+        "WOMEN"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135322988798",
+      "label": "Pantalón Silver Ridge Utility convertible  Columbia para hombre",
+      "antes": [
+        "40off",
+        "actividades",
+        "INDUMENTARIA",
+        "MEN",
+        "PANT",
+        "pantalonesyshort",
+        "proteccionsolar",
+        "sale",
+        "senderismo"
+      ],
+      "despues": [
+        "40off",
+        "actividades",
+        "INDUMENTARIA",
+        "MEN",
+        "PANT",
+        "pantalonesyshort",
+        "proteccionsolar",
+        "outlet",
+        "senderismo"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135327314174",
+      "label": "Campera Challenger™ II rompevientos Columbia para hombre",
+      "antes": [
+        "30off",
+        "actividades",
+        "camperasychalecos",
+        "INDUMENTARIA",
+        "JACKET",
+        "MEN",
+        "outdoor",
+        "sale",
+        "senderismo"
+      ],
+      "despues": [
+        "30off",
+        "actividades",
+        "camperasychalecos",
+        "INDUMENTARIA",
+        "JACKET",
+        "MEN",
+        "outdoor",
+        "outlet",
+        "senderismo"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135329050878",
+      "label": "Campera de polar Columbia Sequoia Grove™ para mujer",
+      "antes": [
+        "40off",
+        "camperasychalecos",
+        "INDUMENTARIA",
+        "JACKET",
+        "lana",
+        "outdoor",
+        "sale",
+        "WOMEN"
+      ],
+      "despues": [
+        "40off",
+        "camperasychalecos",
+        "INDUMENTARIA",
+        "JACKET",
+        "lana",
+        "outdoor",
+        "outlet",
+        "WOMEN"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135329149182",
+      "label": "Campera de polar Columbia Sequoia Grove™ para mujer",
+      "antes": [
+        "40off",
+        "camperasychalecos",
+        "INDUMENTARIA",
+        "JACKET",
+        "lana",
+        "outdoor",
+        "sale",
+        "WOMEN"
+      ],
+      "despues": [
+        "40off",
+        "camperasychalecos",
+        "INDUMENTARIA",
+        "JACKET",
+        "lana",
+        "outdoor",
+        "outlet",
+        "WOMEN"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135329575166",
+      "label": "Pantalón impermeable Shafer Canyon™ Columbia para mujer",
+      "antes": [
+        "20off",
+        "40cybermonday",
+        "actividades",
+        "cybermonday",
+        "impermeable",
+        "INDUMENTARIA",
+        "nieve",
+        "PANT",
+        "pantalonesyshort",
+        "sale",
+        "ski",
+        "WOMEN"
+      ],
+      "despues": [
+        "20off",
+        "40cybermonday",
+        "actividades",
+        "cybermonday",
+        "impermeable",
+        "INDUMENTARIA",
+        "nieve",
+        "PANT",
+        "pantalonesyshort",
+        "outlet",
+        "ski",
+        "WOMEN"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135329837310",
+      "label": "Pantalón Columbia Brea Falls™ para mujer",
+      "antes": [
+        "30off",
+        "impermeable",
+        "INDUMENTARIA",
+        "outdoor",
+        "PANT",
+        "pantalonesyshort",
+        "sale",
+        "WOMEN"
+      ],
+      "despues": [
+        "30off",
+        "impermeable",
+        "INDUMENTARIA",
+        "outdoor",
+        "PANT",
+        "pantalonesyshort",
+        "outlet",
+        "WOMEN"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135329935614",
+      "label": "Pantalón Columbia Brea Falls™ para mujer",
+      "antes": [
+        "40off",
+        "impermeable",
+        "INDUMENTARIA",
+        "outdoor",
+        "PANT",
+        "pantalonesyshort",
+        "sale",
+        "WOMEN"
+      ],
+      "despues": [
+        "40off",
+        "impermeable",
+        "INDUMENTARIA",
+        "outdoor",
+        "PANT",
+        "pantalonesyshort",
+        "outlet",
+        "WOMEN"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135331868926",
+      "label": "Campera Delta Ridge™ II con relleno de plumas Columbia para hombre",
+      "antes": [
+        "30cybermonday",
+        "30off",
+        "actividades",
+        "camperasychalecos",
+        "cybermonday",
+        "INDUMENTARIA",
+        "JACKET",
+        "MEN",
+        "sale",
+        "senderismo"
+      ],
+      "despues": [
+        "30cybermonday",
+        "30off",
+        "actividades",
+        "camperasychalecos",
+        "cybermonday",
+        "INDUMENTARIA",
+        "JACKET",
+        "MEN",
+        "outlet",
+        "senderismo"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135332557054",
+      "label": "Campera Delta Ridge™ II con relleno de plumas Columbia para hombre",
+      "antes": [
+        "30off",
+        "actividades",
+        "camperasychalecos",
+        "INDUMENTARIA",
+        "JACKET",
+        "MEN",
+        "sale",
+        "senderismo"
+      ],
+      "despues": [
+        "30off",
+        "actividades",
+        "camperasychalecos",
+        "INDUMENTARIA",
+        "JACKET",
+        "MEN",
+        "outlet",
+        "senderismo"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135332655358",
+      "label": "Campera Delta Ridge™ II con relleno de plumas Columbia para hombre",
+      "antes": [
+        "40cybermonday",
+        "40off",
+        "actividades",
+        "camperasychalecos",
+        "cybermonday",
+        "INDUMENTARIA",
+        "JACKET",
+        "MEN",
+        "sale",
+        "senderismo"
+      ],
+      "despues": [
+        "40cybermonday",
+        "40off",
+        "actividades",
+        "camperasychalecos",
+        "cybermonday",
+        "INDUMENTARIA",
+        "JACKET",
+        "MEN",
+        "outlet",
+        "senderismo"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135334785278",
+      "label": "Chaleco aislante Powder Lite™ II de Columbia para hombre",
+      "antes": [
+        "40off",
+        "actividades",
+        "aislante",
+        "camperasychalecos",
+        "chaleco",
+        "INDUMENTARIA",
+        "MEN",
+        "sale",
+        "senderismo"
+      ],
+      "despues": [
+        "40off",
+        "actividades",
+        "aislante",
+        "camperasychalecos",
+        "chaleco",
+        "INDUMENTARIA",
+        "MEN",
+        "outlet",
+        "senderismo"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135335899390",
+      "label": "Campera impermeable con capucha Hikebound™ II de Columbia para mujer",
+      "antes": [
+        "30off",
+        "actividades",
+        "camperalluvia",
+        "camperasychalecos",
+        "impermeable",
+        "INDUMENTARIA",
+        "JACKET",
+        "outdoor",
+        "sale",
+        "senderismo",
+        "WOMEN"
+      ],
+      "despues": [
+        "30off",
+        "actividades",
+        "camperalluvia",
+        "camperasychalecos",
+        "impermeable",
+        "INDUMENTARIA",
+        "JACKET",
+        "outdoor",
+        "outlet",
+        "senderismo",
+        "WOMEN"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135338815742",
+      "label": "Campera Bugaboo™ III intercambiable impermeable Columbia para mujer",
+      "antes": [
+        "20off",
+        "3en1",
+        "40cybermonday",
+        "actividades",
+        "camperasychalecos",
+        "cybermonday",
+        "INDUMENTARIA",
+        "JACKET",
+        "outdoor",
+        "sale",
+        "senderismo",
+        "WOMEN"
+      ],
+      "despues": [
+        "20off",
+        "3en1",
+        "40cybermonday",
+        "actividades",
+        "camperasychalecos",
+        "cybermonday",
+        "INDUMENTARIA",
+        "JACKET",
+        "outdoor",
+        "outlet",
+        "senderismo",
+        "WOMEN"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135338946814",
+      "label": "Campera Bugaboo™ III intercambiable impermeable Columbia para mujer",
+      "antes": [
+        "3en1",
+        "40off",
+        "actividades",
+        "camperasychalecos",
+        "INDUMENTARIA",
+        "JACKET",
+        "outdoor",
+        "sale",
+        "senderismo",
+        "WOMEN"
+      ],
+      "despues": [
+        "3en1",
+        "40off",
+        "actividades",
+        "camperasychalecos",
+        "INDUMENTARIA",
+        "JACKET",
+        "outdoor",
+        "outlet",
+        "senderismo",
+        "WOMEN"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135339143422",
+      "label": "Campera Delta Ridge™ II con relleno de plumas Columbia para mujer",
+      "antes": [
+        "30off",
+        "actividades",
+        "bestsellers",
+        "camperasychalecos",
+        "INDUMENTARIA",
+        "JACKET",
+        "sale",
+        "senderismo",
+        "WOMEN"
+      ],
+      "despues": [
+        "30off",
+        "actividades",
+        "bestsellers",
+        "camperasychalecos",
+        "INDUMENTARIA",
+        "JACKET",
+        "outlet",
+        "senderismo",
+        "WOMEN"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135339405566",
+      "label": "Campera Delta Ridge™ II con relleno de plumas Columbia para mujer",
+      "antes": [
+        "30off",
+        "actividades",
+        "bestsellers",
+        "camperasychalecos",
+        "INDUMENTARIA",
+        "JACKET",
+        "sale",
+        "senderismo",
+        "WOMEN"
+      ],
+      "despues": [
+        "30off",
+        "actividades",
+        "bestsellers",
+        "camperasychalecos",
+        "INDUMENTARIA",
+        "JACKET",
+        "outlet",
+        "senderismo",
+        "WOMEN"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135339864318",
+      "label": "Campera impermeable Watertight™ II Columbia para niño",
+      "antes": [
+        "40off",
+        "actividades",
+        "camperasychalecos",
+        "diadelniño",
+        "impermeable",
+        "INDUMENTARIA",
+        "JACKET",
+        "KIDS",
+        "niño30off",
+        "sale",
+        "senderismo"
+      ],
+      "despues": [
+        "40off",
+        "actividades",
+        "camperasychalecos",
+        "diadelniño",
+        "impermeable",
+        "INDUMENTARIA",
+        "JACKET",
+        "KIDS",
+        "niño30off",
+        "outlet",
+        "senderismo"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135340978430",
+      "label": "Buzo de polar Helvetia™ II con medio cierre snap Columbia para hombre",
+      "antes": [
+        "30off",
+        "bestsellers",
+        "INDUMENTARIA",
+        "lana",
+        "MEN",
+        "outdoor",
+        "pullover",
+        "sale"
+      ],
+      "despues": [
+        "30off",
+        "bestsellers",
+        "INDUMENTARIA",
+        "lana",
+        "MEN",
+        "outdoor",
+        "pullover",
+        "outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135341076734",
+      "label": "Buzo de polar Helvetia™ II con medio cierre snap Columbia para hombre",
+      "antes": [
+        "30off",
+        "bestsellers",
+        "INDUMENTARIA",
+        "lana",
+        "MEN",
+        "outdoor",
+        "pullover",
+        "sale"
+      ],
+      "despues": [
+        "30off",
+        "bestsellers",
+        "INDUMENTARIA",
+        "lana",
+        "MEN",
+        "outdoor",
+        "pullover",
+        "outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135341895934",
+      "label": "Campera de polar Backbowl™ II con cierre delantero Columbia para mujer",
+      "antes": [
+        "40off",
+        "camperasychalecos",
+        "INDUMENTARIA",
+        "JACKET",
+        "lana",
+        "outdoor",
+        "sale",
+        "WOMEN"
+      ],
+      "despues": [
+        "40off",
+        "camperasychalecos",
+        "INDUMENTARIA",
+        "JACKET",
+        "lana",
+        "outdoor",
+        "outlet",
+        "WOMEN"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135342223614",
+      "label": "Buzo Helvetia™ II de polar con medio cierre snap Columbia para mujer",
+      "antes": [
+        "30off",
+        "bestsellers",
+        "INDUMENTARIA",
+        "lana",
+        "outdoor",
+        "pullover",
+        "sale",
+        "WOMEN"
+      ],
+      "despues": [
+        "30off",
+        "bestsellers",
+        "INDUMENTARIA",
+        "lana",
+        "outdoor",
+        "pullover",
+        "outlet",
+        "WOMEN"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135342649598",
+      "label": "Buzo Helvetia™ II de polar con medio cierre snap Columbia para mujer",
+      "antes": [
+        "20off",
+        "bestsellers",
+        "INDUMENTARIA",
+        "lana",
+        "outdoor",
+        "pullover",
+        "sale",
+        "WOMEN"
+      ],
+      "despues": [
+        "20off",
+        "bestsellers",
+        "INDUMENTARIA",
+        "lana",
+        "outdoor",
+        "pullover",
+        "outlet",
+        "WOMEN"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135343534334",
+      "label": "Buzo Helvetia™ II de polar con medio cierre snap Columbia para mujer",
+      "antes": [
+        "40off",
+        "bestsellers",
+        "INDUMENTARIA",
+        "lana",
+        "outdoor",
+        "pullover",
+        "sale",
+        "WOMEN"
+      ],
+      "despues": [
+        "40off",
+        "bestsellers",
+        "INDUMENTARIA",
+        "lana",
+        "outdoor",
+        "pullover",
+        "outlet",
+        "WOMEN"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135343632638",
+      "label": "Buzo Helvetia™ II de polar con medio cierre snap Columbia para mujer",
+      "antes": [
+        "40off",
+        "bestsellers",
+        "INDUMENTARIA",
+        "lana",
+        "outdoor",
+        "pullover",
+        "sale",
+        "WOMEN"
+      ],
+      "despues": [
+        "40off",
+        "bestsellers",
+        "INDUMENTARIA",
+        "lana",
+        "outdoor",
+        "pullover",
+        "outlet",
+        "WOMEN"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135343862014",
+      "label": "Buzo Helvetia™ II de polar con medio cierre snap Columbia para mujer",
+      "antes": [
+        "40off",
+        "bestsellers",
+        "INDUMENTARIA",
+        "lana",
+        "outdoor",
+        "pullover",
+        "sale",
+        "WOMEN"
+      ],
+      "despues": [
+        "40off",
+        "bestsellers",
+        "INDUMENTARIA",
+        "lana",
+        "outdoor",
+        "pullover",
+        "outlet",
+        "WOMEN"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135343993086",
+      "label": "Buzo Helvetia™ II de polar con medio cierre snap Columbia para mujer",
+      "antes": [
+        "30off",
+        "bestsellers",
+        "INDUMENTARIA",
+        "lana",
+        "outdoor",
+        "pullover",
+        "sale",
+        "WOMEN"
+      ],
+      "despues": [
+        "30off",
+        "bestsellers",
+        "INDUMENTARIA",
+        "lana",
+        "outdoor",
+        "pullover",
+        "outlet",
+        "WOMEN"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135344124158",
+      "label": "Camisa Bahama™ II manga larga con protección solar Columbia para mujer",
+      "antes": [
+        "30off",
+        "actividades",
+        "bestsellers",
+        "camisa",
+        "INDUMENTARIA",
+        "pesca",
+        "proteccionsolar",
+        "sale",
+        "WOMEN"
+      ],
+      "despues": [
+        "30off",
+        "actividades",
+        "bestsellers",
+        "camisa",
+        "INDUMENTARIA",
+        "pesca",
+        "proteccionsolar",
+        "outlet",
+        "WOMEN"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135344222462",
+      "label": "Camisa Bahama™ II manga larga con protección solar Columbia para mujer",
+      "antes": [
+        "20off",
+        "actividades",
+        "bestsellers",
+        "camisa",
+        "INDUMENTARIA",
+        "pesca",
+        "proteccionsolar",
+        "sale",
+        "WOMEN"
+      ],
+      "despues": [
+        "20off",
+        "actividades",
+        "bestsellers",
+        "camisa",
+        "INDUMENTARIA",
+        "pesca",
+        "proteccionsolar",
+        "outlet",
+        "WOMEN"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135344681214",
+      "label": "Pantalón Tidal Roamer™ II con protección solar Columbia para mujer",
+      "antes": [
+        "30off",
+        "actividades",
+        "INDUMENTARIA",
+        "PANT",
+        "pantalonesyshort",
+        "pesca",
+        "proteccionsolar",
+        "sale",
+        "WOMEN"
+      ],
+      "despues": [
+        "30off",
+        "actividades",
+        "INDUMENTARIA",
+        "PANT",
+        "pantalonesyshort",
+        "pesca",
+        "proteccionsolar",
+        "outlet",
+        "WOMEN"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135344746750",
+      "label": "Pantalón Tidal Roamer™ II con protección solar Columbia para mujer",
+      "antes": [
+        "20off",
+        "actividades",
+        "INDUMENTARIA",
+        "PANT",
+        "pantalonesyshort",
+        "pesca",
+        "proteccionsolar",
+        "sale",
+        "WOMEN"
+      ],
+      "despues": [
+        "20off",
+        "actividades",
+        "INDUMENTARIA",
+        "PANT",
+        "pantalonesyshort",
+        "pesca",
+        "proteccionsolar",
+        "outlet",
+        "WOMEN"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135345500414",
+      "label": "Campera Triple Canyon™ con bolsillo delantero  Columbia para hombre",
+      "antes": [
+        "30off",
+        "actividades",
+        "camperasychalecos",
+        "INDUMENTARIA",
+        "JACKET",
+        "MEN",
+        "sale",
+        "senderismo"
+      ],
+      "despues": [
+        "30off",
+        "actividades",
+        "camperasychalecos",
+        "INDUMENTARIA",
+        "JACKET",
+        "MEN",
+        "outlet",
+        "senderismo"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135347532030",
+      "label": "Buzo de polar Helvetia™ II con medio cierre snap Columbia para hombre",
+      "antes": [
+        "40off",
+        "bestsellers",
+        "INDUMENTARIA",
+        "lana",
+        "MEN",
+        "outdoor",
+        "pullover",
+        "sale"
+      ],
+      "despues": [
+        "40off",
+        "bestsellers",
+        "INDUMENTARIA",
+        "lana",
+        "MEN",
+        "outdoor",
+        "pullover",
+        "outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135347794174",
+      "label": "Buzo Helvetia™ II de polar con medio cierre snap Columbia para mujer",
+      "antes": [
+        "40off",
+        "bestsellers",
+        "INDUMENTARIA",
+        "lana",
+        "outdoor",
+        "pullover",
+        "sale",
+        "WOMEN"
+      ],
+      "despues": [
+        "40off",
+        "bestsellers",
+        "INDUMENTARIA",
+        "lana",
+        "outdoor",
+        "pullover",
+        "outlet",
+        "WOMEN"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135353102590",
+      "label": "Campera de polar Essential Hike™ Grid de Columbia para mujer",
+      "antes": [
+        "20off",
+        "camperasychalecos",
+        "INDUMENTARIA",
+        "JACKET",
+        "lana",
+        "outdoor",
+        "sale",
+        "WOMEN"
+      ],
+      "despues": [
+        "20off",
+        "camperasychalecos",
+        "INDUMENTARIA",
+        "JACKET",
+        "lana",
+        "outdoor",
+        "outlet",
+        "WOMEN"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135353233662",
+      "label": "Campera de polar Essential Hike™ Grid de Columbia para mujer",
+      "antes": [
+        "20off",
+        "camperasychalecos",
+        "INDUMENTARIA",
+        "JACKET",
+        "lana",
+        "outdoor",
+        "sale",
+        "WOMEN"
+      ],
+      "despues": [
+        "20off",
+        "camperasychalecos",
+        "INDUMENTARIA",
+        "JACKET",
+        "lana",
+        "outdoor",
+        "outlet",
+        "WOMEN"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135356641534",
+      "label": "Remera técnica Stealth Spring™ de Columbia para mujer",
+      "antes": [
+        "40off",
+        "actividades",
+        "INDUMENTARIA",
+        "mangacorta",
+        "sale",
+        "senderismo",
+        "T-SHIRT",
+        "trailrunning",
+        "WOMEN"
+      ],
+      "despues": [
+        "40off",
+        "actividades",
+        "INDUMENTARIA",
+        "mangacorta",
+        "outlet",
+        "senderismo",
+        "T-SHIRT",
+        "trailrunning",
+        "WOMEN"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135358181630",
+      "label": "Remera manga larga Stealth Spring con capucha y protección solar Columbia para hombre",
+      "antes": [
+        "20cyber",
+        "20cybermonday",
+        "actividades",
+        "cybermonday",
+        "INDUMENTARIA",
+        "MEN",
+        "precyber",
+        "proteccionsolar",
+        "sale",
+        "senderismo",
+        "T-SHIRT",
+        "trailrunning"
+      ],
+      "despues": [
+        "20cyber",
+        "20cybermonday",
+        "actividades",
+        "cybermonday",
+        "INDUMENTARIA",
+        "MEN",
+        "precyber",
+        "proteccionsolar",
+        "outlet",
+        "senderismo",
+        "T-SHIRT",
+        "trailrunning"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135358247166",
+      "label": "Remera manga larga Stealth Spring con capucha y protección solar Columbia para hombre",
+      "antes": [
+        "20off",
+        "actividades",
+        "INDUMENTARIA",
+        "MEN",
+        "proteccionsolar",
+        "sale",
+        "senderismo",
+        "T-SHIRT",
+        "trailrunning"
+      ],
+      "despues": [
+        "20off",
+        "actividades",
+        "INDUMENTARIA",
+        "MEN",
+        "proteccionsolar",
+        "outlet",
+        "senderismo",
+        "T-SHIRT",
+        "trailrunning"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135363522814",
+      "label": "Guantes Omni-Heat Touch™",
+      "antes": [
+        "30off",
+        "ACCESORIOS",
+        "guantes",
+        "MEN",
+        "nieve",
+        "outdoor",
+        "sale"
+      ],
+      "despues": [
+        "30off",
+        "ACCESORIOS",
+        "guantes",
+        "MEN",
+        "nieve",
+        "outdoor",
+        "outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135364112638",
+      "label": "Cuello Freezer Zero™ II Gaiter",
+      "antes": [
+        "40off",
+        "ACCESORIOS",
+        "actividades",
+        "cuello",
+        "MEN",
+        "outdoor",
+        "proteccionsolar",
+        "sale",
+        "senderismo",
+        "UNISEX",
+        "WOMEN"
+      ],
+      "despues": [
+        "40off",
+        "ACCESORIOS",
+        "actividades",
+        "cuello",
+        "MEN",
+        "outdoor",
+        "proteccionsolar",
+        "outlet",
+        "senderismo",
+        "UNISEX",
+        "WOMEN"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135571861758",
+      "label": "Botas impermeables de senderismo Crestwood™ Mid Waterproof de Columbia para hombre",
+      "antes": [
+        "40off",
+        "bestsellers",
+        "botas",
+        "CALZADO",
+        "impermeable",
+        "MEN",
+        "multideporte",
+        "sale"
+      ],
+      "despues": [
+        "40off",
+        "bestsellers",
+        "botas",
+        "CALZADO",
+        "impermeable",
+        "MEN",
+        "multideporte",
+        "outlet"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135572058366",
+      "label": "Botas para caminar Newton Wander™ de Columbia para mujer",
+      "antes": [
+        "30off",
+        "actividades",
+        "botas",
+        "CALZADO",
+        "impermeable",
+        "sale",
+        "senderismo",
+        "WOMEN"
+      ],
+      "despues": [
+        "30off",
+        "actividades",
+        "botas",
+        "CALZADO",
+        "impermeable",
+        "outlet",
+        "senderismo",
+        "WOMEN"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135572353278",
+      "label": "Campera intercambiable Bugaboo™ III impermeable Columbia para hombre",
+      "antes": [
+        "30off",
+        "3en1",
+        "actividades",
+        "camperasychalecos",
+        "INDUMENTARIA",
+        "JACKET",
+        "MEN",
+        "sale",
+        "senderismo"
+      ],
+      "despues": [
+        "30off",
+        "3en1",
+        "actividades",
+        "camperasychalecos",
+        "INDUMENTARIA",
+        "JACKET",
+        "MEN",
+        "outlet",
+        "senderismo"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135573238014",
+      "label": "Remera técnica con  medio cierre DriVenture™ de Columbia para mujer",
+      "antes": [
+        "20off",
+        "actividades",
+        "camiseta",
+        "INDUMENTARIA",
+        "mangalarga",
+        "sale",
+        "senderismo",
+        "T-SHIRT",
+        "trailrunning",
+        "WOMEN"
+      ],
+      "despues": [
+        "20off",
+        "actividades",
+        "camiseta",
+        "INDUMENTARIA",
+        "mangalarga",
+        "outlet",
+        "senderismo",
+        "T-SHIRT",
+        "trailrunning",
+        "WOMEN"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135573369086",
+      "label": "Polar con medio cierre y estampado Sequoia Grove™ de Columbia para mujer",
+      "antes": [
+        "20off",
+        "INDUMENTARIA",
+        "lana",
+        "outdoor",
+        "pullover",
+        "sale",
+        "WOMEN"
+      ],
+      "despues": [
+        "20off",
+        "INDUMENTARIA",
+        "lana",
+        "outdoor",
+        "pullover",
+        "outlet",
+        "WOMEN"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135573401854",
+      "label": "Campera de polar Essential Hike™ Grid de Columbia para mujer",
+      "antes": [
+        "20off",
+        "camperasychalecos",
+        "INDUMENTARIA",
+        "JACKET",
+        "lana",
+        "outdoor",
+        "sale",
+        "WOMEN"
+      ],
+      "despues": [
+        "20off",
+        "camperasychalecos",
+        "INDUMENTARIA",
+        "JACKET",
+        "lana",
+        "outdoor",
+        "outlet",
+        "WOMEN"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135573434622",
+      "label": "Campera de polar Essential Hike™ Grid de Columbia para mujer",
+      "antes": [
+        "40off",
+        "camperasychalecos",
+        "INDUMENTARIA",
+        "JACKET",
+        "lana",
+        "outdoor",
+        "sale",
+        "WOMEN"
+      ],
+      "despues": [
+        "40off",
+        "camperasychalecos",
+        "INDUMENTARIA",
+        "JACKET",
+        "lana",
+        "outdoor",
+        "outlet",
+        "WOMEN"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135573729534",
+      "label": "Remera Parsons Point™ manga corta con protección solar Columbia para hombre",
+      "antes": [
+        "20off",
+        "actividades",
+        "INDUMENTARIA",
+        "mangacorta",
+        "MEN",
+        "outdoor",
+        "proteccionsolar",
+        "sale",
+        "T-SHIRT"
+      ],
+      "despues": [
+        "20off",
+        "actividades",
+        "INDUMENTARIA",
+        "mangacorta",
+        "MEN",
+        "outdoor",
+        "proteccionsolar",
+        "outlet",
+        "T-SHIRT"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135574089982",
+      "label": "Remera técnica Diamond Peak™ de Columbia para mujer",
+      "antes": [
+        "30off",
+        "40cybermonday",
+        "actividades",
+        "bestsellers",
+        "cybermonday",
+        "INDUMENTARIA",
+        "mangacorta",
+        "sale",
+        "senderismo",
+        "T-SHIRT",
+        "WOMEN"
+      ],
+      "despues": [
+        "30off",
+        "40cybermonday",
+        "actividades",
+        "bestsellers",
+        "cybermonday",
+        "INDUMENTARIA",
+        "mangacorta",
+        "outlet",
+        "senderismo",
+        "T-SHIRT",
+        "WOMEN"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135580479742",
+      "label": "Campera Arcadia™ II impermeable Columbia para mujer",
+      "antes": [
+        "30cybermonday",
+        "30off",
+        "actividades",
+        "camperasychalecos",
+        "cybermonday",
+        "INDUMENTARIA",
+        "JACKET",
+        "sale",
+        "senderismo",
+        "WOMEN"
+      ],
+      "despues": [
+        "30cybermonday",
+        "30off",
+        "actividades",
+        "camperasychalecos",
+        "cybermonday",
+        "INDUMENTARIA",
+        "JACKET",
+        "outlet",
+        "senderismo",
+        "WOMEN"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135580578046",
+      "label": "Remera térmica Midweight Stretch manga larga Columbia para mujer",
+      "antes": [
+        "30off",
+        "camiseta",
+        "INDUMENTARIA",
+        "mangalarga",
+        "nieve",
+        "sale",
+        "ski",
+        "T-SHIRT",
+        "WOMEN"
+      ],
+      "despues": [
+        "30off",
+        "camiseta",
+        "INDUMENTARIA",
+        "mangalarga",
+        "nieve",
+        "outlet",
+        "ski",
+        "T-SHIRT",
+        "WOMEN"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135581167870",
+      "label": "Campera Challenger™ II rompevientos Columbia para hombre",
+      "antes": [
+        "40off",
+        "actividades",
+        "camperasychalecos",
+        "INDUMENTARIA",
+        "JACKET",
+        "MEN",
+        "outdoor",
+        "sale",
+        "senderismo"
+      ],
+      "despues": [
+        "40off",
+        "actividades",
+        "camperasychalecos",
+        "INDUMENTARIA",
+        "JACKET",
+        "MEN",
+        "outdoor",
+        "outlet",
+        "senderismo"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135581430014",
+      "label": "Campera Delta Ridge™ II con relleno de plumas Columbia para hombre",
+      "antes": [
+        "30off",
+        "actividades",
+        "bestsellers",
+        "camperasychalecos",
+        "INDUMENTARIA",
+        "JACKET",
+        "MEN",
+        "sale",
+        "senderismo"
+      ],
+      "despues": [
+        "30off",
+        "actividades",
+        "bestsellers",
+        "camperasychalecos",
+        "INDUMENTARIA",
+        "JACKET",
+        "MEN",
+        "outlet",
+        "senderismo"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135581462782",
+      "label": "Campera Delta Ridge™ II con relleno de plumas Columbia para hombre",
+      "antes": [
+        "40cybermonday",
+        "40off",
+        "actividades",
+        "camperasychalecos",
+        "cybermonday",
+        "INDUMENTARIA",
+        "JACKET",
+        "MEN",
+        "sale",
+        "senderismo"
+      ],
+      "despues": [
+        "40cybermonday",
+        "40off",
+        "actividades",
+        "camperasychalecos",
+        "cybermonday",
+        "INDUMENTARIA",
+        "JACKET",
+        "MEN",
+        "outlet",
+        "senderismo"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135581954302",
+      "label": "Campera Delta Ridge™ II con relleno de plumas Columbia para mujer",
+      "antes": [
+        "40off",
+        "actividades",
+        "camperasychalecos",
+        "INDUMENTARIA",
+        "JACKET",
+        "sale",
+        "senderismo",
+        "WOMEN"
+      ],
+      "despues": [
+        "40off",
+        "actividades",
+        "camperasychalecos",
+        "INDUMENTARIA",
+        "JACKET",
+        "outlet",
+        "senderismo",
+        "WOMEN"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135582707966",
+      "label": "Buzo Helvetia™ II de polar con medio cierre snap Columbia para mujer",
+      "antes": [
+        "40off",
+        "bestsellers",
+        "INDUMENTARIA",
+        "lana",
+        "outdoor",
+        "pullover",
+        "sale",
+        "WOMEN"
+      ],
+      "despues": [
+        "40off",
+        "bestsellers",
+        "INDUMENTARIA",
+        "lana",
+        "outdoor",
+        "pullover",
+        "outlet",
+        "WOMEN"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135583396094",
+      "label": "Campera de polar Arctic Peak™ con cierre delantero  Columbia para hombre",
+      "antes": [
+        "30off",
+        "actividades",
+        "camperasychalecos",
+        "INDUMENTARIA",
+        "JACKET",
+        "lana",
+        "MEN",
+        "sale",
+        "senderismo"
+      ],
+      "despues": [
+        "30off",
+        "actividades",
+        "camperasychalecos",
+        "INDUMENTARIA",
+        "JACKET",
+        "lana",
+        "MEN",
+        "outlet",
+        "senderismo"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135593160958",
+      "label": "Remera térmica Omni-Heat Infinity™ manga larga Columbia para mujer",
+      "antes": [
+        "20off",
+        "INDUMENTARIA",
+        "mangalarga",
+        "sale",
+        "T-SHIRT",
+        "WOMEN"
+      ],
+      "despues": [
+        "20off",
+        "INDUMENTARIA",
+        "mangalarga",
+        "outlet",
+        "T-SHIRT",
+        "WOMEN"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135593357566",
+      "label": "Campera Powder Lite™ II con relleno sintético Columbia para hombre",
+      "antes": [
+        "20off",
+        "40cybermonday",
+        "actividades",
+        "camperasychalecos",
+        "cybermonday",
+        "INDUMENTARIA",
+        "JACKET",
+        "MEN",
+        "sale",
+        "senderismo"
+      ],
+      "despues": [
+        "20off",
+        "40cybermonday",
+        "actividades",
+        "camperasychalecos",
+        "cybermonday",
+        "INDUMENTARIA",
+        "JACKET",
+        "MEN",
+        "outlet",
+        "senderismo"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9135593849086",
+      "label": "Campera impermeable Loop Trail™ Columbia para mujer",
+      "antes": [
+        "30off",
+        "actividades",
+        "camperasychalecos",
+        "INDUMENTARIA",
+        "JACKET",
+        "proteccionsolar",
+        "sale",
+        "WOMEN"
+      ],
+      "despues": [
+        "30off",
+        "actividades",
+        "camperasychalecos",
+        "INDUMENTARIA",
+        "JACKET",
+        "proteccionsolar",
+        "outlet",
+        "WOMEN"
+      ],
+      "ok": true,
+      "error": ""
+    }
+  ],
+  "meta": {},
+  "reversible": true,
+  "deshace": null
+}
