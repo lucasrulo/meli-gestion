@@ -1,6 +1,20 @@
 {
   "ops": [
     {
+      "id": "20261125-110900-e5d99b",
+      "fecha": "2026-11-25 11:09:00",
+      "usuario": "app",
+      "canal": "Shopify",
+      "tienda": "columbia",
+      "accion": "tags_set",
+      "descripcion": "Columbia Sportwear: agregar «30off» en 208 productos",
+      "reversible": true,
+      "deshace": null,
+      "total": 208,
+      "ok": 208,
+      "deshecha_por": null
+    },
+    {
       "id": "20261125-110716-ba22a7",
       "fecha": "2026-11-25 11:07:16",
       "usuario": "app",
