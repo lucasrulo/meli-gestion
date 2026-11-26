@@ -1,6 +1,20 @@
 {
   "ops": [
     {
+      "id": "20261126-111904-c4d12f",
+      "fecha": "2026-11-26 11:19:04",
+      "usuario": "app",
+      "canal": "Shopify",
+      "tienda": "reebok",
+      "accion": "talles_stock",
+      "descripcion": "Reebok Argentina | Sitio Oficial: cargar 5 SKU (talles, EAN y stock)",
+      "reversible": false,
+      "deshace": null,
+      "total": 5,
+      "ok": 5,
+      "deshecha_por": null
+    },
+    {
       "id": "20261125-181946-8b6828",
       "fecha": "2026-11-25 18:19:46",
       "usuario": "app",
