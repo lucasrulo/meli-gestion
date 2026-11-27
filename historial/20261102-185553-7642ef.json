@@ -1,0 +1,664 @@
+{
+  "id": "20261102-185553-7642ef",
+  "fecha": "2026-11-02 18:55:53",
+  "usuario": "app",
+  "canal": "Shopify",
+  "tienda": "crocs",
+  "accion": "precios",
+  "descripcion": "Crocs: igualar precio de venta (igualar al precio de los talles con stock) en 53 variantes",
+  "filas": [
+    {
+      "id": "gid://shopify/Product/9802950672670",
+      "label": "Classic Clog",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50014417355038",
+          "price": "54999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014417387806",
+          "price": "54999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014417453342",
+          "price": "54999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50014417355038",
+          "price": "59999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014417387806",
+          "price": "59999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014417453342",
+          "price": "59999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802971480350",
+      "label": "Crocband™ Clog Kids",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50036593656094",
+          "price": "49999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50036593656094",
+          "price": "59999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802985046302",
+      "label": "Classic Crush Clog",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/51924612743454",
+          "price": "89999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/51924612776222",
+          "price": "89999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/51924612743454",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/51924612776222",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802987962654",
+      "label": "Crocs Echo Clog",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50014441767198",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014441799966",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014441832734",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014442094878",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50014441767198",
+          "price": "109999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014441799966",
+          "price": "109999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014441832734",
+          "price": "109999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014442094878",
+          "price": "109999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802990190878",
+      "label": "Crocs Mega Crush Sandal",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50014449500446",
+          "price": "59999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014449533214",
+          "price": "59999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014449565982",
+          "price": "59999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014449598750",
+          "price": "59999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014449631518",
+          "price": "59999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938350145822",
+          "price": "59999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50014449500446",
+          "price": "89999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014449533214",
+          "price": "89999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014449565982",
+          "price": "89999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014449598750",
+          "price": "89999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014449631518",
+          "price": "89999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938350145822",
+          "price": "89999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802995204382",
+      "label": "Crocs Classic Metallic Crocskin Clog",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/49938347688222",
+          "price": "54999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938347720990",
+          "price": "54999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938347753758",
+          "price": "54999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014461067550",
+          "price": "54999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014461133086",
+          "price": "54999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014461198622",
+          "price": "54999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014461296926",
+          "price": "54999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014461329694",
+          "price": "54999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938347786526",
+          "price": "54999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/49938347688222",
+          "price": "79999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938347720990",
+          "price": "79999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938347753758",
+          "price": "79999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014461067550",
+          "price": "79999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014461133086",
+          "price": "79999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014461198622",
+          "price": "79999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014461296926",
+          "price": "79999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014461329694",
+          "price": "79999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938347786526",
+          "price": "79999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802997170462",
+      "label": "Crocs Dylan Clog",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50014463525150",
+          "price": "74999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014463492382",
+          "price": "74999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50014463525150",
+          "price": "89999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014463492382",
+          "price": "89999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802997334302",
+      "label": "Crocs Dylan Clog",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50014463656222",
+          "price": "74999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014463557918",
+          "price": "74999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50014463656222",
+          "price": "89999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014463557918",
+          "price": "89999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9802997956894",
+      "label": "Crocs Echo Storm",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50014464377118",
+          "price": "69999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938345459998",
+          "price": "69999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014464442654",
+          "price": "69999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014464475422",
+          "price": "69999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014464180510",
+          "price": "69999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938345492766",
+          "price": "69999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014464311582",
+          "price": "69999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938345525534",
+          "price": "69999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50014464377118",
+          "price": "136999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938345459998",
+          "price": "136999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014464442654",
+          "price": "136999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014464475422",
+          "price": "136999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014464180510",
+          "price": "136999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938345492766",
+          "price": "136999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014464311582",
+          "price": "136999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938345525534",
+          "price": "136999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9803002020126",
+      "label": "Crocs Dylan Platform Clog",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/50014469947678",
+          "price": "89999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014469849374",
+          "price": "89999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/50014469947678",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014469849374",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9803005133086",
+      "label": "Crocs Echo Sand Storm Heel",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/49938340938014",
+          "price": "69999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938340970782",
+          "price": "69999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014473879838",
+          "price": "69999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014473912606",
+          "price": "69999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014473421086",
+          "price": "69999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014473453854",
+          "price": "69999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938341003550",
+          "price": "69999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938341036318",
+          "price": "69999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938341069086",
+          "price": "69999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/49938340938014",
+          "price": "136999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938340970782",
+          "price": "136999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014473879838",
+          "price": "136999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014473912606",
+          "price": "136999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014473421086",
+          "price": "136999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/50014473453854",
+          "price": "136999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938341003550",
+          "price": "136999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938341036318",
+          "price": "136999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/49938341069086",
+          "price": "136999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9839154364702",
+      "label": "Classic Clog",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/59756686311710",
+          "price": "44999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/51924598882590",
+          "price": "44999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/51924598915358",
+          "price": "44999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/51924598948126",
+          "price": "44999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/51924598980894",
+          "price": "44999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/59756686311710",
+          "price": "54999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/51924598882590",
+          "price": "54999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/51924598915358",
+          "price": "54999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/51924598948126",
+          "price": "54999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/51924598980894",
+          "price": "54999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    }
+  ],
+  "meta": {},
+  "reversible": true,
+  "deshace": null
+}

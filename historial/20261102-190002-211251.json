@@ -1,0 +1,34 @@
+{
+  "id": "20261102-190002-211251",
+  "fecha": "2026-11-02 19:00:02",
+  "usuario": "app",
+  "canal": "Shopify",
+  "tienda": "piccadilly",
+  "accion": "precios",
+  "descripcion": "Piccadilly: igualar precio de venta (igualar al precio de los talles con stock) en 1 variantes",
+  "filas": [
+    {
+      "id": "gid://shopify/Product/8824292769930",
+      "label": "Zapato Deise Forrado",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/48032513753226",
+          "price": "83799.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/48032513753226",
+          "price": "91999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    }
+  ],
+  "meta": {},
+  "reversible": true,
+  "deshace": null
+}

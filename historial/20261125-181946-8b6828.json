@@ -1,0 +1,244 @@
+{
+  "id": "20261125-181946-8b6828",
+  "fecha": "2026-11-25 18:19:46",
+  "usuario": "app",
+  "canal": "Shopify",
+  "tienda": "reebok",
+  "accion": "precios",
+  "descripcion": "Reebok Argentina | Sitio Oficial: cargar precios de 4 modelo-color (19 SKU)",
+  "filas": [
+    {
+      "id": "gid://shopify/Product/14752818233716",
+      "label": "Zapatillas Classic Leather",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/54705904583028",
+          "price": "119999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/54705905074548",
+          "price": "119999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/54705905107316",
+          "price": "119999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/54705905140084",
+          "price": "119999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/54705904583028",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/54705905074548",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/54705905107316",
+          "price": "99999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/54705905140084",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/14753371750772",
+      "label": "Zapatillas Nano X3",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/54705576903028",
+          "price": "139999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/54705576935796",
+          "price": "139999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/54705576968564",
+          "price": "139999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/54705577001332",
+          "price": "139999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/54705577296244",
+          "price": "139999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/54705576903028",
+          "price": "119999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/54705576935796",
+          "price": "119999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/54705576968564",
+          "price": "119999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/54705577001332",
+          "price": "119999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/54705577296244",
+          "price": "119999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/14753381286260",
+      "label": "Zapatillas Reebok Nano Gym",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/54705450353012",
+          "price": "149999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/54705450385780",
+          "price": "149999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/54705450418548",
+          "price": "149999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/54705450451316",
+          "price": "149999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/54705450484084",
+          "price": "149999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/54705450516852",
+          "price": "149999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/54705450549620",
+          "price": "149999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/54705450582388",
+          "price": "149999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/54705450615156",
+          "price": "149999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/54705450353012",
+          "price": "119999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/54705450385780",
+          "price": "119999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/54705450418548",
+          "price": "119999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/54705450451316",
+          "price": "119999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/54705450484084",
+          "price": "119999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/54705450516852",
+          "price": "119999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/54705450549620",
+          "price": "119999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/54705450582388",
+          "price": "119999.00",
+          "compareAtPrice": null
+        },
+        {
+          "id": "gid://shopify/ProductVariant/54705450615156",
+          "price": "119999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/14777666765172",
+      "label": "Zapatillas Classic Leather",
+      "antes": [
+        {
+          "id": "gid://shopify/ProductVariant/54705318756724",
+          "price": "119999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "despues": [
+        {
+          "id": "gid://shopify/ProductVariant/54705318756724",
+          "price": "99999.00",
+          "compareAtPrice": null
+        }
+      ],
+      "ok": true,
+      "error": ""
+    }
+  ],
+  "meta": {},
+  "reversible": true,
+  "deshace": null
+}

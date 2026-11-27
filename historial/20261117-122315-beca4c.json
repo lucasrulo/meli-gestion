@@ -1,0 +1,34 @@
+{
+  "id": "20261117-122315-beca4c",
+  "fecha": "2026-11-17 12:23:15",
+  "usuario": "app",
+  "canal": "Shopify",
+  "tienda": "reebok",
+  "accion": "contenido",
+  "descripcion": "Contenido Shopify: Campera deportiva Heritage Dance Blocked",
+  "filas": [
+    {
+      "id": "gid://shopify/Product/15011817980276",
+      "label": "Campera deportiva Heritage Dance Blocked",
+      "antes": {
+        "descriptionHtml": "<p>Su tejido de nailon trenzado ofrece una sensación fresca y ligera, con una caída definida y estructurada que garantiza durabilidad durante todo el día. En blanco y negro de alto contraste, aporta un toque atrevido y deportivo con un aire moderno.</p>",
+        "seo": {
+          "title": "",
+          "description": ""
+        }
+      },
+      "despues": {
+        "descriptionHtml": "<p>Con un diseño llamativo y deportivo, esta campera combina comodidad y estilo urbano en una prenda que no pasa desapercibida. Su confección en nailon liviano brinda una sensación fresca y cómoda, ideal para usar durante todo el día.</p>\n<p>La combinación en rosa y rojo le aporta un look moderno, original y lleno de personalidad, mientras que su calce estructurado suma ese toque retro inspirado en el streetwear clásico. Perfecta para levantar cualquier outfit con una vibra deportiva y canchera.</p>\n<p>------------------------------</p>\n<h2>Producto 100% original - tienda oficial reebok</h2>\n<p>Envíos a todo el país.</p>\n<p>Solamente Factura B.</p>\n<p>Cambios dentro de los 30 días, con el producto sin uso y con etiquetas.</p>\n<p>Ante cualquier duda sobre talles o stock, escribinos por preguntas antes de comprar.</p>",
+        "seo": {
+          "title": "Campera deportiva Heritage Dance Blocked Reebok Argentina |",
+          "description": "Comprá Campera deportiva Heritage Dance Blocked Reebok Argentina | Sitio Oficial en la tienda oficial."
+        }
+      },
+      "ok": true,
+      "error": ""
+    }
+  ],
+  "meta": {},
+  "reversible": true,
+  "deshace": null
+}

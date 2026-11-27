@@ -1,0 +1,120 @@
+{
+  "id": "20261103-141918-4dac60",
+  "fecha": "2026-11-03 14:19:18",
+  "usuario": "app",
+  "canal": "Shopify",
+  "tienda": "crocs",
+  "accion": "tags_set",
+  "descripcion": "Crocs Argentina | Sitio Oficial: agregar «20Cybermonday, Cybermonday» en 4 productos",
+  "filas": [
+    {
+      "id": "gid://shopify/Product/9944866947358",
+      "label": "Crocs Spiderman Web Classic Clog",
+      "antes": [
+        "calzado",
+        "colaboraciones",
+        "hombre",
+        "kids",
+        "mujer",
+        "personajes",
+        "sueco",
+        "unisex"
+      ],
+      "despues": [
+        "calzado",
+        "colaboraciones",
+        "hombre",
+        "kids",
+        "mujer",
+        "personajes",
+        "sueco",
+        "unisex",
+        "20Cybermonday",
+        "Cybermonday"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9948213281054",
+      "label": "Crocs Mickey and Friends Classic Clog",
+      "antes": [
+        "calzado",
+        "colaboraciones",
+        "hombre",
+        "mujer",
+        "personajes",
+        "sueco",
+        "ultimasunidades",
+        "unisex"
+      ],
+      "despues": [
+        "calzado",
+        "colaboraciones",
+        "hombre",
+        "mujer",
+        "personajes",
+        "sueco",
+        "ultimasunidades",
+        "unisex",
+        "20Cybermonday",
+        "Cybermonday"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9948213313822",
+      "label": "Crocs Mickey and Minnie Classic Clog",
+      "antes": [
+        "colaboraciones",
+        "hombre",
+        "mujer",
+        "personajes",
+        "sueco",
+        "ultimasunidades",
+        "unisex"
+      ],
+      "despues": [
+        "colaboraciones",
+        "hombre",
+        "mujer",
+        "personajes",
+        "sueco",
+        "ultimasunidades",
+        "unisex",
+        "20Cybermonday",
+        "Cybermonday"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10059465392414",
+      "label": "Crocs Doraemon Classic Clog",
+      "antes": [
+        "calzado",
+        "colaboraciones",
+        "mujer",
+        "personajes",
+        "sueco",
+        "ultimasunidades"
+      ],
+      "despues": [
+        "calzado",
+        "colaboraciones",
+        "mujer",
+        "personajes",
+        "sueco",
+        "ultimasunidades",
+        "20Cybermonday",
+        "Cybermonday"
+      ],
+      "ok": true,
+      "error": ""
+    }
+  ],
+  "meta": {},
+  "reversible": true,
+  "deshace": null
+}

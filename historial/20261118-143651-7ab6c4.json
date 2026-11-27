@@ -1,0 +1,202 @@
+{
+  "id": "20261118-143651-7ab6c4",
+  "fecha": "2026-11-18 14:36:51",
+  "usuario": "app",
+  "canal": "Shopify",
+  "tienda": "piccadilly",
+  "accion": "tags_set",
+  "descripcion": "Piccadilly Argentina | Sitio Oficial: agregar «fiestas25» en 6 productos",
+  "filas": [
+    {
+      "id": "gid://shopify/Product/8629575843978",
+      "label": "Sandalia Cristine Pulsera",
+      "antes": [
+        "25Cyber",
+        "calzado",
+        "Cybermonday",
+        "ddm",
+        "oportunidades",
+        "Precyber",
+        "sandalia",
+        "women"
+      ],
+      "despues": [
+        "25Cyber",
+        "calzado",
+        "Cybermonday",
+        "ddm",
+        "oportunidades",
+        "Precyber",
+        "sandalia",
+        "women",
+        "fiestas25"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8668783214730",
+      "label": "Zueco Paola",
+      "antes": [
+        "25black",
+        "25Cyber",
+        "blackfriday",
+        "calzado",
+        "Cybermonday",
+        "ddm",
+        "Precyber",
+        "primaveraverano",
+        "sandalia",
+        "sueco",
+        "trendy",
+        "women"
+      ],
+      "despues": [
+        "25black",
+        "25Cyber",
+        "blackfriday",
+        "calzado",
+        "Cybermonday",
+        "ddm",
+        "Precyber",
+        "primaveraverano",
+        "sandalia",
+        "sueco",
+        "trendy",
+        "women",
+        "fiestas25"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8668783280266",
+      "label": "Zueco Paola",
+      "antes": [
+        "25black",
+        "25Cyber",
+        "blackfriday",
+        "calzado",
+        "Cybermonday",
+        "ddm",
+        "Precyber",
+        "primaveraverano",
+        "sandalia",
+        "sueco",
+        "trendy",
+        "women"
+      ],
+      "despues": [
+        "25black",
+        "25Cyber",
+        "blackfriday",
+        "calzado",
+        "Cybermonday",
+        "ddm",
+        "Precyber",
+        "primaveraverano",
+        "sandalia",
+        "sueco",
+        "trendy",
+        "women",
+        "fiestas25"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8668783313034",
+      "label": "Zueco Paola",
+      "antes": [
+        "25black",
+        "25Cyber",
+        "blackfriday",
+        "calzado",
+        "Cybermonday",
+        "ddm",
+        "Precyber",
+        "primaveraverano",
+        "sandalia",
+        "sueco",
+        "trendy",
+        "ultimasunidades",
+        "women"
+      ],
+      "despues": [
+        "25black",
+        "25Cyber",
+        "blackfriday",
+        "calzado",
+        "Cybermonday",
+        "ddm",
+        "Precyber",
+        "primaveraverano",
+        "sandalia",
+        "sueco",
+        "trendy",
+        "ultimasunidades",
+        "women",
+        "fiestas25"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8668784328842",
+      "label": "Sandalia Flavia",
+      "antes": [
+        "25Cyber",
+        "calzado",
+        "Cybermonday",
+        "Precyber",
+        "primaveraverano",
+        "sandalia",
+        "trendy",
+        "women"
+      ],
+      "despues": [
+        "25Cyber",
+        "calzado",
+        "Cybermonday",
+        "Precyber",
+        "primaveraverano",
+        "sandalia",
+        "trendy",
+        "women",
+        "fiestas25"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/8668784361610",
+      "label": "Sandalia Flavia",
+      "antes": [
+        "25Cyber",
+        "calzado",
+        "Cybermonday",
+        "Precyber",
+        "primaveraverano",
+        "sandalia",
+        "trendy",
+        "women"
+      ],
+      "despues": [
+        "25Cyber",
+        "calzado",
+        "Cybermonday",
+        "Precyber",
+        "primaveraverano",
+        "sandalia",
+        "trendy",
+        "women",
+        "fiestas25"
+      ],
+      "ok": true,
+      "error": ""
+    }
+  ],
+  "meta": {},
+  "reversible": true,
+  "deshace": null
+}

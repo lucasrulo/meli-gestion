@@ -1,0 +1,146 @@
+{
+  "id": "20261103-141538-402a44",
+  "fecha": "2026-11-03 14:15:38",
+  "usuario": "app",
+  "canal": "Shopify",
+  "tienda": "crocs",
+  "accion": "tags_set",
+  "descripcion": "Crocs Argentina | Sitio Oficial: agregar «30Cybermonday, Cybermonday» en 5 productos",
+  "filas": [
+    {
+      "id": "gid://shopify/Product/9802974691614",
+      "label": "Crocs Classic Littles Infant",
+      "antes": [
+        "calzado",
+        "classic",
+        "infant",
+        "sueco",
+        "ultimasunidades"
+      ],
+      "despues": [
+        "calzado",
+        "classic",
+        "infant",
+        "sueco",
+        "ultimasunidades",
+        "30Cybermonday",
+        "Cybermonday"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9956434641182",
+      "label": "Crocs Batman Batmobile Classic Clog",
+      "antes": [
+        "calzado",
+        "colaboraciones",
+        "hombre",
+        "mujer",
+        "personajes",
+        "sueco",
+        "unisex"
+      ],
+      "despues": [
+        "calzado",
+        "colaboraciones",
+        "hombre",
+        "mujer",
+        "personajes",
+        "sueco",
+        "unisex",
+        "30Cybermonday",
+        "Cybermonday"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/9956434673950",
+      "label": "Crocs Batman Batmobile Classic Clog Kids",
+      "antes": [
+        "calzado",
+        "colaboraciones",
+        "kids",
+        "personajes",
+        "sueco"
+      ],
+      "despues": [
+        "calzado",
+        "colaboraciones",
+        "kids",
+        "personajes",
+        "sueco",
+        "30Cybermonday",
+        "Cybermonday"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10064546562334",
+      "label": "Crocs Bae Slide",
+      "antes": [
+        "calzado",
+        "ddm",
+        "mujer",
+        "nuevo",
+        "plataforma",
+        "sandalia",
+        "style",
+        "sueco",
+        "ultimasunidades"
+      ],
+      "despues": [
+        "calzado",
+        "ddm",
+        "mujer",
+        "nuevo",
+        "plataforma",
+        "sandalia",
+        "style",
+        "sueco",
+        "ultimasunidades",
+        "30Cybermonday",
+        "Cybermonday"
+      ],
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/Product/10064546627870",
+      "label": "Crocs Bae Slide",
+      "antes": [
+        "calzado",
+        "ddm",
+        "mamá",
+        "mujer",
+        "nuevo",
+        "plataforma",
+        "sandalia",
+        "style",
+        "sueco",
+        "ultimasunidades"
+      ],
+      "despues": [
+        "calzado",
+        "ddm",
+        "mamá",
+        "mujer",
+        "nuevo",
+        "plataforma",
+        "sandalia",
+        "style",
+        "sueco",
+        "ultimasunidades",
+        "30Cybermonday",
+        "Cybermonday"
+      ],
+      "ok": true,
+      "error": ""
+    }
+  ],
+  "meta": {},
+  "reversible": true,
+  "deshace": null
+}

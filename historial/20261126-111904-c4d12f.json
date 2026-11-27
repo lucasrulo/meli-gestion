@@ -1,0 +1,74 @@
+{
+  "id": "20261126-111904-c4d12f",
+  "fecha": "2026-11-26 11:19:04",
+  "usuario": "app",
+  "canal": "Shopify",
+  "tienda": "reebok",
+  "accion": "talles_stock",
+  "descripcion": "Reebok Argentina | Sitio Oficial: cargar 5 SKU (talles, EAN y stock)",
+  "filas": [
+    {
+      "id": "gid://shopify/ProductVariant/57056597803380",
+      "label": "Zapatillas Reebok Nanoflex Tr 2 · RBK1100212024-12",
+      "antes": null,
+      "despues": {
+        "ean": "1200161014260",
+        "stock": 1,
+        "accion": "🆕 Crear talle"
+      },
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/ProductVariant/57056597836148",
+      "label": "Zapatillas Reebok Nanoflex Tr 2 · RBK1100212024-13",
+      "antes": null,
+      "despues": {
+        "ean": "1200161014284",
+        "stock": 1,
+        "accion": "🆕 Crear talle"
+      },
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/ProductVariant/57056597967220",
+      "label": "Zapatillas Princess · RBKMU536-RBKHP7571-7",
+      "antes": null,
+      "despues": {
+        "ean": "4066747021384",
+        "stock": 5,
+        "accion": "🆕 Crear talle"
+      },
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/ProductVariant/57056598065524",
+      "label": "Zapatillas Reebok ATR Pump Vertical · RBK1100074729-11",
+      "antes": null,
+      "despues": {
+        "ean": "1200143169346",
+        "stock": 3,
+        "accion": "🆕 Crear talle"
+      },
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "gid://shopify/ProductVariant/57056598098292",
+      "label": "Zapatillas Reebok ATR Pump Vertical · RBK1100074729-11.5",
+      "antes": null,
+      "despues": {
+        "ean": "1200143169360",
+        "stock": 3,
+        "accion": "🆕 Crear talle"
+      },
+      "ok": true,
+      "error": ""
+    }
+  ],
+  "meta": {},
+  "reversible": false,
+  "deshace": null
+}
